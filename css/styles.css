@@ -1,0 +1,214 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body{
+	margin:0 auto;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	height: 100%;	
+}
+
+h1 {
+	font-size: 48px;
+	font-weight: 400;
+	color:#fff;
+	font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+	font-size: 38px;
+	font-weight: 100;	
+}
+
+h3 {
+	font-size: 36px;
+	font-weight: 100;
+}
+
+h4 {
+	font-size: 30px;
+	font-weight: 100;	
+}
+
+h5 {
+	font-size: 28px;
+	font-weight: 100;	
+}
+
+h6 {
+	font-size: 22px;
+	font-weight: 100;	
+}
+
+ul {
+	text-decoration: none;
+	margin:0 auto;
+	line-height: 75px;
+}
+
+li {
+	color: #fff;
+	font-weight: 100;
+	display: inline-block;
+	padding-right:16px;	
+}
+
+p {	
+	font-size: 16px;	
+	font-weight: 300;
+	line-height: 25px;
+}
+
+a {	
+	color: #fff;
+	font-weight: 600;
+	text-decoration: none;
+	padding-right: 3px;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;    
+}
+
+a:hover{
+	color:  #c13240;
+	text-decoration: overline;
+}
+
+.active{
+	color:  #8da9a7;
+	background-color: #fec901;
+	color: #000;
+	padding-top: 28px;
+	padding-bottom: 28px;	
+}
+
+
+.back_full_screen{
+	overflow: hidden;
+	background-position: center center; 
+    background-repeat: no-repeat;	   
+	background-size: cover;
+	background-image:url(../img/background_red.jpg); 
+	width:100%; 
+	height:100%;
+	min-height:650px;	  	
+}
+
+header{
+	text-align: center;	
+	margin: 0 auto;
+	width: 100%;	
+	-webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    padding-left: 100px;
+    padding-right: 100px;
+  background: rgba(0,0,0,1);
+background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(33,33,33,1) 13%, rgba(255,255,255,0) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(13%, rgba(33,33,33,1)), color-stop(100%, rgba(255,255,255,0)));
+background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(33,33,33,1) 13%, rgba(255,255,255,0) 100%);
+background: -o-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(33,33,33,1) 13%, rgba(255,255,255,0) 100%);
+background: -ms-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(33,33,33,1) 13%, rgba(255,255,255,0) 100%);
+background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(33,33,33,1) 13%, rgba(255,255,255,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=0 );
+    box-sizing: border-box;
+}
+
+header.fixed{	
+	position: fixed;			
+	z-index: 1;
+	background-color: #000;
+}
+
+nav {
+	margin: 0 auto;	
+	text-decoration: none;
+	height: 75px;
+	width: 60%;
+	display:inline-block;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;	
+}
+
+.logo{	
+	font-family: 'Oswald', sans-serif;
+	color:#fff;
+	float:left;
+	text-align: center;	
+	font-size: 40px;	
+	-webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    width: 20%;
+    line-height: 75px;
+}
+.icons{
+	float:right;
+	color:#fff;
+	width: 20%;
+}
+
+.copyServices{
+	float: left;
+	position: absolute; 
+	bottom: 0;
+	padding: 0px 0px 50px 100px;
+	width: 40%
+}
+
+.copyServices p {
+	color: #fff;
+}
+
+.button-principal{	
+	border-bottom: 3px solid #000;
+	padding: 7px 30px;	
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	background-color: #bba9a7;
+	text-decoration: none;
+	color:#991b2c;
+	display: inline-block;	
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;   
+}
+
+.button-principal:hover{
+	border: 0px;	
+	background-color: #991b2c;
+	color:#bba9a7;
+	border-bottom: 3px solid #bba9a7;
+}
+
+.products{
+	width: 100%;	
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+}
+
+.steps{
+	margin: 0 auto;
+	width: 40%;
+	background-color: #bba9a7;
+	height: 75px;
+	vertical-align: center;
+}
+
+.stepsNumbers{
+	padding: 15px;
+	border: solid 1px #fff;
+}
+
+.cards{
+	width: 33%;
+	float: left;
+}
