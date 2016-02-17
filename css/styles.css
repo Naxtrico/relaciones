@@ -16,11 +16,13 @@ h1 {
 }
 
 h2 {
+	font-family: 'Oswald', sans-serif;
 	font-size: 38px;
 	font-weight: 100;	
 }
 
 h3 {
+	font-family: 'Oswald', sans-serif;
 	font-size: 36px;
 	font-weight: 100;
 }
@@ -44,6 +46,7 @@ ul {
 	text-decoration: none;
 	margin:0 auto;
 	line-height: 75px;
+	padding: 0;
 }
 
 li {
@@ -57,6 +60,7 @@ p {
 	font-size: 16px;	
 	font-weight: 300;
 	line-height: 25px;
+	margin: 10px;
 }
 
 a {	
@@ -196,15 +200,19 @@ nav {
 	border-bottom: 3px solid #bba9a7;
 }
 
-.products{
-	width: 100%;	
+.sectionsPF{
+	margin:0 auto;
+	width: 100%;
+	max-width: 1366px;	
     box-sizing: border-box;
     text-align: center;
     overflow: hidden;
-    vertical-align: middle;    
+    vertical-align: middle;
+    margin-top: 100px;       
 }
 
 .steps{
+	text-align: center;
 	margin: 0 auto;
 	width: 40%;
 	background-color: #D8D8D8;
@@ -225,10 +233,13 @@ nav {
 	border: 1px solid #000000;	
 }
 
-.cards{
+.contentCards{
 	height: 100%;
 	width: 33.33333%;
-	float: left;
+	float:left;		
+}
+
+.cards{	
 	background-image: url(../img/masaje.jpg);
 	background-position: center center;
     background-repeat: no-repeat;
@@ -238,3 +249,113 @@ nav {
     opacity: 1;
     overflow: hidden;
 }
+
+.description{	
+	padding: 35px;
+	text-align: left;	
+}
+
+.seeMore{
+	text-align: right;
+	font-size: 12px;
+}
+.descriptionColorImpares{
+	background-color: #D8D8D8;
+}
+
+.descriptionColorPares{
+	background-color: #BCA9A7;
+}
+
+.description h3{
+	margin-top: 0;
+}
+
+.detailsModel{
+	font-weight: bold;
+	width: 100px;	
+}
+.seleccion{
+	text-align: right;
+}
+
+.button-selection{	
+	border: 3px solid #991b2c;
+	padding: 7px 30px;	
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;	
+	text-decoration: none;
+	color:#991b2c;
+	display: inline-block;
+	background-color: transparent;
+	visibility: visible;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;   
+}
+
+.button-selection:hover{		
+	background-color: #991b2c;
+	color:#bba9a7;
+	border: 3px solid #991b2c;	
+}
+
+.button-selection:active{
+	background-color: #fff;
+	color:#bba9a7;
+	border: 3px solid #991b2c;		
+}
+
+ input[type=radio]{
+ 	visibility: hidden;    
+ }
+
+ input[type=radio]:checked + span{
+ 	background-color: #fff;    
+ }
+
+input[type="text"]{
+	display: block;	
+	border: 1px solid #fff;
+	padding: 10px;
+	margin-bottom: 25px;	
+	background-color: #bba9a7;	
+	-webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    color:#fff;
+    width: 450px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus{	
+	border: 1px solid #3f302f;
+	padding: 10px;	
+	background-color: #fff;	
+	color:#000;
+	content: clear;	
+}
+
+legend{
+	margin-bottom: 10px;	
+	font-size: 16px;	
+}
+
+form{
+	padding-top: 20px;
+	margin: 0 auto;
+	width: 455px;
+}
+
+footer{
+	background-color: #000;
+	min-width: 1366px;
+	height: 100px;
+	margin-top: 50px;
+}
+
+
+
