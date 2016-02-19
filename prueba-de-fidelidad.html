@@ -7,247 +7,214 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#masaje").click(function () {        
+   var masaje = $('input:radio[name=selec]:checked').val();    
+    $("#yourSelection").text( "Has elegido el ambiente: " + masaje);      
+    }); 
+
+     $("#copa").click(function () {        
+   var masaje = $('input:radio[name=selec]:checked').val();    
+    $("#yourSelection").text( "Has elegido el ambiente: " + masaje);      
+    });        
+  });
+</script>
 </head>
-<body>
-<div class="back_full_screen">        
-    <header>
-        <div class="logo" id="logo">
-            IMPARES                   
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">QUE HACEMOS</a></li>
-                <li><a href="#">SERVICIOS</a></li>
-                <li><a href="#">TIENDA</a></li>
-                <li><a href="#">RED IMPARES</a></li>
-                <li><a href="#">TESTIMONIOS</a></li>
-                <li><a href="#">CONTACTO</a></li>
-            </ul>            
-        </nav>
-        <div class="icons">
-        	<img src="img/login.png">
-        	<img src="img/registrarse.png">
-        	<img src="img/carrito.png">
-        </div>         
-    </header>
-    <section class="contentCopy">
-    	<div class="copyServices">
-        	<h1>PRUEBA DE FIDELIDAD</h1>
-        	<p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. </p>
-
-        	<a href="#products" class="button-principal">DESCÚBRELO</a>
-        </div>
-        </section>            
-    </div>
-    <div class="steps" id="steps">
-            <span class="stepsNumbers">1</span>------------
-            <span class="stepsNumbers">2</span>------------
-            <span class="stepsNumbers">3</span>
-        </div>
-    <section class="sectionsPF" id="products">
-    	
-    	<h2> SELECCIONA UN AMBIENTE PARA LA PRUEBA DE FIDELIDAD</h2>
-    	<p> Elige un lugar donde quieres que se realice la prueba</p>
-        <div class="contentCards">     
-        	<div class="cards">
-        	<h1>100€</h1>    	
+<body>    
+    <div class="back_full_screen">        
+        <header>
+            <div class="logo" id="logo">
+                IMPARES                   
             </div>
-            <div class="description descriptionColorImpares">
-                <h3>MASAJE PRIVADO</h3>
-                <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-                <div class="seeMore">
-                    Ver mas +
-                </div>
-            </div>
-        </div>
-    	<div class="contentCards">     
-            <div class="cards">
-            <h1>100€</h1>       
-            </div>
-            <div class="description descriptionColorPares">
-                <h3>CAFETERÍA CON LIGUE</h3>
-                <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-                <div class="seeMore">
-                    VEr mas +
-                </div>
-            </div>
-        </div>
-        <div class="contentCards">     
-            <div class="cards">
-            <h1>100€</h1>       
-            </div>
-            <div class="description descriptionColorImpares">
-                <h3>BIBLIOTECA AMOROSA</h3>
-                <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-                <div class="seeMore">
-                    Ver mas +
-                </div>
-            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">QUE HACEMOS</a></li>
+                    <li><a href="#">SERVICIOS</a></li>
+                    <li><a href="#">TIENDA</a></li>
+                    <li><a href="#">RED IMPARES</a></li>
+                    <li><a href="#">TESTIMONIOS</a></li>
+                    <li><a href="#">CONTACTO</a></li>
+                </ul>            
+            </nav>
+            <div class="icons">
+               <img src="img/login.png">
+               <img src="img/registrarse.png">
+               <img src="img/carrito.png">
+           </div>         
+       </header>
+       <section class="contentCopy">
+        <div class="contentCopyTop"><img src="img/eye.png"></div>  
+           <div class="copyServices">
+               <h1>PRUEBA DE FIDELIDAD</h1>               
+               <p>Un 35% de hombres y un 26% de mujeres reconocen</p>
+               <p>haber sido infieles a su pareja alguna vez.</p>
+               <p>Con nuestro servicio puedes averiguar si tu pareja te</p>
+                <p>está poniendo los cuernos o no.</p>
+               
+           </div>
+        <div class="contentCopyBottom"><a href="#products" class="button-principal">DESCÚBRELO</a></div>
+       </section>            
+   </div>
+   <div class="steps" id="steps">
+    <span class="stepsNumbers">1</span>------------
+    <span class="stepsNumbers">2</span>------------
+    <span class="stepsNumbers">3</span>
+</div>
+<section class="sectionsPF" id="products">
+   <h2> SELECCIONA UN AMBIENTE PARA LA PRUEBA DE FIDELIDAD</h2>
+   <p> Elige un lugar donde quieres que se realice la prueba</p>   
+<div class="card">
+    <div class="card_body">
+        <div class="card_price">
+            <p> 50€</p>
         </div>        
-        <div class="contentCards">     
-            <div class="cards">
-            <h1>100€</h1>       
-            </div>
-            <div class="description descriptionColorPares">
-                <h3>ENCUENTRO EN EL GYM</h3>
-                <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-                <div class="seeMore">
-                    Ver mas +
-                </div>
-            </div>
+        <div class="card_description">
+            <h3>MASAJE CALIENTE</h3>
+            <hr>
+            <p> Servicio a domicilio. El actor se hará pasar por un masajista profesional que no ofrecera solo un masaje relajante a tu pareja sinó que intentará ir más allà.</p>
+            <p> Como reaccionarà tu pareja?</p>             
         </div>
-        <div class="contentCards">     
-            <div class="cards">
-            <h1>100€</h1>       
-            </div>
-            <div class="description descriptionColorImpares">
-                <h3>CITA EN EL PARQUE</h3>
-                <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-                <div class="seeMore">
-                    Ver mas +
-                </div>
-            </div>
+    </div>
+    <div class="card_footer">
+        <label><input type="radio" name="selec" value="MASAJE CALIENTE" id="masaje"><span class="card_btn">SELECCIONAR</span></label>
+       
+    </div>
+</div>
+<div class="card">
+    <div class="card_body">
+        <div class="card_price">
+            <p>80€</p>
         </div>
-        <div class="contentCards">     
-            <div class="cards">
-            <h1>100€</h1>       
-            </div>
-            <div class="description descriptionColorPares">
-                <h3>SUPERMERCADO</h3>
-                <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-                <div class="seeMore">
-                    Ver mas +
-                </div>
-            </div>
+        <div class="card_description">
+            <h3>TE INVITO A UNA COPA</h3>
+            <hr>
+            <p>Ese local que tu pareja va siempre con sus amig@s.</p>
+            <p>Nuestro actor le invitara a una copa e intentara compartir con ella algo más que un trago…</p>
+            <p>Tu pareja lo permitirà?</p>             
         </div>
-    </section>
-    <section class="sectionsPF">
-        <h2> SELECCIONA UN ACTOR</h2>
-        <p> ¿Qué le gusta a tu pareja? Elige lo que le pueda interesar</p>
-        <div class="contentCards">     
-            <div class="cards" style="background-image: url(img/model1.jpg);">
-            <h1>100€</h1>       
-            </div>
-                <div class="description descriptionColorPares">
-                <h3>NATASHA</h3>
-                <p><span class="detailsModel">ALTURA: </span> 1,82 / 74*</p>
-                <p><span class="detailsModel">SUIT: </span> 50 / 19,5*</p>
-                <p><span class="detailsModel">PANTALONES: </span> 40 /15.5*</p>
-                <p><span class="detailsModel">PELO: </span> Marrón claro</p>
-                <p><span class="detailsModel">OJOS: </span> Azúl </p>
+    </div>
+    <div class="card_footer">
+        <label><input type="radio" name="selec" value="TE INVITO A UNA COPA" id="copa"><span class="card_btn">SELECCIONAR</span></label>
+    </div>
+</div>     
+<div class="card">
+    <div class="card_body">
+        <div class="card_price">
+            <p>100€</p>
+        </div>
+        <div class="card_description">
+            <h3>¿NOS CORREMOS JUNTOS?</h3>
+            <hr>
+            <p>Tu pareja es un@ gran deportista?</p>
+            <p>Y si nuestro actor le dice de correr juntos y compartir experiencias… </p>
+            <p>Que crees que pasaria?</p>            
+        </div>
+    </div>
+    <div class="card_footer">
+        <label><input type="radio" name="selec" value="¿NOS CORREMOS JUNTOS?" id="correr"><span class="card_btn">SELECCIONAR</span></label>
+    </div>
+</div>     
+<div class="card">
+    <div class="card_body">
+        <div class="card_price">
+            <p>50€</p>
+        </div>
+        <div class="card_description">
+            <h3>MASAJE PRIVADO EN LA TOSCANA</h3>
+            <hr>
+            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p> 
+        </div>
+    </div>
+    <div class="card_footer">
+        <label><input type="radio" name="selec" value="male"><span class="card_btn">SELECCIONAR</span></label>
+    </div>
+</div>     
+<div class="card">
+    <div class="card_body">
+        <div class="card_price">
+            <p>80€</p>
+        </div>
+        <div class="card_description">
+            <h3>¿NOS TOMAMOS UNA COPA JUNTOS?</h3>
+            <hr>
+            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p> 
+        </div>
+    </div>
+    <div class="card_footer">
+        <label><input type="radio" name="selec" value="male"><span class="card_btn">SELECCIONAR</span></label>
+    </div>
+</div>     
+<div class="card">
+    <div class="card_body">
+        <div class="card_price">
+            <p>100€</p>
+        </div>
+        <div class="card_description">
+            <h3>MASAJE PRIVADO EN LA TOSCANA</h3>
+            <hr>
+            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p> 
+        </div>
+    </div>
+    </form>
+    <div class="card_footer">
+        <label><input type="radio" name="selec" value="male"><span class="card_btn">SELECCIONAR</span></label>
+    </div>
+</div>       
+</section>
+<section class="sectionsPF">
+    <h2> SELECCIONA UN ACTOR</h2>
+    <p> ¿Qué le gusta a tu pareja? Elige lo que le pueda interesar</p>
+        
+</section>
+<section class="sectionsPF">    
+    <h2> TU SELECCIóN</h2>
+    <div class="yourSelection">
+        <p id="yourSelection"> NO HAS SELECCIONADO NADA</p>
+    </div>    
+    <h2>RELLENA EL SIGUIENTE FORMULARIO</h2>    
+    <form>
+        <p>Escribe tus datos personales</p>
+        <input type="text" value="Nombre" id="nombre" onfocus="this.value = ''" required>       
+        <input type="text" id="email" title="Indica un Email válido" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" value="*email" onfocus="this.value = ''" required>
+        <input type="text" id="mobil" value="Móbil" onfocus="this.value = ''" required>
+        <p>Escribe los datos de tu pareja</p>
+         <input type="text" id="nombrePar" value="Nombre" onfocus="this.value = ''" required>       
+        <input type="text" id="edad" value="Edad" onfocus="this.value = ''" required>
+        <input type="text" id="foto" value="Adjuntar una foto" onfocus="this.value = ''" required>       
+        <textarea id="txtArea id="textarea"" rows="10" cols="70" onfocus="this.value = ''">
+        Háblanos de lo que le gusta a tu pareja:
+        Ej. Defensora de los animales, le encanta el futbol. etc.
+        *Cuanto más detallada sea la descripción de como es y lo que le gusta, mejor podremos 
+        acercarnos de forma personal.
+        </textarea> 
+         <p>Datos para la prueba</p>
+         <input type="text" id="donde" value="¿Dónde se realizaría? (Ciudad)" onfocus="this.value = ''" required>       
+        <input type="text" id="fecha" value="Fecha *debe de haber de margen una semana como mínimo desde la contratación" onfocus="this.value = ''" required>
+        <input type="text" id="foto" value="Adjuntar una foto" onfocus="this.value = ''" required>
+        <input type="submit" value="FINALIZAR" class="card_btn">  
+    </form>
+</section>
+<footer>
 
-                <div class="seleccion">
-                    <label><input type="radio" name="selec" value="male"><span class="button-selection">SELECCIONAR</span></label>
-                </div>
-            </div>
-        </div>
-        <div class="contentCards">     
-            <div class="cards" style="background-image: url(img/model1.jpg);">
-            <h1>100€</h1>       
-            </div>
-                <div class="description descriptionColorImpares">
-                <h3>NATASHA</h3>
-                <p><span class="detailsModel">ALTURA: </span> 1,82 / 74*</p>
-                <p><span class="detailsModel">SUIT: </span> 50 / 19,5*</p>
-                <p><span class="detailsModel">PANTALONES: </span> 40 /15.5*</p>
-                <p><span class="detailsModel">PELO: </span> Marrón claro</p>
-                <p><span class="detailsModel">OJOS: </span> Azúl </p>
+</footer>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="js/wow.js"></script>
 
-                <div class="seleccion">
-                    <label><input type="radio" name="selec" value="male"><span class="button-selection">SELECCIONAR</span></label>
-                </div>
-            </div>
-        </div>
-        <div class="contentCards">     
-            <div class="cards" style="background-image: url(img/model1.jpg);">
-            <h1>100€</h1>       
-            </div>
-                <div class="description descriptionColorPares">
-                <h3>NATASHA</h3>
-                <p><span class="detailsModel">ALTURA: </span> 1,82 / 74*</p>
-                <p><span class="detailsModel">SUIT: </span> 50 / 19,5*</p>
-                <p><span class="detailsModel">PANTALONES: </span> 40 /15.5*</p>
-                <p><span class="detailsModel">PELO: </span> Marrón claro</p>
-                <p><span class="detailsModel">OJOS: </span> Azúl </p>
-
-                <div class="seleccion">
-                    <label><input type="radio" name="selec" value="male"><span class="button-selection">SELECCIONAR</span></label>
-                </div>
-            </div>
-        </div>
-
-        <div class="contentCards">     
-            <div class="cards" style="background-image: url(img/model1.jpg);">
-            <h1>100€</h1>       
-            </div>
-                <div class="description descriptionColorImpares">
-                <h3>NATASHA</h3>
-                <p><span class="detailsModel">ALTURA: </span> 1,82 / 74*</p>
-                <p><span class="detailsModel">SUIT: </span> 50 / 19,5*</p>
-                <p><span class="detailsModel">PANTALONES: </span> 40 /15.5*</p>
-                <p><span class="detailsModel">PELO: </span> Marrón claro</p>
-                <p><span class="detailsModel">OJOS: </span> Azúl </p>
-
-                <div class="seleccion">
-                    <label><input type="radio" name="selec" value="male"><span class="button-selection">SELECCIONAR</span></label>
-                </div>
-            </div>
-        </div>
-        <div class="contentCards">     
-            <div class="cards" style="background-image: url(img/model1.jpg);">
-            <h1>100€</h1>       
-            </div>
-                <div class="description descriptionColorPares">
-                <h3>NATASHA</h3>
-                <p><span class="detailsModel">ALTURA: </span> 1,82 / 74*</p>
-                <p><span class="detailsModel">SUIT: </span> 50 / 19,5*</p>
-                <p><span class="detailsModel">PANTALONES: </span> 40 /15.5*</p>
-                <p><span class="detailsModel">PELO: </span> Marrón claro</p>
-                <p><span class="detailsModel">OJOS: </span> Azúl </p>
-
-                <div class="seleccion">
-                   <label><input type="radio" name="selec" value="male"><span class="button-selection">SELECCIONAR</span></label>
-                </div>
-            </div>
-        </div>
-        <div class="contentCards">     
-            <div class="cards" style="background-image: url(img/model1.jpg);">
-            <h1>100€</h1>       
-            </div>
-                <div class="description descriptionColorImpares">
-                <h3>NATASHA</h3>
-                <p><span class="detailsModel">ALTURA: </span> 1,82 / 74*</p>
-                <p><span class="detailsModel">SUIT: </span> 50 / 19,5*</p>
-                <p><span class="detailsModel">PANTALONES: </span> 40 /15.5*</p>
-                <p><span class="detailsModel">PELO: </span> Marrón claro</p>
-                <p><span class="detailsModel">OJOS: </span> Azúl </p>
-                <div class="seleccion">
-                    <label><input type="radio" name="selec" value="male"><span class="button-selection">SELECCIONAR</span></label>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="sectionsPF">
-        <h2> FINALIZAR PRUEBA FIDELIDAD</h2>
-        <form>
-            <input type="text" value="*nombre" onfocus="this.value = ''" required>
-            <input type="text" value="*apellidos" onfocus="this.value = ''" required>
-            <input type="text" title="Indica un email válido" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" value="*email" onfocus="this.value = ''" required>
-            <input type="text" value="*localidad" onfocus="this.value = ''" required>
-            <input type="text" value="*provincia" onfocus="this.value = ''" required>
-            <input type="submit" value="FINALIZAR" class="button-selection">  
-        </form>
-    </section>
-    <footer>
-
-    </footer>
-     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-    <script src="js/wow.js"></script>
-
-    <!-- efect scroll page -->
-        <script type="text/javascript">
-        $(function() {
+<!-- efect scroll page -->
+<script type="text/javascript">
+$(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -255,25 +222,27 @@
       if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 1000);
+      }, 1000);
         return false;
-      }
     }
-  });
+}
 });
-        </script>
- <!-- end efect scroll page -->
- <!-- efect menu fixed -->
-    <script type="text/javascript">
-        jQuery(window).scroll(function () {
-            var threshold = 200;
-        if  (jQuery(window).scrollTop() >= 200)
-            jQuery('header').addClass('fixed');              
-                                  
-        else
-            jQuery('header').removeClass('fixed');        
-        });
-        </script>
-        <!-- end efect menu fixed -->       
+});
+</script>
+<!-- end efect scroll page -->
+<!-- efect menu fixed -->
+<script type="text/javascript">
+jQuery(window).scroll(function () {
+    var threshold = 200;
+    if  (jQuery(window).scrollTop() >= 200)
+        jQuery('header').addClass('fixed');              
+
+    else
+        jQuery('header').removeClass('fixed');        
+});
+</script>
+<!-- end efect menu fixed -->  
+
+ 
 </body>
 </html>
