@@ -203,7 +203,7 @@ nav {
 .sectionsPF{
 	margin:0 auto;
 	width: 100%;
-	max-width: 1366px;	
+	max-width: 1024px;	
     box-sizing: border-box;
     text-align: center;
     overflow: hidden;
@@ -236,28 +236,82 @@ nav {
 .contentCards{
 	height: 100%;
 	width: 33.33333%;
-	float:left;		
+	float:left;
+	height: 600px;
+	position: relative;
+	overflow: hidden;
 }
+
+.price{
+	background-color:#D8D8D8;
+	padding: 15px;
+	margin-top: -100px;
+}
+
+.card {
+	background-image: url(../img/masaje.jpg);
+	background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    overflow: hidden;
+    width: 33.33333%;
+    float: left;
+}
+
+.card_body {
+	position: relative;
+	top:300px;
+	height: 100%;
+	transition: all 0.5s ease;
+}
+
+.card:hover .card_body{
+	top:0;
+}
+
+.card_description{
+	background-color: red;
+	height: 100%;
+}
+.
 
 .cards{	
 	background-image: url(../img/masaje.jpg);
 	background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 240px;       
+    height: 300px;       
     cursor: pointer;
     opacity: 1;
     overflow: hidden;
 }
-
 .description{	
 	padding: 35px;
-	text-align: left;	
+	text-align: left;
+	height: 600px;
+	top:300px;
+	position: absolute;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.contentCards:hover .description{	
+	padding: 35px;
+	text-align: left;
+	top: 60px;	
 }
 
 .seeMore{
-	text-align: right;
-	font-size: 12px;
+	text-align: left;
+	font-size: 20px;
+	position: absolute;
+	left: 0;
+	right: 0;	
+	bottom:0;
+	padding: 15px 35px;
+	background-color: #D8D8D8;
 }
 .descriptionColorImpares{
 	background-color: #D8D8D8;
@@ -313,7 +367,11 @@ nav {
  }
 
  input[type=radio]:checked + span{
- 	background-color: #fff;    
+ 	content:"seleccionado";
+ 	background-color: #fff;
+ 	background-image: url(../img/check.png);
+ 	background-repeat: no-repeat;
+ 	background-position: right;  
  }
 
 input[type="text"]{
