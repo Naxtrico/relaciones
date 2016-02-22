@@ -263,56 +263,12 @@ nav {
 	margin-bottom: 25px;
 }
 
-<<<<<<< HEAD
-.contentCards{
-	height: 100%;
-	width: 33.33333%;
-	float:left;
-	height: 600px;
-	position: relative;
-	overflow: hidden;
-}
-
-.price{
-	background-color:#D8D8D8;
-	padding: 15px;
-	margin-top: -100px;
-}
-
-.card {
-	background-image: url(../img/masaje.jpg);
-	background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-    overflow: hidden;
-    width: 33.33333%;
-    float: left;
-}
-
-.card_body {
-	position: relative;
-	top:300px;
-	height: 100%;
-	transition: all 0.5s ease;
-}
-
-.card:hover .card_body{
-	top:0;
-}
-
-.card_description{
-	background-color: red;
-	height: 100%;
-=======
 .stepsNumbers p{
 	font-size: 24px;
 	font-weight: 800;
 	line-height: 50px;
 	margin: 0 auto;
->>>>>>> 459ebb0c6c6c1dd517b04729ba418cfc7ee217b7
 }
-.
 
 
 /* ambientes*/
@@ -321,13 +277,7 @@ nav {
 	background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-<<<<<<< HEAD
-    height: 300px;       
-    cursor: pointer;
-    opacity: 1;
-=======
     height: 600px;
->>>>>>> 459ebb0c6c6c1dd517b04729ba418cfc7ee217b7
     overflow: hidden;
     width: 31.33333%;
     float: left;
@@ -344,34 +294,6 @@ nav {
 	height: 100%;
 	transition: all 0.5s ease;
 }
-<<<<<<< HEAD
-.description{	
-	padding: 35px;
-	text-align: left;
-	height: 600px;
-	top:300px;
-	position: absolute;
-	-webkit-transition: all 0.5s ease;
-    -moz-transition:all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-.contentCards:hover .description{	
-	padding: 35px;
-	text-align: left;
-	top: 60px;	
-}
-
-.seeMore{
-	text-align: left;
-	font-size: 20px;
-	position: absolute;
-	left: 0;
-	right: 0;	
-	bottom:0;
-	padding: 15px 35px;
-	background-color: #D8D8D8;
-=======
 
 .card:hover .card_body{
 	top:0;
@@ -382,7 +304,6 @@ nav {
 	padding: 5px;
 	margin-left: 50px;
 	width: 30%;	
->>>>>>> 459ebb0c6c6c1dd517b04729ba418cfc7ee217b7
 }
 
 .card_price_colorDiferent{
@@ -484,11 +405,7 @@ nav {
 
  input[type=radio]:checked + span{
  	content:"seleccionado";
-<<<<<<< HEAD
- 	background-color: #fff;
-=======
  	background-color: #96c017;
->>>>>>> 459ebb0c6c6c1dd517b04729ba418cfc7ee217b7
  	background-image: url(../img/check.png);
  	background-repeat: no-repeat;
  	background-position: right;  
