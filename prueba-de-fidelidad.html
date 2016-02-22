@@ -6,21 +6,7 @@
     <link rel="stylesheet" href="css/normalize.css">    
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function(){
-    $("#masaje").click(function () {        
-   var masaje = $('input:radio[name=selec]:checked').val();    
-    $("#yourSelection").text( "Has elegido el ambiente: " + masaje);      
-    }); 
-
-     $("#copa").click(function () {        
-   var masaje = $('input:radio[name=selec]:checked').val();    
-    $("#yourSelection").text( "Has elegido el ambiente: " + masaje);      
-    });        
-  });
-</script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'> 
 </head>
 <body>    
     <div class="back_full_screen">        
@@ -58,22 +44,71 @@
        </section>            
    </div>
    <div class="steps" id="steps">
-    <span class="stepsNumbers">1</span>------------
-    <span class="stepsNumbers">2</span>------------
-    <span class="stepsNumbers">3</span>
+     <div style="display:inline-block; width:100px;">
+            <div class="stepsNumbers">
+            <p>1</p>
+            </div>               
+            <div>
+                Información
+            </div>            
+        </div>
+         <div style="min-height: 100%; margin-top: -50px; display: inline-block;">
+                <p>-------------------</p>
+            </div>
+            
+         <div style="display:inline-block; width:100px;">
+            <div class="stepsNumbers">
+            <p>2</p>
+            </div>
+            <div>
+                Ambiente
+            </div>
+        </div> 
+         <div style="display:inline-block; width:100px;">
+            <div class="stepsNumbers">
+            <p>3</p>
+            </div>
+            <div>
+                Actores
+            </div>
+        </div> 
+         <div style="display:inline-block; width:100px;">
+            <div class="stepsNumbers">
+            <p>4</p>
+            </div>
+            <div>
+                Datos
+            </div>
+        </div> 
+         <div style="display:inline-block; width:100px;">
+            <div class="stepsNumbers">
+            <p>5</p>
+            </div>
+            <div>
+                Pagar
+            </div>
+        </div> 
+
 </div>
+<section class="sectionsPF">
+    <h2>INFORMACIÓN</h2>
+
+</section>
+<div  class="content_color">
 <section class="sectionsPF" id="products">
-   <h2> SELECCIONA UN AMBIENTE PARA LA PRUEBA DE FIDELIDAD</h2>
-   <p> Elige un lugar donde quieres que se realice la prueba</p>   
+   <h2>SELECCIONA UN TEMA PARA LA PRUEBA DE FIDELIDAD</h2>
+   <p>Un tema es el hilo conductor de nuestra prueba de fidelidad, marcará el lugar, el personaje</p>
+    <p>que interpretará nuestro actor/iz y los hechos que pasarán. Mira nuestros temas y elige el</p>
+    <p>que creas que más se pueda adaptar a la manera de ser de tu pareja.</p>
 <div class="card">
     <div class="card_body">
         <div class="card_price">
             <p> 50€</p>
         </div>        
         <div class="card_description">
-            <h3>MASAJE CALIENTE</h3>
+            <h2>MASAJE</h2> <h2>CALIENTE</h2>
             <hr>
-            <p> Servicio a domicilio. El actor se hará pasar por un masajista profesional que no ofrecera solo un masaje relajante a tu pareja sinó que intentará ir más allà.</p>
+            <p> Servicio a domicilio. El actor se hará pasar por un masajista profesional que no ofrecerá solo un masaje relajante a tu pareja sino que intentará ir más allá.</p>
             <p> Como reaccionarà tu pareja?</p>             
         </div>
     </div>
@@ -84,19 +119,19 @@
 </div>
 <div class="card">
     <div class="card_body">
-        <div class="card_price">
+        <div class="card_price card_price_colorDiferent">
             <p>80€</p>
         </div>
-        <div class="card_description">
-            <h3>TE INVITO A UNA COPA</h3>
-            <hr>
-            <p>Ese local que tu pareja va siempre con sus amig@s.</p>
+        <div class="card_description card_description_colorDiferent">
+            <h2>TE INVITO A</h2><h2>UNA COPA</h2> 
+            <hr>             
+            <p>Bar, pub o cafetería al que suela ir tu pareja a menudo.</p>
             <p>Nuestro actor le invitara a una copa e intentara compartir con ella algo más que un trago…</p>
             <p>Tu pareja lo permitirà?</p>             
         </div>
     </div>
-    <div class="card_footer">
-        <label><input type="radio" name="selec" value="TE INVITO A UNA COPA" id="copa"><span class="card_btn">SELECCIONAR</span></label>
+    <div class="card_footer card_footer_colorDiferent">
+        <label><input type="radio" name="selec" value="TE INVITO A UNA COPA" id="copa"><span class="card_btn card_btn_colorDiferent">SELECCIONAR</span></label>
     </div>
 </div>     
 <div class="card">
@@ -105,33 +140,32 @@
             <p>100€</p>
         </div>
         <div class="card_description">
-            <h3>¿NOS CORREMOS JUNTOS?</h3>
+            <h2>¿CORREMOS</h2> <h2>JUNTOS?</h2>
             <hr>
-            <p>Tu pareja es un@ gran deportista?</p>
-            <p>Y si nuestro actor le dice de correr juntos y compartir experiencias… </p>
+            <p>¿Tu pareja es deportista?</p> 
+            <p> Indícanos un lugar al que suela ir a practicar deporte y nuestro actor le propondrá correr juntos y compartir experiencias…</p>            
             <p>Que crees que pasaria?</p>            
         </div>
     </div>
     <div class="card_footer">
-        <label><input type="radio" name="selec" value="¿NOS CORREMOS JUNTOS?" id="correr"><span class="card_btn">SELECCIONAR</span></label>
+        <label><input type="radio" name="selec" value="¿CORREMOS JUNTOS?" id="correr"><span class="card_btn">SELECCIONAR</span></label>
     </div>
 </div>     
 <div class="card">
     <div class="card_body">
-        <div class="card_price">
+        <div class="card_price card_price_colorDiferent">
             <p>50€</p>
         </div>
-        <div class="card_description">
-            <h3>MASAJE PRIVADO EN LA TOSCANA</h3>
+        <div class="card_description card_description_colorDiferent">
+            <h2>ENCUENTRO EN</h2> <h2>LA BIBLIOTECA</h2> 
             <hr>
-            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p> 
+            <p> Se está preparando para un exámen y últimamente acude mucho a la biblioteca.</p>
+            <p> Nuestro actor se haría pasar por estudiante e intentaría seducirl@ a través de miraditas y acercamientos.</p>
+            <p> ¿Tu pareja le seguirá el juego?</p>            
         </div>
     </div>
-    <div class="card_footer">
-        <label><input type="radio" name="selec" value="male"><span class="card_btn">SELECCIONAR</span></label>
+    <div class="card_footer card_footer_colorDiferent">
+        <label><input type="radio" name="selec" value="ENCUENTRO EN LA BIBLIOTECA" id="biblio"><span class="card_btn card_btn_colorDiferent">SELECCIONAR</span></label>
     </div>
 </div>     
 <div class="card">
@@ -140,56 +174,53 @@
             <p>80€</p>
         </div>
         <div class="card_description">
-            <h3>¿NOS TOMAMOS UNA COPA JUNTOS?</h3>
+            <h2>ARRÉGLAME EL</h2> <h2>APARATO</h2>
             <hr>
-            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p> 
+            <p> ¿Se te ha “estropeado” algo en casa y necesitas un profesional para que te lo repare? </p>
+            <p> Dinos que le gustaría que fuera nuestro actor (fontanero, carpintero, electricista...etc) para interpretar el papel e intentar conquistar a tu pareja con sus habilidades técnicas.</p>            
         </div>
     </div>
     <div class="card_footer">
-        <label><input type="radio" name="selec" value="male"><span class="card_btn">SELECCIONAR</span></label>
+        <label><input type="radio" name="selec" value="ARRÉGLAME EL APARATO" id="arregla"><span class="card_btn">SELECCIONAR</span></label>
     </div>
 </div>     
 <div class="card">
     <div class="card_body">
-        <div class="card_price">
+        <div class="card_price card_price_colorDiferent">
             <p>100€</p>
         </div>
-        <div class="card_description">
-            <h3>MASAJE PRIVADO EN LA TOSCANA</h3>
+        <div class="card_description card_description_colorDiferent">
+            <h2>¡HE INFRINGIDO</h2><h2>LA LEY!</h2>
             <hr>
-            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-            <p> Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p> 
+            <p>Un “policía” se presentará en tu casa para interrogar a tu pareja por unos supuestos casos de robos en el barrio.</p>
+            <p>Éste intentará ligar con tu pareja en medio del interrogatorio.</p>
+            <p>¿Se resistirá ante la ley?</p>            
         </div>
     </div>
     </form>
-    <div class="card_footer">
-        <label><input type="radio" name="selec" value="male"><span class="card_btn">SELECCIONAR</span></label>
+    <div class="card_footer card_footer_colorDiferent">
+        <label><input type="radio" name="selec" value="¡HE INFRINGIDO LA LEY!" id="ley"><span class="card_btn card_btn_colorDiferent">SELECCIONAR</span></label>
     </div>
 </div>       
 </section>
+</div>
 <section class="sectionsPF">
     <h2> SELECCIONA UN ACTOR</h2>
     <p> ¿Qué le gusta a tu pareja? Elige lo que le pueda interesar</p>
         
 </section>
+<div  class="content_color">
 <section class="sectionsPF">    
-    <h2> TU SELECCIóN</h2>
-    <div class="yourSelection">
-        <p id="yourSelection"> NO HAS SELECCIONADO NADA</p>
-    </div>    
     <h2>RELLENA EL SIGUIENTE FORMULARIO</h2>    
     <form>
         <p>Escribe tus datos personales</p>
-        <input type="text" value="Nombre" id="nombre" onfocus="this.value = ''" required>       
-        <input type="text" id="email" title="Indica un Email válido" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" value="*email" onfocus="this.value = ''" required>
-        <input type="text" id="mobil" value="Móbil" onfocus="this.value = ''" required>
-        <p>Escribe los datos de tu pareja</p>
-         <input type="text" id="nombrePar" value="Nombre" onfocus="this.value = ''" required>       
+        <input type="text" id="nombre" required>       
+        <input type="text" id="email" title="Indica un Email válido" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" value="*email" required>
+        <input type="text" id="mobil"  required>        
+         <input type="text" id="nombrePar"  required>
+         <input type="submit" value="FINALIZAR">
+    </form>  
+    <form>   
         <input type="text" id="edad" value="Edad" onfocus="this.value = ''" required>
         <input type="text" id="foto" value="Adjuntar una foto" onfocus="this.value = ''" required>       
         <textarea id="txtArea id="textarea"" rows="10" cols="70" onfocus="this.value = ''">
@@ -205,6 +236,7 @@
         <input type="submit" value="FINALIZAR" class="card_btn">  
     </form>
 </section>
+</div>
 <footer>
 
 </footer>
