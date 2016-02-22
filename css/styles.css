@@ -10,7 +10,7 @@ html, body{
 }
 
 h1 {
-	font-size: 50px;
+	font-size: 35px;
 	font-weight: 600;
 	color:#fff;
 	font-family: 'Oswald', sans-serif;
@@ -18,28 +18,28 @@ h1 {
 
 h2 {
 	font-family: 'Oswald', sans-serif;
-	font-size: 31px;
+	font-size: 30px;
 	font-weight: 600;	
 }
 
 h3 {
 	font-family: 'Oswald', sans-serif;
-	font-size: 28px;
+	font-size: 24px;
 	font-weight: 500;
 }
 
 h4 {
-	font-size: 24px;
-	font-weight: 100;	
-}
-
-h5 {
 	font-size: 22px;
 	font-weight: 100;	
 }
 
+h5 {
+	font-size: 18px;
+	font-weight: 100;	
+}
+
 h6 {
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 100;	
 }
 
@@ -79,19 +79,6 @@ a {
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;    
-}
-
-a:hover{
-	color:  #c13240;
-	text-decoration: overline;
-}
-
-.active{
-	color:  #8da9a7;
-	background-color: #fec901;
-	color: #000;
-	padding-top: 28px;
-	padding-bottom: 28px;	
 }
 
 
@@ -207,7 +194,6 @@ nav {
 }
 
 .button-principal{	
-	border: 1px solid #979797;
 	padding: 7px 30px;	
 	font-size: 16px;
 	font-weight: bold;
@@ -215,11 +201,7 @@ nav {
 	background-color: #c3a3f2;
 	text-decoration: none;
 	color:#281348;
-	display: inline-block;	
-    -webkit-transition: all 0.5s ease;
-    -moz-transition:all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;   
+	display: inline-block;   
 }
 
 .sectionsPF{
@@ -298,9 +280,9 @@ nav {
 }
 
 .map{
-	border-top: 1px solid #000;
-	border-right: 1px solid #000;
-	border-left: 1px solid #000;
+	border-top: 2px solid #2f0553;
+	border-right: 2px solid #2f0553;
+	border-left: 2px solid #2f0553;
 	height: 70px;
 	width: 75%;
 	margin: 0 auto;
