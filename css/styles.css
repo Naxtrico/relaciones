@@ -65,7 +65,8 @@ p {
 }
 
 hr{
-	margin-bottom: 15px;
+	margin-bottom: 15px;	
+	border:1px solid #000;
 }
 
 a {	
@@ -215,6 +216,10 @@ nav {
     margin-top: 100px;       
 }
 
+.sectionsPF a{
+	color:#000;      
+}
+
 .sectionsPF h2{
 	font-size: 24px;	    
 }
@@ -260,11 +265,11 @@ nav {
     box-sizing: border-box;
     font-size: 18px;
 }
-.info_steps h3, p{	
+.info_steps h3{	
     font-size: 18px;}
 
 
-.result_veredict1 .result_veredict2 h3, p{
+.result_veredict1 .result_veredict2 h3{
 	font-size: 18px;
 }
 .result h3{
@@ -414,6 +419,65 @@ nav {
 .card_btn_colorDiferent:active{
 	background-color: #991b2c;
 	color:#000;
+}
+
+/*cards actors*/
+
+.actors_content{
+	background-image: url(../img/actor1.jpg);
+	background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+	overflow: hidden;
+	 float: left;
+	 height: 400px;
+	 width: 30%;
+	 cursor: pointer;
+	 margin-top: 50px;
+    margin-right: 3.33333%;
+     box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    
+}
+
+.ocult{	
+	display: none;
+}
+
+.actors_description{
+	position: relative;
+    top: 400px;
+    height: 100%;
+    background-color: #cbaff5;
+    opacity: 0.8;
+    padding: 30px;
+    transition: all 0.5s ease;
+ }
+
+ .actors_content:hover .actors_description{
+	top:0;
+}
+/*cards actors*/
+
+.btn_select_sex{
+	margin-top: 20px;	
+	padding: 10px 30px;	
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;	
+	text-decoration: none;
+	color:#311752;
+	display: inline-block;
+	background-color: #bba2cd;
+	border: none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;   
 }
 
  input[type=radio]{

@@ -260,6 +260,88 @@
 <section class="sectionsPF">
     <h2> SELECCIONA UN ACTOR</h2>
     <p> ¿Qué le gusta a tu pareja? Elige lo que le pueda interesar</p>
+    <p><span class="btn_select_sex" id="hombres">HOMBRES</span>  <span class="btn_select_sex" id="mujeres">MUJERES</span></p>
+        <div class="actors_content" id="actors_content">                
+                <div class="actors_description">
+                    <h2>ARNO</h2>
+                    <hr>
+                   <p>ALTURA: 188 / 74"</p>
+                   <p>SUIT: 50 / 19.5"</p>
+                   <p>PANTALONES: 40 / 15.5"</p>
+                   <p>PIE: 44</p>
+                   <p>PELO: Marrón claro</p>
+                   <p>OJOS: Azul</p>
+                   <label><input type="radio" name="actor" value="arno" id="arno"><span class="card_btn">SELECCIONAR</span></label>               
+                </div>
+                
+        </div>
+        <div class="actors_content" id="actors_content2" style="background-image: url(img/actor2.jpg);">               
+                <div class="actors_description">
+                    <h2>ARNO</h2>
+                    <hr>
+                   <p>ALTURA: 188 / 74"</p>
+                   <p>SUIT: 50 / 19.5"</p>
+                   <p>PANTALONES: 40 / 15.5"</p>
+                   <p>PIE: 44</p>
+                   <p>PELO: Marrón claro</p>
+                   <p>OJOS: Azul</p>
+                   <label><input type="radio" name="actor" value="arno" id="arno"><span class="card_btn">SELECCIONAR</span></label>
+                </div>
+        </div>
+        <div class="actors_content" id="actors_content3" style="background-image: url(img/actor3.jpg);">               
+                <div class="actors_description">
+                    <h2>ARNO</h2>
+                    <hr>
+                   <p>ALTURA: 188 / 74"</p>
+                   <p>SUIT: 50 / 19.5"</p>
+                   <p>PANTALONES: 40 / 15.5"</p>
+                   <p>PIE: 44</p>
+                   <p>PELO: Marrón claro</p>
+                   <p>OJOS: Azul</p>
+                   <label><input type="radio" name="actor" value="arno" id="arno"><span class="card_btn">SELECCIONAR</span></label>
+                </div>
+        </div>
+
+        <div class="actors_content ocult" id="actoras_content" style="background-image: url(img/actriz1.jpg);">               
+                <div class="actors_description">
+                    <h2>ARNO</h2>
+                    <hr>
+                   <p>ALTURA: 188 / 74"</p>
+                   <p>SUIT: 50 / 19.5"</p>
+                   <p>PANTALONES: 40 / 15.5"</p>
+                   <p>PIE: 44</p>
+                   <p>PELO: Marrón claro</p>
+                   <p>OJOS: Azul</p>
+                   <label><input type="radio" name="actor" value="arno" id="arno"><span class="card_btn">SELECCIONAR</span></label>               
+                </div>
+                
+        </div>
+        <div class="actors_content ocult" id="actoras_content2" style="background-image: url(img/actriz2.jpg);">                
+                <div class="actors_description">
+                    <h2>ARNO</h2>
+                    <hr>
+                   <p>ALTURA: 188 / 74"</p>
+                   <p>SUIT: 50 / 19.5"</p>
+                   <p>PANTALONES: 40 / 15.5"</p>
+                   <p>PIE: 44</p>
+                   <p>PELO: Marrón claro</p>
+                   <p>OJOS: Azul</p>
+                   <label><input type="radio" name="actor" value="arno" id="arno"><span class="card_btn">SELECCIONAR</span></label>
+                </div>
+        </div>
+        <div class="actors_content ocult" id="actoras_content3" style="background-image: url(img/actriz3.jpg);">               
+                <div class="actors_description">
+                    <h2>ARNO</h2>
+                    <hr>
+                   <p>ALTURA: 188 / 74"</p>
+                   <p>SUIT: 50 / 19.5"</p>
+                   <p>PANTALONES: 40 / 15.5"</p>
+                   <p>PIE: 44</p>
+                   <p>PELO: Marrón claro</p>
+                   <p>OJOS: Azul</p>
+                   <label><input type="radio" name="actor" value="arno" id="arno"><span class="card_btn">SELECCIONAR</span></label>
+                </div>
+        </div>
         
 </section>
 <div  class="content_color">
@@ -291,10 +373,11 @@
 </section>
 </div>
 <footer>
-
 </footer>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
 <script src="js/wow.js"></script>
 
 <!-- efect scroll page -->
@@ -326,8 +409,26 @@ jQuery(window).scroll(function () {
         jQuery('header').removeClass('fixed');        
 });
 </script>
-<!-- end efect menu fixed -->  
-
- 
+<!-- end efect menu fixed -->
+<script type="text/javascript"> 
+$(document).ready(function () {
+  $("#mujeres").click(function () {        
+      $('#actors_content').addClass('ocult');
+      $('#actors_content2').addClass('ocult');
+      $('#actors_content3').addClass('ocult');
+      $('#actoras_content').removeClass('ocult');
+      $('#actoras_content2').removeClass('ocult');
+      $('#actoras_content3').removeClass('ocult');     
+    });    
+    $("#hombres").click(function () {        
+      $('#actors_content').removeClass('ocult');
+      $('#actors_content2').removeClass('ocult'); 
+      $('#actors_content3').removeClass('ocult');
+      $('#actoras_content').addClass('ocult');
+      $('#actoras_content2').addClass('ocult');
+      $('#actoras_content3').addClass('ocult');      
+    });
+});
+ </script>
 </body>
 </html>
