@@ -20,13 +20,20 @@ h1 {
 h2 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 30px;
-	font-weight: 600;	
+	font-weight: 600;
+	color:#2C0C52;	
+}
+
+.titlecard{
+	color:#fff;
+
 }
 
 h3 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 24px;
 	font-weight: 500;
+	color:#2C0C52;
 }
 
 h4 {
@@ -68,6 +75,11 @@ p {
 hr{
 	margin-bottom: 15px;	
 	border:1px solid #fff;
+}
+
+.hrcolor{
+	margin-bottom: 15px;	
+	border:1px solid #2C0C52;
 }
 
 a {	
@@ -154,6 +166,7 @@ nav {
 	color:#fff;
 	width: 20%;	
     line-height: 75px;
+    padding-top: 10px;
 }
 
 .contentCopycontacto{
@@ -251,7 +264,7 @@ nav {
 }
 
 .button-principal{	
-	padding: 15px 35px;	
+	padding: 10px 30px;	
 	font-size: 15px;
 	font-weight: bold;
 	cursor: pointer;
@@ -359,7 +372,8 @@ nav {
     width: 31.33333%;
     float: left;
     color: #fff;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: -20px;
     margin-right: 20px;
     box-sizing:border-box;
     -webkit-box-sizing:border-box;
