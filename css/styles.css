@@ -66,7 +66,7 @@ p {
 
 hr{
 	margin-bottom: 15px;	
-	border:1px solid #000;
+	border:1px solid #fff;
 }
 
 a {	
@@ -157,9 +157,8 @@ nav {
 	margin: 0 auto;
 	border-top:4px solid #fff;
 	border-right:4px solid #fff;
-	border-left:4px solid #fff;
-	height: 40px;
-	padding-top: 40px;
+	border-left:4px solid #fff;	
+	padding-top: 30px;
 	text-align: center;
 	margin-bottom: 40px;
 	width: 70%;
@@ -169,8 +168,7 @@ nav {
 	margin: 0 auto;
 	border-bottom:4px solid #fff;
 	border-right:4px solid #fff;
-	border-left:4px solid #fff;
-	height: 40px;
+	border-left:4px solid #fff;	
 	padding-bottom: 40px;
 	text-align: center;
 	margin-top: 40px;	
@@ -195,7 +193,7 @@ nav {
 }
 
 .button-principal{	
-	padding: 7px 30px;	
+	padding: 15px 35px;	
 	font-size: 15px;
 	font-weight: bold;
 	cursor: pointer;
@@ -213,7 +211,8 @@ nav {
     text-align: center;
     overflow: hidden;
     vertical-align: middle;
-    margin-top: 100px;       
+    padding-top: 50px;
+    padding-bottom: 70px;      
 }
 
 .sectionsPF a{
@@ -227,8 +226,7 @@ nav {
 .content_color{	
 	width: 100%;
 	background-color: #D8D8D8;
-	padding-bottom: 60px;	
-}
+}	
 
 .steps{
 	padding: 10px;
@@ -297,8 +295,7 @@ nav {
 .card {
 	background-image: url(../img/masaje.jpg);
 	background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: no-repeat;   
     height: 600px;
     overflow: hidden;
     width: 31.33333%;
@@ -441,8 +438,9 @@ nav {
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    
-}
+ }
+
+
 
 .ocult{	
 	display: none;
@@ -561,6 +559,10 @@ form{
 	padding: 70px;
     background-color: #fff;
     border: 1px solid #979797;
+}
+form p{	
+	margin-bottom: 10px;
+	
 }
 
 footer{
