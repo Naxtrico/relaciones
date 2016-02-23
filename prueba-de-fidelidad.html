@@ -102,7 +102,8 @@
 <section class="sectionsPF">
     <h2>INFORMACIÓN</h2>
     <div class="info_steps">
-        <h3>PERSONALIZA</h3>        
+        <img src="img/personaliza-01.svg" atl="">    
+        <h3>PERSONALIZA</h3>            
         <p>Elige el tema de tu prueba, el</p>
 <p>actor/actriz que más pueda</p>
 <p>atraer a tu pareja, contesta a</p>
@@ -110,6 +111,7 @@
 <p>el pago del 50% del importe</p>
     </div>
     <div class="info_steps">
+        <img src="img/personaliza-01.svg" atl="">
         <h3>LLAMADA</h3>
         <p>Definiremos contigo como,</p>
 <p>cuando y donde transcurrirá</p>
@@ -119,6 +121,7 @@
     </div>
 
     <div class="info_steps">
+        <img src="img/personaliza-01.svg" atl="">
         <h3>PRUEBA</h3>
         <p>El actor o actriz pasará a la</p>
 <p>acción, que será filmada con</p>
@@ -128,6 +131,7 @@
 <p>de la prueba</p>
     </div>
     <div class="result">
+        <img src="img/personaliza-01.svg" atl="">
         <h3>RESULTADOS</h3>
         <div class="map">
             
@@ -346,37 +350,39 @@
 </section>
 <div  class="content_color">
 <section class="sectionsPF">    
-    <h2>RELLENA EL SIGUIENTE FORMULARIO</h2>  
-    <form id="">
-        <p>Escribe tus datos personales</p>
+    <h2>RELLENA EL SIGUIENTE FORMULARIO</h2>
+    <div class="content_form">
+            <span>Tus datos</span> <span>Tu pareja</span> <span>Prueba</span >
+
+    <form id="personal_data">
+        
         <input type="text" id="nombre" required>       
         <input type="text" id="email" title="Indica un Email válido" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" value="*email" required>
         <input type="text" id="mobil"  required>        
          <input type="text" id="nombrePar"  required>
-         <input type="submit" value="FINALIZAR">
-    </form>  
-    <form>   
-        <input type="text" id="edad" value="Edad" onfocus="this.value = ''" required>
-        <input type="text" id="foto" value="Adjuntar una foto" onfocus="this.value = ''" required>       
-        <textarea id="txtArea id="textarea"" rows="10" cols="70" onfocus="this.value = ''">
-        Háblanos de lo que le gusta a tu pareja:
-        Ej. Defensora de los animales, le encanta el futbol. etc.
-        *Cuanto más detallada sea la descripción de como es y lo que le gusta, mejor podremos 
-        acercarnos de forma personal.
-        </textarea> 
-         <p>Datos para la prueba</p>
-         <input type="text" id="donde" value="¿Dónde se realizaría? (Ciudad)" onfocus="this.value = ''" required>       
-        <input type="text" id="fecha" value="Fecha *debe de haber de margen una semana como mínimo desde la contratación" onfocus="this.value = ''" required>
-        <input type="text" id="foto" value="Adjuntar una foto" onfocus="this.value = ''" required>
-        <input type="submit" value="FINALIZAR" class="card_btn">  
-    </form>
+         <input type="submit" id="cont_pers" value="CONTINUAR">
+    </form>    
+    <form id="couple" class="ocult" style="background-color:blue;">        
+        <input type="text" id="nombre" required>       
+        <input type="text" id="email" title="Indica un Email válido" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" value="*email" required>
+        <input type="text" id="mobil"  required>        
+         <input type="text" id="nombrePar"  required>
+         <input type="submit" id="cuple" value="CONTINUAR">
+    </form> 
+        <form id="prueba" class="ocult" style="background-color:yellow;">       
+        <input type="text" id="nombre" required>       
+        <input type="text" id="email" title="Indica un Email válido" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" value="*email" required>
+        <input type="text" id="mobil"  required>        
+         <input type="text" id="nombrePar"  required>
+         <input type="submit" id="prueba" value="CONTINUAR">
+    </form> 
+    <div>
 </section>
 </div>
 <footer>
 </footer>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script>
 <script src="js/wow.js"></script>
 
@@ -427,6 +433,19 @@ $(document).ready(function () {
       $('#actoras_content').addClass('ocult');
       $('#actoras_content2').addClass('ocult');
       $('#actoras_content3').addClass('ocult');      
+    });
+});
+ </script>
+
+ <script type="text/javascript"> 
+$(document).ready(function () {
+  $("#cont_pers").click(function () {        
+      $('#personal_data').addClass('ocult');      
+      $('#couple').removeClass('ocult');     
+    });    
+    $("#cuple").click(function () {        
+      $('#prueba').removeClass('ocult');      
+      $('#couple').addClass('ocult');      
     });
 });
  </script>

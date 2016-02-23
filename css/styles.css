@@ -378,7 +378,8 @@ nav {
 
 .card_price{
 	background-color:#311752;
-	padding: 5px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	margin-left: 50px;
 	width: 30%;	
 }
@@ -390,8 +391,8 @@ nav {
 
 .card_price p {
 	font-family: 'Oswald', sans-serif;
-	font-size: 28px;
-	font-weight: 500;	
+	font-size: 30px;
+	font-weight: 600;	
 }
 
 .card_description{
@@ -606,22 +607,41 @@ input[type="submit"]{
     transition: all 0.5s ease;  
 }
 
-
 label{
 	text-align: left;
 }
-
-form{	
-	margin: 0 auto;
-	width: 650px;
-	padding: 70px;
-    background-color: #fff;
-    border: 1px solid #979797;
+form{
+	margin-top: 50px;
 }
+
 form p{	
 	margin-bottom: 10px;
 	
 }
+
+.content_form{
+	background-color:red; 
+	width:auto; 
+	margin:0 auto; 
+	width:650px; 
+	padding:70px;
+}
+
+.content_form span {	
+	font-size: 20px;
+	color: #fff;
+	font-weight: 600;
+	padding-bottom: 15px;	
+	padding-right: 3px;
+	margin-bottom: 15px;
+	border-bottom: solid 1px #000; 
+	font-family: 'overpass';
+	-webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;    
+}
+
 
 footer{
 	background-color: #000;	
