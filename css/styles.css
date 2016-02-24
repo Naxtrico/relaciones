@@ -244,29 +244,28 @@ nav {
 }
 
 .contentCopycontacto{
+    width: 400px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background-color: #AF2131;    
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.containerred{
 	width: 100%;
     position: relative;
     left: 50%;
-    top: 50%;
+    top: 115%;
+    background-color: #AF2131;    
+    margin: -100px 0 -100px;
     transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%); 
-    
-     
-
+    -webkit-transform: translate(-50%, -50%);
+    height: 100%;
 }
-.containerred{
-	width: 100%;
-	position:relative;
-	left: 50%;
-	top: 100%;
-	background-color: #AF2131;
-	padding-top: 50px;
-	margin: -100px 0 -100px;
-	transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);  
 
-
-}
 .contentCopy{   
    	width: 500px;
     position: relative;
@@ -284,7 +283,7 @@ nav {
 	padding-top: 30px;
 	text-align: center;
 	margin-bottom: 40px;
-	width: 50%;
+	width: 80%;
 }
 .contentCopyBottomcontacto{
 	margin: 0 auto;
@@ -294,7 +293,7 @@ nav {
 	padding-bottom: 40px;
 	text-align: center;
 	margin-top: 40px;	
-	width: 50%;
+	width: 80%;
 	color: #fff;
 }
 
