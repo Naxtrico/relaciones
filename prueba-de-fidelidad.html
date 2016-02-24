@@ -27,9 +27,26 @@
                 </ul>            
             </nav>
             <div class="icons">
-               <img src="img/perfil.svg">
-              <img src="img/carrito.svg">
-           </div>         
+               <a href="#" id="registry_icon"><img src="img/perfil.svg"></a>
+              <img src="img/carrito.svg"> 
+           </div>           
+           <div class="register" id="register">
+                <h3>IDENTIFÍCATE</h3>
+                    <form id="registro">
+                        <label>Usuario</label>
+                        <input type="text" id="usuario" required>
+                         <label>Contraseña</label>
+                        <input type="text" id="contraseña" required>                                                
+                         <div class="content_btn_form">
+                            <p>¿Has olvidado tu contraseña?</p>
+                         <input type="submit" id="identificar" value="IDENTIFICAR">
+                        </div>
+                   </form> 
+                   <div class="register_now">
+                    <p>Si aún no eres usuario, registrate aquí</p>
+                        <a href="#" class="button-principal btn_reg_now">REGÍSTRATE</a>
+                   </div> 
+              </div>                     
        </header>
        <section class="contentCopy">
         <div class="contentCopyTop"><img src="img/eye.png"></div>  
@@ -473,9 +490,9 @@ $(document).ready(function () {
       $('#step_prueba').addClass('form_steps_selected');     
     });
 });
-
-<!-- setps fixed -->
  </script>
+
+  <!-- setps fixed -->
 <script type="text/javascript">
    $(document).ready(function(){                   
       var altura = $("#steps").offset().top;                          
@@ -490,7 +507,7 @@ $(document).ready(function () {
 });
  </script>
 
- <!-- setps fixed -->
+ <!-- setps fixed change color numbers -->
  </script>
 <script type="text/javascript">
    $(document).ready(function(){                   
@@ -540,5 +557,17 @@ $(document).ready(function () {
 });
  </script>
 
+ <!-- Cambiar forms -->
+<script type="text/javascript"> 
+$(document).ready(function () {
+  $("#registry_icon").hover(function () {        
+      $('#register').addClass('register_visible');          
+    }); 
+   $("#registry_icon").mouseout(function () {        
+      $('#register').removeClass('register_visible');          
+    });   
+    
+});
+ </script>
 </body>
 </html>
