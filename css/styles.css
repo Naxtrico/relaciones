@@ -14,18 +14,28 @@ h1 {
 	font-weight: 600;
 	color:#fff;
 	font-family: 'Oswald', sans-serif;
+	text-transform:uppercase;
 }
 
 h2 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 30px;
-	font-weight: 600;	
+	font-weight: 600;
+	color:#2C0C52;
+	text-transform: uppercase;	
+}
+
+.titlecard{
+	color:#fff;
+
 }
 
 h3 {
 	font-family: 'Oswald', sans-serif;
 	font-size: 24px;
 	font-weight: 500;
+	color:#2C0C52;
+	text-transform: uppercase;
 }
 
 h4 {
@@ -47,14 +57,17 @@ ul {
 	text-decoration: none;
 	margin:0 auto;
 	line-height: 75px;
-	padding: 0;
+	text-transform: uppercase;
+	float: left;
+	margin-left:-90px;
 }
 
 li {
 	color: #fff;
 	font-weight: 100;
 	display: inline-block;
-	padding-right:16px;	
+	padding-top: 10px;
+	padding-left: 20px;
 }
 
 p {	
@@ -67,6 +80,11 @@ p {
 hr{
 	margin-bottom: 15px;	
 	border:1px solid #fff;
+}
+
+.hrcolor{
+	margin-bottom: 15px;	
+	border:1px solid #2C0C52;
 }
 
 a {	
@@ -82,6 +100,17 @@ a {
     transition: all 0.5s ease;    
 }
 
+
+.back_full_screen_contacto{
+	overflow: hidden;
+	background-position: center center; 
+    background-repeat: no-repeat;	   
+	background-size: cover;
+	background-image:url(../img/contacto.jpg); 
+	width:100%; 
+	height:100%;
+	min-height:650px;	  	
+}
 
 .back_full_screen{
 	overflow: hidden;
@@ -115,7 +144,7 @@ header.fixed{
 nav {		
 	text-decoration: none;
 	height: 75px;
-	width: 62%;
+	width: 72%;
 	display:inline-block;
 	text-align: left;
 	-webkit-transition: all 0.5s ease;
@@ -124,24 +153,121 @@ nav {
     transition: all 0.5s ease;	
 }
 
+.button-principal{	
+	padding: 10px 30px;	
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	background-color: #c3a3f2;
+	text-decoration: none;
+	color:#281348;
+	display: inline-block;
+	text-transform: uppercase;
+	box-sizing: border-box;  
+}
+
 .logo{	
-	font-family: 'Oswald', sans-serif;
-	color:#fff;
 	float:left;
-	text-align: center;	
-	font-size: 25px;	
 	-webkit-transition: all 0.5s ease;
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     width: 18%;
     line-height: 75px;
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-top: 10px;
+
 }
 .icons{
 	float:right;
 	color:#fff;
 	width: 20%;	
     line-height: 75px;
+padding-top: 20px;
+  
+}
+
+.register{
+	position: absolute;
+	width: 344px;
+	height: 510px;
+	right: 50px;
+	padding: 20px;
+	color: #000;
+	background-color: #E3E1E1;
+	box-sizing: border-box;
+	visibility: hidden;
+}
+
+.register_visible{
+	visibility: visible;
+} 
+
+.register p{
+	font-size: 14px;		
+}
+
+
+#registro input[type="text"] {
+	width: 100%;
+	box-sizing:border-box;
+}
+
+#registro input[type="submit"]{
+	background-color: #AF2131;
+	
+}
+
+#registro{
+	margin-top: 0;
+}
+
+.register_now{
+	position: absolute;
+    padding: 10px;
+    padding-top: 25px;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 130px;
+    box-sizing:border-box;       
+}
+
+.btn_reg_now{
+	width: 100%;
+	background-color: #49494A;
+	color: #fff;
+
+}
+
+.icons img{
+	margin-right: 10px;
+
+}
+
+.contentCopycontacto{
+    width: 400px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background-color: #AF2131;    
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.containerred{
+	width: 100%;
+    position: relative;
+    left: 50%;
+    top: 115%;
+    background-color: #AF2131;    
+    margin: -100px 0 -100px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    height: 100%;
 }
 
 .contentCopy{   
@@ -149,8 +275,30 @@ nav {
     position: relative;
     left: 50%;
     top: 50%;
+
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);   
+}
+.contentCopyTopcontacto{
+	margin: 0 auto;
+	border-top:4px solid #fff;
+	border-right:4px solid #fff;
+	border-left:4px solid #fff;	
+	padding-top: 30px;
+	text-align: center;
+	margin-bottom: 40px;
+	width: 80%;
+}
+.contentCopyBottomcontacto{
+	margin: 0 auto;
+	border-bottom:4px solid #fff;
+	border-right:4px solid #fff;
+	border-left:4px solid #fff;	
+	padding-bottom: 40px;
+	text-align: center;
+	margin-top: 40px;	
+	width: 80%;
+	color: #fff;
 }
 
 .contentCopyTop{
@@ -192,17 +340,6 @@ nav {
 
 }
 
-.button-principal{	
-	padding: 15px 35px;	
-	font-size: 15px;
-	font-weight: bold;
-	cursor: pointer;
-	background-color: #c3a3f2;
-	text-decoration: none;
-	color:#281348;
-	display: inline-block;   
-}
-
 .sectionsPF{
 	margin:0 auto;
 	width: 100%;
@@ -239,6 +376,24 @@ nav {
 	-webkit-border-radius: 0px 0px 9px 9px;
 }
 
+.setps_fixed{
+	position: fixed;
+	top: 85px;
+    margin: 0 auto;
+    z-index: 2;
+    border: 1px solid #fff;
+}
+
+.section_step{
+	margin:0 auto;
+	width: 100%;
+	max-width: 800px;	
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: middle;   
+}
+
 .stepsNumbers{	
 	width: 50px;
 	height: 50px;	
@@ -247,7 +402,12 @@ nav {
 	-moz-border-radius: 400px 400px 400px 400px;
 	-webkit-border-radius: 400px 400px 400px 400px;
 	border: 1px solid #000000;
-	margin-bottom: 25px;
+	margin-bottom: 5px;
+}
+
+.stepsNumbers_selected{
+	background-color: #2f0553;
+	color:#fff;
 }
 
 .stepsNumbers p{
@@ -301,7 +461,8 @@ nav {
     width: 31.33333%;
     float: left;
     color: #fff;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: -20px;
     margin-right: 20px;
     box-sizing:border-box;
     -webkit-box-sizing:border-box;
@@ -429,10 +590,10 @@ nav {
 	overflow: hidden;
 	 float: left;
 	 height: 400px;
-	 width: 30%;
+	 width: 23%;
 	 cursor: pointer;
 	 margin-top: 50px;
-    margin-right: 3.33333%;
+    margin-right: 15.5%;
      box-sizing:border-box;
     -webkit-box-sizing:border-box;
     -webkit-transition: all 0.5s ease;
@@ -451,8 +612,7 @@ nav {
 	position: relative;
     top: 400px;
     height: 100%;
-    background-color: #cbaff5;
-    opacity: 0.8;
+    background-color: rgba(187,162, 205, 0.8);    
     padding: 30px;
     transition: all 0.5s ease;
  }
@@ -492,6 +652,7 @@ nav {
  }
 
 input[type="text"]{
+	margin-top: 10px;
 	display: block;		
 	padding: 10px;
 	margin-bottom: 25px;		
@@ -508,7 +669,9 @@ input[type="text"]{
 	border: 1px solid #bcbcbc;
 }
 
+
 textarea{
+	margin-top: 10px;
 	display: block;	
 	padding: 10px;
 	margin-bottom: 25px;	
@@ -525,7 +688,7 @@ textarea{
 	border: 1px solid #bcbcbc;
 }
 
-input[type="text"]:focus{	
+input[type="text"]:focus{		
 	border: 1px solid #3f302f;
 	padding: 10px;	
 	background-color: #fff;	
@@ -549,11 +712,9 @@ input[type="submit"]{
     transition: all 0.5s ease;  
 }
 
-label{
-	text-align: left;
-}
 form{
 	margin-top: 50px;
+	text-align: left;
 }
 
 form p{	
@@ -561,18 +722,26 @@ form p{
 	
 }
 
+label{
+	font-size: 16px;
+}
+
 .content_form{
-	background-color:red; 
+	background-color:#fff; 
 	width:auto; 
 	margin:0 auto; 
 	width:650px; 
 	padding:70px;
 }
 
-.content_form span {	
+.content_form p{
+	margin-top: -25px;		
+}
+
+.form_steps {
+	margin-right: 20px;
 	font-size: 20px;
-	color: #fff;
-	font-weight: 600;
+	color: #000;	
 	padding-bottom: 15px;	
 	padding-right: 3px;
 	margin-bottom: 15px;
@@ -584,11 +753,21 @@ form p{
     transition: all 0.5s ease;    
 }
 
+.form_steps_selected{
+	font-weight: 800;
+	border-bottom: solid 2px #000;	
+}
+
+.content_btn_form{
+	width: 100%;
+	margin: 0 auto;
+	text-align: right;
+}
 
 footer{
 	background-color: #000;	
 	height: 100px;
-	margin-top: 50px;
+	
 }
 
 
