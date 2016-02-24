@@ -411,13 +411,29 @@
         <label>Adjuntar foto</label>  
         <input type="file" name="adjunto">
         <div class="content_btn_form">
-         <input type="submit" id="btn_prueba" value="FINALIZAR">
+         <input type="submit" id="prueba" value="FINALIZAR">
         </div>
     </form> 
     <div>
 </section>
 </div>
 <footer>
+  <div class="containterfooter1">
+    <img src="img/logofooter.svg"></div>
+    <div class="textfooter">
+      <ul class="listfooter">
+                    <li><a href="#">preguntas frecuentes</a></li>
+                    <li><a href="#">testimonios</a></li>
+                    <li><a href="#">política de privacidad</a></li>
+                    <li><a href="#">contacto</a></li>
+                 </ul></div>
+                 <div class="iconsfooter">
+                  <img src="img/facebook.svg">
+                  <img src="img/twitter.svg">
+                  <img src="img/instagram.svg">
+                </div>
+
+
 </footer>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
@@ -485,12 +501,6 @@ $(document).ready(function () {
       $('#tus_datos').removeClass('form_steps_selected');
       $('#tu_pareja').addClass('form_steps_selected');      
     });    
-    $("#btn_couple").click(function () {        
-      $('#prueba').removeClass('ocult');      
-      $('#couple').addClass('ocult');
-      $('#tu_pareja').removeClass('form_steps_selected');
-      $('#step_prueba').addClass('form_steps_selected');     
-    });
     $("#btn_couple").click(function () {        
       $('#prueba').removeClass('ocult');      
       $('#couple').addClass('ocult');
