@@ -22,8 +22,7 @@
                     <li><a href="#">dejar</a></li>
                     <li><a href="#">paquete negro</a></li>
                     <li><a href="#">tienda</a></li>
-                    <li><a href="#">red impares</a></li>
-                  
+                    <li><a href="#">red impares</a></li>                  
                 </ul>  
                  <div class="icons">
                <a href="#" id="registry_icon"><img src="img/perfil.svg"></a>
@@ -402,7 +401,7 @@
             <input type="submit" id="btn_couple" value="CONTINUAR">
         </div>
     </form> 
-        <form id="prueba" class="ocult" action="pasarela.html">
+        <form id="prueba" class="ocult" action="#5">
         <label>Lugar de realización de la prueba (Ciudad)</label>    
         <input type="text" id="ciudad" required>
         <label>Fecha*</label>      
@@ -411,12 +410,31 @@
         <label>Adjuntar foto</label>  
         <input type="file" name="adjunto">
         <div class="content_btn_form">
-         <input type="submit" id="prueba" value="FINALIZAR">
+         <input type="submit" id="btn_prueba" value="FINALIZAR">
         </div>
     </form> 
     <div>
 </section>
 </div>
+<section class="sectionsPF" id="5">
+  <div class="email_sent">
+    <img src="img/monedas.svg">
+    <p>Recibirás un email de confirmación del servicio.</p>
+    <p>En un periódo máximo de tres días, te llamaremos</p>
+    <p>para terminar de concretar datos.</p>
+    
+  </div>
+  <div class="payment">
+    <img src="img/emailprueba.svg">
+   <p> Se cobrará el 50% de lo que valga la prueba</p>
+    <p>por adelantado, el resto, una vez realizada.</p>
+  </div>
+  <div style="clear:both;"></div>
+  <div class="pay">
+    <a href="pasarela.html" class="button-principal btn_pagar">PAGAR </a>
+  </div>
+  
+</section>
 <footer>
   <div class="containterfooter1">
     <img src="img/logofooter.svg"></div>
@@ -425,15 +443,15 @@
                     <li><a href="#">preguntas frecuentes</a></li>
                     <li><a href="#">testimonios</a></li>
                     <li><a href="#">política de privacidad</a></li>
-                    <li><a href="#">contacto</a></li>
+                    <li><a href="contacto.html">contacto</a></li>
                  </ul></div>
                  <div class="iconsfooter">
                   <img src="img/facebook.svg">
                   <img src="img/twitter.svg">
                   <img src="img/instagram.svg">
                 </div>
-
-
+                <div class="linefooter">
+                  <p class="footercopy">Copyright 2016. All Rights Reserved</p></div>
 </footer>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
@@ -506,7 +524,7 @@ $(document).ready(function () {
       $('#couple').addClass('ocult');
       $('#tu_pareja').removeClass('form_steps_selected');
       $('#step_prueba').addClass('form_steps_selected');     
-    });
+    });   
 });
  </script>
 
