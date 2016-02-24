@@ -153,6 +153,19 @@ nav {
     transition: all 0.5s ease;	
 }
 
+.button-principal{	
+	padding: 10px 30px;	
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+	background-color: #c3a3f2;
+	text-decoration: none;
+	color:#281348;
+	display: inline-block;
+	text-transform: uppercase;
+	box-sizing: border-box;  
+}
+
 .logo{	
 	float:left;
 	-webkit-transition: all 0.5s ease;
@@ -171,7 +184,67 @@ nav {
 	color:#fff;
 	width: 20%;	
     line-height: 75px;
-    padding-top: 20px;
+padding-top: 20px;
+  
+}
+
+.register{
+	position: absolute;
+	width: 344px;
+	height: 510px;
+	right: 50px;
+	padding: 20px;
+	color: #000;
+	background-color: #E3E1E1;
+	box-sizing: border-box;
+	visibility: hidden;
+}
+
+.register_visible{
+	visibility: visible;
+} 
+
+.register p{
+	font-size: 14px;		
+}
+
+
+#registro input[type="text"] {
+	width: 100%;
+	box-sizing:border-box;
+}
+
+#registro input[type="submit"]{
+	background-color: #AF2131;
+	
+}
+
+#registro{
+	margin-top: 0;
+}
+
+.register_now{
+	position: absolute;
+    padding: 10px;
+    padding-top: 25px;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 130px;
+    box-sizing:border-box;       
+}
+
+.btn_reg_now{
+	width: 100%;
+	background-color: #49494A;
+	color: #fff;
+
+}
+
+.icons img{
+	margin-right: 10px;
+
 }
 
 .contentCopycontacto{
@@ -268,18 +341,6 @@ nav {
 
 }
 
-.button-principal{	
-	padding: 10px 30px;	
-	font-size: 15px;
-	font-weight: bold;
-	cursor: pointer;
-	background-color: #c3a3f2;
-	text-decoration: none;
-	color:#281348;
-	display: inline-block;
-	text-transform: uppercase;   
-}
-
 .sectionsPF{
 	margin:0 auto;
 	width: 100%;
@@ -342,7 +403,7 @@ nav {
 	-moz-border-radius: 400px 400px 400px 400px;
 	-webkit-border-radius: 400px 400px 400px 400px;
 	border: 1px solid #000000;
-	margin-bottom: 25px;
+	margin-bottom: 5px;
 }
 
 .stepsNumbers_selected{
@@ -609,6 +670,7 @@ input[type="text"]{
 	-webkit-border-radius: 5px 5px 5px 5px;
 	border: 1px solid #bcbcbc;
 }
+
 
 textarea{
 	margin-top: 10px;
