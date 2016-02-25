@@ -282,10 +282,9 @@ nav {
     position: relative;
     left: 50%;
     transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    background-color: #AF2131;    
+    -webkit-transform: translate(-50%, -50%);       
     box-sizing: border-box;
-    padding-top: 30px;
+    bottom: -103px;
 }
 
 .containerred{
@@ -317,17 +316,19 @@ nav {
 	padding-top: 30px;
 	text-align: center;
 	margin-bottom: 40px;
-	width: 80%;
+    width: 90%;
+    background-color: #AF2131;
+    box-sizing: border-box;
 }
 .contentCopyBottomcontacto{
 	margin: 0 auto;
 	border-bottom:4px solid #fff;
 	border-right:4px solid #fff;
 	border-left:4px solid #fff;	
-	padding-bottom: 40px;
+	padding-bottom: 60px;
 	text-align: center;
 	margin-top: 40px;	
-	width: 80%;
+	width: 90%;
 	color: #fff;
 }
 
