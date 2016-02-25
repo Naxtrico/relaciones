@@ -144,9 +144,10 @@ header.fixed{
 nav {		
 	text-decoration: none;
 	height: 75px;
-	width: 72%;
+	width: 82%;
 	display:inline-block;
 	text-align: left;
+	box-sizing: border-box;
 	-webkit-transition: all 0.5s ease;
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -173,25 +174,29 @@ nav {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     width: 18%;
-    line-height: 75px;
-    padding-left: 50px;
+    line-height: 75px;    
     padding-right: 10px;
     padding-top: 10px;
-
+    box-sizing: border-box;
 }
+
 .icons{
 	float:right;
 	color:#fff;
 	width: 20%;	
     line-height: 75px;
-padding-top: 20px;
-  
+	padding-top: 20px;
+	text-align: center;  
 }
 
-.register{
+.icons img{
+	margin-right: 10px;
+}
+
+.login{
 	position: absolute;
 	width: 344px;
-	height: 510px;
+	height: 430px;
 	right: 80px;
 	padding: 20px;
 	margin-top: 100px;
@@ -201,38 +206,50 @@ padding-top: 20px;
 	visibility: hidden;
 }
 
-.register_visible{
+.login form , .registration form{
+	margin-top: 5px;
+}
+
+.login_visible{
 	visibility: visible;
 } 
 
-.register p{
+.login p ,  .registration p{
 	font-size: 14px;		
 }
 
+.login label ,  .registration label{
+	font-size: 14px;		
+}
 
-#registro input[type="text"] {
+#login_form input[type="text"] , #registration input[type="text"] {
 	width: 100%;
 	box-sizing:border-box;
+	margin: 0;	
 }
 
-#registro input[type="submit"]{
-	background-color: #AF2131;
-	
+#login_form input[type="submit"] , #registration input[type="submit"]{
+	background-color: #AF2131;	
 }
 
-#registro{
+#login_form h3 , #registration h3 {
+	font-size: 18;
+	margin: 0;
+}
+
+#login_form{
 	margin-top: 0;
 }
 
 .register_now{
 	position: absolute;
     padding: 10px;
-    padding-top: 25px;
+    padding-top: 20px;
     background-color: #fff;
     left: 0;
     right: 0;
     bottom: 0;
-    height: 130px;
+    height: 110px;
     box-sizing:border-box;       
 }
 
@@ -240,13 +257,25 @@ padding-top: 20px;
 	width: 100%;
 	background-color: #49494A;
 	color: #fff;
-
+	text-align: center;
 }
 
-.icons img{
-	margin-right: 10px;
-
+.registration{
+	position: absolute;
+	width: 344px;
+	height: auto;
+	right: 80px;
+	padding: 20px;
+	margin-top: 100px;
+	color: #000;
+	background-color: #E3E1E1;
+	box-sizing: border-box;
+	visibility:hidden;
 }
+
+.registration_visible{
+	visibility: visible;
+} 
 
 .contentCopycontacto{
     width: 400px;
@@ -833,7 +862,3 @@ footer{
 	padding-top: 25px;
 
 }
-
-
-
-

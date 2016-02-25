@@ -28,9 +28,9 @@
                <a href="#" id="registry_icon"><img src="img/perfil.svg"></a>
               <img src="img/carrito.svg"> 
            </div>           
-           <div class="register" id="register">
+           <div class="login" id="login">
                 <h3>IDENTIFÍCATE</h3>
-                    <form id="registro">
+                    <form id="login_form">
                         <label>Usuario</label>
                         <input type="text" id="usuario" required>
                          <label>Contraseña</label>
@@ -42,11 +42,35 @@
                    </form> 
                    <div class="register_now">
                     <p>Si aún no eres usuario, registrate aquí</p>
-                        <a href="#" class="button-principal btn_reg_now">REGÍSTRATE</a>
+                        <a href="#" class="button-principal btn_reg_now" id="registrate">REGÍSTRATE</a>
                    </div> 
-              </div>           
-            </nav>
-                               
+            </div>
+            <div class="registration" id="registration">
+                <h3>REGÍSTRATE</h3>
+                <p>Todos los campos son obligatorios a rellenar</p>
+                    <form id="registration_form">
+                        <label>Nombre*</label>
+                        <input type="text" id="nombre" required>
+                         <label>Email*</label>
+                        <input type="text" id="email" required>
+                        <label>Usuario (no tene que ser tu nombre)</label>
+                        <input type="text" id="usuario" required>
+                        <label>Contraseña (mín. 6 carácteres)</label>
+                        <input type="text" id="pass" required>
+                        <label>Repetir contraseña</label>
+                        <input type="text" id="repass" required>
+                        <p>*Tu nombre y email no se mostrarán públicamente</p>
+                        <input type="checkbox" name="vehicle" value="Bike"> Acepto la política de privacidad<br>
+                        <input type="checkbox" name="vehicle" value="Car" checked="checked"> Quiero recibir la newsletter<br>                                                   
+                         <div class="content_btn_form">
+                            <p>Volver a “Iniciar sesión”</p>
+                         <input type="submit" id="registrar" value="REGISTRAR">
+                        </div>
+                   </form>                    
+            </div>
+
+
+            </nav>    
 
        </header>
        <section class="contentCopy">
@@ -595,15 +619,25 @@ $(document).ready(function () {
 
  <!-- Cambiar forms -->
 <script type="text/javascript"> 
-$(document).ready(function () {
-  $("#registry_icon").hover(function () {        
-      $('#register').addClass('register_visible');          
-    }); 
-   $("#registry_icon").mouseout(function () {        
-      $('#register').removeClass('register_visible');          
-    });   
-    
+$("#registry_icon").click(function () {
+if($('#login').hasClass('login_visible')){                         
+                  $('#login').removeClass('login_visible');
+                  $('#registration').removeClass('registration_visible');                               
+            }else{
+                                     
+                 $('#login').addClass('login_visible');                               
+            }               
 });
+
+
+
  </script>
+<script type="text/javascript"> 
+ $(document).ready(function () {
+   $("#registrate").click(function () {        
+       $('#registration').addClass('registration_visible');           
+     });
+   });
+  </script>   
 </body>
 </html>
