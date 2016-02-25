@@ -182,10 +182,10 @@ nav {
 .icons{
 	float:right;
 	color:#fff;
-	width: 10%;	
+	width: 15%;	
     line-height: 75px;
 	padding-top: 20px;
-	text-align: center;  
+	text-align: CENTER;  
 }
 
 .icons img{
@@ -196,7 +196,7 @@ nav {
 	position: absolute;
 	width: 344px;
 	height: 430px;
-	right: 80px;
+	right: 40px;
 	padding: 20px;
 	margin-top: 100px;
 	color: #000;
@@ -263,7 +263,7 @@ nav {
 	position: absolute;
 	width: 344px;
 	height: auto;
-	right: 80px;
+	right: 40px;
 	padding: 20px;
 	margin-top: 100px;
 	color: #000;
