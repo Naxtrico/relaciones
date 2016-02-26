@@ -16,7 +16,7 @@
                 <img src="img/logo.svg">                  
             </div>
             <nav>
-                <ul>
+                <ul class="nav_principal" id="nav_principal">
                     <li><a href="#">que hacemos</a></li>
                     <li><a href="#">prueba de fidelidad</a></li>
                     <li><a href="#">dejar</a></li>
@@ -26,7 +26,8 @@
                 </ul>  
                  <div class="icons">
                <a href="#" id="registry_icon"><img src="img/perfil.svg"></a>
-              <img src="img/carrito.svg"> 
+              <img src="img/carrito.svg">
+              <a id="nav-toggle" href="#"><span></span></a>
            </div>           
            <div class="login" id="login">
                 <h3>IDENTIFÍCATE</h3>
@@ -235,7 +236,7 @@
         <label><input type="radio" name="selec" value="TE INVITO A UNA COPA" id="copa"><span class="card_btn card_btn_colorDiferent">SELECCIONAR</span></label>
     </div>
 </div>     
-<div class="card" style="background-image: url(img/runner1.jpg);">
+<div class="card" style="background-image: url(img/runner1.jpg); margin-right:0px;">
     <div class="card_body">
         <div class="card_price">
             <p>100€</p>
@@ -285,7 +286,7 @@
         <label><input type="radio" name="selec" value="ARRÉGLAME EL APARATO" id="arregla"><span class="card_btn">SELECCIONAR</span></label>
     </div>
 </div>     
-<div class="card" style="background-image: url(img/esposas.jpg);">
+<div class="card" style="background-image: url(img/esposas.jpg); margin-right:0px;">
     <div class="card_body">
         <div class="card_price card_price_colorDiferent">
             <p>100€</p>
@@ -334,7 +335,7 @@
                    <label><input type="radio" name="actor" value="arno" id="arno"><span class="card_btn card_btn_colorDiferent">SELECCIONAR</span></label>
                 </div>
         </div>
-        <div class="actors_content" id="actors_content3" style="background-image: url(img/actor3.jpg); margin-right:0px;">               
+        <div class="actors_content actors_nomargin" id="actors_content3" style="background-image: url(img/actor3.jpg);">               
                 <div class="actors_description">
                     <h2>ARNO</h2>
                     <hr>
@@ -624,9 +625,6 @@ if($('#login').hasClass('login_visible')){
                  $('#login').addClass('login_visible');                               
             }               
 });
-
-
-
  </script>
 <script type="text/javascript"> 
  $(document).ready(function () {
@@ -634,6 +632,24 @@ if($('#login').hasClass('login_visible')){
        $('#registration').addClass('registration_visible');           
      });
    });
-  </script>   
+  </script>
+
+<!-- menu hamburguer-->
+  <script type="text/javascript">
+  document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
+  this.classList.toggle( "active" );
+});
+
+$("#nav-toggle").click(function () {
+if($('#nav_principal').hasClass('visible')){                         
+                  $('#nav_principal').removeClass('visible');                                                 
+            }else{
+                                     
+                 $('#nav_principal').addClass('visible');                               
+            }               
+});
+
+
+  </script>  
 </body>
 </html>
