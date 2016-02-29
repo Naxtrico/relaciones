@@ -2,11 +2,15 @@
 /* CSS Document */
 @import url("http://overpass-30e2.kxcdn.com/overpass.css");
 
-html, body{
+html, body {
 	margin:0 auto;
-	font-family: 'overpass';
 	font-size: 14px;
-	height: 100%;	
+	height: 100%;
+    font-family: "overpass";
+}
+
+p {
+    font-family: "overpass";
 }
 
 h1 {
@@ -22,7 +26,7 @@ h2 {
 	font-size: 30px;
 	font-weight: 600;
 	color:#2C0C52;
-	text-transform: uppercase;	
+	text-transform: uppercase;
 }
 
 .titlecard{
@@ -40,17 +44,17 @@ h3 {
 
 h4 {
 	font-size: 22px;
-	font-weight: 100;	
+	font-weight: 100;
 }
 
 h5 {
 	font-size: 18px;
-	font-weight: 100;	
+	font-weight: 100;
 }
 
 h6 {
 	font-size: 16px;
-	font-weight: 100;	
+	font-weight: 100;
 }
 
 ul {
@@ -70,24 +74,24 @@ li {
 	padding-left: 20px;
 }
 
-p {	
-	font-size: 16px;	
+p {
+	font-size: 16px;
 	font-weight: 400;
 	line-height: 25px;
 	margin: 0;
 }
 
 hr{
-	margin-bottom: 15px;	
+	margin-bottom: 15px;
 	border:1px solid #fff;
 }
 
 .hrcolor{
-	margin-bottom: 15px;	
+	margin-bottom: 15px;
 	border:1px solid #2C0C52;
 }
 
-a {	
+a {
 	font-size: 14px;
 	color: #fff;
 	font-weight: 600;
@@ -97,51 +101,51 @@ a {
 	-webkit-transition: all 0.5s ease;
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;    
+    transition: all 0.5s ease;
 }
 
 
 .back_full_screen_contacto{
 	overflow: hidden;
-	background-position: center center; 
-    background-repeat: no-repeat;	   
+	background-position: center center;
+    background-repeat: no-repeat;
 	background-size: cover;
-	background-image:url(../img/pruebafotocontacto.jpg); 
-	width:100%; 
+	background-image:url(../img/pruebafotocontacto.jpg);
+	width:100%;
 	height:100%;
-	min-height:650px;	  	
+	min-height:650px;
 }
 
 .back_full_screen{
 	overflow: hidden;
-	background-position: center center; 
-    background-repeat: no-repeat;	   
+	background-position: center center;
+    background-repeat: no-repeat;
 	background-size: cover;
-	background-image:url(../img/prueba1c.jpg); 
-	width:100%; 
+	background-image:url(../img/prueba1c.jpg);
+	width:100%;
 	height:100%;
-	min-height:650px;	  	
+	min-height:650px;
 }
 
 header{
-	text-align: center;	
+	text-align: center;
 	margin: 0 auto;
-	width: 100%;	
+	width: 100%;
 	-webkit-transition: all 0.5s ease;
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;     
+    transition: all 0.5s ease;
     position: fixed;
     z-index: 1;
 }
 
-header.fixed{	
-	position: fixed;			
+header.fixed{
+	position: fixed;
 	z-index: 1;
 	background-color: #000;
 }
 
-nav {		
+nav {
 	text-decoration: none;
 	height: 75px;
 	width: 82%;
@@ -151,11 +155,11 @@ nav {
 	-webkit-transition: all 0.5s ease;
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;     	
+    transition: all 0.5s ease;
 }
 
-.button-principal{	
-	padding: 10px 30px;	
+.button-principal{
+	padding: 10px 30px;
 	font-size: 15px;
 	font-weight: bold;
 	cursor: pointer;
@@ -164,17 +168,17 @@ nav {
 	color:#281348;
 	display: inline-block;
 	text-transform: uppercase;
-	box-sizing: border-box;  
+	box-sizing: border-box;
 }
 
-.logo{	
+.logo{
 	float:left;
 	-webkit-transition: all 0.5s ease;
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     width: 18%;
-    line-height: 75px;    
+    line-height: 75px;
     padding-right: 10px;
     padding-top: 10px;
     box-sizing: border-box;
@@ -183,10 +187,10 @@ nav {
 .icons{
 	float:right;
 	color:#fff;
-	width: 10%;	
+	width: 10%;
     line-height: 75px;
 	padding-top: 20px;
-	text-align: left;  
+	text-align: left;
 }
 
 .icons img{
@@ -203,33 +207,28 @@ nav {
 	color: #000;
 	background-color: #E3E1E1;
 	box-sizing: border-box;
-	visibility: hidden;
 }
 
 .login form , .registration form{
 	margin-top: 5px;
 }
 
-.login_visible{
-	visibility: visible;
-} 
-
 .login p ,  .registration p{
-	font-size: 14px;		
+	font-size: 14px;
 }
 
 .login label ,  .registration label{
-	font-size: 14px;		
+	font-size: 14px;
 }
 
 #login_form input[type="text"] , #registration input[type="text"] {
 	width: 100%;
 	box-sizing:border-box;
-	margin: 0;	
+	margin: 0;
 }
 
 #login_form input[type="submit"] , #registration input[type="submit"]{
-	background-color: #AF2131;	
+	background-color: #AF2131;
 }
 
 #login_form h3 , #registration h3 {
@@ -250,7 +249,7 @@ nav {
     right: 0;
     bottom: 0;
     height: 110px;
-    box-sizing:border-box;       
+    box-sizing:border-box;
 }
 
 .btn_reg_now{
@@ -270,19 +269,20 @@ nav {
 	color: #000;
 	background-color: #E3E1E1;
 	box-sizing: border-box;
-	visibility:hidden;
+    display: none;
 }
 
-.registration_visible{
-	visibility: visible;
-} 
+.registration a.back-to-login {
+    color: #000;
+}
+
 
 .contentCopycontacto{
     width: 400px;
     position: relative;
     left: 50%;
     transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);       
+    -webkit-transform: translate(-50%, -50%);
     box-sizing: border-box;
     bottom: -103px;
 }
@@ -292,27 +292,27 @@ nav {
     position: relative;
     left: 50%;
     top: 115%;
-    background-color: #AF2131;    
+    background-color: #AF2131;
     margin: -100px 0 -100px;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     height: 100%;
 }
 
-.contentCopy{   
+.contentCopy{
    	width: 500px;
     position: relative;
     left: 50%;
     top: 50%;
 
     transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);   
+    -webkit-transform: translate(-50%, -50%);
 }
 .contentCopyTopcontacto{
 	margin: 0 auto;
 	border-top:4px solid #fff;
 	border-right:4px solid #fff;
-	border-left:4px solid #fff;	
+	border-left:4px solid #fff;
 	padding-top: 30px;
 	text-align: center;
 	margin-bottom: 40px;
@@ -324,10 +324,10 @@ nav {
 	margin: 0 auto;
 	border-bottom:4px solid #fff;
 	border-right:4px solid #fff;
-	border-left:4px solid #fff;	
+	border-left:4px solid #fff;
 	padding-bottom: 60px;
 	text-align: center;
-	margin-top: 40px;	
+	margin-top: 40px;
 	width: 90%;
 	color: #fff;
 }
@@ -336,7 +336,7 @@ nav {
 	margin: 0 auto;
 	border-top:4px solid #fff;
 	border-right:4px solid #fff;
-	border-left:4px solid #fff;	
+	border-left:4px solid #fff;
 	padding-top: 30px;
 	text-align: center;
 	margin-bottom: 40px;
@@ -347,19 +347,19 @@ nav {
 	margin: 0 auto;
 	border-bottom:4px solid #fff;
 	border-right:4px solid #fff;
-	border-left:4px solid #fff;	
+	border-left:4px solid #fff;
 	padding-bottom: 40px;
 	text-align: center;
-	margin-top: 40px;	
+	margin-top: 40px;
 	width: 70%;
 }
 
-.copyServices{	
+.copyServices{
 	width: 100%;
 	text-align: center;
 }
 
-.copyServices h1{	
+.copyServices h1{
 	margin-top: 7px;
 	margin-bottom: 7px;
 }
@@ -374,34 +374,34 @@ nav {
 .sectionsPF{
 	margin:0 auto;
 	width: 100%;
-	max-width: 1024px;	
+	max-width: 1024px;
     box-sizing: border-box;
     text-align: center;
     overflow: hidden;
     vertical-align: middle;
     padding-top: 50px;
-    padding-bottom: 70px;      
+    padding-bottom: 70px;
 }
 
 .sectionsPF a{
-	color:#000;      
+	color:#000;
 }
 
 .sectionsPF h2{
-	font-size: 24px;	    
+	font-size: 24px;
 }
 
-.content_color{	
+.content_color{
 	width: 100%;
 	background-color: #D8D8D8;
-}	
+}
 
 .steps{
 	padding: 10px;
 	text-align: center;
 	margin: 0 auto;
 	width: 784px;
-	background-color: #D8D8D8;	
+	background-color: #D8D8D8;
 	border-radius: 0px 0px 9px 9px;
 	-moz-border-radius: 0px 0px 9px 9px;
 	-webkit-border-radius: 0px 0px 9px 9px;
@@ -418,17 +418,17 @@ nav {
 .section_step{
 	margin:0 auto;
 	width: 100%;
-	max-width: 800px;	
+	max-width: 800px;
     box-sizing: border-box;
     text-align: center;
     overflow: hidden;
-    vertical-align: middle;   
+    vertical-align: middle;
 }
 
-.stepsNumbers{	
+.stepsNumbers{
 	width: 50px;
-	height: 50px;	
-	margin: 0 auto;		
+	height: 50px;
+	margin: 0 auto;
 	border-radius: 400px 400px 400px 400px;
 	-moz-border-radius: 400px 400px 400px 400px;
 	-webkit-border-radius: 400px 400px 400px 400px;
@@ -454,7 +454,7 @@ nav {
     box-sizing: border-box;
     font-size: 18px;
 }
-.info_steps h3{	
+.info_steps h3{
     font-size: 18px;}
 
 
@@ -488,7 +488,7 @@ nav {
 .card {
 	background-image: url(../img/masaje.jpg);
 	background-position: top center;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
     height: 600px;
     overflow: hidden;
     width: 32%;
@@ -517,18 +517,18 @@ nav {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	margin-left: 50px;
-	width: 30%;	
+	width: 30%;
 }
 
 .card_price_colorDiferent{
 	background-color:#CBAFF5;
-	color: #311751;	
+	color: #311751;
 }
 
 .card_price p {
 	font-family: 'Oswald', sans-serif;
 	font-size: 30px;
-	font-weight: 600;	
+	font-weight: 600;
 }
 
 .card_description{
@@ -548,7 +548,7 @@ nav {
 	margin-bottom: 0;
 }
 .card_description p{
-	margin-left: 0;	
+	margin-left: 0;
 }
 
 .card_footer{
@@ -556,7 +556,7 @@ nav {
 	font-size: 20px;
 	position: relative;
 	left: 0;
-	right: 0;	
+	right: 0;
 	bottom: 105px;
     padding: 35px 0px 35px 35px;
 	background-color: #311752;
@@ -568,11 +568,11 @@ nav {
 
 /* ambientes*/
 
-.card_btn{	
-	padding: 10px 30px;	
+.card_btn{
+	padding: 10px 30px;
 	font-size: 16px;
 	font-weight: bold;
-	cursor: pointer;	
+	cursor: pointer;
 	text-decoration: none;
 	color:#311752;
 	display: inline-block;
@@ -581,31 +581,31 @@ nav {
     -webkit-transition: all 0.5s ease;
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;   
+    transition: all 0.5s ease;
 }
 
-.card_btn_colorDiferent{	
-	color:#fff;	
-	background-color: #311751;	
+.card_btn_colorDiferent{
+	color:#fff;
+	background-color: #311751;
     -webkit-transition: all 0.5s ease;
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;   
+    transition: all 0.5s ease;
 }
 
-.card_btn:hover{		
+.card_btn:hover{
 	background-color: #fff;
-	color:#bba2cd;		
+	color:#bba2cd;
 }
 
-.card_btn_colorDiferent:hover{		
+.card_btn_colorDiferent:hover{
 	background-color: #fff;
-	color:#311752;		
+	color:#311752;
 }
 
 .card_btn:active{
 	background-color: #991b2c;
-	color:#311752;		
+	color:#311752;
 }
 
 .card_btn_colorDiferent:active{
@@ -640,30 +640,30 @@ nav {
 }
 
 
-.ocult{	
+.ocult{
 	display: none;
 }
 
-.actors_description{
+ .actors_description{
 	position: relative;
-    top: 400px;
+    top: 100%;
     height: 100%;
-    background-color: rgba(187,162, 205, 0.8);    
+    background-color: rgba(187,162, 205, 0.8);
     padding: 30px;
     transition: all 0.5s ease;
  }
 
  .actors_content:hover .actors_description{
-	top:0;
-}
+	top: 0;
+ }
 /*cards actors*/
 
 .btn_select_sex{
-	margin-top: 20px;	
-	padding: 10px 30px;	
+	margin-top: 20px;
+	padding: 10px 30px;
 	font-size: 16px;
 	font-weight: bold;
-	cursor: pointer;	
+	cursor: pointer;
 	text-decoration: none;
 	color:#311752;
 	display: inline-block;
@@ -672,11 +672,11 @@ nav {
     -webkit-transition: all 0.5s ease;
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;   
+    transition: all 0.5s ease;
 }
 
  input[type=radio]{
- 	visibility: hidden;    
+ 	visibility: hidden;
  }
 
  input[type=radio]:checked + span{
@@ -684,14 +684,14 @@ nav {
  	background-color: #96c017;
  	background-image: url(../img/check.png);
  	background-repeat: no-repeat;
- 	background-position: right;  
+ 	background-position: right;
  }
 
 input[type="text"]{
 	margin-top: 10px;
-	display: block;		
+	display: block;
 	padding: 10px;
-	margin-bottom: 25px;		
+	margin-bottom: 25px;
 	-webkit-transition: all 0.5s ease;
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -708,9 +708,9 @@ input[type="text"]{
 
 textarea{
 	margin-top: 10px;
-	display: block;	
+	display: block;
 	padding: 10px;
-	margin-bottom: 25px;	
+	margin-bottom: 25px;
 	-webkit-transition: all 0.5s ease;
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -724,19 +724,19 @@ textarea{
 	border: 1px solid #bcbcbc;
 }
 
-input[type="text"]:focus{		
+input[type="text"]:focus{
 	border: 1px solid #3f302f;
-	padding: 10px;	
-	background-color: #fff;	
+	padding: 10px;
+	background-color: #fff;
 	color:#000;
-	content: clear;	
+	content: clear;
 }
 
 input[type="submit"]{
-	padding: 10px 30px;	
+	padding: 10px 30px;
 	font-size: 16px;
 	font-weight: bold;
-	cursor: pointer;	
+	cursor: pointer;
 	text-decoration: none;
 	color:#fff;
 	display: inline-block;
@@ -745,7 +745,7 @@ input[type="submit"]{
     -webkit-transition: all 0.5s ease;
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;  
+    transition: all 0.5s ease;
 }
 
 form{
@@ -753,9 +753,9 @@ form{
 	text-align: left;
 }
 
-form p{	
+form p{
 	margin-bottom: 10px;
-	
+
 }
 
 label{
@@ -763,35 +763,35 @@ label{
 }
 
 .content_form{
-	background-color:#fff; 
-	width:auto; 
-	margin:0 auto; 
-	width:650px; 
+	background-color:#fff;
+	width:auto;
+	margin:0 auto;
+	width:650px;
 	padding:70px;
 }
 
 .content_form p{
-	margin-top: -25px;		
+	margin-top: -25px;
 }
 
 .form_steps {
 	margin-right: 20px;
 	font-size: 20px;
-	color: #000;	
-	padding-bottom: 15px;	
+	color: #000;
+	padding-bottom: 15px;
 	padding-right: 3px;
 	margin-bottom: 15px;
-	border-bottom: solid 1px #000; 
+	border-bottom: solid 1px #000;
 	font-family: 'overpass';
 	-webkit-transition: all 0.5s ease;
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;    
+    transition: all 0.5s ease;
 }
 
 .form_steps_selected{
 	font-weight: 800;
-	border-bottom: solid 2px #000;	
+	border-bottom: solid 2px #000;
 }
 
 .content_btn_form{
@@ -821,7 +821,7 @@ label{
 
 }
 
-.btn_pagar{	
+.btn_pagar{
 	margin-top: 50px;
 	background-color: #67b244;
 }
@@ -831,7 +831,7 @@ label{
 }
 
 footer{
-	background-color: #49494A;	
+	background-color: #49494A;
 	height: 200px;
 }
 .containterfooter1{
@@ -854,12 +854,12 @@ footer{
 .iconsfooter{
 	padding-top: 65px;
 	height: 100px;
-	
+
 }
 .linefooter{
-	background-color: #211915;	
+	background-color: #211915;
 	height: 70px;
-	
+
 }
 .footercopy{
 	color: #fff;
@@ -883,13 +883,13 @@ footer{
   display: inline;
   line-height: 72px;
   display: none;
-  
+
 }
 #nav-toggle span:before {
   top: -10px;
 }
 #nav-toggle span:after {
-  bottom: -10px; 
+  bottom: -10px;
 }
 
 /*animation*/
@@ -922,23 +922,23 @@ footer{
 		top:80px;
 		width: 30%;
 		color:#000;
-		width: 300px;				    
+		width: 300px;
 	}
 
-	nav{ 
+	nav{
 		width: 70%;
 	}
 
 	.nav_principal li{
 		display: block;
-		
+
 	}
 
 	.nav_principal a{
 		color:#000;
 	}
 
-	.visible{		
+	.visible{
 		display: inline-block;
 	}
 
@@ -950,7 +950,7 @@ footer{
 		width: 30%;
 	}
 
-	#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {  
+	#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
   		display: inline;
 	}
 
@@ -959,8 +959,8 @@ footer{
 		float:none;
 	}
 	.card{
-		width: 47%;		
-	}	
+		width: 47%;
+	}
 
 	.actors_content{
 		float: none;
@@ -972,18 +972,18 @@ footer{
 }
 
 @media screen and (max-width: 540px) {
-	.steps{	
-		width: auto;	
+	.steps{
+		width: auto;
 	}
 
 	.stepsNumbers {
 		width: 30px;
-		height: 30px;	
+		height: 30px;
 	}
 
 	.stepsNumbers p{
 		font-size: 14px;
-		line-height: 30px;	
+		line-height: 30px;
 	}
 
 	.actors_content{
