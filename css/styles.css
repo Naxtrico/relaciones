@@ -9,9 +9,6 @@ html, body {
     font-family: "overpass";
 }
 
-p {
-    font-family: "overpass";
-}
 
 h1 {
 	font-size: 35px;
@@ -178,7 +175,7 @@ nav {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     width: 18%;
-    line-height: 75px;
+    line-height: 40px;
     padding-right: 10px;
     padding-top: 10px;
     box-sizing: border-box;
@@ -409,7 +406,7 @@ nav {
 
 .setps_fixed{
 	position: fixed;
-	top: 109px;
+	top: 92px;
     margin: 0 auto;
     z-index: 2;
     border: 1px solid #fff;
@@ -697,7 +694,7 @@ input[type="text"]{
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     color:#000;
-    width: 650px;
+    width: 100%;
     box-sizing: border-box;
     border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px 5px 5px 5px;
@@ -716,7 +713,7 @@ textarea{
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     color:#000;
-    width: 650px;
+    width: 100%;
     box-sizing: border-box;
     border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px 5px 5px 5px;
@@ -766,8 +763,8 @@ label{
 	background-color:#fff;
 	width:auto;
 	margin:0 auto;
-	width:650px;
-	padding:70px;
+	width: 60%;
+    padding: 5%;
 }
 
 .content_form p{
@@ -954,10 +951,7 @@ footer{
   		display: inline;
 	}
 
-	.info_steps{
-		width: 100%;
-		float:none;
-	}
+
 	.card{
 		width: 47%;
 	}
@@ -968,6 +962,23 @@ footer{
 		margin: 0 auto;
 		margin-top: 30px;
 	}
+
+	.content_form{	
+	width: 70%;   
+}
+
+.email_sent,.payment{
+	width: auto;
+	text-align: center;
+	float:none;
+	margin-top: 50px;
+	padding: 0px 50px;
+	box-sizing:border-box;
+}
+
+.email_sent{
+	border-right: 0;
+}
 
 }
 
@@ -993,4 +1004,76 @@ footer{
 		margin: 0 auto
 	}
 
+	.content_form{	
+	width: 90%;   
+	}
+
+	.email_sent{
+		border-right: 0;
+	}
+
+	.form_steps {	
+		font-size: 15px;	
+	}
+
+	.map{
+		display: none;
+	}
+
+	.sectionsPF{
+		padding: 1em;
+	}
+	.card{		
+	    width: 100%;
+	    float: none;    
+	   
+	}
+
+	p {
+		font-size: 14px;	
+		line-height: 21px;	
+	}
+
+	.copyServices p {    
+   		font-size: 14px;
+	}
+
+	.contentCopy {
+    width: 90%;
+	}
+
+	h1 {
+	font-size: 25px;	
+	}
+
+	.sectionsPF h2 {	
+	font-size: 20px;	
+}
+
+	.contentCopyTop {
+		margin-bottom: 15px;
+		padding-top: 10px;
+	}
+
+	.contentCopyBottom {
+		margin-top: 15px;
+		padding-bottom: 35px;
+	}
+
+		.info_steps{
+		width: 100%;
+		float:none;
+	}
+
+	.map{
+	display: none;
+	}
+
+.result_veredict1, .result_veredict2{
+	float:none;
+	
+	}
+	.card_description h2 {
+		font-size: 18px;
+	}
 }
