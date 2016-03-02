@@ -14,24 +14,23 @@
 </head>
 <body>
     <div class="back_full_screen">
-        <header>
-            <div class="logo" id="logo">
-                <img src="img/logo.svg">
-            </div>
-            <nav>
-                <ul class="nav_principal" id="nav_principal">
+        <header>            
+                <img src="img/logo.svg" class="logo" id="logo">            
+            <nav class="nav_principal" id="nav_principal">
+                <ul>
                     <li><a href="#">que hacemos</a></li>
                     <li><a href="#">prueba de fidelidad</a></li>
                     <li><a href="#">dejar</a></li>
                     <li><a href="#">paquete negro</a></li>
                     <li><a href="#">tienda</a></li>
                     <li><a href="#">red impares</a></li>
-                </ul>
-                 <div class="icons">
-               <a href="#" id="registry_icon"><img src="img/perfil.svg"></a>
-              <img src="img/carrito.svg">
-              <a id="nav-toggle" href="#"><span></span></a>
-           </div>
+                </ul>                 
+           </nav>
+           <div class="icons">
+                   <a href="#" id="registry_icon"><img src="img/perfil.svg"></a>
+                  <a href="#"><img src="img/carrito.svg"></a>
+                  <a href="#" id="nav-toggle" class="nav-toggle"><span></span></a>
+                </div>
            <div id="login-container" style="display: none">
                <div class="login" id="login">
                     <h3>IDENTIFÍCATE</h3>
@@ -74,9 +73,6 @@
                        </form>
                 </div>
             </div>
-
-
-            </nav>
 
        </header>
        <section class="contentCopy">
@@ -600,23 +596,25 @@
   </div>
 
 </section>
-<footer>
-  <div class="containterfooter1">
-    <img src="img/logofooter.svg"></div>
-    <div class="textfooter">
-      <ul class="listfooter">
-                    <li><a href="#">preguntas frecuentes</a></li>
-                    <li><a href="#">testimonios</a></li>
-                    <li><a href="#">política de privacidad</a></li>
-                    <li><a href="contacto.html">contacto</a></li>
-                 </ul></div>
+<footer>  
+    <img src="img/logofooter.svg" class="logoFooter">    
+      <nav class="listfooter nav_secundaria">
+          <ul>
+              <li><a href="#">preguntas frecuentes</a></li>
+              <li><a href="#">testimonios</a></li>
+              <li><a href="#">política de privacidad</a></li>
+              <li class="margin"><a href="contacto.html">contacto</a></li>
+          </ul>
+      </nav>
+    
                  <div class="iconsfooter">
                   <img src="img/facebook.svg">
                   <img src="img/twitter.svg">
                   <img src="img/instagram.svg">
                 </div>
                 <div class="linefooter">
-                  <p class="footercopy">Copyright 2016. All Rights Reserved</p></div>
+                  <p class="footercopy">Copyright 2016. All Rights Reserved</p>
+                </div>
 </footer>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
