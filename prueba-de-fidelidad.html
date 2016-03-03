@@ -572,7 +572,7 @@
         <input type="file" name="adjunto">
         <div class="content_btn_form">
          <input type="submit" id="btn_prueba" value="FINALIZAR">
-        </div>
+        </div>        
     </form>
     </div>
 </section>
@@ -688,7 +688,7 @@ $(document).ready(function () {
  </script>
 <script type="text/javascript">
    $(document).ready(function(){
-      var altura = $("#1").offset().top;
+      var altura = $("#1").offset().top -300;
       $(window).scroll(function(){
             if($(window).scrollTop() >= altura){
                   $("#paso1").addClass("stepsNumbers_selected");
@@ -699,7 +699,7 @@ $(document).ready(function () {
       });
 });
     $(document).ready(function(){
-      var altura = $("#2").offset().top;
+      var altura = $("#2").offset().top -300;
       $(window).scroll(function(){
             if($(window).scrollTop() >= altura){
                   $("#paso2").addClass("stepsNumbers_selected");
@@ -711,7 +711,7 @@ $(document).ready(function () {
 });
 
      $(document).ready(function(){
-      var altura = $("#3").offset().top;
+      var altura = $("#3").offset().top -300;
       $(window).scroll(function(){
             if($(window).scrollTop() >= altura){
                   $("#paso3").addClass("stepsNumbers_selected");
@@ -722,13 +722,24 @@ $(document).ready(function () {
       });
 });
       $(document).ready(function(){
-      var altura = $("#4").offset().top;
+      var altura = $("#4").offset().top -300;
       $(window).scroll(function(){
             if($(window).scrollTop() >= altura){
                   $("#paso4").addClass("stepsNumbers_selected");
             }else{
 
                  $("#paso4").removeClass("stepsNumbers_selected");
+            }
+      });
+});
+      $(document).ready(function(){
+      var altura = $("#5").offset().top -300;
+      $(window).scroll(function(){
+            if($(window).scrollTop() >= altura){
+                  $("#paso5").addClass("stepsNumbers_selected");
+            }else{
+
+                 $("#paso5").removeClass("stepsNumbers_selected");
             }
       });
 });
