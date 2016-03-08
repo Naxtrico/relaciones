@@ -192,6 +192,20 @@ header.fixed{
 	margin-right: 10px;
 }
 
+.loginContainer{
+	display: none
+}
+
+.loginContainer::after{
+	    content: "";
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #E3E1E1;
+    bottom: -6px;    
+    right: 70px;
+    position: absolute;    
+  }
+
 .login{
 	position: absolute;
 	width: 344px;
@@ -219,16 +233,18 @@ header.fixed{
 #login_form input[type="text"] , #registration input[type="text"] {
 	width: 100%;
 	box-sizing:border-box;
-	margin: 0;
+	margin: 0;	
 }
 
 #login_form input[type="submit"] , #registration input[type="submit"]{
 	background-color: #AF2131;
 }
 
-#login_form h3 , #registration h3 {
+#login h3 , #registration h3 {
 	font-size: 18;
 	margin: 0;
+	text-align: left;
+	margin-bottom: 10px;
 }
 
 #login_form{
@@ -284,7 +300,60 @@ header.fixed{
 
 /* ---------------------POU UP-----------------------------------------------*/
 
-
+.popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+    z-index: 9999;    
+}
+ 
+/* Inner */
+.popup-inner {
+    max-width:700px;
+    width:90%;
+    padding:40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background:#fff;
+    box-sizing: border-box;
+}
+ 
+/* Close Button */
+.popup-close {
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:0px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%);
+    transform:translate(50%, -50%);
+    border-radius:1000px;
+    background:rgba(167,14,32,0.8);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    color:#fff;
+}
+ 
+.popup-close:hover {
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:rgba(0,0,0,1);
+    text-decoration:none;
+}
 
 /* ---------------------POU UP-----------------------------------------------*/
 
@@ -998,7 +1067,7 @@ footer{
 	float:none;
 	margin-top: 50px;
 	padding: 0px 50px;
-	box-sizing:border-box;
+	box-sizing:border-box;	
 }
 
 .email_sent{
@@ -1012,6 +1081,7 @@ footer{
 	li{
 		display: block;
 		padding-bottom: 20px;
+		padding-right: 0px;
 	}
 
 	.iconsfooter{
@@ -1117,5 +1187,15 @@ footer{
 	}
 	.card_description h2 {
 		font-size: 18px;
+	}
+
+	.login{
+		width: 88%;
+		right: 20px;
+	}
+
+	.registration{
+		width: 88%;
+		right: 20px;
 	}
 }

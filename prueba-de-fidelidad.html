@@ -14,6 +14,27 @@
 </head>
 <body>
     <div class="back_full_screen">
+       <!-- POP UP LOGIN -->
+            <div class="popup" data-popup="popup-1">
+                <div class="popup-inner">
+                    <h2>HOLA!</h2>
+                    <p>Login correcto, puedes consultar el estado de tus pedidos!</p>
+                    <p><a data-popup-close="popup-1" href="#">Close</a></p>
+                    <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+                </div>
+            </div>
+         <!-- POP UP -->
+
+          <!-- POP UP REGISTRO -->
+            <div class="popup" data-popup="popup-2">
+                <div class="popup-inner">
+                    <h2>REGISTRO COMPLETADO!</h2>
+                    <p>Login correcto, puedes consultar el estado de tus pedidos!</p>
+                    <p><a data-popup-close="popup-2" href="#">Close</a></p>
+                    <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+                </div>
+            </div>
+         <!-- POP UP -->
         <header>            
                 <img src="img/logo.svg" class="logo" id="logo">            
             <nav class="nav_principal" id="nav_principal">
@@ -28,10 +49,10 @@
            </nav>
            <div class="icons">
                    <a href="#" id="registry_icon"><img src="img/perfil.svg"></a>
-                  <a href="#"><img src="img/carrito.svg"></a>
-                  <a href="#" id="nav-toggle" class="nav-toggle"><span></span></a>
+                  <a href="#"><img src="img/carrito.svg"></a>                  
+                  <a href="#" id="nav-toggle" class="nav-toggle"><span></span></a>                  
                 </div>
-           <div id="login-container" style="display: none">
+           <div id="loginContainer" class="loginContainer">
                <div class="login" id="login">
                     <h3>IDENTIFÍCATE</h3>
                         <form id="login_form">
@@ -41,7 +62,7 @@
                             <input type="text" id="contraseña" required>
                              <div class="content_btn_form">
                                 <p>¿Has olvidado tu contraseña?</p>
-                             <input type="submit" id="identificar" value="IDENTIFICAR">
+                             <input type="submit" id="identificar" data-popup-open="popup-1" value="IDENTIFICAR">                             
                             </div>
                        </form>
                        <div class="register_now">
@@ -68,7 +89,7 @@
                             <input type="checkbox" name="vehicle" value="Car" checked="checked"> Quiero recibir la newsletter<br>
                              <div class="content_btn_form">
                                  <p>Volver a <a class="back-to-login" href="">"Identificate"</a></p>
-                             <input type="submit" id="registrar" value="REGISTRAR">
+                             <input type="submit" id="registrar" data-popup-open="popup-2" value="REGISTRAR">
                             </div>
                        </form>
                 </div>
@@ -748,25 +769,25 @@ $(document).ready(function () {
 
 <script type="text/javascript">
 $("#registry_icon").click(function () {
-    console.log($("#login-container").css("display"));
-    if($("#login-container").css("display") == "block" ){
-        $("#login-container").hide();
+    console.log($("#loginContainer").css("display"));
+    if($("#loginContainer").css("display") == "block" ){
+        $("#loginContainer").hide();
     }else{
         $('#registration').hide();
-        $("#login-container #login").show();
-        $("#login-container").show();
+        $("#loginContainer #login").show();
+        $("#loginContainer").show();
     }
 });
  </script>
 <script type="text/javascript">
  $(document).ready(function () {
    $("#registrate").click(function () {
-       $("#login-container #login").hide();
+       $("#loginContainer #login").hide();
        $('#registration').show();
      });
    });
    $("#registration a.back-to-login").click(function(){
-       $("#login-container #login").show();
+       $("#loginContainer #login").show();
        $('#registration').hide();
        return false;
    });
@@ -786,8 +807,28 @@ if($('#nav_principal').hasClass('visible')){
                  $('#nav_principal').addClass('visible');
             }
 });
-
-
   </script>
+
+  <!-- POPUP-->
+  <script type="text/javascript">
+  $(function() {
+    //----- OPEN
+    $('[data-popup-open]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-open');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+ 
+        e.preventDefault();
+    });
+ 
+    //----- CLOSE
+    $('[data-popup-close]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-close');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+ 
+        e.preventDefault();
+    });
+});
+  </script>
+  <!-- POPUP-->
 </body>
 </html>
