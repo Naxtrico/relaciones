@@ -70,7 +70,7 @@ li {
 }
 
 p {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
 	line-height: 25px;
 	margin: 0;
@@ -468,66 +468,81 @@ header.fixed{
 
 /*steps*/
 
-.steps{
-	padding: 10px;
-	text-align: center;
-	margin: 0 auto;
+.stepNumber-item{
+	position: relative;
+	padding: 0px;
+	width: 8.5em;
+}
+
+.stepsNumbers-list{
+	counter-reset: section;
+	text-transform: none;
 	width: 784px;
 	background-color: #D8D8D8;
+	padding: 5px;
+	text-align: center;
+	margin: 0 auto;
 	border-radius: 0px 0px 9px 9px;
 	-moz-border-radius: 0px 0px 9px 9px;
 	-webkit-border-radius: 0px 0px 9px 9px;
 }
 
-.stepNumber-item{
-	position: relative;
-	padding: 0px;
-	width: 8.5em;
-
-}
-
-.stepsNumbers-list{
-	counter-reset: section;
-}
-
 .stepNumber-link{
 	text-decoration: none;
-	display: block;	
+	display: block;
+	font-size: 0.8rem;
+	color:#000;
 }
 
 .stepNumber-link:hover::before{
-	background-color: red;
+	background-color: #2C0C52;
+	color: #fff;
+}
+
+.stepNumber-item-selected{
+	background-color: #2C0C52;
+	color: #fff;
 }
 
 
-.stepNumber-link::before{	
-	content: counter(section) "1";
+.stepNumber-link::before{
+	counter-increment: section;	
+	content: counter(section) "";
 	display: block;	
 	text-align: center;
 	border: 1px solid #000;
-	border-radius: 1.5rem;
-	width: 3rem;
-	height: 3rem;
-	line-height: 3rem;
-	font-size: 1.5rem;
+	border-radius: 1rem;
+	width: 2rem;
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 1rem;
 	margin:0 auto;
 	font-weight: bold;
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.09rem;
+	color: #000;
 }
 
 .stepNumber-item::after{	
 	content:'';
-	border-top: 1px dashed;
+	border-top: 1px dashed #000;
 	display: block;	
 	height: 0;
 	width: 5rem;
 	position: absolute;
-	top:1.5rem;
-	left:6rem;
+	top:1rem;
+	left:6rem;	
 }
 
 .stepNumber-item:last-child::after{
 	display: none;
+}
+
+.steps_fixed{
+	position: fixed;
+	top:92px;
+	margin: 0 auto;
+	z-index: 2;
+	border: 1px solid #fff;	
 }
 
 
@@ -814,12 +829,18 @@ textarea{
 	border: 1px solid #bcbcbc;
 }
 
+textarea:focus{
+	outline:0px;
+	border: 1px solid #3f302f;
+}
+
 input[type="text"]:focus{
 	border: 1px solid #3f302f;
 	padding: 10px;
 	background-color: #fff;
 	color:#000;
 	content: clear;
+	outline:0px;
 }
 
 input[type="submit"]{
@@ -838,8 +859,7 @@ input[type="submit"]{
     transition: all 0.5s ease;
 }
 
-form{
-	margin-top: 50px;
+form{	
 	text-align: left;
 }
 
@@ -849,7 +869,7 @@ form p{
 }
 
 label{
-	font-size: 16px;
+	font-size: 20px;
 }
 
 .content_form{
@@ -860,28 +880,32 @@ label{
     padding: 5%;
 }
 
-.content_form p{
+.textDetail{
 	margin-top: -25px;
 }
 
 .form_steps {
-	margin-right: 20px;
-	font-size: 20px;
+	margin: 0 auto;
+	font-size: 18px;
 	color: #000;
+	font-weight: 600;
+	border-bottom: solid 2px #000;
 	padding-bottom: 15px;
 	padding-right: 3px;
-	margin-bottom: 15px;
-	border-bottom: solid 1px #000;
+	margin-bottom: 15px;	
 	font-family: 'overpass';
+	display: inherit;
+    text-align: center;
+    margin-bottom: 3rem;
+    width: 100px;
 	-webkit-transition: all 0.5s ease;
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
-.form_steps_selected{
-	font-weight: 800;
-	border-bottom: solid 2px #000;
+.form_steps_ocult{
+	display: none;
 }
 
 .content_btn_form{
@@ -923,7 +947,7 @@ label{
 footer{
 	background-color: #49494A;
 	height: 200px;
-	text-align: center;
+	text-align: right;
 }
 
 .logoFooter{
