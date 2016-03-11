@@ -466,6 +466,8 @@ header.fixed{
 	background-color: #D8D8D8;
 }
 
+/*steps*/
+
 .steps{
 	padding: 10px;
 	text-align: center;
@@ -477,46 +479,60 @@ header.fixed{
 	-webkit-border-radius: 0px 0px 9px 9px;
 }
 
-.setps_fixed{
-	position: fixed;
-	top: 92px;
-    margin: 0 auto;
-    z-index: 2;
-    border: 1px solid #fff;
+.stepNumber-item{
+	position: relative;
+	padding: 0px;
+	width: 8.5em;
+
 }
 
-.section_step{
+.stepsNumbers-list{
+	counter-reset: section;
+}
+
+.stepNumber-link{
+	text-decoration: none;
+	display: block;	
+}
+
+.stepNumber-link:hover::before{
+	background-color: red;
+}
+
+
+.stepNumber-link::before{	
+	content: counter(section) "1";
+	display: block;	
+	text-align: center;
+	border: 1px solid #000;
+	border-radius: 1.5rem;
+	width: 3rem;
+	height: 3rem;
+	line-height: 3rem;
+	font-size: 1.5rem;
 	margin:0 auto;
-	width: 100%;
-	max-width: 800px;
-    box-sizing: border-box;
-    text-align: center;
-    overflow: hidden;
-    vertical-align: middle;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
 }
 
-.stepsNumbers{
-	width: 50px;
-	height: 50px;
-	margin: 0 auto;
-	border-radius: 400px 400px 400px 400px;
-	-moz-border-radius: 400px 400px 400px 400px;
-	-webkit-border-radius: 400px 400px 400px 400px;
-	border: 1px solid #000000;
-	margin-bottom: 5px;
+.stepNumber-item::after{	
+	content:'';
+	border-top: 1px dashed;
+	display: block;	
+	height: 0;
+	width: 5rem;
+	position: absolute;
+	top:1.5rem;
+	left:6rem;
 }
 
-.stepsNumbers_selected{
-	background-color: #2f0553;
-	color:#fff;
+.stepNumber-item:last-child::after{
+	display: none;
 }
 
-.stepsNumbers p{
-	font-size: 24px;
-	font-weight: 800;
-	line-height: 50px;
-	margin: 0 auto;
-}
+
+/*steps*/
+
 .info_steps{
 	width: 33.333%;
 	padding: 20px;
