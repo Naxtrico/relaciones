@@ -12,90 +12,90 @@
 <body>    
     <div class="back_full_screen_contacto">        
         <!-- POP UP LOGIN -->
-            <div class="popup" data-popup="popup-1">
-                <div class="popup-inner">
-                    <h2>HOLA!</h2>
-                    <p>Login correcto, puedes consultar el estado de tus pedidos!</p>
-                    <p><a data-popup-close="popup-1" href="#">Close</a></p>
-                    <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
-                </div>
-            </div>
-         <!-- POP UP -->
+   <div class="popup" data-popup="popup-1">
+    <div class="popup-inner">
+      <h2>HOLA!</h2>
+      <p>Login correcto, puedes consultar el estado de tus pedidos!</p>
+      <p><a data-popup-close="popup-1" href="#">Close</a></p>
+      <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+    </div>
+  </div>
+  <!-- POP UP -->
 
-          <!-- POP UP REGISTRO -->
-            <div class="popup" data-popup="popup-2">
-                <div class="popup-inner">
-                    <h2>REGISTRO COMPLETADO!</h2>
-                    <p>Login correcto, puedes consultar el estado de tus pedidos!</p>
-                    <p><a data-popup-close="popup-2" href="#">Close</a></p>
-                    <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
-                </div>
-            </div>
-         <!-- POP UP -->
-        <header>            
-                <img src="img/logo.svg" class="logo" id="logo">            
-            <nav class="nav_principal" id="nav_principal">
-                <ul>
-                    <li><a href="#">que hacemos</a></li>
-                    <li><a href="#">prueba de fidelidad</a></li>
-                    <li><a href="#">dejar</a></li>
-                    <li><a href="#">paquete negro</a></li>
-                    <li><a href="#">tienda</a></li>
-                    <li><a href="#">red impares</a></li>
-                </ul>                 
-           </nav>
-           <div class="icons">
-                   <a href="#" id="registry_icon"><img src="img/perfil.svg"></a>
-                  <a href="#"><img src="img/carrito.svg"></a>                  
-                  <a href="#" id="nav-toggle" class="nav-toggle"><span></span></a>                  
-                </div>
-           <div id="loginContainer" class="loginContainer">
-               <div class="login" id="login">
-                    <h3>IDENTIFÍCATE</h3>
-                        <form id="login_form">
-                            <label>Usuario</label>
-                            <input type="text" id="usuario" required>
-                             <label>Contraseña</label>
-                            <input type="text" id="contraseña" required>
-                             <div class="content_btn_form">
-                                <p>¿Has olvidado tu contraseña?</p>
-                             <input type="submit" id="identificar" data-popup-open="popup-1" value="IDENTIFICAR">                             
-                            </div>
-                       </form>
-                       <div class="register_now">
-                        <p>Si aún no eres usuario, registrate aquí</p>
-                            <a href="#" class="button-principal btn_reg_now" id="registrate">REGÍSTRATE</a>
-                       </div>
-                </div>
-                <div class="registration" id="registration">
-                    <h3>REGÍSTRATE</h3>
-                    <p>Todos los campos son obligatorios a rellenar</p>
-                        <form id="registration_form">
-                            <label>Nombre*</label>
-                            <input type="text" id="nombre" required>
-                             <label>Email*</label>
-                            <input type="text" id="email" required>
-                            <label>Usuario (no tene que ser tu nombre)</label>
-                            <input type="text" id="usuario" required>
-                            <label>Contraseña (mín. 6 carácteres)</label>
-                            <input type="text" id="pass" required>
-                            <label>Repetir contraseña</label>
-                            <input type="text" id="repass" required>
-                            <p>*Tu nombre y email no se mostrarán públicamente</p>
-                            <input type="checkbox" name="vehicle" value="Bike"> Acepto la política de privacidad<br>
-                            <input type="checkbox" name="vehicle" value="Car" checked="checked"> Quiero recibir la newsletter<br>
-                             <div class="content_btn_form">
-                                 <p>Volver a <a class="back-to-login" href="">"Identificate"</a></p>
-                             <input type="submit" id="registrar" data-popup-open="popup-2" value="REGISTRAR">
-                            </div>
-                       </form>
-                </div>
+  <!-- POP UP REGISTRO -->
+  <div class="popup" data-popup="popup-2">
+    <div class="popup-inner">
+      <h2>REGISTRO COMPLETADO!</h2>
+      <p>Login correcto, puedes consultar el estado de tus pedidos!</p>
+      <p><a data-popup-close="popup-2" href="#">Close</a></p>
+      <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+    </div>
+  </div>
+  <!-- POP UP -->
+  <header>            
+    <img src="img/logo.svg" class="logo" id="logo">            
+    <nav class="nav_principal" id="nav_principal">
+      <ul>
+       <!-- <li><a href="#">que hacemos</a></li>-->
+        <li><a href="#">prueba de fidelidad</a></li>
+       <!-- <li><a href="#">dejar</a></li>
+        <li><a href="#">paquete negro</a></li>
+        <li><a href="#">tienda</a></li>
+        <li><a href="#">red impares</a></li>-->
+      </ul>                 
+    </nav>
+    <div class="icons">
+     <a href="#" id="registry_icon"><img src="img/perfil.svg"></a>
+     <!--<a href="#"><img src="img/carrito.svg"></a>-->                  
+     <a href="#" id="nav-toggle" class="nav-toggle"><span></span></a>                  
+   </div>
+   <div id="Container_login" class="Container_login">
+     <div class="login" id="login">
+      <h3>IDENTIFÍCATE</h3>
+      <form id="login_form">
+        <label>Usuario</label>
+        <input type="text" id="usuario" required>
+        <label>Contraseña</label>
+        <input type="text" id="contraseña" required>
+        <div class="content_btn_form">
+          <p>¿Has olvidado tu contraseña?</p>
+          <input type="submit" id="identificar" data-popup-open="popup-1" value="IDENTIFICAR">                             
+        </div>
+      </form>
+      <div class="register_now">
+        <p>Si aún no eres usuario, registrate aquí</p>
+        <a href="#" class="button_principal btn_reg_now" id="registrate">REGÍSTRATE</a>
+      </div>
+    </div>
+    <div class="registration" id="registration">
+      <h3>REGÍSTRATE</h3>
+      <p>Todos los campos son obligatorios a rellenar</p>
+      <form id="registration_form">
+        <label>Nombre*</label>
+        <input type="text" id="nombre" required>
+        <label>Email*</label>
+        <input type="text" id="email" required>
+        <label>Usuario (no tene que ser tu nombre)</label>
+        <input type="text" id="usuario" required>
+        <label>Contraseña (mín. 6 carácteres)</label>
+        <input type="text" id="pass" required>
+        <label>Repetir contraseña</label>
+        <input type="text" id="repass" required>
+        <p>*Tu nombre y email no se mostrarán públicamente</p>
+        <input type="checkbox" name="vehicle" value="Bike"> Acepto la política de privacidad<br>
+        <input type="checkbox" name="vehicle" value="Car" checked="checked"> Quiero recibir la newsletter<br>
+        <div class="content_btn_form">
+         <p>Volver a <a class="back-to-login" href="">"Identificate"</a></p>
+         <input type="submit" id="registrar" data-popup-open="popup-2" value="REGISTRAR">
+       </div>
+     </form>
+   </div>
             </div>
        </header>
         <div class="containerred">
         <section class="contentCopycontacto">
         <div class="contentCopyTopcontacto"><img src="img/sobrecontacto.svg"></div>  
-           <div class="copyServices">
+           <div class="services_copy">
                <h1>¿Te podemos ayudar?</h1>               
                <p>Si necesitas contactarnos por alguna duda que no te</p>
                <p>ha quedado clara o simplemente quieres hacernos</p>
@@ -165,29 +165,29 @@ jQuery(window).scroll(function () {
 
 <script type="text/javascript">
 $("#registry_icon").click(function () {
-    console.log($("#loginContainer").css("display"));
-    if($("#loginContainer").css("display") == "block" ){
-        $("#loginContainer").hide();
-    }else{
-        $('#registration').hide();
-        $("#loginContainer #login").show();
-        $("#loginContainer").show();
-    }
+  console.log($("#Container_login").css("display"));
+  if($("#Container_login").css("display") == "block" ){
+    $("#Container_login").hide();
+  }else{
+    $('#registration').hide();
+    $("#Container_login #login").show();
+    $("#Container_login").show();
+  }
 });
- </script>
+</script>
 <script type="text/javascript">
- $(document).ready(function () {
-   $("#registrate").click(function () {
-       $("#loginContainer #login").hide();
-       $('#registration').show();
-     });
-   });
-   $("#registration a.back-to-login").click(function(){
-       $("#loginContainer #login").show();
-       $('#registration').hide();
-       return false;
-   });
-  </script>
+$(document).ready(function () {
+ $("#registrate").click(function () {
+   $("#Container_login #login").hide();
+   $('#registration').show();
+ });
+});
+$("#registration a.back-to-login").click(function(){
+ $("#Container_login #login").show();
+ $('#registration').hide();
+ return false;
+});
+</script>
 
 <!-- menu hamburguer-->
   <script type="text/javascript">

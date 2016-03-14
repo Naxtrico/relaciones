@@ -26,10 +26,6 @@ h2 {
 	text-transform: uppercase;
 }
 
-.titlecard{
-	color:#fff;
-
-}
 
 h3 {
 	font-family: 'Oswald', sans-serif;
@@ -81,7 +77,7 @@ hr{
 	border:1px solid #fff;
 }
 
-.hrcolor{
+.hr_color{
 	margin-bottom: 15px;
 	border:1px solid #2C0C52;
 }
@@ -157,7 +153,7 @@ header.fixed{
 }
 
 
-.button-principal{
+.button_principal{
 	padding: 10px 30px;
 	font-size: 15px;
 	font-weight: bold;
@@ -192,11 +188,11 @@ header.fixed{
 	margin-right: 10px;
 }
 
-.loginContainer{
+.Container_login{
 	display: none
 }
 
-.loginContainer::after{
+.Container_login::after{
 	    content: "";
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
@@ -424,17 +420,17 @@ header.fixed{
 	width: 70%;
 }
 
-.copyServices{
+.services_copy{
 	width: 100%;
 	text-align: center;
 }
 
-.copyServices h1{
+.services_copy h1{
 	margin-top: 7px;
 	margin-bottom: 7px;
 }
 
-.copyServices p {
+.services_copy p {
 	color: #fff;
 	font-size: 15px;
 	margin:0;
@@ -628,6 +624,10 @@ header.fixed{
 .card_price_colorDiferent{
 	background-color:#CBAFF5;
 	color: #311751;
+}
+
+.card_title{
+	color:#fff;
 }
 
 .card_price p {
@@ -1205,7 +1205,7 @@ footer{
 		line-height: 21px;	
 	}
 
-	.copyServices p {    
+	.services_copy p {    
    		font-size: 14px;
 	}
 	

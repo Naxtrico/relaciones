@@ -52,7 +52,7 @@
      <!--<a href="#"><img src="img/carrito.svg"></a>-->                  
      <a href="#" id="nav-toggle" class="nav-toggle"><span></span></a>                  
    </div>
-   <div id="loginContainer" class="loginContainer">
+   <div id="Container_login" class="Container_login">
      <div class="login" id="login">
       <h3>IDENTIFÍCATE</h3>
       <form id="login_form">
@@ -67,7 +67,7 @@
       </form>
       <div class="register_now">
         <p>Si aún no eres usuario, registrate aquí</p>
-        <a href="#" class="button-principal btn_reg_now" id="registrate">REGÍSTRATE</a>
+        <a href="#" class="button_principal btn_reg_now" id="registrate">REGÍSTRATE</a>
       </div>
     </div>
     <div class="registration" id="registration">
@@ -98,14 +98,14 @@
 </header>
 <section class="contentCopy">
   <div class="contentCopyTop"><img src="img/eye.png"></div>
-  <div class="copyServices">
+  <div class="services_copy">
    <h1>prueba de fidelidad</h1>
    <p>Un 35% de hombres y un 26% de mujeres reconocen</p>
    <p>haber sido infieles a su pareja alguna vez.</p>
    <p>Con nuestro servicio puedes averiguar si tu pareja te</p>
    <p>está poniendo los cuernos o no.</p>
  </div>
- <div class="contentCopyBottom"><a href="#info" class="button-principal">descúbrelo</a></div>
+ <div class="contentCopyBottom"><a href="#info" class="button_principal">descúbrelo</a></div>
 </section>
 </div>
 <section id="info">   
@@ -192,7 +192,7 @@
         <p> 50€</p>
       </div>
       <div class="card_description">
-        <h2 class="titlecard">MASAJE <br>CALIENTE</h2>
+        <h2 class="card_title">MASAJE <br>CALIENTE</h2>
         <hr>
         <p> Servicio a domicilio. El actor se hará pasar por un masajista profesional que no ofrecerá solo un masaje relajante a tu pareja sino que intentará ir más allá.</p>
         <p> Como reaccionarà tu pareja?</p>
@@ -210,7 +210,7 @@
       </div>
       <div class="card_description card_description_colorDiferent">
         <h2>¿TE INVITO A <br>UNA COPA?</h2>
-        <hr class="hrcolor">
+        <hr class="hr_color">
         <p>Bar, pub o cafetería al que suela ir tu pareja a menudo.</p>
         <p>Nuestro actor le invitara a una copa e intentara compartir con ella algo más que un trago…</p>
         <p>Tu pareja lo permitirà?</p>
@@ -226,7 +226,7 @@
         <p>100€</p>
       </div>
       <div class="card_description">
-        <h2 class="titlecard">¿CORREMOS <br>JUNTOS?</h2>
+        <h2 class="card_title">¿CORREMOS <br>JUNTOS?</h2>
         <hr>
         <p>¿Tu pareja es deportista?</p>
         <p> Indícanos un lugar al que suela ir a practicar deporte y nuestro actor le propondrá correr juntos y compartir experiencias…</p>
@@ -244,7 +244,7 @@
       </div>
       <div class="card_description card_description_colorDiferent">
         <h2>ENCUENTRO EN <br>LA BIBLIOTECA</h2>
-        <hr class="hrcolor">
+        <hr class="hr_color">
         <p> Se está preparando para un exámen y últimamente acude mucho a la biblioteca.</p>
         <p> Nuestro actor se haría pasar por estudiante e intentaría seducirl@ a través de miraditas y acercamientos.</p>
         <p> ¿Tu pareja le seguirá el juego?</p>
@@ -260,7 +260,7 @@
         <p>80€</p>
       </div>
       <div class="card_description">
-        <h2 class="titlecard">ARRÉGLAME EL <br>APARATO</h2>
+        <h2 class="card_title">ARRÉGLAME EL <br>APARATO</h2>
         <hr>
         <p> ¿Se te ha “estropeado” algo en casa y necesitas un profesional para que te lo repare? </p>
         <p> Dinos que le gustaría que fuera nuestro actor (fontanero, carpintero, electricista...etc) para interpretar el papel e intentar conquistar a tu pareja con sus habilidades técnicas.</p>
@@ -277,7 +277,7 @@
       </div>
       <div class="card_description card_description_colorDiferent">
         <h2>¡HE INFRINGIDO <br>LA LEY!</h2>
-        <hr class="hrcolor">
+        <hr class="hr_color">
         <p>Un “policía” se presentará en tu casa para interrogar a tu pareja por unos supuestos casos de robos en el barrio.</p>
         <p>Éste intentará ligar con tu pareja en medio del interrogatorio.</p>
         <p>¿Se resistirá ante la ley?</p>
@@ -574,7 +574,7 @@
   </div>
   <div style="clear:both;"></div>
   <div class="pay">
-    <a href="pasarela.html" class="button-principal btn_pagar">PAGAR </a>
+    <a href="pasarela.html" class="button_principal btn_pagar">PAGAR </a>
   </div>
 
 </section>
@@ -725,25 +725,25 @@ $(document).ready(function(){
 
 <script type="text/javascript">
 $("#registry_icon").click(function () {
-  console.log($("#loginContainer").css("display"));
-  if($("#loginContainer").css("display") == "block" ){
-    $("#loginContainer").hide();
+  console.log($("#Container_login").css("display"));
+  if($("#Container_login").css("display") == "block" ){
+    $("#Container_login").hide();
   }else{
     $('#registration').hide();
-    $("#loginContainer #login").show();
-    $("#loginContainer").show();
+    $("#Container_login #login").show();
+    $("#Container_login").show();
   }
 });
 </script>
 <script type="text/javascript">
 $(document).ready(function () {
  $("#registrate").click(function () {
-   $("#loginContainer #login").hide();
+   $("#Container_login #login").hide();
    $('#registration').show();
  });
 });
 $("#registration a.back-to-login").click(function(){
- $("#loginContainer #login").show();
+ $("#Container_login #login").show();
  $('#registration').hide();
  return false;
 });
