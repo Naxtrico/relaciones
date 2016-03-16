@@ -495,11 +495,6 @@ header.fixed{
 	color: #fff;
 }
 
-.stepNumber-item-selected{
-	background-color: #2C0C52;
-	color: #fff;
-}
-
 
 .stepNumber-link::before{
 	counter-increment: section;	
@@ -516,6 +511,11 @@ header.fixed{
 	font-weight: bold;
 	margin-bottom: 0.09rem;
 	color: #000;
+}
+
+.stepNumber-link.stepNumber-item-selected::before{
+	background-color: #2C0C52;
+	color: #fff;
 }
 
 .stepNumber-item::after{	
@@ -993,6 +993,13 @@ footer{
 
 /*icon hamburguer*/
 
+.content-nav-toggle{
+	display: none;
+	height: 20px;   
+    margin-right: 30px;    
+    width: 10px;    
+}
+
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
   cursor: pointer;
   border-radius: 1px;
@@ -1037,6 +1044,10 @@ footer{
 
 	#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
   		display: inherit;
+	}
+
+	.content-nav-toggle{	
+    	display: inline-block;   
 	}
 
 	.nav_principal{
@@ -1116,21 +1127,23 @@ footer{
 	width: 70%;   
 	}
 
-.email_sent,.payment{
-	width: auto;
-	text-align: center;
-	float:none;
-	margin-top: 50px;
-	padding: 0px 50px;
-	box-sizing:border-box;	
-}
-
-.email_sent{
-	border-right: 0;
-}
-.sectionsPF{
-		padding: 1em;
+	.email_sent,.payment{
+		width: auto;
+		text-align: center;
+		float:none;
+		margin-top: 50px;
+		padding: 0px 50px;
+		box-sizing:border-box;	
 	}
+
+	.email_sent{
+		border-right: 0;
+	}
+	
+	.sectionsPF{
+			padding-right: 1em;
+			padding-left: 1em;
+		}
 
 }
 /*-----------------------------------------------------------------------------------------------------------634*/
@@ -1191,7 +1204,8 @@ footer{
 	}
 
 	.sectionsPF{
-		padding: 1em;
+		padding-right: 1em;
+		padding-left: 1em;
 	}
 
 	.card{		

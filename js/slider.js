@@ -75,6 +75,98 @@ var Slider = function(target, options) {
     return this;
 }
 
+$(document).ready(function() {
+    var womenSliderStarted = false;
+    var width = $(window).width();
+    $("#mujeres").click(function () {
+        $("#men_slider").hide();
+        $("#women_slider").show();
+        if( !womenSliderStarted ) {
+            if (width >= 1023) {
+                new Slider(
+                    "#women_slider",
+                    {
+                        visibleImages: 3,
+                        imageMargin: 160
+                    }
+                );
+            } else {
+                new Slider(
+                    "#women_slider",
+                    {
+                        visibleImages: 2,
+                        imageMargin: 80
+                    }
+                );
+            }
+            womenSliderStarted = true;
+        }
+    });
+});
+
+
+    $("#hombres").click(function () {
+        $("#women_slider").hide();
+        $("#men_slider").show();
+    });
+
+    $(document).ready(function() {
+        var width = $(window).width();        
+    if (width >= 1023) {
+                new Slider(
+                    "#men_slider",
+                    {
+                        visibleImages: 3,
+                        imageMargin: 160
+                    }
+                );
+            } else {
+                new Slider(
+                    "#men_slider",
+                    {
+                        visibleImages: 2,
+                        imageMargin: 80,                        
+                    }
+                );
+            }
+
+});
+
+   /* $(document).ready(function() {
+        var width = $(window).width();        
+    if (width <= 500) {
+                new Slider(
+                    "#men_slider",
+                    {
+                        visibleImages: 1,
+                        imageMargin: 50, 
+                        
+                    }
+                );
+            }else if (width <= 1023){
+                new Slider(
+                    "#men_slider",
+                    {
+                        visibleImages: 2,
+                        imageMargin: 80, 
+                    }
+                );
+
+            }else {
+                new Slider(
+                    "#men_slider",
+                    {   
+                        isibleImages: 3,
+                        imageMargin: 160
+                                               
+                    }
+                );
+            }
+
+});*/
+
+/*ORIGINAL
+
 $(document).ready(function(){
     var womenSliderStarted = false;
     $("#mujeres").click(function () {
@@ -102,3 +194,9 @@ $(document).ready(function(){
         }
     );
 });
+
+
+
+
+
+*/
