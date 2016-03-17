@@ -11,7 +11,7 @@ var Slider = function(target, options) {
     var images = _slider.find("ul li img").length;
     var sliderWidth = imageWidth * images + ((images-1)*imageMargin);
 
-    _slider.find("ul li:first").addClass("first");
+    //_slider.find("ul li:first").addClass("first");
     _slider.find("ul li[class!='first']").css("margin-left", String(imageMargin)+"px");
     _slider.find("ul li img").css("width", String(imageWidth)+"px");
 
@@ -105,34 +105,7 @@ $(document).ready(function() {
 });
 
 
-    $("#hombres").click(function () {
-        $("#women_slider").hide();
-        $("#men_slider").show();
-    });
-
-    $(document).ready(function() {
-        var width = $(window).width();        
-    if (width >= 1023) {
-                new Slider(
-                    "#men_slider",
-                    {
-                        visibleImages: 3,
-                        imageMargin: 160
-                    }
-                );
-            } else {
-                new Slider(
-                    "#men_slider",
-                    {
-                        visibleImages: 2,
-                        imageMargin: 80,                        
-                    }
-                );
-            }
-
-});
-
-   /* $(document).ready(function() {
+ $(document).ready(function() {
         var width = $(window).width();        
     if (width <= 500) {
                 new Slider(
@@ -156,14 +129,15 @@ $(document).ready(function() {
                 new Slider(
                     "#men_slider",
                     {   
-                        isibleImages: 3,
+                        visibleImages: 3,
                         imageMargin: 160
                                                
                     }
                 );
             }
 
-});*/
+});
+
 
 /*ORIGINAL
 
