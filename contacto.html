@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMPARES</title>
+    <title>IMPARES - contacto</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
@@ -109,15 +109,15 @@
           </div>-->
         </section>
         <section class="contact_form">
-          <form>
+          <form action="contacto-enviado.html" method ="get">
             <label>Nombre</label>
-            <input type="text" id="nombre" required>
+            <input type="text" id="nombre_contact" name="Nombre_contact" required>
             <label>Email</label>
-            <input type="text" id="email" title="Indica un Email válido" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" value="*email" required>
+            <input type="text" title="Indica un Email válido" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" value="*email" required>
             <label>¿Cuando quieres que te llamemos?*</label>
-            <input type="text" id="hora"  required>
+            <textarea rows="4" cols="50"></textarea>
             <div class="content_btn_form">
-              <input type="submit" id="cont_pers" value="SIGUIENTE">
+              <input type="submit" class="contacto_button" id="cont_pers" value="CONTÁCTANOS">
             </div>
           </form>
         </section>

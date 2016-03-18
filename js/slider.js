@@ -11,7 +11,7 @@ var Slider = function(target, options) {
     var images = _slider.find("ul li img").length;
     var sliderWidth = imageWidth * images + ((images-1)*imageMargin);
 
-    //_slider.find("ul li:first").addClass("first");
+    _slider.find("ul li:first").addClass("first");
     _slider.find("ul li[class!='first']").css("margin-left", String(imageMargin)+"px");
     _slider.find("ul li img").css("width", String(imageWidth)+"px");
 

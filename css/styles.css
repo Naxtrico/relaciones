@@ -112,8 +112,7 @@ nav {
 	margin-left: 20px;
 }
 
-.back_full_screen_contacto{
-	
+.back_full_screen_contacto{	
     background-repeat: no-repeat;
 	background-size: cover;
 	background-image:url(../img/pruebafotocontacto.jpg);
@@ -426,9 +425,27 @@ header.fixed{
 }
 
 .contact_form{
+	max-width: 600px;	
+	margin: 0 auto;
+	color:#fff;
+	padding: 0 1em 3em;
+}
+
+.sent_form{
+	text-align: center;
 	max-width: 1024px;	
-	padding-right: 200px;
-	padding-left: 200px;
+	margin: 0 auto;
+	color:#fff;
+	padding-bottom: 50px;
+}
+
+.contact_form input[type="submit"]{	
+	color:#000;	
+	background-color: #fff;	
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .services_copy{
@@ -882,7 +899,7 @@ form p{
 }
 
 label{
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .content_form{
@@ -899,13 +916,12 @@ label{
 
 .form_steps {
 	margin: 0 auto;
-	font-size: 18px;
+	font-size: 16px;
 	color: #000;
 	font-weight: 600;
 	border-bottom: solid 2px #000;
-	padding-bottom: 15px;
-	padding-right: 3px;
-	margin-bottom: 15px;	
+	padding-bottom: 5px;
+	padding-right: 3px;		
 	font-family: 'overpass';
 	display: inherit;
     text-align: center;
