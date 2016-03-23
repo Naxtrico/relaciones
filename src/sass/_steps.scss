@@ -1,0 +1,75 @@
+.stepNumber-item{
+	position: relative;
+	padding: 0px;
+	width: 8.5em;
+}
+
+.stepsNumbers-list{	
+	text-transform: none;	
+	background-color: #5B5B5F;
+	padding: 10px;
+	text-align: center;
+	margin: 0 auto;	
+}
+
+.stepNumber-link{
+	text-decoration: none;
+	display: block;
+	font-size: 0.8rem;
+	color:#fff;
+}
+
+
+
+.steps_fixed{
+	position: fixed;
+	top:95px;
+	margin: 0 auto;
+	z-index: 2;	
+	left: 0;
+    right: 0;
+}
+
+.stepNumber-item-selected{
+	border-bottom: 2px solid #fff;	
+}
+
+.info_steps{
+	width: 25%;
+	padding: 20px;
+	float:left;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+.info_steps h3{
+    font-size: 18px;
+}
+
+
+.content_button_steps{
+	clear: both;
+	margin-top: 50px;
+	padding-top: 50px;
+}
+
+@media screen and (max-width: 800px) {
+
+	.info_steps{
+		margin: 0 auto;
+		width: 50%;
+		float:none;
+	}
+}
+
+@media screen and (max-width: 540px) {
+
+	.steps{
+		width: auto;
+	}
+
+	.info_steps{		
+		width: 80%;
+		float:none;
+	}
+	
+}

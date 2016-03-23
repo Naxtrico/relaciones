@@ -1,0 +1,29 @@
+{
+  "name": "relaciones",
+  "version": "1.0.0",
+  "description": "project BAU",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "imagemin-pngquant": "^4.2.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-sass": "^2.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Naxtrico/relaciones.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Naxtrico/relaciones/issues"
+  },
+  "homepage": "https://github.com/Naxtrico/relaciones#readme"
+}

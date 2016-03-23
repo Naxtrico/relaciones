@@ -1,0 +1,66 @@
+.Container_login{
+	display: none
+}
+
+.Container_login::after{
+	    content: "";
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #E3E1E1;
+    bottom: -6px;    
+    right: 70px;
+    position: absolute;    
+  }
+
+.login{
+	position: absolute;
+	width: 344px;
+	height: 430px;
+	right: 40px;
+	padding: 20px;
+	margin-top: 100px;
+	color: #000;
+	background-color: #E3E1E1;
+	box-sizing: border-box;
+}
+
+.login form , .registration form{
+	margin-top: 5px;
+}
+
+.login p ,  .registration p{
+	font-size: 14px;
+}
+
+.login label ,  .registration label{
+	font-size: 14px;
+}
+
+#login_form input[type="text"] , #registration input[type="text"] {
+	width: 100%;
+	box-sizing:border-box;
+	margin: 0;	
+}
+
+#login_form input[type="submit"] , #registration input[type="submit"]{
+	background-color: #AF2131;
+}
+
+#login h3 , #registration h3 {
+	font-size: 18;
+	margin: 0;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+#login_form{
+	margin-top: 0;
+}
+
+@media screen and (max-width: 540px) {
+
+	.login{
+		width: 88%;
+		right: 20px;
+	}
+}

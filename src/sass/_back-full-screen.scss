@@ -1,0 +1,18 @@
+.back_full_screen_contacto{	
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-image:url(../../dist/img/pruebafotocontacto.jpg);
+	width:100%;
+	min-height:300px;
+}
+
+.back_full_screen{
+	overflow: hidden;
+	background-position: center center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-image:url(../../dist/img/background_PF.jpg);
+	width:100%;
+	height:100%;
+	min-height:550px;
+}

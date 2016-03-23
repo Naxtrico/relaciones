@@ -1,0 +1,14 @@
+.logo{
+	float:left;	
+    line-height: 40px;    
+    padding-top: 10px;
+    margin-left: 20px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 540px) {
+
+	.logo{
+		margin-left: 5px;
+	}
+}

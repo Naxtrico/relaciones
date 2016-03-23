@@ -1,0 +1,43 @@
+.sectionsPF{
+	margin:0 auto;
+	width: 100%;
+	max-width: 1024px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+    vertical-align: middle;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+
+.sectionsPF h2{
+	font-size: 24px;
+}
+
+.content_color{
+	width: 100%;
+	background-color: #D8D8D8;
+}
+
+@media screen and (max-width: 1024px) {	
+
+	.sectionsPF{
+			padding-right: 1em;
+			padding-left: 1em;
+		}
+
+}
+
+@media screen and (max-width: 540px) {
+
+	.sectionsPF{
+		padding-right: 1em;
+		padding-left: 1em;
+	}
+
+	.sectionsPF h2 {	
+	font-size: 20px;	
+	}
+	
+}

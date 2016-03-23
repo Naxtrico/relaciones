@@ -1,0 +1,75 @@
+.contentCopy{
+   	width: 500px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.contentCopyTop{
+	margin: 0 auto;
+	border-top:4px solid #fff;
+	border-right:4px solid #fff;
+	border-left:4px solid #fff;
+	padding-top: 30px;
+	text-align: center;
+	margin-bottom: 40px;
+	width: 70%;
+}
+
+.contentCopyBottom{
+	margin: 0 auto;
+	border-bottom:4px solid #fff;
+	border-right:4px solid #fff;
+	border-left:4px solid #fff;
+	padding-bottom: 55px;
+	text-align: center;
+	margin-top: 40px;
+	width: 70%;
+}
+
+.services_copy{
+	width: 100%;
+	text-align: center;
+}
+
+.services_copy h1{
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+.services_copy p {
+	color: #fff;
+	font-size: 15px;
+	margin:0;
+
+}
+
+@media screen and (max-width: 540px) {
+
+	.services_copy p {    
+   		font-size: 14px;
+	}
+
+	.contentCopy, .contentCopycontacto {
+    width: 90%;
+	}
+
+	.contentCopyTop, .contentCopyTopcontacto {
+		width: 70%;
+	}
+
+	.contentCopyBottom, .contentCopyBottomcontacto {
+		width: 70%;
+	}
+
+	.contentCopyTopcontacto{ 
+	margin-bottom: 55px;
+	}
+
+	.contentCopyBottomcontacto{
+		margin-top: 55px;
+	}
+}

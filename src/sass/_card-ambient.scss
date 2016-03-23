@@ -1,0 +1,156 @@
+.card {
+	background-image: url(../../dist/img/masaje.jpg);
+	background-position: top center;
+    background-repeat: no-repeat;
+    height: 500px;    
+    width: 32%;
+    float: left;
+    color: #fff;
+    margin-top: 50px;    
+    margin-right: 2%;
+    overflow: hidden;
+    -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+
+.card:nth-of-type(3n){
+	margin-right: 0px;
+}
+
+.card_body {
+	position: relative;
+	top:50%;		
+	transition: all 0.5s ease;
+}
+
+.card_title{
+	color:#fff;
+}
+
+.card_price {	
+	font-size: 16px;
+	font-weight: 400;
+	border: 1px solid #381443;
+	padding: 2px 0px;
+	width: 60px;	
+	display: inline-block;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.card_body {
+	position: relative;
+	top:250px;
+	height: 100%;
+	transition: all 0.5s ease;
+}
+
+.card:hover .card_body{
+	top:100px;
+}
+
+.card_description{
+	background-color: #fff;
+	height: 100%;
+	padding:30px;
+	text-align: left;
+	color:#381443;
+	text-align: center;	
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.card_description h2{
+	margin-top: 0;	
+	text-transform: none;
+	color:#381443;	
+}
+
+.card_footer{
+	font-size: 20px;
+	position: relative;
+	left: 0;
+	right: 0;
+	bottom: 100px;
+    padding: 35px 0px 35px 0px;
+	background-color: #fff;
+	color:#000;
+}
+
+.card_btn{
+	padding: 2px 20px;
+	font-size: 16px;	
+	font-weight: 100;
+	cursor: pointer;
+	text-decoration: none;
+	color:#fff;
+	border: 1px solid #381443;
+	display: inline-block;
+	line-height: 25px;
+	background-color: #381443;
+	-webkit-border-top-right-radius: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-moz-border-radius-topright: 4px;
+	-moz-border-radius-bottomright: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+.card_btn:hover{
+	background-color: #CBAFF5;
+	color:#000;
+	border: 1px solid #CBAFF5;
+}
+
+
+.card_btn:active{
+	background-color: #991b2c;
+	color:#311752;
+}
+
+@media screen and (max-width: 1024px) {
+	.card{
+		width: 49%;
+	}
+
+	.card:nth-of-type(3n){
+		margin-right: 2%;
+	}
+
+	.card:nth-of-type(2n){
+		margin-right: 0px;
+	}
+
+}
+@media screen and (max-width: 540px) {
+	
+	.card{		
+	    width: 100%;
+	    float: none; 	   
+	}
+
+	.card:nth-of-type(3n){
+		margin-right: 0pc;
+	}
+
+	.card_description h2 {
+		font-size: 18px;
+	}
+
+}

@@ -1,1 +1,6 @@
+# Ignorar el contenido de las carpetas log y cache
+
+.sass-cache/
+node_modules/
+
 .DS_Store

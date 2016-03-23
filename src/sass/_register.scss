@@ -1,0 +1,36 @@
+.register_now{
+	position: absolute;
+    padding: 10px;
+    padding-top: 20px;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 110px;
+    box-sizing:border-box;
+}
+
+.registration{
+	position: absolute;
+	width: 344px;
+	height: auto;
+	right: 40px;
+	padding: 20px;
+	margin-top: 100px;
+	color: #000;
+	background-color: #E3E1E1;
+	box-sizing: border-box;
+    display: none;
+}
+
+.registration a.back-to-login {
+    color: #000;
+}
+
+@media screen and (max-width: 540px) {
+	
+	.registration{
+		width: 88%;
+		right: 20px;
+	}
+}
