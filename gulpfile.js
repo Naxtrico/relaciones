@@ -3,6 +3,7 @@ var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
+var ghPages = require('gulp-gh-pages');
 
 gulp.task('css', function(){
 	return gulp.src('src/sass/styles.scss')
@@ -24,6 +25,11 @@ gulp.task('image', () => {
 			use: [pngquant()]
 		}))
 		.pipe(gulp.dest('dist/img'));
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
 
 gulp.task('default', ['css'], function(){
