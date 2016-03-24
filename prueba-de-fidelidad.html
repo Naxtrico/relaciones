@@ -38,9 +38,9 @@
     <nav class="nav_principal" id="nav_principal">
       <ul>
        <!-- <li><a href="#">que hacemos</a></li>-->
-       <li><a href="#">prueba de fidelidad</a></li>
-       <!-- <li><a href="#">dejar</a></li>
-        <li><a href="#">paquete negro</a></li>
+       <li><a href="prueba-de-fidelidad.html">prueba de fidelidad</a></li>
+       <li><a href="dejar.html">dejar</a></li>
+       <!-- <li><a href="#">paquete negro</a></li>
         <li><a href="#">tienda</a></li>
         <li><a href="#">red impares</a></li>-->
       </ul>                 
@@ -60,7 +60,7 @@
         <input type="text" id="contraseña" required>
         <div class="content_btn_form">
           <p>¿Has olvidado tu contraseña?</p>
-          <input type="submit" id="identificar" data-popup-open="popup-1" value="IDENTIFICAR">                             
+          <input type="submit" id="identificar" data-popup-open="popup-1" class="button_login_reg" value="IDENTIFICAR">                             
         </div>
       </form>
       <div class="register_now">
@@ -87,7 +87,7 @@
         <input type="checkbox" name="vehicle" value="Car" checked="checked"> Quiero recibir la newsletter<br>
         <div class="content_btn_form">
          <p>Volver a <a class="back-to-login" href="">"Identificate"</a></p>
-         <input type="submit" id="registrar" data-popup-open="popup-2" value="REGISTRAR">
+         <input type="submit" id="registrar" data-popup-open="popup-2" class="button_login_reg" value="REGISTRAR">
        </div>
      </form>
    </div>
@@ -487,7 +487,7 @@
     <h2>Rellena el siguiente formulario</h2>
     <div class="content_form">
       <form id="personal_data">
-        <p id="tus_datos" class="form_steps">Tus datos</p>
+        <p id="tus_datos" class="form_steps form_steps_PF_color">Tus datos</p>
         <label>Nombre</label>
         <input type="text" id="nombre" required>
         <label>Email</label>
@@ -498,11 +498,11 @@
         <input type="text" id="hora"  required>
         <p class="textDetail">*Especifica el día y la franja horaria</p>
         <div class="content_btn_form">
-         <input type="submit" id="cont_pers" value="SIGUIENTE">
+         <input type="submit" id="cont_pers" class="form_button_PF" value="SIGUIENTE">
        </div>
      </form>
      <form id="couple" class="ocult">
-      <span id="tu_pareja" class="form_steps">Tu pareja</span>
+      <span id="tu_pareja" class="form_steps form_steps_PF_color">Tu pareja</span>
       <label>Nombre</label>
       <input type="text" id="nombre" required>      
       <label>Adjuntar foto</label>
@@ -510,11 +510,11 @@
       <label>¿Qué le gusta a tu pareja?</label>
       <textarea id="nombrePar"> </textarea>
       <div class="content_btn_form">
-        <input type="submit" id="btn_couple" value="SIGUIENTE">
+        <input type="submit" id="btn_couple" class="form_button_PF" value="SIGUIENTE">
       </div>
     </form>
     <form id="prueba" class="ocult" action="#5">
-      <span id="step_prueba" class="form_steps">Prueba</span>
+      <span id="step_prueba" class="form_steps form_steps_PF_color">Prueba</span>
       <label>Lugar de realización de la prueba (Ciudad)</label>
       <input type="text" id="ciudad" required>
       <label>Fecha*</label>
@@ -523,7 +523,7 @@
       <label>Adjuntar foto</label>
       <input type="file" name="adjunto">
       <div class="content_btn_form">
-       <input type="submit" id="btn_prueba" value="FINALIZAR">
+       <input type="submit" id="btn_prueba" class="form_button_PF" value="FINALIZAR">
      </div>        
    </form>
  </div>

@@ -1,9 +1,9 @@
-.card {
+.cardDejar {
 	background-image: url(../../dist/img/masaje.jpg);
 	background-position: top center;
     background-repeat: no-repeat;
-    height: 500px;    
-    width: 32%;
+    height: 600px;    
+    width: 23.5%;
     float: left;
     color: #fff;
     margin-top: 50px;    
@@ -16,24 +16,24 @@
     -webkit-box-sizing:border-box;
 }
 
-.card:nth-of-type(3n){
+.cardDejar:nth-of-type(4n){
 	margin-right: 0px;
 }
 
-.card_body {
+.cardDejar_body {
 	position: relative;
 	top:50%;		
 	transition: all 0.5s ease;
 }
 
-.card_title{
+.cardDejar_title{
 	color:#fff;
 }
 
-.card_price {	
+.cardDejar_price {	
 	font-size: 16px;
 	font-weight: 400;
-	border: 1px solid #381443;
+	border: 1px solid #99172F;
 	padding: 2px 0px;
 	width: 60px;	
 	display: inline-block;
@@ -45,18 +45,18 @@
 	border-bottom-left-radius: 4px;
 }
 
-.card_body {
+.cardDejar_body {
 	position: relative;
 	top:250px;
 	height: 100%;
 	transition: all 0.5s ease;
 }
 
-.card:hover .card_body{
-	top:100px;
+.cardDejar:hover .cardDejar_body{
+	top:160px;
 }
 
-.card_description{
+.cardDejar_description{
 	background-color: #fff;
 	height: 100%;
 	padding:30px;
@@ -71,34 +71,34 @@
 	border-bottom-left-radius: 10px;
 }
 
-.card_description h2{
+.cardDejar_description h2{
 	margin-top: 0;	
 	text-transform: none;
 	color:#381443;	
 }
 
-.card_footer{
+.cardDejar_footer{
 	font-size: 20px;
 	position: relative;
 	left: 0;
 	right: 0;
-	bottom: 100px;
+	bottom: 150px;
     padding: 35px 0px 35px 0px;
 	background-color: #fff;
-	color:#000;
+	color:#99172F;
 }
 
-.card_btn{
+.cardDejar_btn{
 	padding: 2px 20px;
 	font-size: 16px;	
 	font-weight: 100;
 	cursor: pointer;
 	text-decoration: none;
 	color:#fff;
-	border: 1px solid #381443;
+	border: 1px solid #99172F;
 	display: inline-block;
 	line-height: 25px;
-	background-color: #381443;
+	background-color: #99172F;
 	-webkit-border-top-right-radius: 4px;
 	-webkit-border-bottom-right-radius: 4px;
 	-moz-border-radius-topright: 4px;
@@ -111,45 +111,72 @@
     transition: all 0.5s ease;
 }
 
+.cardDejar_btn:hover{
+	background-color: #D32F53;
+	color:#fff;
+	border: 1px solid #D32F53;
+}
 
-.card_btn:hover{
-	background-color: #CBAFF5;
-	color:#000;
-	border: 1px solid #CBAFF5;
+.cardDejar_examples{
+	max-width: 150px;
+    margin: 0 auto;
+    display: block;
+	padding: 2px 20px;
+	font-size: 15px;	
+	font-weight: 400;
+	cursor: pointer;
+	text-decoration: none;
+	color:#99172F;
+	border: 1px solid #99172F;	
+	line-height: 25px;
+	margin-bottom: 20px;	
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+	border-radius: 4px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.cardDejar_examples:hover{
+	background-color: #D32F53;
+	color:#fff;
+	border: 1px solid #D32F53;
 }
 
 
-.card_btn:active{
+.cardDejar_btn:active{
 	background-color: #991b2c;
 	color:#311752;
 }
 
 @media screen and (max-width: 1024px) {
-	.card{
+	.cardDejar{
 		width: 49%;
 	}
 
-	.card:nth-of-type(3n){
+	.cardDejar:nth-of-type(3n){
 		margin-right: 2%;
 	}
 
-	.card:nth-of-type(2n){
+	.cardDejar:nth-of-type(2n){
 		margin-right: 0px;
 	}
 
 }
 @media screen and (max-width: 540px) {
 	
-	.card{		
+	.cardDejar{		
 	    width: 100%;
 	    float: none; 	   
 	}
 
-	.card:nth-of-type(3n){
+	.cardDejar:nth-of-type(3n){
 		margin-right: 0px;
 	}
 
-	.card_description h2 {
+	.cardDejar_description h2 {
 		font-size: 18px;
 	}
 

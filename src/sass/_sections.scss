@@ -1,4 +1,4 @@
-.sectionsPF{
+.sectionsPF, .sectionDejar{
 	margin:0 auto;
 	width: 100%;
 	max-width: 1024px;
@@ -15,6 +15,11 @@
 	font-size: 24px;
 }
 
+.sectionDejar h2{
+	font-size: 24px;
+	color:#99172F;
+}
+
 .content_color{
 	width: 100%;
 	background-color: #D8D8D8;
@@ -22,7 +27,7 @@
 
 @media screen and (max-width: 1024px) {	
 
-	.sectionsPF{
+	.sectionsPF, .sectionDejar{
 			padding-right: 1em;
 			padding-left: 1em;
 		}
@@ -31,12 +36,12 @@
 
 @media screen and (max-width: 540px) {
 
-	.sectionsPF{
+	.sectionsPF, .sectionDejar{
 		padding-right: 1em;
 		padding-left: 1em;
 	}
 
-	.sectionsPF h2 {	
+	.sectionsPF h2, .sectionDejar h2 {	
 	font-size: 20px;	
 	}
 	

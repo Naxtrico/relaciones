@@ -69,6 +69,10 @@
   color: #D5D7DA;
   background-color: #31353D; }
 
+.button_color_dejar {
+  color: #99172F;
+  background-color: #fff; }
+
 .contacto_button {
   padding: 10px 30px;
   font-size: 15px;
@@ -78,6 +82,16 @@
   text-decoration: none;
   color: #000;
   display: inline-block;
+  text-transform: uppercase;
+  box-sizing: border-box; }
+
+.button_login_reg {
+  padding: 10px 30px;
+  font-size: 15px;
+  background-color: #AF2131;
+  border: none;
+  display: inline-block;
+  color: #fff;
   text-transform: uppercase;
   box-sizing: border-box; }
 
@@ -103,7 +117,12 @@
 
 .btn_pagar {
   margin-top: 50px;
-  background-color: #67b244; }
+  background-color: #67b244;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.btn_pagar:hover {
+  background-color: #97e573; }
 
 .card {
   background-image: url(../../dist/img/masaje.jpg);
@@ -227,8 +246,156 @@
     width: 100%;
     float: none; }
   .card:nth-of-type(3n) {
-    margin-right: 0pc; }
+    margin-right: 0px; }
   .card_description h2 {
+    font-size: 18px; } }
+
+.cardDejar {
+  background-image: url(../../dist/img/masaje.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 23.5%;
+  float: left;
+  color: #fff;
+  margin-top: 50px;
+  margin-right: 2%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+.cardDejar:nth-of-type(4n) {
+  margin-right: 0px; }
+
+.cardDejar_body {
+  position: relative;
+  top: 50%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.cardDejar_title {
+  color: #fff; }
+
+.cardDejar_price {
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #99172F;
+  padding: 2px 0px;
+  width: 60px;
+  display: inline-block;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px; }
+
+.cardDejar_body {
+  position: relative;
+  top: 250px;
+  height: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.cardDejar:hover .cardDejar_body {
+  top: 160px; }
+
+.cardDejar_description {
+  background-color: #fff;
+  height: 100%;
+  padding: 30px;
+  text-align: left;
+  color: #381443;
+  text-align: center;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px; }
+
+.cardDejar_description h2 {
+  margin-top: 0;
+  text-transform: none;
+  color: #381443; }
+
+.cardDejar_footer {
+  font-size: 20px;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 150px;
+  padding: 35px 0px 35px 0px;
+  background-color: #fff;
+  color: #99172F; }
+
+.cardDejar_btn {
+  padding: 2px 20px;
+  font-size: 16px;
+  font-weight: 100;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #99172F;
+  display: inline-block;
+  line-height: 25px;
+  background-color: #99172F;
+  -webkit-border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.cardDejar_btn:hover {
+  background-color: #D32F53;
+  color: #fff;
+  border: 1px solid #D32F53; }
+
+.cardDejar_examples {
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+  padding: 2px 20px;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  text-decoration: none;
+  color: #99172F;
+  border: 1px solid #99172F;
+  line-height: 25px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.cardDejar_examples:hover {
+  background-color: #D32F53;
+  color: #fff;
+  border: 1px solid #D32F53; }
+
+.cardDejar_btn:active {
+  background-color: #991b2c;
+  color: #311752; }
+
+@media screen and (max-width: 1024px) {
+  .cardDejar {
+    width: 49%; }
+  .cardDejar:nth-of-type(3n) {
+    margin-right: 2%; }
+  .cardDejar:nth-of-type(2n) {
+    margin-right: 0px; } }
+
+@media screen and (max-width: 540px) {
+  .cardDejar {
+    width: 100%;
+    float: none; }
+  .cardDejar:nth-of-type(3n) {
+    margin-right: 0px; }
+  .cardDejar_description h2 {
     font-size: 18px; } }
 
 .containerred {
@@ -247,10 +414,10 @@
 
 .contentCopyTopcontacto {
   margin: 0 auto;
-  border-top: 4px solid #fff;
-  border-right: 4px solid #fff;
-  border-left: 4px solid #fff;
-  padding-top: 10px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  border-left: 3px solid #fff;
+  padding-top: 11px;
   text-align: center;
   width: 90%;
   background-color: #AF2131;
@@ -258,9 +425,9 @@
 
 .contentCopyBottomcontacto {
   margin: 0 auto;
-  border-bottom: 4px solid #fff;
-  border-right: 4px solid #fff;
-  border-left: 4px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+  border-left: 3px solid #fff;
   padding-bottom: 60px;
   text-align: center;
   margin-top: 40px;
@@ -401,7 +568,7 @@ input[type="text"]:focus {
   content: clear;
   outline: 0px; }
 
-input[type="submit"] {
+.form_button_PF {
   padding: 10px 30px;
   font-size: 16px;
   font-weight: bold;
@@ -411,8 +578,30 @@ input[type="submit"] {
   display: inline-block;
   background-color: #311752;
   border: none;
+  border-radius: 4px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
+
+.form_button_PF:hover {
+  background-color: #bba2cd;
+  color: #000; }
+
+.form_button_Dejar {
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  background-color: #99172F;
+  border: none;
+  border-radius: 4px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.form_button_Dejar:hover {
+  background-color: #D32F53; }
 
 form {
   text-align: left; }
@@ -428,14 +617,17 @@ label {
   width: auto;
   margin: 0 auto;
   width: 60%;
-  padding: 5%; }
+  padding: 5%;
+  margin-top: 50px;
+  border: 1px solid #C6C6C5;
+  border-radius: 10px; }
 
 .textDetail {
   margin-top: -25px; }
 
 .form_steps {
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 20px;
   color: #000;
   font-weight: 600;
   border-bottom: solid 2px #000;
@@ -444,9 +636,14 @@ label {
   display: inherit;
   text-align: center;
   margin-bottom: 3rem;
-  width: 80px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  width: 110px; }
+
+.form_steps_PF_color {
+  color: #000; }
+
+.form_steps_Dejar_color {
+  color: #99172F;
+  border-bottom: solid 2px #99172F; }
 
 .form_steps_ocult {
   display: none; }
@@ -597,9 +794,6 @@ header.fixed {
   width: 100%;
   box-sizing: border-box;
   margin: 0; }
-
-#login_form input[type="submit"], #registration input[type="submit"] {
-  background-color: #AF2131; }
 
 #login h3, #registration h3 {
   font-size: 18;
@@ -843,7 +1037,7 @@ nav {
     width: 88%;
     right: 20px; } }
 
-.sectionsPF {
+.sectionsPF, .sectionDejar {
   margin: 0 auto;
   width: 100%;
   max-width: 1024px;
@@ -857,20 +1051,24 @@ nav {
 .sectionsPF h2 {
   font-size: 24px; }
 
+.sectionDejar h2 {
+  font-size: 24px;
+  color: #99172F; }
+
 .content_color {
   width: 100%;
   background-color: #D8D8D8; }
 
 @media screen and (max-width: 1024px) {
-  .sectionsPF {
+  .sectionsPF, .sectionDejar {
     padding-right: 1em;
     padding-left: 1em; } }
 
 @media screen and (max-width: 540px) {
-  .sectionsPF {
+  .sectionsPF, .sectionDejar {
     padding-right: 1em;
     padding-left: 1em; }
-  .sectionsPF h2 {
+  .sectionsPF h2, .sectionDejar h2 {
     font-size: 20px; } }
 
 .contentCopy {
@@ -884,9 +1082,9 @@ nav {
 
 .contentCopyTop {
   margin: 0 auto;
-  border-top: 4px solid #fff;
-  border-right: 4px solid #fff;
-  border-left: 4px solid #fff;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  border-left: 3px solid #fff;
   padding-top: 30px;
   text-align: center;
   margin-bottom: 40px;
@@ -894,9 +1092,9 @@ nav {
 
 .contentCopyBottom {
   margin: 0 auto;
-  border-bottom: 4px solid #fff;
-  border-right: 4px solid #fff;
-  border-left: 4px solid #fff;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+  border-left: 3px solid #fff;
   padding-bottom: 55px;
   text-align: center;
   margin-top: 40px;
