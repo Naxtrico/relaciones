@@ -3,12 +3,12 @@
 }
 
 .Container_login::after{
-	    content: "";
+	content: "";
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-bottom: 15px solid #E3E1E1;
     bottom: -6px;    
-    right: 70px;
+    right: 28px;
     position: absolute;    
   }
 
@@ -16,7 +16,7 @@
 	position: absolute;
 	width: 344px;
 	height: 430px;
-	right: 40px;
+	right: 20px;
 	padding: 20px;
 	margin-top: 100px;
 	color: #000;

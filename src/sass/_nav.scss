@@ -22,14 +22,14 @@ nav {
 	line-height: 75px;
 	height: 75px;	
 	display:inline-block;
-	text-align: left;
+	text-align: right;
 	float: left;
 	margin-left: 20px;
 }
 
 @media screen and (max-width: 1067px) {
 	.nav_principal{
-		background: #d7d7d7;
+		background: #000;
 		display: none;
 		position: absolute;
 		right:0;
@@ -37,8 +37,17 @@ nav {
 		width: 30%;
 		color:#000;		
 		width: 100%;
-    	box-sizing:border-box;
-    	max-width: 400px;
+    	box-sizing:border-box;    	
+	}
+
+	.nav_principal::before{
+		content: "";
+    	width: 69px;
+    	height: 80px;
+    	background-color: #000;
+    	position: absolute;
+    	right: 0;
+    	top: -79px;	   	
 	}
 
 	nav{
@@ -47,15 +56,32 @@ nav {
 
 	.nav_principal li{
 		display: block;
-
+		border-bottom: 1px solid #fff;			
+		padding: 0px 10px 0px 0px;
 	}
 
-	.nav_principal a{
-		color:#000;
+	.nav_principal li:last-child{
+
+		border-bottom: 0;
 	}
+
 
 	.visible{
 		display: table;
 		padding: 10px;
 	}
+
+	.icon_register_desktop{
+		display: none;
+	}
+
 }
+@media screen and (min-width: 1067px) {
+	
+	.icon_register_mobile{
+		display: none;
+	}
+
+}
+
+

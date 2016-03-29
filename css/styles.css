@@ -493,6 +493,7 @@ header.fixed{
 	position: relative;
 	padding: 0px;
 	width: 8.5em;
+	display: inline-block;
 }
 
 .stepsNumbers-list{	
@@ -509,7 +510,6 @@ header.fixed{
 	font-size: 0.8rem;
 	color:#fff;
 }
-
 
 
 .steps_fixed{

@@ -83,7 +83,8 @@
   color: #000;
   display: inline-block;
   text-transform: uppercase;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border: none; }
 
 .button_login_reg {
   padding: 10px 30px;
@@ -722,8 +723,7 @@ p {
 @media screen and (max-width: 634px) {
   li {
     display: block;
-    padding-bottom: 20px;
-    padding-right: 0px; } }
+    padding: 0; } }
 
 @media screen and (max-width: 540px) {
   p {
@@ -767,14 +767,14 @@ header.fixed {
   border-right: 15px solid transparent;
   border-bottom: 15px solid #E3E1E1;
   bottom: -6px;
-  right: 70px;
+  right: 28px;
   position: absolute; }
 
 .login {
   position: absolute;
   width: 344px;
   height: 430px;
-  right: 40px;
+  right: 20px;
   padding: 20px;
   margin-top: 100px;
   color: #000;
@@ -890,13 +890,13 @@ nav {
   line-height: 75px;
   height: 75px;
   display: inline-block;
-  text-align: left;
+  text-align: right;
   float: left;
   margin-left: 20px; }
 
 @media screen and (max-width: 1067px) {
   .nav_principal {
-    background: #d7d7d7;
+    background: #000;
     display: none;
     position: absolute;
     right: 0;
@@ -904,17 +904,32 @@ nav {
     width: 30%;
     color: #000;
     width: 100%;
-    box-sizing: border-box;
-    max-width: 400px; }
+    box-sizing: border-box; }
+  .nav_principal::before {
+    content: "";
+    width: 69px;
+    height: 80px;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    top: -79px; }
   nav {
     display: none; }
   .nav_principal li {
-    display: block; }
-  .nav_principal a {
-    color: #000; }
+    display: block;
+    border-bottom: 1px solid #fff;
+    padding: 0px 10px 0px 0px; }
+  .nav_principal li:last-child {
+    border-bottom: 0; }
   .visible {
     display: table;
-    padding: 10px; } }
+    padding: 10px; }
+  .icon_register_desktop {
+    display: none; } }
+
+@media screen and (min-width: 1067px) {
+  .icon_register_mobile {
+    display: none; } }
 
 .email_sent, .payment {
   width: 50%;
@@ -931,7 +946,7 @@ nav {
   border-right: 3px solid #000; }
 
 .email_sent img, .payment img {
-  margin-bottom: 50px; }
+  margin-bottom: 15px; }
 
 .pay a {
   color: #fff; }
@@ -1021,7 +1036,7 @@ nav {
   position: absolute;
   width: 344px;
   height: auto;
-  right: 40px;
+  right: 20px;
   padding: 20px;
   margin-top: 100px;
   color: #000;
@@ -1122,15 +1137,28 @@ nav {
     width: 70%; }
   .contentCopyBottom, .contentCopyBottomcontacto {
     width: 70%; }
-  .contentCopyTopcontacto {
-    margin-bottom: 55px; }
   .contentCopyBottomcontacto {
-    margin-top: 55px; } }
+    margin-top: 55px; }
+  .contentCopycontacto {
+    bottom: -16px; } }
+
+@media screen and (max-width: 380px) {
+  .contentCopycontacto {
+    bottom: -27px; } }
+
+@media screen and (max-width: 368px) {
+  .contentCopycontacto {
+    bottom: -37px; } }
+
+@media screen and (max-width: 320px) {
+  .contentCopycontacto {
+    bottom: -54px; } }
 
 .stepNumber-item {
   position: relative;
   padding: 0px;
-  width: 8.5em; }
+  width: 8.5em;
+  display: inline-block; }
 
 .stepsNumbers-list {
   text-transform: none;
@@ -1175,7 +1203,8 @@ nav {
   .info_steps {
     margin: 0 auto;
     width: 50%;
-    float: none; } }
+    float: none;
+    margin-top: 30px; } }
 
 @media screen and (max-width: 540px) {
   .steps {
@@ -1183,3 +1212,7 @@ nav {
   .info_steps {
     width: 80%;
     float: none; } }
+
+@media screen and (max-width: 388px) {
+  .stepNumber-item {
+    width: 6.5em; } }

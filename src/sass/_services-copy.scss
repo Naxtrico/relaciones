@@ -63,13 +63,32 @@
 
 	.contentCopyBottom, .contentCopyBottomcontacto {
 		width: 70%;
-	}
-
-	.contentCopyTopcontacto{ 
-	margin-bottom: 55px;
-	}
+	}	
 
 	.contentCopyBottomcontacto{
 		margin-top: 55px;
 	}
+
+	.contentCopycontacto {
+	    bottom: -16px;
+	 }
+
+}
+
+@media screen and (max-width: 380px) {
+	.contentCopycontacto {
+	    bottom: -27px;
+	 }
+}
+
+@media screen and (max-width: 368px) {
+	.contentCopycontacto {
+	    bottom: -37px;
+	 }
+}
+
+@media screen and (max-width: 320px) {
+	.contentCopycontacto {
+	    bottom: -54px;
+	 }
 }

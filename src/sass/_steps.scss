@@ -2,6 +2,7 @@
 	position: relative;
 	padding: 0px;
 	width: 8.5em;
+	display: inline-block;
 }
 
 .stepsNumbers-list{	
@@ -58,6 +59,7 @@
 		margin: 0 auto;
 		width: 50%;
 		float:none;
+		margin-top: 30px;
 	}
 }
 
@@ -72,4 +74,11 @@
 		float:none;
 	}
 	
+}
+@media screen and (max-width: 388px) {
+
+    .stepNumber-item{
+     	width: 6.5em;	
+    }  
+
 }
