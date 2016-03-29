@@ -40,7 +40,7 @@
        <!-- <li><a href="#">que hacemos</a></li>-->
        <li><a href="prueba-de-fidelidad.html">prueba de fidelidad</a></li>
        <li><a href="dejar.html">dejar</a></li>
-       <li><a href="#" class="icon_register_mobile"><img src="dist/img/perfil.svg"></a></li>
+       <li><a href="#" id="registry_icon_mobile" class="icon_register_mobile"><img src="dist/img/perfil.svg"></a></li>
        <!-- <li><a href="#">paquete negro</a></li>
         <li><a href="#">tienda</a></li>
         <li><a href="#">red impares</a></li>-->
@@ -696,10 +696,37 @@ $(document).ready(function(){
  });
 });
 </script>
-<!-- pantallas de registro y login -->
 
+<!-- pantallas de registro y login DESKTOP -->
 <script type="text/javascript">
 $("#registry_icon").click(function () {
+  console.log($("#Container_login").css("display"));
+  if($("#Container_login").css("display") == "block" ){
+    $("#Container_login").hide();
+  }else{
+    $('#registration').hide();
+    $("#Container_login #login").show();
+    $("#Container_login").show();
+  }
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+ $("#registrate").click(function () {
+   $("#Container_login #login").hide();
+   $('#registration').show();
+ });
+});
+$("#registration a.back-to-login").click(function(){
+ $("#Container_login #login").show();
+ $('#registration').hide();
+ return false;
+});
+</script>
+
+<!-- pantallas de registro y login MOBILE -->
+<script type="text/javascript">
+$("#registry_icon_mobile").click(function () {
   console.log($("#Container_login").css("display"));
   if($("#Container_login").css("display") == "block" ){
     $("#Container_login").hide();

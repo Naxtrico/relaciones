@@ -53,10 +53,38 @@
 	margin-top: 0;
 }
 
+@media screen and (max-width: 1067px) {
+
+	.login{
+		right: 100px;
+		margin-top: 25px;
+	}
+
+	.Container_login::after {
+    content: "";
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #E3E1E1;
+    bottom: -190px;
+    right: 71px;
+    position: absolute;
+	}
+}
+
 @media screen and (max-width: 540px) {
 
 	.login{
-		width: 88%;
-		right: 20px;
+		width: 84%;
+    	left: 0;
+    	margin-top: 0px;
 	}
+
+	.login p ,  .registration p{
+	font-size: 12px;
+}
+
+.login label ,  .registration label{
+	font-size: 12px;
+}
+
 }

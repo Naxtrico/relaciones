@@ -27,10 +27,21 @@
     color: #000;
 }
 
+@media screen and (max-width: 1067px) {
+
+	.registration{
+		right: 100px;
+		margin-top: 25px;
+	}
+}
+
+
 @media screen and (max-width: 540px) {
 	
 	.registration{
-		width: 88%;
-		right: 20px;
+		width: 84%;
+    	left: 0;
+    	margin-top: 0px;
+
 	}
 }
