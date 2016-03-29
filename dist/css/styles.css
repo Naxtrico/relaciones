@@ -284,6 +284,7 @@
   border: 1px solid #99172F;
   padding: 2px 0px;
   width: 60px;
+  line-height: 25px;
   display: inline-block;
   -webkit-border-top-left-radius: 4px;
   -webkit-border-bottom-left-radius: 4px;
