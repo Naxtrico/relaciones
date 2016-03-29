@@ -38,7 +38,9 @@ nav {
 		color:#000;		
 		width: 100%;
     	box-sizing:border-box;
-    	z-index: -1;    	
+    	z-index: -1;
+    	padding-right: 10px;
+		padding-left: 10px;   	
 	}
 
 	.nav_principal::before{
@@ -69,7 +71,7 @@ nav {
 
 	.visible{
 		display: table;
-		padding-right: 10px;
+		
 	}
 
 	.icon_register_desktop{
@@ -82,6 +84,7 @@ nav {
 	.icon_register_mobile{
 		display: none;
 	}
+
 
 }
 
