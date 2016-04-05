@@ -9,7 +9,7 @@
   cursor: pointer;
   border-radius: 1px;
   height: 2px;
-  width: 35px;
+  width: 30px;
   background: white;
   position: absolute;
   display: block;
@@ -20,10 +20,10 @@
 
 }
 #nav-toggle span:before {
-  top: -10px;
+  top: -8px;
 }
 #nav-toggle span:after {
-  bottom: -10px;
+  bottom: -8px;
 }
 
 /*animation*/

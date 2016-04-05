@@ -29,12 +29,12 @@ input[type=radio]{
  	display: none;
  }
 
- input[type=radio]:checked + span{
- 	content:"seleccionado";
- 	background-color: #96c017;
- 	background-image: url(../../dist/img/check.png);
+ input[type=radio]:checked + span{ 	
+ 	background-color: #058411; 	
  	background-repeat: no-repeat;
  	background-position: right;
+ 	border: 1px solid #058411;
+ 	color:#fff;
  }
 
 input[type="text"]{

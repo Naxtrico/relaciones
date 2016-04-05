@@ -5,7 +5,7 @@
   <meta charset="UTF-8">    
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IMPARES - PRUEBA DE FIDELIDAD</title>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>  
   <link rel="stylesheet" href="dist/css/normalize.css">
   <link rel="stylesheet" href="dist/css/slider.css">
@@ -128,7 +128,7 @@
     </li>    
   </ul>
 </section>
-<div  class="content_color" id="1">
+<div  class="content_color_dejar" id="1">
   <section class="sectionDejar" id="products">
    <h2>Selecciona un método para dejar a tu pareja</h2>
    <p>Te ofrecemos estos 4 métodos para dejar a tu pareja segun el tipo de relación que tengas.</p>
@@ -142,7 +142,7 @@
         </p>                
       </div>
     </div>
-    <div class="cardDejar_footer">
+    <div class="cardDejar_footer cardDejar_no_example">
       <p class="cardDejar_price">25€</p><label><input type="radio" name="selec" value="TE INVITO A UNA COPA" id="copa"><span class="cardDejar_btn">Seleccionar</span></label>
     </div> 
   </div>
@@ -162,7 +162,7 @@
      </div>   
    </div>
 
-   <div class="cardDejar" style="background-image: url(dist/img/imagen-mobil-3.jpg);">
+   <div class="cardDejar" style="background-image: url(dist/img/imagen-mobil-3.jpg); background-position: initial;">
     <div class="cardDejar_body">      
       <div class="cardDejar_description">
         <h2 class="cardDejar_title">LLamada</h2>        
@@ -194,7 +194,7 @@
   </section>
 </div>
 
-<div  class="content_color">
+<div  class="content_color_dejar">
   <section class="sectionDejar" id="2">
     <h2>Rellena el siguiente formulario</h2>
     <p>Ya falta poco! Solo necesitamos saber un poco más sobre ti y tu pareja.</p>
@@ -235,19 +235,13 @@
 </section>
 </div>
 <section class="sectionDejar" id="3">
-  <div class="email_sent">
+  <div class="dejar_email_sent">
     <img src="dist/img/monedas.svg">
     <p>Recibirás un email de confirmación del servicio.</p>
     <p>En un periódo máximo de tres días, te llamaremos</p>
     <p>para terminar de concretar datos.</p>
-
   </div>
-  <div class="payment">
-    <img src="dist/img/emailprueba.svg">
-    <p> Se cobrará el 50% de lo que valga la prueba</p>
-    <p>por adelantado, el resto, una vez realizada.</p>
-  </div>
-  <div style="clear:both;"></div>
+  
   <div class="pay">
     <a href="pasarela.html" class="button_principal btn_pagar">PAGAR </a>
   </div>
@@ -430,6 +424,33 @@ $("#registration a.back-to-login").click(function(){
  $('#registration').hide();
  return false;
 });
+</script>
+
+<script type="text/javascript">
+$("#identificar").click(function () {
+  console.log($("#Container_login").css("display"));
+  if($("#Container_login").css("display") == "block" ){
+    $("#Container_login").hide();
+  }else{
+    $('#registration').hide();
+    $("#Container_login #login").hide();
+    $("#Container_login").hide();
+  }
+});
+</script>
+
+<script type="text/javascript">
+$("#registrar").click(function () {
+  console.log($("#Container_login").css("display"));
+  if($("#Container_login").css("display") == "block" ){
+    $("#Container_login").hide();
+  }else{
+    $('#registration').hide();
+    $("#Container_login #login").hide();
+    $("#Container_login").hide();
+  }
+});
+
 </script>
 
 <!-- menu hamburguer-->

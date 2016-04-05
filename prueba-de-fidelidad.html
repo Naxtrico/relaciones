@@ -5,7 +5,7 @@
   <meta charset="UTF-8">    
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IMPARES - PRUEBA DE FIDELIDAD</title>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>  
   <link rel="stylesheet" href="dist/css/normalize.css">
   <link rel="stylesheet" href="dist/css/slider.css">
@@ -117,20 +117,20 @@
 </div>
 <section id="info">   
   <ul class="stepsNumbers-list" id="steps">
-    <li class="stepNumber-item" id="paso1">
-      <a href="#1" class="stepNumber-link">Información</a>            
+    <li class="stepNumber-item steps_PF_width" id="paso1">
+      <a href="#1" class="stepNumber-link">INFORMACIÓN</a>            
     </li>
-    <li class="stepNumber-item" id="paso2">
-      <a href="#2" class="stepNumber-link">Ambiente</a>            
+    <li class="stepNumber-item steps_PF_width " id="paso2">
+      <a href="#2" class="stepNumber-link">AMBIENTE</a>            
     </li>
-    <li class="stepNumber-item" id="paso3">
-      <a href="#3" class="stepNumber-link">Actores</a>            
+    <li class="stepNumber-item steps_PF_width" id="paso3">
+      <a href="#3" class="stepNumber-link">ACTORES</a>            
     </li>
-    <li class="stepNumber-item" id="paso4">
-      <a href="#4" class="stepNumber-link">Datos</a>            
+    <li class="stepNumber-item steps_PF_width" id="paso4">
+      <a href="#4" class="stepNumber-link">DATOS</a>            
     </li>
-    <li class="stepNumber-item" id="paso5">
-      <a href="#5" class="stepNumber-link">Pagar</a>        
+    <li class="stepNumber-item steps_PF_width" id="paso5">
+      <a href="#5" class="stepNumber-link">PAGAR</a>        
     </li>        
   </ul>
 </section>
@@ -179,7 +179,7 @@
 </div>
 <div class="content_button_steps"><a href="#products" class="button_principal button_color_PF">¡LO HE ENTENDIDO!</a></div>
 </section>
-<div  class="content_color" id="2">
+<div  class="content_color_pf" id="2">
   <section class="sectionsPF" id="products">
    <h2>Selecciona un tema para la prueba de fidelidad</h2>
    <p>Un tema es el hilo conductor de nuestra prueba de fidelidad, marcará el lugar, el personaje</p>
@@ -493,7 +493,7 @@
 <span class="arrows right"></span>
 </div>
 </section>
-<div  class="content_color">
+<div  class="content_color_pf">
   <section class="sectionsPF" id="4">
     <h2>Rellena el siguiente formulario</h2>
     <div class="content_form">
@@ -747,6 +747,7 @@ $("#registry_icon_mobile").click(function () {
   }
 });
 </script>
+
 <script type="text/javascript">
 $(document).ready(function () {
  $("#registrate").click(function () {
@@ -759,6 +760,33 @@ $("#registration a.back-to-login").click(function(){
  $('#registration').hide();
  return false;
 });
+</script>
+
+<script type="text/javascript">
+$("#identificar").click(function () {
+  console.log($("#Container_login").css("display"));
+  if($("#Container_login").css("display") == "block" ){
+    $("#Container_login").hide();
+  }else{
+    $('#registration').hide();
+    $("#Container_login #login").hide();
+    $("#Container_login").hide();
+  }
+});
+</script>
+
+<script type="text/javascript">
+$("#registrar").click(function () {
+  console.log($("#Container_login").css("display"));
+  if($("#Container_login").css("display") == "block" ){
+    $("#Container_login").hide();
+  }else{
+    $('#registration').hide();
+    $("#Container_login #login").hide();
+    $("#Container_login").hide();
+  }
+});
+
 </script>
 
 <!-- menu hamburguer-->
