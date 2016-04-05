@@ -1,3 +1,30 @@
 .desc_p{
   margin-bottom: 20px;
+  color: #fff;
+}
+
+.cite{
+	width: 100%;
+	clear: both;
+	text-align: center;
+	margin-top: 50px;
+	display: inline-block;
+	
+}
+
+.cite p {
+	font-size: 26px;
+	line-height: 35px;
+	color:#fff;
+}
+
+.members{
+	float: left;
+	width: 33%;
+	padding: 10px;
+	box-sizing:border-box;
+}
+
+.rol_title{
+	font-size: 30px;
 }

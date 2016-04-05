@@ -731,7 +731,6 @@ h1 {
   text-transform: uppercase; }
 
 h2 {
-  font-size: 30px;
   font-weight: 600;
   color: #2C0C52; }
 
@@ -1295,6 +1294,28 @@ nav {
   width: 47%;
   box-sizing: border-box; }
 
+.team {
+  background-color: #f1f1f2;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  text-align: center;
+  overflow: hidden; }
+
+.team h2, h3, p {
+  color: #1f5a60; }
+
+.team h2 {
+  font-size: 35px;
+  margin: 0; }
+
+.team h3 {
+  font-size: 30px; }
+
+.team p {
+  font-size: 18px; }
+
 @media screen and (max-width: 1024px) {
   .sectionsPF, .sectionDejar {
     padding-right: 1em;
@@ -1308,7 +1329,29 @@ nav {
     font-size: 20px; } }
 
 .desc_p {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  color: #fff; }
+
+.cite {
+  width: 100%;
+  clear: both;
+  text-align: center;
+  margin-top: 50px;
+  display: inline-block; }
+
+.cite p {
+  font-size: 26px;
+  line-height: 35px;
+  color: #fff; }
+
+.members {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  box-sizing: border-box; }
+
+.rol_title {
+  font-size: 30px; }
 
 .container_copy_whatdo {
   width: 100%;
