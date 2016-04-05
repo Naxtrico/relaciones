@@ -1,0 +1,27 @@
+.container_copy_whatdo{
+	width: 100%;    
+    background-color: #1F5A60;
+       
+}
+
+.content_copy_whatdo{
+    width: 400px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    bottom: 13px;
+}
+
+.content_copy_Top_whatdo{
+	margin: 0 auto;
+	border-top:3px solid #fff;
+	border-right:3px solid #fff;
+	border-left:3px solid #fff;
+	padding-top: 11px;
+	text-align: center;	
+    width: 90%;
+    background-color: #1F5A60;    
+    box-sizing: border-box;
+}

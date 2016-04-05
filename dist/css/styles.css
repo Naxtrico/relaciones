@@ -64,6 +64,13 @@
   height: 100%;
   min-height: 550px; }
 
+.back_full_screen_whatdo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../dist/img/bg-que-hacemos.jpg);
+  width: 100%;
+  min-height: 400px; }
+
 .button_principal {
   padding: 15px 0px;
   font-size: 15px;
@@ -1270,6 +1277,24 @@ nav {
   width: 100%;
   background-color: #F1F1F1; }
 
+.content_desc_whatdo {
+  max-width: 950px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 0 3em 3em;
+  overflow: hidden; }
+
+.whatdo_desc_left {
+  float: left;
+  margin-right: 6%; }
+
+.whatdo_desc_right {
+  float: right; }
+
+.whatdo_desc_left, .whatdo_desc_right {
+  width: 47%;
+  box-sizing: border-box; }
+
 @media screen and (max-width: 1024px) {
   .sectionsPF, .sectionDejar {
     padding-right: 1em;
@@ -1281,6 +1306,34 @@ nav {
     padding-left: 1em; }
   .sectionsPF h2, .sectionDejar h2 {
     font-size: 20px; } }
+
+.desc_p {
+  margin-bottom: 20px; }
+
+.container_copy_whatdo {
+  width: 100%;
+  background-color: #1F5A60; }
+
+.content_copy_whatdo {
+  width: 400px;
+  position: relative;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  bottom: 13px; }
+
+.content_copy_Top_whatdo {
+  margin: 0 auto;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  border-left: 3px solid #fff;
+  padding-top: 11px;
+  text-align: center;
+  width: 90%;
+  background-color: #1F5A60;
+  box-sizing: border-box; }
 
 .contentCopy {
   width: 500px;

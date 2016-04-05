@@ -36,6 +36,29 @@
 	background-color: #F1F1F1;
 }
 
+.content_desc_whatdo{
+	max-width: 950px;	
+	margin: 0 auto;
+	color:#fff;
+	padding: 0 3em 3em;
+	overflow: hidden;
+}
+
+.whatdo_desc_left{
+	float: left;
+	margin-right: 6%;	   
+}
+
+.whatdo_desc_right{
+	float: right;
+	
+}
+
+.whatdo_desc_left, .whatdo_desc_right{
+	width: 47%;
+	box-sizing: border-box;
+}
+
 
 @media screen and (max-width: 1024px) {	
 
