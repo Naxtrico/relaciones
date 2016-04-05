@@ -41,7 +41,7 @@ input[type="text"]{
 	margin-top: 10px;
 	display: block;
 	padding: 10px;
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 	-webkit-transition: all 0.5s ease;
     -moz-transition:all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -198,6 +198,21 @@ label{
 	text-align: right;	
 }
 
+#form_pasarela{
+	padding: 30px;
+}
+
+#form_pasarela .inline-block{
+	display: inline-block;
+	width: 60px;
+	margin-right: 10px;
+}
+
+
+.block{
+	display:block;
+}
+
 @media screen and (max-width: 1024px) {
 	.content_form{	
 	width: 70%;   
@@ -213,5 +228,9 @@ label{
 	.form_steps {	
 		font-size: 15px;	
 	}
+
+	#form_pasarela{
+	padding: 30px 0px;
+}
 
 }

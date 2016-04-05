@@ -1,4 +1,4 @@
-.sectionsPF, .sectionDejar{
+.sectionsPF, .sectionDejar, .section_pasarela{
 	margin:0 auto;
 	width: 100%;
 	max-width: 1024px;
@@ -8,6 +8,12 @@
     vertical-align: middle;
     padding-top: 50px;
     padding-bottom: 70px;
+}
+
+.section_pasarela{
+	padding-top: 100px;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 
@@ -29,6 +35,7 @@
 	width: 100%;
 	background-color: #F1F1F1;
 }
+
 
 @media screen and (max-width: 1024px) {	
 
