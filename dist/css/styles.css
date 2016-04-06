@@ -100,11 +100,11 @@
   background-color: #fff; }
 
 .button_color_PF {
-  color: #D5D7DA;
-  background-color: #31353D; }
+  color: #000;
+  background-color: #fff; }
 
 .button_color_dejar {
-  color: #99172F;
+  color: #000;
   background-color: #fff; }
 
 .contacto_button {
@@ -755,8 +755,7 @@ html, body {
 h1 {
   font-size: 35px;
   font-weight: 600;
-  color: #fff;
-  text-transform: uppercase; }
+  color: #fff; }
 
 h2 {
   font-weight: 600;
@@ -848,12 +847,17 @@ header.fixed {
 .services_copy_home h1 {
   margin-top: 7px;
   margin-bottom: 7px;
-  font-size: 45px; }
+  font-size: 45px;
+  text-transform: none; }
 
 .services_copy_home p {
   color: #fff;
   font-size: 21px;
-  margin: 0; }
+  margin: 0;
+  line-height: 35px;
+  -webkit-text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+  -moz-text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.4); }
 
 @media screen and (max-width: 540px) {
   .content_copy_home {
@@ -865,8 +869,8 @@ header.fixed {
   background-repeat: no-repeat;
   background-size: cover;
   width: 423px;
-  height: 630px;
-  padding: 100px 20px;
+  height: 545px;
+  padding: 70px 20px;
   box-sizing: border-box;
   border-radius: 10px;
   margin-top: 20px; }
@@ -1422,10 +1426,11 @@ nav {
   margin: 0; }
 
 .team h3 {
-  font-size: 30px; }
+  font-size: 20px;
+  font-weight: bold; }
 
 .team p {
-  font-size: 18px;
+  font-size: 16px;
   color: #000; }
 
 @media screen and (max-width: 1280px) {
