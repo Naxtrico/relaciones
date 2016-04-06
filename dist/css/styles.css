@@ -65,6 +65,8 @@
   min-height: 550px; }
 
 .back_full_screen_whatdo {
+  overflow: hidden;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../../dist/img/bg-que-hacemos.jpg);
@@ -475,6 +477,18 @@
   margin-top: 40px;
   width: 90%;
   color: #fff; }
+
+@media screen and (max-width: 380px) {
+  .contentCopycontacto {
+    bottom: -27px; } }
+
+@media screen and (max-width: 368px) {
+  .contentCopycontacto {
+    bottom: -37px; } }
+
+@media screen and (max-width: 329px) {
+  .contentCopycontacto {
+    bottom: -54px; } }
 
 footer {
   background-color: #49494A;
@@ -1321,12 +1335,27 @@ nav {
     padding-right: 1em;
     padding-left: 1em; } }
 
+@media screen and (max-width: 768px) {
+  .team h2 {
+    font-size: 30px; }
+  .team h3 {
+    font-size: 25px; }
+  .team p {
+    font-size: 16px; } }
+
+@media screen and (max-width: 650px) {
+  .whatdo_desc_left, .whatdo_desc_right {
+    float: none;
+    width: 100%; } }
+
 @media screen and (max-width: 540px) {
   .sectionsPF, .sectionDejar {
     padding-right: 1em;
     padding-left: 1em; }
   .sectionsPF h2, .sectionDejar h2 {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .content_desc_whatdo {
+    padding: 0 2em 2em; } }
 
 .desc_p {
   margin-bottom: 20px;
@@ -1353,6 +1382,20 @@ nav {
 .rol_title {
   font-size: 30px; }
 
+@media screen and (max-width: 768px) {
+  .cite p {
+    font-size: 24px; } }
+
+@media screen and (max-width: 620px) {
+  .members {
+    float: none;
+    width: 300px;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 340px) {
+  .members {
+    width: 100%; } }
+
 .container_copy_whatdo {
   width: 100%;
   background-color: #1F5A60; }
@@ -1376,7 +1419,8 @@ nav {
   text-align: center;
   width: 90%;
   background-color: #1F5A60;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  height: 80px; }
 
 .contentCopy {
   width: 500px;
@@ -1423,7 +1467,7 @@ nav {
 @media screen and (max-width: 540px) {
   .services_copy p {
     font-size: 14px; }
-  .contentCopy, .contentCopycontacto {
+  .contentCopy, .contentCopycontacto, .content_copy_whatdo {
     width: 90%; }
   .contentCopyTop, .contentCopyTopcontacto {
     width: 70%; }
@@ -1432,19 +1476,9 @@ nav {
   .contentCopyBottomcontacto {
     margin-top: 55px; }
   .contentCopycontacto {
-    bottom: -16px; } }
-
-@media screen and (max-width: 380px) {
-  .contentCopycontacto {
-    bottom: -27px; } }
-
-@media screen and (max-width: 368px) {
-  .contentCopycontacto {
-    bottom: -37px; } }
-
-@media screen and (max-width: 329px) {
-  .contentCopycontacto {
-    bottom: -54px; } }
+    bottom: -16px; }
+  .content_copy_Top_whatdo {
+    height: 68px; } }
 
 .stepNumber-item {
   position: relative;

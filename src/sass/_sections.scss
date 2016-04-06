@@ -98,6 +98,32 @@
 
 }
 
+@media screen and (max-width: 768px) {
+
+	.team h2{	
+		font-size: 30px;
+		
+	}
+
+	.team h3{	
+		font-size: 25px;
+	}
+
+	.team p{
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+
+		.whatdo_desc_left, .whatdo_desc_right {
+	float: none;
+	width: 100%;
+		   
+}
+
+}
+
 @media screen and (max-width: 540px) {
 
 	.sectionsPF, .sectionDejar{
@@ -108,5 +134,14 @@
 	.sectionsPF h2, .sectionDejar h2 {	
 	font-size: 20px;	
 	}
-	
+
+
+
+	.content_desc_whatdo{
+
+		padding: 0 2em 2em;
+
+	}
+
 }
+

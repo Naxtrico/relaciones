@@ -28,3 +28,29 @@
 .rol_title{
 	font-size: 30px;
 }
+
+@media screen and (max-width: 768px) {
+
+  .cite p {
+  font-size: 24px; 
+}
+
+  }
+
+@media screen and (max-width: 620px) {
+
+  .members{
+    float:none;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 340px) {
+  
+  .members{
+    width: 100%;
+  }
+
+}

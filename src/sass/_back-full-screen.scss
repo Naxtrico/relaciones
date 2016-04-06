@@ -28,7 +28,9 @@
 	min-height: 550px;
 }
 
-.back_full_screen_whatdo{	
+.back_full_screen_whatdo{
+	overflow: hidden;
+	background-position: top center;	
     background-repeat: no-repeat;
 	background-size: cover;
 	background-image:url(../../dist/img/bg-que-hacemos.jpg);

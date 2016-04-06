@@ -53,7 +53,7 @@
    		font-size: 14px;
 	}
 
-	.contentCopy, .contentCopycontacto {
+	.contentCopy, .contentCopycontacto, .content_copy_whatdo {
     width: 90%;
 	}
 
@@ -73,23 +73,9 @@
 	    bottom: -16px;
 	 }
 
-}
-
-@media screen and (max-width: 380px) {
-	.contentCopycontacto {
-	    bottom: -27px;
+	 .content_copy_Top_whatdo{
+	 	height: 68px;
 	 }
+
 }
 
-@media screen and (max-width: 368px) {
-	.contentCopycontacto {
-	    bottom: -37px;
-	 }
-}
-
-
-@media screen and (max-width: 329px) {
-	.contentCopycontacto {
-	    bottom: -54px;
-	 }
-}
