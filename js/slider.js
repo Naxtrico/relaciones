@@ -19,7 +19,9 @@ var Slider = function(target, options) {
     _slider.find("ul li[class!='first']").css("margin-left", String(imageMargin)+"px");
     _slider.find("ul li img").css("width", String(imageWidth)+"px");
 
-    var sliderHeight = _slider.find("ul li img").height();
+    var sliderHeight = _slider.find("ul li img").first().height();
+
+    console.log(sliderHeight);
 
     _slider.css("height", String(sliderHeight)+"px");
     _slider.children("ul").css("height",String(sliderHeight)+"px");
@@ -140,14 +142,19 @@ $(document).ready(function() {
               }
           );
     } else {
+            console.log("new slider");
           new Slider(
               "#men_slider",
               {
                   visibleImages: 3,
                   imageMargin: 160
-
               }
           );
       }
+
+    $("#hombres").click(function () {
+        $("#women_slider").hide();
+        $("#men_slider").show();
+    });
 
 });
