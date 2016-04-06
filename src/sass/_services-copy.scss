@@ -49,17 +49,31 @@
 
 @media screen and (max-width: 540px) {
 
-	.services_copy p {    
+	.services_copy p, .services_copy_home p, .services_copy_home p  {    
    		font-size: 14px;
 	}
 
-	.contentCopy, .contentCopycontacto, .content_copy_whatdo {
+	.services_copy_home h1{
+		font-size: 25px;	
+	}
+
+	.contentCopy, .contentCopycontacto, .content_copy_whatdo, {
     width: 90%;
 	}
 
 	.contentCopyTop, .contentCopyTopcontacto {
 		width: 70%;
 	}
+
+	.contentCopyTop{
+		padding-top: 15px;
+	}
+
+	.contentCopyBottom{
+	 	padding-bottom: 35px;
+	 } 
+
+	
 
 	.contentCopyBottom, .contentCopyBottomcontacto {
 		width: 70%;
@@ -76,6 +90,8 @@
 	 .content_copy_Top_whatdo{
 	 	height: 68px;
 	 }
+	 
+	 
 
 }
 

@@ -20,13 +20,42 @@
 
 .members{
 	float: left;
-	width: 33%;
+	width: 33.333333%;
 	padding: 10px;
+	padding-right: 5%;
+	margin-top: 20px;
 	box-sizing:border-box;
+}
+
+.members:last-child{	
+	padding-right: 0;
+	
 }
 
 .rol_title{
 	font-size: 30px;
+}
+
+.members_img{
+	margin-top: 40px;
+	width: 200px;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+}
+
+@media screen and (max-width: 940px) {
+
+	.members{
+	    float:none;
+	    margin: 0 auto;	    
+	    width: 300px;
+   }
+
+	.members:last-child {   	
+	    margin-right: auto;
+	}
+
 }
 
 @media screen and (max-width: 768px) {

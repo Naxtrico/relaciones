@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IMPARES</title>
   <link rel="stylesheet" href="dist/css/normalize.css">    
   <link rel="stylesheet" href="dist/css/styles.css">
@@ -41,10 +42,10 @@
 </div>
 <!-- POP UP -->
 <header class="header_pasarela_bg">            
-  <img src="dist/img/logo.svg" class="logo" id="logo">            
+  <a href="index.html"><img src="dist/img/logo.svg" class="logo" id="logo"></a>           
   <nav class="nav_principal" id="nav_principal">
     <ul>
-     <!-- <li><a href="#">que hacemos</a></li>-->
+     <li><a href="que-hacemos.html">que hacemos</a></li>
      <li><a href="prueba-de-fidelidad.html">prueba de fidelidad</a></li>
      <li><a href="dejar.html">dejar</a></li>
      <li><a href="#" id="registry_icon_mobile" class="icon_register_mobile"><img src="dist/img/perfil.svg"></a></li>
@@ -113,7 +114,7 @@
     <div class="resume_product">
       <p class="product">PRODUCTO X</p><p class="price">1 X 00,00€</p>
     </div>
-
+    <div style="clear:both"></div>
     <div class="price_total">
       <p>TOTAL:</p><p>00,00€</p>
 
@@ -125,11 +126,11 @@
     <p>INICIAR SESIÓN</p>
     <ul>
       <li>
-        Cliente registrado
+      <a href="#" id="login_pay">  Cliente registrado</a>
         <p class="init_sesion_info">¿Tienes ya una cuenta?</p>
       </li>
       <li>
-        Nuevo cliente
+       <a href="#" id="registrarse"> Nuevo cliente</a>
         <p class="init_sesion_info">Crea una nueva cuenta</p>
       </li>
     </ul>
@@ -140,7 +141,7 @@
       <label>Número de tarjeta</label>
       <input type="text" id="numero_targeta" required>
       <label>Nombre que aparece en la tarjeta</label>
-      <input type="text" id="nombre_targeta" title="Indica un Email válido" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required>
+      <input type="text" id="nombre_targeta" title="Indica un Email válido" required>
       <label class="block">Fecha de caducidad</label>
       <input type="text" id="fecha" class="inline-block"  required><input type="text" id="fecha" class="inline-block"  required>
       <label class="block">Código de seguridad* ¿Qué es esto?</label>
@@ -327,5 +328,36 @@ $(function() {
   });
 </script>
 <!-- POPUP-->
+
+<!-- registrarse para PAGAR-->
+
+<script type="text/javascript">
+$("#login_pay").click(function () {
+  console.log($("#Container_login").css("display"));
+  if($("#Container_login").css("display") == "block" ){
+    $("#Container_login").hide();
+  }else{
+    $('#registration').hide();
+    $("#Container_login #login").show();
+    $("#Container_login").show();
+  }
+});
+</script>
+
+<script type="text/javascript">
+$("#registrarse").click(function () {
+  console.log($("#Container_login").css("display"));
+  if($("#Container_login").css("display") == "block" ){
+    $("#Container_login").hide();
+  }else{    
+    $("#Container_login #registration").show();
+    $("#Container_login").show();
+  }
+});
+</script>
+
+
+
+<!-- registrarse para COMPRAR-->
 </body>
 </html>

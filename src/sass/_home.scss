@@ -1,0 +1,45 @@
+.home_services_Pf, .home_services_Dejar{
+	overflow: hidden;
+	background-position: center center;
+    background-repeat: no-repeat;
+	background-size: cover;	
+	width: 423px;
+	height: 630px;
+	padding: 100px 20px;
+	box-sizing: border-box;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-top: 20px;	
+}
+
+.home_services_Pf{
+	background-image:url(../../dist/img/background_PF.jpg);
+	float: left;
+
+}
+
+.home_services_Dejar{
+	background-image:url(../../dist/img/imagen-full-dejalo.png);
+	float: right;
+}
+
+@media screen and (max-width: 1024px) {
+
+	.home_services_Pf, .home_services_Dejar{
+		float: none;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+}
+
+@media screen and (max-width: 625px) {
+
+	.home_services_Pf, .home_services_Dejar{
+		width: 100%;
+		height: auto;
+    	padding: 50px 20px;
+	}
+
+}

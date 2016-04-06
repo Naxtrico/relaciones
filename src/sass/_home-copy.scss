@@ -1,0 +1,33 @@
+.content_copy_home{
+   	width: 90%;
+    position: relative;
+    left: 50%;
+    top: 45%;
+    text-align: center;
+
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.services_copy_home h1{
+	margin-top: 7px;
+	margin-bottom: 7px;
+	font-size: 45px;
+}
+
+.services_copy_home p {
+	color: #fff;
+	font-size: 21px;
+	margin:0;
+
+}
+
+
+
+@media screen and (max-width: 540px) {
+
+	.content_copy_home{
+		width: 90%;
+	}
+}
+

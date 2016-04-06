@@ -73,6 +73,16 @@
   width: 100%;
   min-height: 400px; }
 
+.back_full_screen_home {
+  overflow: hidden;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../dist/img/bg-home.jpg);
+  width: 100%;
+  height: 80%;
+  min-height: 550px; }
+
 .button_principal {
   padding: 15px 0px;
   font-size: 15px;
@@ -84,6 +94,10 @@
   border-radius: 4px;
   box-sizing: border-box;
   width: 200px; }
+
+.button_color_services_home {
+  color: #222220;
+  background-color: #fff; }
 
 .button_color_PF {
   color: #D5D7DA;
@@ -789,6 +803,9 @@ p {
 .ocult {
   display: none; }
 
+.bg_body_home {
+  background-color: #F0F0F1; }
+
 @media screen and (max-width: 634px) {
   li {
     display: block;
@@ -817,6 +834,62 @@ header.fixed {
 
 .header_pasarela_bg {
   background-color: #000; }
+
+.content_copy_home {
+  width: 90%;
+  position: relative;
+  left: 50%;
+  top: 45%;
+  text-align: center;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%); }
+
+.services_copy_home h1 {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  font-size: 45px; }
+
+.services_copy_home p {
+  color: #fff;
+  font-size: 21px;
+  margin: 0; }
+
+@media screen and (max-width: 540px) {
+  .content_copy_home {
+    width: 90%; } }
+
+.home_services_Pf, .home_services_Dejar {
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 423px;
+  height: 630px;
+  padding: 100px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 20px; }
+
+.home_services_Pf {
+  background-image: url(../../dist/img/background_PF.jpg);
+  float: left; }
+
+.home_services_Dejar {
+  background-image: url(../../dist/img/imagen-full-dejalo.png);
+  float: right; }
+
+@media screen and (max-width: 1024px) {
+  .home_services_Pf, .home_services_Dejar {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 20px; } }
+
+@media screen and (max-width: 625px) {
+  .home_services_Pf, .home_services_Dejar {
+    width: 100%;
+    height: auto;
+    padding: 50px 20px; } }
 
 .icons {
   float: right;
@@ -885,7 +958,7 @@ header.fixed {
     border-bottom: 15px solid transparent;
     border-top: 15px solid transparent;
     border-left: 15px solid #E3E1E1;
-    bottom: -190px;
+    bottom: -252px;
     right: 71px;
     position: absolute; } }
 
@@ -897,7 +970,10 @@ header.fixed {
   .login p, .registration p {
     font-size: 12px; }
   .login label, .registration label {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .Container_login::after {
+    bottom: -224px;
+    right: 78px; } }
 
 .logo {
   float: left;
@@ -1259,6 +1335,27 @@ nav {
     left: 0;
     margin-top: 0px; } }
 
+.home_services {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1024px;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: middle;
+  padding: 20px 60px 70px 60px;
+  background-color: #fff;
+  position: relative;
+  top: -77px; }
+
+.home_services h2 {
+  font-size: 30px;
+  color: #000; }
+
+.home_services h3 {
+  font-family: 'PT Serif', serif;
+  color: #fff; }
+
 .sectionsPF, .sectionDejar, .section_pasarela {
   margin: 0 auto;
   width: 100%;
@@ -1310,15 +1407,15 @@ nav {
 
 .team {
   background-color: #f1f1f2;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 13em;
+  padding-right: 13em;
   padding-top: 3em;
   padding-bottom: 3em;
   text-align: center;
   overflow: hidden; }
 
-.team h2, h3, p {
-  color: #1f5a60; }
+.team h2, .team h3 {
+  color: #529CA0; }
 
 .team h2 {
   font-size: 35px;
@@ -1328,12 +1425,20 @@ nav {
   font-size: 30px; }
 
 .team p {
-  font-size: 18px; }
+  font-size: 18px;
+  color: #000; }
+
+@media screen and (max-width: 1280px) {
+  .team {
+    padding-left: 6em;
+    padding-right: 6em; } }
 
 @media screen and (max-width: 1024px) {
   .sectionsPF, .sectionDejar {
     padding-right: 1em;
-    padding-left: 1em; } }
+    padding-left: 1em; }
+  .home_services {
+    max-width: 600px; } }
 
 @media screen and (max-width: 768px) {
   .team h2 {
@@ -1346,7 +1451,15 @@ nav {
 @media screen and (max-width: 650px) {
   .whatdo_desc_left, .whatdo_desc_right {
     float: none;
-    width: 100%; } }
+    width: 100%; }
+  .team {
+    padding-left: 1em;
+    padding-right: 1em; } }
+
+@media screen and (max-width: 625px) {
+  .home_services {
+    max-width: 95%;
+    padding: 20px 1.5em 70px 1.5em; } }
 
 @media screen and (max-width: 540px) {
   .sectionsPF, .sectionDejar {
@@ -1375,12 +1488,32 @@ nav {
 
 .members {
   float: left;
-  width: 33%;
+  width: 33.333333%;
   padding: 10px;
+  padding-right: 5%;
+  margin-top: 20px;
   box-sizing: border-box; }
+
+.members:last-child {
+  padding-right: 0; }
 
 .rol_title {
   font-size: 30px; }
+
+.members_img {
+  margin-top: 40px;
+  width: 200px;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px; }
+
+@media screen and (max-width: 940px) {
+  .members {
+    float: none;
+    margin: 0 auto;
+    width: 300px; }
+  .members:last-child {
+    margin-right: auto; } }
 
 @media screen and (max-width: 768px) {
   .cite p {
@@ -1398,7 +1531,7 @@ nav {
 
 .container_copy_whatdo {
   width: 100%;
-  background-color: #1F5A60; }
+  background-color: #529CA0; }
 
 .content_copy_whatdo {
   width: 400px;
@@ -1418,7 +1551,7 @@ nav {
   padding-top: 11px;
   text-align: center;
   width: 90%;
-  background-color: #1F5A60;
+  background-color: #529CA0;
   box-sizing: border-box;
   height: 80px; }
 
@@ -1465,12 +1598,18 @@ nav {
   margin: 0; }
 
 @media screen and (max-width: 540px) {
-  .services_copy p {
+  .services_copy p, .services_copy_home p, .services_copy_home p {
     font-size: 14px; }
+  .services_copy_home h1 {
+    font-size: 25px; }
   .contentCopy, .contentCopycontacto, .content_copy_whatdo {
     width: 90%; }
   .contentCopyTop, .contentCopyTopcontacto {
     width: 70%; }
+  .contentCopyTop {
+    padding-top: 15px; }
+  .contentCopyBottom {
+    padding-bottom: 35px; }
   .contentCopyBottom, .contentCopyBottomcontacto {
     width: 70%; }
   .contentCopyBottomcontacto {
