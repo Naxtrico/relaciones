@@ -132,7 +132,8 @@
   display: inline-block;
   color: #fff;
   text-transform: uppercase;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border-radius: 4px; }
 
 .btn_reg_now {
   width: 100%;
@@ -953,10 +954,11 @@ header.fixed {
   margin: 0; }
 
 #login h3, #registration h3 {
-  font-size: 18;
+  font-size: 18px;
   margin: 0;
   text-align: left;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  color: #3F2F2E; }
 
 #login_form {
   margin-top: 0; }
@@ -1592,7 +1594,7 @@ nav {
   border-bottom: 3px solid #fff;
   border-right: 3px solid #fff;
   border-left: 3px solid #fff;
-  padding-bottom: 55px;
+  padding-bottom: 38px;
   text-align: center;
   margin-top: 40px;
   width: 70%; }
