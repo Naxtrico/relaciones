@@ -103,9 +103,12 @@
   color: #000;
   background-color: #fff; }
 
-.button_color_PF_info {
+.button_color_PF_info, .button_color_goHome {
   color: #fff;
   background-color: #31353D; }
+
+.button_color_goHome {
+  margin-top: 50px; }
 
 .button_color_dejar {
   color: #000;
@@ -176,7 +179,13 @@
   border: 1px solid #7CA537;
   box-sizing: border-box;
   background-color: #7CA537;
-  color: #fff; }
+  color: #fff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.btn_pasarela:hover {
+  border: 1px solid #97e573;
+  background-color: #97e573; }
 
 @media screen and (max-width: 540px) {
   .button_principal {
@@ -307,7 +316,9 @@
   .card:nth-of-type(3n) {
     margin-right: 0px; }
   .card_description h2 {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .card_btn {
+    line-height: 21px; } }
 
 .cardDejar {
   background-image: url(../../dist/img/imagen-enpersona-1.jpg);
@@ -473,7 +484,7 @@
       transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   box-sizing: border-box;
-  bottom: -52px; }
+  bottom: -28px; }
 
 .contentCopyTopcontacto {
   margin: 0 auto;
@@ -587,6 +598,7 @@ footer {
 .contact_form input[type="submit"] {
   color: #000;
   background-color: #fff;
+  border-radius: 4px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
@@ -925,7 +937,7 @@ header.fixed {
   border-right: 15px solid transparent;
   border-bottom: 15px solid #E3E1E1;
   bottom: -6px;
-  right: 28px;
+  right: 48px;
   position: absolute; }
 
 .login {
@@ -1090,7 +1102,7 @@ nav {
     padding-left: 10px; }
   .nav_principal::before {
     content: "";
-    width: 69px;
+    width: 106px;
     height: 80px;
     background-color: #000;
     position: absolute;
@@ -1386,6 +1398,9 @@ nav {
   padding-left: 1em;
   padding-right: 1em; }
 
+.section_pasarela h1 {
+  color: #000; }
+
 .sectionsPF h2 {
   font-size: 24px; }
 
@@ -1662,7 +1677,7 @@ nav {
 
 .steps_fixed {
   position: fixed;
-  top: 95px;
+  top: 94px;
   margin: 0 auto;
   z-index: 2;
   left: 0;
