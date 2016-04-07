@@ -498,7 +498,7 @@
   <section class="sectionsPF" id="4">
     <h2>Rellena el siguiente formulario</h2>
     <div class="content_form">
-      <form id="personal_data">
+      <form id="personal_data" onsubmit="return false">
         <p id="tus_datos" class="form_steps form_steps_PF_color">Tus datos</p>
         <label>Nombre</label>
         <input type="text" id="nombre" required>
@@ -513,7 +513,7 @@
          <input type="submit" id="cont_pers" class="form_button_PF" value="SIGUIENTE">
        </div>
      </form>
-     <form id="couple" class="ocult">
+     <form id="couple" class="ocult" onsubmit="return false">
       <span id="tu_pareja" class="form_steps form_steps_PF_color">Tu pareja</span>
       <label>Nombre</label>
       <input type="text" id="nombre" required>

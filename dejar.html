@@ -255,7 +255,7 @@
     <h2>Rellena el siguiente formulario</h2>
     <p>¡Ya falta poco! Solo necesitamos saber un poco más sobre ti y tu pareja.</p>
     <div class="content_form">
-      <form id="personal_data">
+      <form id="personal_data" onsubmit="return false">
         <p id="tus_datos" class="form_steps form_steps_Dejar_color">Tus datos</p>
         <label>Nombre</label>
         <input type="text" id="nombre" required>
@@ -265,7 +265,7 @@
          <input type="submit" id="cont_pers" class="form_button_Dejar" value="SIGUIENTE">
        </div>
      </form>
-     <form id="couple" class="ocult">
+     <form id="couple" class="ocult" onsubmit="return false">
       <span id="tu_pareja" class="form_steps form_steps_Dejar_color">Tu pareja</span>
       <label>Nombre y apellidos</label>
       <input type="text" id="nombre" required>      
