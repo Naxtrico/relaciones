@@ -508,6 +508,12 @@
   width: 90%;
   color: #fff; }
 
+@media screen and (max-width: 540px) {
+  .contentCopyBottomcontacto {
+    margin-top: 55px; }
+  .contentCopycontacto {
+    bottom: -16px; } }
+
 @media screen and (max-width: 380px) {
   .contentCopycontacto {
     bottom: -27px; } }
@@ -516,9 +522,9 @@
   .contentCopycontacto {
     bottom: -37px; } }
 
-@media screen and (max-width: 329px) {
+@media screen and (max-width: 330px) {
   .contentCopycontacto {
-    bottom: -54px; } }
+    bottom: -37px; } }
 
 footer {
   background-color: #49494A;
@@ -1642,10 +1648,6 @@ nav {
     padding-bottom: 35px; }
   .contentCopyBottom, .contentCopyBottomcontacto {
     width: 70%; }
-  .contentCopyBottomcontacto {
-    margin-top: 55px; }
-  .contentCopycontacto {
-    bottom: -16px; }
   .content_copy_Top_whatdo {
     height: 68px; } }
 
