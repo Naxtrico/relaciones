@@ -36,10 +36,18 @@
 
 @media screen and (max-width: 625px) {
 
-	.home_services_Pf, .home_services_Dejar{
-		width: 100%;
+	.home_services_Pf, .home_services_Dejar{		
 		height: auto;
-    	padding: 50px 20px;
+    	padding: 50px 3px;
+    	width: 390px;
+	}
+
+}
+
+@media screen and (max-width: 450px) {
+
+	.home_services_Pf, .home_services_Dejar{		
+		width: 100%;
 	}
 
 }
