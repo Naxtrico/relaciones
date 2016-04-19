@@ -15,10 +15,8 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-75953522-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 </head>
 <body>
@@ -829,12 +827,13 @@ $(function() {
 </script>
 <!-- POPUP-->
 
-  <script type="text/javascript">
-$(document).ready(function () {
+<script type="text/javascript">
 
+$(document).ready(function () {
   var $all_listItems = $('.card');
   $all_listItems.on('click', function () {
     var index = $all_listItems.index(this);
+
     $(this).siblings().stop().fadeTo(300, 0.5);
     $(this).parent().siblings().stop().fadeTo(300, 0.3);
     $('.card').css('opacity', '1');
@@ -842,5 +841,8 @@ $(document).ready(function () {
 
 });
     </script>
+
+
+
 </body>
 </html>
