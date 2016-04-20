@@ -19,10 +19,7 @@
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition:all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    @include transition;
 }
 
 
@@ -104,10 +101,7 @@ input[type="text"]:focus{
 	-webkit-border-radius: 4px;
     -moz-border-radius: 4px;
 	border-radius: 4px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition:all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    @include transition;
 }
 
 .form_button_PF:hover{
@@ -128,10 +122,7 @@ input[type="text"]:focus{
 	-webkit-border-radius: 4px;
     -moz-border-radius: 4px;
 	border-radius: 4px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition:all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    @include transition;
 }
 
 .form_button_Dejar:hover{

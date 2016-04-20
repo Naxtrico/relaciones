@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPARES - contacto</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-75953522-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </head>
+  <body>
+    <header>
+        <a href="index.html"><img src="img/logo.svg" class="logo" id="logo" alt="logo impares"></a>
+        <nav class="nav_principal" id="nav_principal">
+          <ul>
+            <li><a href="que-hacemos.html">que hacemos</a></li>
+            <li><a href="prueba-de-fidelidad.html">prueba de fidelidad</a></li>
+            <li><a href="dejar.html">dejar</a></li>
+            <li><a href="#" id="registry_icon_mobile" class="icon_register_mobile"><img src="img/perfil.svg" alt="logo resgistro login"></a></li>
+            <!--<li><a href="#">paquete negro</a></li>
+            <li><a href="#">tienda</a></li>
+            <li><a href="#">red impares</a></li>-->
+          </ul>
+        </nav>
+        <div class="icons">
+          <a href="#" id="registry_icon" class="icon_register_desktop"><img src="img/perfil.svg" alt="logo resgistro login"></a>
+          <!--<a href="#"><img src="img/carrito.svg" alt="carrito de la compra"></a>-->
+          <a href="#" id="nav-toggle" class="nav-toggle content-nav-toggle"><span></span></a>
+        </div>
+        <div id="Container_login" class="Container_login">
+          <div class="login" id="login">
+            <h3>IDENTIFÍCATE</h3>
+            <form id="login_form">
+              <label>Usuario</label>
+              <input type="text" id="usuario_login" required>
+              <label>Contraseña</label>
+              <input type="text" id="contraseña" required>
+              <div class="content_btn_form">
+                <p>¿Has olvidado tu contraseña?</p>
+                <input type="submit" id="identificar" data-popup-open="popup-1" class="button_login_reg" value="IDENTIFICAR">
+              </div>
+            </form>
+            <div class="register_now">
+              <p>Si aún no eres usuario, registrate aquí</p>
+              <a href="#" class="button_principal btn_reg_now" id="registrate">REGÍSTRATE</a>
+            </div>
+          </div>
+          <div class="registration" id="registration">
+            <h3>REGÍSTRATE</h3>
+            <p>Todos los campos son obligatorios a rellenar</p>
+            <form id="registration_form">
+              <label>Nombre*</label>
+              <input type="text" id="nombre" required>
+              <label>Email*</label>
+              <input type="text" id="email" required>
+              <label>Usuario (no tene que ser tu nombre)</label>
+              <input type="text" id="usuario_reg" required>
+              <label>Contraseña (mín. 6 carácteres)</label>
+              <input type="text" id="pass" required>
+              <label>Repetir contraseña</label>
+              <input type="text" id="repass" required>
+              <p>*Tu nombre y email no se mostrarán públicamente</p>
+              <input type="checkbox" name="vehicle" value="Bike"> Acepto la política de privacidad<br>
+              <input type="checkbox" name="vehicle" value="Car" checked="checked"> Quiero recibir la newsletter<br>
+              <div class="content_btn_form">
+                <p>Volver a <a class="back-to-login" href="">"Identificate"</a></p>
+                <input type="submit" id="registrar" data-popup-open="popup-2" class="button_login_reg"  value="REGISTRAR">
+              </div>
+            </form>
+          </div>
+        </div>
+      </header>
+    <div class="back_full_screen_contacto"> </div>    
+      <!-- POP UP LOGIN -->
+   <div class="popup" data-popup="popup-1">
+    <div class="popup-inner">
+      <h2>¡HOLA!</h2>
+      <p>Login correcto</p>
+      <p><a data-popup-close="popup-1" href="#">Close</a></p>
+      <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+    </div>
+  </div>
+  <!-- POP UP -->
+  <!-- POP UP REGISTRO -->
+  <div class="popup" data-popup="popup-2">
+    <div class="popup-inner">
+      <h2>¡REGISTRO COMPLETADO!</h2>
+      <p>Bienvenido a IMPARES</p>
+      <p><a data-popup-close="popup-2" href="#">Close</a></p>
+      <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+    </div>
+  </div>
+  <!-- POP UP -->
+      
+      <div class="containerred">
+        <section class="contentCopycontacto">
+          <div class="contentCopyTopcontacto">
+            <img src="img/sobrecontacto.svg" alt="imagen de carta">
+          </div>
+          <div class="services_copy">
+            <h1>¡EMAIL ENVIADO!</h1>
+            <p>Gracias por contactar con nosotros</p>
+             <p>En breve nos pondremos en contacto contigo</p>
+             <p>para resolver tu consulta.</p>              
+          </div>
+          <!--
+          <div class="contentCopyBottomcontacto">
+          </div>-->
+        </section>
+        <section class="sent_form">
+           <h1 id="Name_Contact"></h1>                   
+        </section>
+      </div>
+   
+    <footer>
+      <img src="img/logofooter.svg" class="logoFooter" alt="logo imnpares">
+      <nav class="listfooter nav_secundaria">
+        <ul>
+          <!-- <li><a href="#">preguntas frecuentes</a></li>
+          <li><a href="#">testimonios</a></li>
+          <li><a href="#">política de privacidad</a></li>-->
+          <li><a href="contacto.html">contacto</a></li>
+        </ul>
+      </nav>
+      <div class="iconsfooter">
+        <!-- <img src="img/facebook.svg">
+        <img src="img/twitter.svg">
+        <img src="img/instagram.svg">-->
+      </div>
+      <div class="linefooter">
+        <p class="footercopy">Copyright 2016. All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="js/wow.js"></script>
+    <!-- efect scroll page -->
+    <script type="text/javascript">
+    $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+    $('html, body').animate({
+    scrollTop: target.offset().top
+    }, 1000);
+    return false;
+    }
+    }
+    });
+    });
+    </script>
+    <!-- end efect scroll page -->
+    <!-- efect menu fixed -->
+    <script type="text/javascript">
+    jQuery(window).scroll(function () {
+    var threshold = 1;
+    if  (jQuery(window).scrollTop() >= 1)
+    jQuery('header').addClass('fixed');
+    else
+    jQuery('header').removeClass('fixed');
+    });
+    </script>
+    <!-- pantallas de registro y login -->
+    <script type="text/javascript">
+    $("#registry_icon").click(function () {
+    console.log($("#Container_login").css("display"));
+    if($("#Container_login").css("display") == "block" ){
+    $("#Container_login").hide();
+    }else{
+    $('#registration').hide();
+    $("#Container_login #login").show();
+    $("#Container_login").show();
+    }
+    });
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+    $("#registrate").click(function () {
+    $("#Container_login #login").hide();
+    $('#registration').show();
+    });
+    });
+    $("#registration a.back-to-login").click(function(){
+    $("#Container_login #login").show();
+    $('#registration').hide();
+    return false;
+    });
+    </script>
+
+    <!-- pantallas de registro y login MOBILE -->
+<script type="text/javascript">
+$("#registry_icon_mobile").click(function () {
+  console.log($("#Container_login").css("display"));
+  if($("#Container_login").css("display") == "block" ){
+    $("#Container_login").hide();
+  }else{
+    $('#registration').hide();
+    $("#Container_login #login").show();
+    $("#Container_login").show();
+  }
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+ $("#registrate").click(function () {
+   $("#Container_login #login").hide();
+   $('#registration').show();
+ });
+});
+$("#registration a.back-to-login").click(function(){
+ $("#Container_login #login").show();
+ $('#registration').hide();
+ return false;
+});
+</script>
+
+<script type="text/javascript">
+$("#identificar").click(function () {
+  console.log($("#Container_login").css("display"));
+  if($("#Container_login").css("display") == "block" ){
+    $("#Container_login").hide();
+  }else{
+    $('#registration').hide();
+    $("#Container_login #login").hide();
+    $("#Container_login").hide();
+  }
+});
+</script>
+
+<script type="text/javascript">
+$("#registrar").click(function () {
+  console.log($("#Container_login").css("display"));
+  if($("#Container_login").css("display") == "block" ){
+    $("#Container_login").hide();
+  }else{
+    $('#registration').hide();
+    $("#Container_login #login").hide();
+    $("#Container_login").hide();
+  }
+});
+
+</script>
+
+
+    <!-- menu hamburguer-->
+    <script type="text/javascript">
+    document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
+    this.classList.toggle( "active" );
+    });
+    $("#nav-toggle").click(function () {
+    if($('#nav_principal').hasClass('visible')){
+    $('#nav_principal').removeClass('visible');
+    }else{
+    $('#nav_principal').addClass('visible');
+    }
+    });
+    </script>
+    <!-- POPUP-->
+    <script type="text/javascript">
+    $(function() {
+    //----- OPEN
+    $('[data-popup-open]').on('click', function(e)  {
+    var targeted_popup_class = jQuery(this).attr('data-popup-open');
+    $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+    e.preventDefault();
+    });
+    //----- CLOSE
+    $('[data-popup-close]').on('click', function(e)  {
+    var targeted_popup_class = jQuery(this).attr('data-popup-close');
+    $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+    e.preventDefault();
+    });
+    });
+    </script>
+    <!-- POPUP-->
+    <!-- RECOJER VARIABLE DEL FORM-->
+    <script type="text/javascript">
+    var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+      var nombre = getUrlParameter('Nombre_contact');
+      $("#Name_Contact").text("¡GRACIAS " +nombre+ "!"); 
+    </script>
+     <!-- RECOJER VARIABLE DEL FORM-->
+  </body>
+</html>

@@ -11,6 +11,7 @@
 	border-radius: 4px;
 	box-sizing: border-box;
 	width: 200px;
+	@include transition;
 }
 
 .button_color_services_home{
@@ -18,9 +19,13 @@
 	background-color:#fff;
 }
 
-.button_color_PF{
+.button_color_PF, .button_color_dejar {
 	color:#000;
 	background-color:#fff;
+	&:hover {
+        background-color:#555;
+        color:#fff;
+    }
 }
 
 .button_color_PF_info, .button_color_goHome{
@@ -30,11 +35,6 @@
 
 .button_color_goHome{
 	margin-top: 50px;
-}
-
-.button_color_dejar{
-	color:#000;
-	background-color:#fff;
 }
 
 .contacto_button{
@@ -84,23 +84,14 @@
 	display: inline-block;
 	background-color: #bba2cd;
 	border: none;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition:all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+   @include transition;
 }
 
 .btn_pagar{
 	margin-top: 50px;
 	background-color: #67b244;
-	-webkit-transition: all 0.5s ease;
-    -moz-transition:all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;	
-}
-
-.btn_pagar:hover{	
-	background-color: #97e573;
+	@include transition;
+	&:hover {background-color: #97e573;}
 }
 
 .btn_pasarela{
@@ -118,26 +109,18 @@
 	box-sizing: border-box;
 	background-color: #7CA537;
 	color:#fff;
-	-webkit-transition: all 0.5s ease;
-    -moz-transition:all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;	
+	@include transition;
+	&:hover{
+		border: 1px solid #97e573;	
+		background-color: #97e573;
+	}
 }
-
-.btn_pasarela:hover{
-	border: 1px solid #97e573;	
-	background-color: #97e573;	
-}
-
-
-
 
 @media screen and (max-width: 540px) {
 
 	.button_principal{
 		width: 150px;
 		padding: 10px 0px;
-
 	}
 
-	}
+}
