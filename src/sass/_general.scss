@@ -73,6 +73,47 @@ p {
 	background-color: #F0F0F1;
 }
 
+.yourSelection{
+	padding: 20px;
+	background-color: #EEEEEE;
+	width: 250px;
+	margin:0 auto;
+	box-sizing:border-box;
+	border: 1px solid #999899;
+	display: none;
+	position: absolute;
+	right: -250px;
+	position: fixed;
+    top: 50%;
+    z-index: 1;
+}
+
+.close{
+	display: none;
+   position: fixed;   
+    background-color: #000;
+    color: #fff;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 37px;
+    font-size: 25px;    
+    right: 0;
+    z-index: 2;
+    -webkit-border-top-left-radius: 100px;
+	-webkit-border-bottom-left-radius: 100px;
+	-moz-border-radius-topleft: 100px;
+	-moz-border-radius-bottomleft: 100px;
+	border-top-left-radius: 100px;
+	border-bottom-left-radius: 100px;
+}
+
+.close a {
+	color: #fff;
+	text-decoration: none;
+}
+
 @media screen and (max-width: 634px) {
 
 		li{
