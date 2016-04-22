@@ -10,9 +10,8 @@
 	 cursor: pointer;
 	 margin-top: 50px;
     margin-right: 15.5%;
-     box-sizing:border-box;
-    -webkit-box-sizing:border-box;
-    @include transition;
+     box-sizing:border-box;    
+   transition: all 0.5s ease;
  }
 
 .actors_nomargin{

@@ -1,6 +1,6 @@
 nav {
 	text-decoration: none;	
-	@include transition;
+	transition: all 0.5s ease;
 }
 
 .nav_principal a, .nav_secundaria a{
@@ -9,7 +9,7 @@ nav {
 	font-weight: 600;
 	text-decoration: none;
 	padding-right: 3px;	
-	@include transition;
+	transition: all 0.5s ease;
 }
 
 .nav_principal{

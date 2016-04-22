@@ -11,7 +11,7 @@
 	border-radius: 4px;
 	box-sizing: border-box;
 	width: 200px;
-	@include transition;
+	transition: all 0.5s ease;
 }
 
 .button_color_services_home{
@@ -84,13 +84,13 @@
 	display: inline-block;
 	background-color: #bba2cd;
 	border: none;
-   @include transition;
+   transition: all 0.5s ease;
 }
 
 .btn_pagar{
 	margin-top: 50px;
 	background-color: #67b244;
-	@include transition;
+	transition: all 0.5s ease;
 	&:hover {background-color: #97e573;}
 }
 
@@ -109,7 +109,7 @@
 	box-sizing: border-box;
 	background-color: #7CA537;
 	color:#fff;
-	@include transition;
+	transition: all 0.5s ease;
 	&:hover{
 		border: 1px solid #97e573;	
 		background-color: #97e573;

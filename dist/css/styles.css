@@ -11,7 +11,6 @@
   margin-top: 50px;
   margin-right: 15.5%;
   box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
@@ -203,8 +202,7 @@
   margin-right: 2%;
   overflow: hidden;
   border-radius: 10px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box; }
+  box-sizing: border-box; }
 
 .card:nth-of-type(3n) {
   margin-right: 0px; }
@@ -225,10 +223,6 @@
   padding: 2px 0px;
   width: 60px;
   display: inline-block;
-  -webkit-border-top-left-radius: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  -moz-border-radius-topleft: 4px;
-  -moz-border-radius-bottomleft: 4px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px; }
 
@@ -249,10 +243,6 @@
   text-align: left;
   color: #381443;
   text-align: center;
-  -webkit-border-bottom-right-radius: 10px;
-  -webkit-border-bottom-left-radius: 10px;
-  -moz-border-radius-bottomright: 10px;
-  -moz-border-radius-bottomleft: 10px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px; }
 
@@ -282,10 +272,6 @@
   display: inline-block;
   line-height: 25px;
   background-color: #381443;
-  -webkit-border-top-right-radius: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  -moz-border-radius-bottomright: 4px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   -webkit-transition: all 0.5s ease;
@@ -331,8 +317,7 @@
   margin-right: 2%;
   overflow: hidden;
   border-radius: 10px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box; }
+  box-sizing: border-box; }
 
 .cardDejar:nth-of-type(4n) {
   margin-right: 0px; }
@@ -354,10 +339,6 @@
   width: 60px;
   line-height: 25px;
   display: inline-block;
-  -webkit-border-top-left-radius: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  -moz-border-radius-topleft: 4px;
-  -moz-border-radius-bottomleft: 4px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px; }
 
@@ -378,10 +359,6 @@
   text-align: left;
   color: #381443;
   text-align: center;
-  -webkit-border-bottom-right-radius: 10px;
-  -webkit-border-bottom-left-radius: 10px;
-  -moz-border-radius-bottomright: 10px;
-  -moz-border-radius-bottomleft: 10px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px; }
 
@@ -411,10 +388,6 @@
   display: inline-block;
   line-height: 25px;
   background-color: #99172F;
-  -webkit-border-top-right-radius: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  -moz-border-radius-topright: 4px;
-  -moz-border-radius-bottomright: 4px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   -webkit-transition: all 0.5s ease;
@@ -479,9 +452,9 @@
   width: 400px;
   position: relative;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   box-sizing: border-box;
   bottom: -28px; }
 
@@ -629,8 +602,6 @@ input[type="text"] {
   width: 100%;
   box-sizing: border-box;
   border-radius: 5px 5px 5px 5px;
-  -moz-border-radius: 5px 5px 5px 5px;
-  -webkit-border-radius: 5px 5px 5px 5px;
   border: 1px solid #bcbcbc; }
 
 textarea {
@@ -644,8 +615,6 @@ textarea {
   width: 100%;
   box-sizing: border-box;
   border-radius: 5px 5px 5px 5px;
-  -moz-border-radius: 5px 5px 5px 5px;
-  -webkit-border-radius: 5px 5px 5px 5px;
   border: 1px solid #bcbcbc; }
 
 textarea:focus {
@@ -854,10 +823,6 @@ p {
   font-size: 25px;
   right: 0;
   z-index: 2;
-  -webkit-border-top-left-radius: 100px;
-  -webkit-border-bottom-left-radius: 100px;
-  -moz-border-radius-topleft: 100px;
-  -moz-border-radius-bottomleft: 100px;
   border-top-left-radius: 100px;
   border-bottom-left-radius: 100px; }
 
@@ -901,9 +866,9 @@ header.fixed {
   left: 50%;
   top: 45%;
   text-align: center;
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 .services_copy_home h1 {
   margin-top: 7px;
@@ -916,8 +881,6 @@ header.fixed {
   font-size: 21px;
   margin: 0;
   line-height: 35px;
-  -webkit-text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
-  -moz-text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
   text-shadow: 2px 2px rgba(0, 0, 0, 0.4); }
 
 @media screen and (max-width: 540px) {
@@ -1331,8 +1294,8 @@ nav {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   box-shadow: 0px 2px 6px black;
   border-radius: 3px;
   background: #fff;
@@ -1350,8 +1313,8 @@ nav {
   -webkit-transition: ease 0.25s all;
   transition: ease 0.25s all;
   -webkit-transform: translate(50%, -50%);
-  -ms-transform: translate(50%, -50%);
-      transform: translate(50%, -50%);
+      -ms-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
   border-radius: 1000px;
   background: rgba(167, 14, 32, 0.8);
   font-family: Arial, Sans-Serif;
@@ -1362,8 +1325,8 @@ nav {
 
 .popup-close:hover {
   -webkit-transform: translate(50%, -50%) rotate(180deg);
-  -ms-transform: translate(50%, -50%) rotate(180deg);
-      transform: translate(50%, -50%) rotate(180deg);
+      -ms-transform: translate(50%, -50%) rotate(180deg);
+          transform: translate(50%, -50%) rotate(180deg);
   background: black;
   text-decoration: none; }
 
@@ -1576,9 +1539,7 @@ nav {
 .members_img {
   margin-top: 40px;
   width: 200px;
-  border-radius: 500px;
-  -webkit-border-radius: 500px;
-  -moz-border-radius: 500px; }
+  border-radius: 500px; }
 
 @media screen and (max-width: 940px) {
   .members {
@@ -1610,9 +1571,9 @@ nav {
   width: 400px;
   position: relative;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   box-sizing: border-box;
   bottom: 13px; }
 
@@ -1633,9 +1594,9 @@ nav {
   position: relative;
   left: 50%;
   top: 50%;
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 .contentCopyTop {
   margin: 0 auto;

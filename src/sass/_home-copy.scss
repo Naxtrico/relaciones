@@ -4,9 +4,7 @@
     left: 50%;
     top: 45%;
     text-align: center;
-
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);    
 }
 
 .services_copy_home h1{
@@ -20,13 +18,9 @@
 	color: #fff;
 	font-size: 21px;
 	margin:0;
-	line-height: 35px;
-	-webkit-text-shadow: 2px 2px rgba(0,0,0,0.40) ;
--moz-text-shadow: 2px 2px rgba(0,0,0,0.40);
-text-shadow: 2px 2px rgba(0,0,0,0.40);
-
+	line-height: 35px;	
+	text-shadow: 2px 2px rgba(0,0,0,0.40);
 }
-
 
 
 @media screen and (max-width: 540px) {
