@@ -502,47 +502,45 @@
     <h2>Rellena el siguiente formulario</h2>
     <div class="content_form">
       <form id="personal_data" onsubmit="return false">
-        <p id="tus_datos" class="form_steps form_steps_PF_color">Tus datos</p>
-        <label>Nombre</label>
-        <input type="text" id="nombre_usuario" required>
-        <label>Email</label>
-        <input type="text" id="email_usuario" title="Indica un Email válido" pattern="^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" value="*email" required>
-        <label>Móvil</label>
-        <input type="text" id="mobil"  required>
-        <label>¿Cuando quieres que te llamemos?*</label>
-        <input type="text" id="hora"  required>
-        <p class="textDetail">*Especifica el día y la franja horaria</p>
-        <div class="content_btn_form">
-         <input type="submit" id="cont_pers" class="form_button_PF" value="SIGUIENTE">
-       </div>
+        <fieldset>
+          <legend>Tus datos</legend>
+          <label>Nombre</label>
+          <input type="text" id="nombre_usuario" required>
+          <label>Email</label>
+          <input type="text" id="email_usuario" title="Indica un Email válido" pattern="^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" value="*email" required>
+          <label>Móvil</label>
+          <input type="text" id="mobil"  required>
+          <label>¿Cuando quieres que te llamemos?*</label>
+          <input type="text" id="hora"  required>
+          <p class="textDetail">*Especifica el día y la franja horaria</p>
+        </fieldset> 
+
+        <fieldset>
+          <legend>Tu pareja</legend>      
+          <label>Nombre</label>
+          <input type="text" id="nombre_pareja" required>
+          <label>Adjuntar foto</label>
+          <input type="text" id="foto"  required>
+          <label>¿Qué le gusta a tu pareja?</label>
+          <textarea id="nombrePar"> </textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Prueba</legend>      
+          <label>Lugar de realización de la prueba (Ciudad)</label>
+          <input type="text" id="ciudad" required>
+          <label>Fecha*</label>
+          <input type="text" id="fecha" required>
+          <p class="textDetail">*debe de haber de margen una semana como mínimo desde la contratación</p>
+          <label>Adjuntar foto</label>
+          <input type="file" name="adjunto">
+          <div class="content_btn_form">
+           <input type="submit" id="btn_prueba" class="form_button_PF" value="FINALIZAR">
+         </div>
+       </fieldset>
      </form>
-     <form id="couple" class="ocult" onsubmit="return false">
-      <span id="tu_pareja" class="form_steps form_steps_PF_color">Tu pareja</span>
-      <label>Nombre</label>
-      <input type="text" id="nombre_pareja" required>
-      <label>Adjuntar foto</label>
-      <input type="text" id="foto"  required>
-      <label>¿Qué le gusta a tu pareja?</label>
-      <textarea id="nombrePar"> </textarea>
-      <div class="content_btn_form">
-        <input type="submit" id="btn_couple" class="form_button_PF" value="SIGUIENTE">
-      </div>
-    </form>
-    <form id="prueba" class="ocult" action="#5">
-      <span id="step_prueba" class="form_steps form_steps_PF_color">Prueba</span>
-      <label>Lugar de realización de la prueba (Ciudad)</label>
-      <input type="text" id="ciudad" required>
-      <label>Fecha*</label>
-      <input type="text" id="fecha" required>
-      <p class="textDetail">*debe de haber de margen una semana como mínimo desde la contratación</p>
-      <label>Adjuntar foto</label>
-      <input type="file" name="adjunto">
-      <div class="content_btn_form">
-       <input type="submit" id="btn_prueba" class="form_button_PF" value="FINALIZAR">
-     </div>
-   </form>
- </div>
-</section>
+   </div>
+ </section>
 </div>
 <section class="sectionsPF" id="5">
   <div class="email_sent">
