@@ -3,15 +3,6 @@ nav {
 	transition: all 0.5s ease;
 }
 
-.nav_principal a, .nav_secundaria a{
-	font-size: 12px;
-	color: #fff;
-	font-weight: 600;
-	text-decoration: none;
-	padding-right: 3px;	
-	transition: all 0.5s ease;
-}
-
 .nav_principal{
 	line-height: 30px;
 	height: 75px;	
@@ -20,6 +11,33 @@ nav {
 	float: left;
 	margin-left: 20px;
 }
+
+.nav_principal-link, .nav_secundaria-link{
+	font-size: 12px;
+	color: #fff;
+	font-weight: 600;
+	text-decoration: none;
+	padding-right: 3px;	
+	transition: all 0.5s ease;
+}
+
+.nav_principal-list, .nav_secundaria-list{
+	text-decoration: none;
+	margin:0 auto;	
+	text-transform: uppercase;	
+	-webkit-padding-start: 0px;
+	list-style: none;
+}
+
+.nav_principal-item{
+	list-style: none;
+	color: #fff;
+	font-weight: 100;
+	display: inline-block;
+	padding-top: 10px;
+	padding-right: 20px;
+}
+
 
 @media screen and (max-width: 1067px) {
 	.nav_principal{
@@ -52,13 +70,13 @@ nav {
 		display: none;
 	}
 
-	.nav_principal li{
+	.nav_principal-item{
 		display: block;
 		border-bottom: 1px solid #fff;			
 		padding: 0px 10px 0px 0px;
 	}
 
-	.nav_principal li:last-child{
+	.nav_principal-item:last-child{
 
 		border-bottom: 0;
 	}

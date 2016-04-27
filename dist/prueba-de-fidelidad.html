@@ -7,8 +7,7 @@
   <title>IMPARES - PRUEBA DE FIDELIDAD</title>
   <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/normalize.css">  
   <link rel="stylesheet" href="css/styles.css">
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -45,11 +44,11 @@
     <a href="index.html"><img src="img/logo.svg" class="logo" id="logo" alt="logo impares"></a>            
 
     <nav class="nav_principal" id="nav_principal">
-      <ul>
-       <li><a href="que-hacemos.html">¿que hacemos?</a></li>
-       <li><a href="prueba-de-fidelidad.html">prueba de fidelidad</a></li>
-       <li><a href="dejar.html">dejar</a></li>
-       <li><a href="#" id="registry_icon_mobile" class="icon_register_mobile"><img src="img/perfil.svg" alt="logo login registro"></a></li>
+     <ul class="nav_principal-list">
+      <li class="nav_principal-item"><a href="que-hacemos.html" class="nav_principal-link">¿que hacemos?</a></li>
+      <li class="nav_principal-item"><a href="prueba-de-fidelidad.html" class="nav_principal-link">prueba de fidelidad</a></li>
+      <li class="nav_principal-item"><a href="dejar.html" class="nav_principal-link">dejar</a></li>
+      <li class="nav_principal-item"><a href="#" id="registry_icon_mobile" class="icon_register_mobile"><img src="img/perfil.svg" alt="icono registrarse"></a></li>
        <!-- <li><a href="#">paquete negro</a></li>
         <li><a href="#">tienda</a></li>
         <li><a href="#">red impares</a></li>-->
@@ -178,10 +177,13 @@
 </div>
 <div class="content_button_steps"><a href="#products" class="button_principal button_color_PF_info">¡LO HE ENTENDIDO!</a></div>
 </section>
+<!-- RESUMEN ANTIGUA
 <div class="close" id="close"> <a href="#" id="close_x">X</a> </div>
 <div class="yourSelection" id="selection">  
   <p id="yourSelection"> NO HAS SELECCIONADO NADA</p>
 </div>
+-->
+
 
 <div  class="content_color_pf" id="2">
   <section class="sectionsPF" id="products">
@@ -189,7 +191,18 @@
    <p>Un tema es el hilo conductor de nuestra prueba de fidelidad, marcará el lugar, el personaje</p>
    <p>que interpretará nuestro actor/iz y los hechos que pasarán. Mira nuestros temas y elige el</p>
    <p>que creas que más se pueda adaptar a la manera de ser de tu pareja.</p>
+   <div class="contentWindowMessage">
+    <div id="WindowMessage" class="WindowMessage">
+      <div id="WindowMessage-button" class="WindowMessage-button"></div>
+      <div class="WindowMessage-content">
+        <p id="WindowMessage-text" class="WindowMessage-text">No has seleccionado nada:</p>
+        <ul id="WindowMessage-list" class="WindowMessage-list">
+        </ul>
+      </div>
+    </div>
 
+  </div>
+  <div class="contentCards">
    <div class="card">
     <div class="card_body">
       <div class="card_description">
@@ -274,33 +287,17 @@
         </div>
       </section>      
     </div>
-    <section class="sectionsPF" id="3">
-      <h2>Selecciona un actor</h2>
-      <p> ¿Qué le gusta a tu pareja? Elige lo que le pueda interesar</p>
-      <p><span class="btn_select_sex" id="hombres">HOMBRES</span>  <span class="btn_select_sex" id="mujeres">MUJERES</span></p>
+  </div>
+  <section class="sectionsPF" id="3">
+    <h2>Selecciona un actor</h2>
+    <p> ¿Qué le gusta a tu pareja? Elige lo que le pueda interesar</p>
+    <p><span class="btn_select_sex" id="hombres">HOMBRES</span>  <span class="btn_select_sex" id="mujeres">MUJERES</span></p>
 
-      <div id="men_slider" class="slider">
-        <span class="arrows left"></span>
-        <ul>
-          <li>
-            <img src="img/actor1.jpg" alt="imagen modelo hombre"/>
-            <div class="actors_description">
-             <h2>ARNO</h2>
-             <hr>
-             <p>ALTURA: 188 / 74"</p>
-             <p>SUIT: 50 / 19.5"</p>
-             <p>PANTALONES: 40 / 15.5"</p>
-             <p>PIE: 44</p>
-             <p>PELO: Marrón claro</p>
-             <p>OJOS: Azul</p>
-             <label>
-               <input type="radio" name="actor" value="arno" id="arno1">
-               <span class="card_btn card_btn_colorDiferent">SELECCIONAR</span>
-             </label>
-           </div>
-         </li>
-         <li>
-          <img src="img/actor2.jpg" alt="imagen modelo hombre"/>
+    <div id="men_slider" class="slider">
+      <span class="arrows left"> <img src="img/arrowLeft.png"></span>
+      <ul>
+        <li>
+          <img src="img/actor1.jpg" alt="imagen modelo hombre"/>
           <div class="actors_description">
            <h2>ARNO</h2>
            <hr>
@@ -311,13 +308,13 @@
            <p>PELO: Marrón claro</p>
            <p>OJOS: Azul</p>
            <label>
-             <input type="radio" name="actor" value="arno" id="arno2">
+             <input type="radio" name="actor" value="arno" id="arno1">
              <span class="card_btn card_btn_colorDiferent">SELECCIONAR</span>
            </label>
          </div>
        </li>
        <li>
-        <img src="img/actor3.jpg" alt="imagen modelo hombre"/>
+        <img src="img/actor2.jpg" alt="imagen modelo hombre"/>
         <div class="actors_description">
          <h2>ARNO</h2>
          <hr>
@@ -328,13 +325,13 @@
          <p>PELO: Marrón claro</p>
          <p>OJOS: Azul</p>
          <label>
-           <input type="radio" name="actor" value="arno" id="arno3">
+           <input type="radio" name="actor" value="arno" id="arno2">
            <span class="card_btn card_btn_colorDiferent">SELECCIONAR</span>
          </label>
        </div>
      </li>
      <li>
-      <img src="img/actor1.jpg" alt="imagen modelo hombre"/>
+      <img src="img/actor3.jpg" alt="imagen modelo hombre"/>
       <div class="actors_description">
        <h2>ARNO</h2>
        <hr>
@@ -345,13 +342,13 @@
        <p>PELO: Marrón claro</p>
        <p>OJOS: Azul</p>
        <label>
-         <input type="radio" name="actor" value="arno" id="arno4">
+         <input type="radio" name="actor" value="arno" id="arno3">
          <span class="card_btn card_btn_colorDiferent">SELECCIONAR</span>
        </label>
      </div>
    </li>
    <li>
-    <img src="img/actor2.jpg" alt="imagen modelo hombre"/>
+    <img src="img/actor1.jpg" alt="imagen modelo hombre"/>
     <div class="actors_description">
      <h2>ARNO</h2>
      <hr>
@@ -362,12 +359,29 @@
      <p>PELO: Marrón claro</p>
      <p>OJOS: Azul</p>
      <label>
-       <input type="radio" name="actor" value="arno" id="arno5">
+       <input type="radio" name="actor" value="arno" id="arno4">
        <span class="card_btn card_btn_colorDiferent">SELECCIONAR</span>
      </label>
    </div>
  </li>
  <li>
+  <img src="img/actor2.jpg" alt="imagen modelo hombre"/>
+  <div class="actors_description">
+   <h2>ARNO</h2>
+   <hr>
+   <p>ALTURA: 188 / 74"</p>
+   <p>SUIT: 50 / 19.5"</p>
+   <p>PANTALONES: 40 / 15.5"</p>
+   <p>PIE: 44</p>
+   <p>PELO: Marrón claro</p>
+   <p>OJOS: Azul</p>
+   <label>
+     <input type="radio" name="actor" value="arno" id="arno5">
+     <span class="card_btn card_btn_colorDiferent">SELECCIONAR</span>
+   </label>
+ </div>
+</li>
+<li>
   <img src="img/actor3.jpg" alt="imagen modelo hombre">
   <div class="actors_description">
    <h2>ARNO</h2>
@@ -385,31 +399,14 @@
  </div>
 </li>
 </ul>
-<span class="arrows right"></span>
+<span class="arrows right"><img src="img/arrowRight.png"></span>
 </div>
 
 <div id="women_slider" class="slider" style="display: none">
-  <span class="arrows left"></span>
-  <ul>
-    <li>
-      <img src="img/actriz1.jpg" alt="imagen modelo mujer"/>
-      <div class="actors_description">
-       <h2>ARNO</h2>
-       <hr>
-       <p>ALTURA: 188 / 74"</p>
-       <p>SUIT: 50 / 19.5"</p>
-       <p>PANTALONES: 40 / 15.5"</p>
-       <p>PIE: 44</p>
-       <p>PELO: Marrón claro</p>
-       <p>OJOS: Azul</p>
-       <label>
-         <input type="radio" name="actor" value="arno" id="actriz1">
-         <span class="card_btn card_btn_colorDiferent">SELECCIONAR</span>
-       </label>
-     </div>
-   </li>
-   <li>
-    <img src="img/actriz2.jpg" alt="imagen modelo mujer"/>
+ <span class="arrows left"> <img src="img/arrowLeft.png"></span>
+ <ul>
+  <li>
+    <img src="img/actriz1.jpg" alt="imagen modelo mujer"/>
     <div class="actors_description">
      <h2>ARNO</h2>
      <hr>
@@ -420,12 +417,29 @@
      <p>PELO: Marrón claro</p>
      <p>OJOS: Azul</p>
      <label>
-       <input type="radio" name="actor" value="arno" id="actriz2">
+       <input type="radio" name="actor" value="arno" id="actriz1">
        <span class="card_btn card_btn_colorDiferent">SELECCIONAR</span>
      </label>
    </div>
  </li>
  <li>
+  <img src="img/actriz2.jpg" alt="imagen modelo mujer"/>
+  <div class="actors_description">
+   <h2>ARNO</h2>
+   <hr>
+   <p>ALTURA: 188 / 74"</p>
+   <p>SUIT: 50 / 19.5"</p>
+   <p>PANTALONES: 40 / 15.5"</p>
+   <p>PIE: 44</p>
+   <p>PELO: Marrón claro</p>
+   <p>OJOS: Azul</p>
+   <label>
+     <input type="radio" name="actor" value="arno" id="actriz2">
+     <span class="card_btn card_btn_colorDiferent">SELECCIONAR</span>
+   </label>
+ </div>
+</li>
+<li>
   <img src="img/actriz3.jpg" alt="imagen modelo mujer"/>
   <div class="actors_description">
    <h2>ARNO</h2>
@@ -494,7 +508,7 @@
  </div>
 </li>
 </ul>
-<span class="arrows right"></span>
+<span class="arrows right"><img src="img/arrowRight.png"></span>
 </div>
 </section>
 <div  class="content_color_pf">
@@ -564,11 +578,11 @@
 <footer>
   <img src="img/logofooter.svg" class="logoFooter" alt="logo impares">
   <nav class="listfooter nav_secundaria">
-    <ul>
+    <ul class="nav_secundaria-list">
      <!-- <li><a href="#">preguntas frecuentes</a></li>
       <li><a href="#">testimonios</a></li>
       <li><a href="#">política de privacidad</a></li>-->
-      <li><a href="contacto.html">contacto</a></li>
+      <li><a href="contacto.html" class="nav_secundaria-link">contacto</a></li>
     </ul>
   </nav>
 

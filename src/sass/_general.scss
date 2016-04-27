@@ -44,20 +44,20 @@ h6 {
 	font-weight: 100;
 }
 
-ul {
+/*ul {
 	text-decoration: none;
 	margin:0 auto;	
 	text-transform: uppercase;	
 	-webkit-padding-start: 0px;
-}
+}*/
 
-li {
+/*li {
 	color: #fff;
 	font-weight: 100;
 	display: inline-block;
 	padding-top: 10px;
 	padding-right: 20px;
-}
+}*/
 
 p {
 	font-size: 14px;	
@@ -110,12 +110,20 @@ p {
 	text-decoration: none;
 }
 
+.WindowMessage {
+	position: fixed;
+	right: 0;
+	top: 50%;
+	border: 1px solid #000;
+	z-index: 99;		
+}
+
 @media screen and (max-width: 634px) {
 
-		li{
+		/*li{
 		display: block;
 		padding: 0;
-	}
+	}*/
 }
 
 @media screen and (max-width: 540px) {
