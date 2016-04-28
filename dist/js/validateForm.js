@@ -5,13 +5,14 @@ $('#btn_prueba').click(function(ev){
               if(nombre.length < 1 || nombre.length >15){
                 $('input[name="nombre_usuario"]').prev().show();
                 $('input[name="nombre_usuario"]').addClass('error');
+                $('input[name="nombre_usuario"]').focus();
               }else{
                 $('input[name="nombre_usuario"]').prev().hide();
                 $('input[name="nombre_usuario"]').removeClass('error');
               }
 
               var email_usuario = $('input[name="email_usuario"]').val();
-              if(email_usuario.length < 0 ){
+              if(email_usuario.length == 0 ){
                 $('input[name="email_usuario"]').prev().show();
                 $('input[name="email_usuario"]').addClass('error');
               }

@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
   var windowIsOpen = false;
 
   var selectAmbient = function(elem) {
@@ -27,50 +27,36 @@ $(document).ready(function(){
         $('#WindowMessage').addClass('is_open');
     }
    
-  }
- 
+  } 
 
   $('#masaje').on('click', function() {
     selectAmbient($(this));
-    
-     
   });
 
    $('#copa').on('click', function() {
     selectAmbient($(this));
-   
-     
   });
 
   $('#correr').on('click', function() {
     selectAmbient($(this));
-   
-     
   });
 
   $('#biblio').on('click', function() {
     selectAmbient($(this));
-    
-     
   });
 
     $('#arregla').on('click', function() {
-    selectAmbient($(this));
-   
-     
+    selectAmbient($(this)); 
   });
-
       $('#ley').on('click', function() {
-    selectAmbient($(this));
-    
-     
+    selectAmbient($(this));         
   });
 
 });
+*/
 
 
-
-/*$(document).ready(function(){
+$(document).ready(function(){
 
   $("#masaje").click(function () {        
    var masaje = $('input:radio[name=selec]:checked').val();    
@@ -155,4 +141,4 @@ $('#close_x').click(function (e) {
     $('#selection').fadeIn(80).animate({ "right": "+=250px" }, "fast" );
     $('#close').fadeIn(80).animate({ "right": "+=250px" }, "fast" );
   }           
-});*/
+});

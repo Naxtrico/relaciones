@@ -28,7 +28,7 @@
     }
 }
 
-.button_color_PF_info, .button_color_goHome{
+.button_color_goHome{
 	color:#fff;
 	background-color:#31353D;
 }
@@ -71,20 +71,6 @@
 	background-color: #49494A;
 	color: #fff;
 	text-align: center;
-}
-
-.btn_select_sex{
-	margin-top: 20px;
-	padding: 10px 30px;
-	font-size: 16px;
-	font-weight: bold;
-	cursor: pointer;
-	text-decoration: none;
-	color:#311752;
-	display: inline-block;
-	background-color: #bba2cd;
-	border: none;
-   transition: all 0.5s ease;
 }
 
 .btn_pagar{

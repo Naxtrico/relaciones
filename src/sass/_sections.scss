@@ -23,7 +23,7 @@
 	color:#fff;
 }
 
-.sectionsPF, .sectionDejar, .section_pasarela{
+.sectionsPFSteps, .sectionsPF, .sectionDejar, .section_pasarela{
 	margin:0 auto;
 	width: 100%;
 	max-width: 1024px;
@@ -33,6 +33,10 @@
     vertical-align: middle;
     padding-top: 50px;
     padding-bottom: 70px;
+}
+
+.sectionsPF{
+	max-width: 800px;
 }
 
 .section_pasarela{
@@ -48,8 +52,10 @@
 
 
 
-.sectionsPF h2{
+.titleInfoPf{
 	font-size: 24px;
+	font-weight: 600;
+	color:#2C0C52;	
 }
 
 .sectionDejar h2{

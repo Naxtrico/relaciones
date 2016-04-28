@@ -179,7 +179,7 @@ input[type="radio"] {
     background-color: #555;
     color: #fff; }
 
-.button_color_PF_info, .button_color_goHome {
+.button_color_goHome {
   color: #fff;
   background-color: #31353D; }
 
@@ -215,20 +215,6 @@ input[type="radio"] {
   background-color: #49494A;
   color: #fff;
   text-align: center; }
-
-.btn_select_sex {
-  margin-top: 20px;
-  padding: 10px 30px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
-  color: #311752;
-  display: inline-block;
-  background-color: #bba2cd;
-  border: none;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
 
 .btn_pagar {
   color: #fff;
@@ -267,7 +253,7 @@ input[type="radio"] {
   background-image: url(../../dist/img/masaje.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 481px;
   width: 32%;
   float: left;
   color: #fff;
@@ -301,7 +287,7 @@ input[type="radio"] {
 
 .card_body {
   position: relative;
-  top: 250px;
+  top: 175px;
   height: 100%;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
@@ -945,6 +931,12 @@ p {
   border: 1px solid #000;
   z-index: 99; }
 
+@media screen and (max-width: 634px) {
+  /*li{
+		display: block;
+		padding: 0;
+	}*/ }
+
 @media screen and (max-width: 540px) {
   p {
     font-size: 14px;
@@ -1518,7 +1510,7 @@ nav {
   font-family: 'PT Serif', serif;
   color: #fff; }
 
-.sectionsPF, .sectionDejar, .section_pasarela {
+.sectionsPFSteps, .sectionsPF, .sectionDejar, .section_pasarela {
   margin: 0 auto;
   width: 100%;
   max-width: 1024px;
@@ -1529,6 +1521,9 @@ nav {
   padding-top: 50px;
   padding-bottom: 70px; }
 
+.sectionsPF {
+  max-width: 800px; }
+
 .section_pasarela {
   padding-top: 100px;
   padding-left: 1em;
@@ -1537,8 +1532,10 @@ nav {
 .section_pasarela h1 {
   color: #000; }
 
-.sectionsPF h2 {
-  font-size: 24px; }
+.titleInfoPf {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2C0C52; }
 
 .sectionDejar h2 {
   font-size: 24px;
@@ -1827,10 +1824,9 @@ nav {
 .info_steps h3 {
   font-size: 18px; }
 
-.content_button_steps {
-  clear: both;
-  margin-top: 50px;
-  padding-top: 50px; }
+.infoStepsDescription {
+  font-size: 14px;
+  line-height: 25px; }
 
 @media screen and (max-width: 800px) {
   .info_steps {

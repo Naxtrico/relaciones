@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
   var windowIsOpen = false;
 
   var selectAmbient = function(elem) {
@@ -53,10 +53,10 @@ $(document).ready(function(){
   });
 
 });
+*/
 
 
-
-/*$(document).ready(function(){
+$(document).ready(function(){
 
   $("#masaje").click(function () {        
    var masaje = $('input:radio[name=selec]:checked').val();    
@@ -141,4 +141,4 @@ $('#close_x').click(function (e) {
     $('#selection').fadeIn(80).animate({ "right": "+=250px" }, "fast" );
     $('#close').fadeIn(80).animate({ "right": "+=250px" }, "fast" );
   }           
-});*/
+});
