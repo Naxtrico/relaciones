@@ -231,6 +231,7 @@ input[type="radio"] {
   transition: all 0.5s ease; }
 
 .btn_pagar {
+  color: #fff;
   margin-top: 50px;
   background-color: #67b244;
   -webkit-transition: all 0.5s ease;
@@ -657,10 +658,10 @@ input[type=radio] {
   display: none; }
 
 input[type=radio]:checked + span {
-  background-color: #058411;
+  background-color: #C66D14;
   background-repeat: no-repeat;
   background-position: right;
-  border: 1px solid #058411;
+  border: 1px solid #C66D14;
   color: #fff; }
 
 input[type="text"] {
@@ -767,6 +768,13 @@ fieldset {
   width: auto;
   padding: 2rem; }
 
+span.error {
+  color: #DB2020 !important;
+  display: none; }
+
+input.error {
+  border: 2px solid #DB2020 !important; }
+
 .content_form {
   background-color: #fff;
   width: auto;
@@ -837,23 +845,26 @@ html, body {
   height: 100%;
   font-family: 'Open Sans', sans-serif; }
 
+/*
 h1 {
-  font-size: 35px;
-  font-weight: 600;
-  color: #fff; }
-
-h2 {
-  font-weight: 600;
-  color: #2C0C52; }
-
+	font-size: 35px;
+	font-weight: 600;
+	color:#fff;	
+}
+*/
+/*h2 {		
+	
+	font-weight: 600;
+	color:#2C0C52;	
+}*/
 h1, h2 {
   font-family: 'PT Serif', serif; }
 
-h3 {
-  font-size: 24px;
-  font-weight: 500;
-  color: #2C0C52; }
-
+/*h3 {	
+	font-size: 24px;
+	font-weight: 500;
+	color:#2C0C52;	
+}*/
 h4 {
   font-size: 22px;
   font-weight: 100; }
@@ -880,9 +891,12 @@ h6 {
 	padding-right: 20px;
 }*/
 p {
-  font-size: 14px;
+  /*font-size: 14px;*/
   line-height: 25px;
-  margin: 0; }
+  /*margin: 0;*/ }
+
+.lineSeparator {
+  border: 1px solid #fff; }
 
 .ocult {
   display: none; }
@@ -967,6 +981,14 @@ header.fixed {
           transform: translate(-50%, -50%); }
 
 .services_copy_home h1 {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  font-size: 45px;
+  text-transform: none;
+  font-weight: 600;
+  color: #fff; }
+
+.homeCopy {
   margin-top: 7px;
   margin-bottom: 7px;
   font-size: 45px;
@@ -1344,9 +1366,6 @@ nav {
 .email_sent img, .payment img {
   margin-bottom: 15px; }
 
-.pay a {
-  color: #fff; }
-
 @media screen and (max-width: 1024px) {
   .email_sent, .payment {
     width: auto;
@@ -1560,18 +1579,18 @@ nav {
   text-align: center;
   overflow: hidden; }
 
-.team h2, .team h3 {
+.teamTitle--color, .membersTitle--color {
   color: #529CA0; }
 
-.team h2 {
+.teamTitle {
   font-size: 35px;
   margin: 0; }
 
-.team h3 {
+.membersTitle {
   font-size: 20px;
   font-weight: bold; }
 
-.team p {
+.teamDescMembers {
   font-size: 16px;
   color: #000; }
 
@@ -1588,12 +1607,8 @@ nav {
     max-width: 600px; } }
 
 @media screen and (max-width: 768px) {
-  .team h2 {
-    font-size: 30px; }
-  .team h3 {
-    font-size: 25px; }
-  .team p {
-    font-size: 16px; } }
+  .teamTitle {
+    font-size: 30px; } }
 
 @media screen and (max-width: 650px) {
   .whatdo_desc_left, .whatdo_desc_right {
@@ -1628,10 +1643,11 @@ nav {
   margin-top: 50px;
   display: inline-block; }
 
-.cite p {
+.citeText {
   font-size: 26px;
   line-height: 35px;
-  color: #fff; }
+  color: #fff;
+  margin: 0; }
 
 .members {
   float: left;
@@ -1661,7 +1677,7 @@ nav {
     margin-right: auto; } }
 
 @media screen and (max-width: 768px) {
-  .cite p {
+  .citeText {
     font-size: 24px; } }
 
 @media screen and (max-width: 620px) {
@@ -1729,21 +1745,23 @@ nav {
   margin-top: 40px;
   width: 70%; }
 
-.services_copy {
+.servicesCopy {
   width: 100%;
   text-align: center; }
 
-.services_copy h1 {
+.servicesCopyText {
   margin-top: 7px;
-  margin-bottom: 7px; }
+  margin-bottom: 7px;
+  color: #fff;
+  font-size: 35px; }
 
-.services_copy p {
+.servicesCopy p {
   color: #fff;
   font-size: 15px;
   margin: 0; }
 
 @media screen and (max-width: 540px) {
-  .services_copy p, .services_copy_home p, .services_copy_home p {
+  .servicesCopy p, .services_copy_home p, .services_copy_home p {
     font-size: 14px; }
   .services_copy_home h1 {
     font-size: 25px; }
@@ -1755,6 +1773,8 @@ nav {
     padding-top: 15px; }
   .contentCopyBottom {
     padding-bottom: 35px; }
+  .servicesCopyText {
+    font-size: 25px; }
   .contentCopyBottom, .contentCopyBottomcontacto {
     width: 70%; }
   .content_copy_Top_whatdo {

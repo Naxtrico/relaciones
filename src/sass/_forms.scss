@@ -30,10 +30,10 @@ input[type=radio]{
  }
 
  input[type=radio]:checked + span{ 	
- 	background-color: #058411; 	
+ 	background-color: #C66D14; 	
  	background-repeat: no-repeat;
  	background-position: right;
- 	border: 1px solid #058411;
+ 	border: 1px solid #C66D14;
  	color:#fff;
  }
 
@@ -152,6 +152,17 @@ fieldset{
   padding: 2rem;  
   
 }
+
+
+span.error {
+        color: #DB2020!important;
+         display: none;
+      }
+
+      input.error {
+        border: 2px solid #DB2020!important;
+      }
+      
 
 
 .content_form{

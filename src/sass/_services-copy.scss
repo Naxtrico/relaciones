@@ -28,17 +28,19 @@
 	width: 70%;
 }
 
-.services_copy{
+.servicesCopy{
 	width: 100%;
 	text-align: center;
 }
 
-.services_copy h1{
+.servicesCopyText{
 	margin-top: 7px;
 	margin-bottom: 7px;
+	color:#fff;
+	font-size: 35px;
 }
 
-.services_copy p {
+.servicesCopy p {
 	color: #fff;
 	font-size: 15px;
 	margin:0;
@@ -47,7 +49,7 @@
 
 @media screen and (max-width: 540px) {
 
-	.services_copy p, .services_copy_home p, .services_copy_home p  {    
+	.servicesCopy p, .services_copy_home p, .services_copy_home p  {    
    		font-size: 14px;
 	}
 
@@ -71,7 +73,9 @@
 	 	padding-bottom: 35px;
 	 } 
 
-	
+	.servicesCopyText{
+		font-size: 25px;
+	}
 
 	.contentCopyBottom, .contentCopyBottomcontacto {
 		width: 70%;

@@ -12,10 +12,11 @@
 	
 }
 
-.cite p {
+.citeText {
 	font-size: 26px;
 	line-height: 35px;
-	color:#fff;
+	color:#fff;	
+	margin: 0;
 }
 
 .members{
@@ -58,7 +59,7 @@
 
 @media screen and (max-width: 768px) {
 
-  .cite p {
+  .citeText {
   font-size: 24px; 
 }
 

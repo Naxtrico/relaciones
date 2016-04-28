@@ -100,21 +100,21 @@
 	overflow: hidden;
 }
 
-.team h2, .team h3{
+.teamTitle--color, .membersTitle--color{
 	color: #529CA0;
 }
 
-.team h2{	
+.teamTitle{	
 	font-size: 35px;
 	margin:0;
 }
 
-.team h3{	
+.membersTitle{	
 	font-size: 20px;
 	font-weight: bold;
 }
 
-.team p{
+.teamDescMembers{
 	font-size: 16px;
 	color:#000;
 }
@@ -146,20 +146,13 @@
 
 @media screen and (max-width: 768px) {
 
-	.team h2{	
+	.teamTitle{	
 		font-size: 30px;
 		
 	}
 
-	.team h3{	
-		font-size: 25px;
-	}
-
-	.team p{
-		font-size: 16px;
-	}
+	
 }
-
 @media screen and (max-width: 650px) {
 
 		.whatdo_desc_left, .whatdo_desc_right {
