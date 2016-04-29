@@ -19,7 +19,7 @@ h1 {
 }*/
 
 h1,h2{
-	font-family: 'PT Serif', serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -44,12 +44,12 @@ h6 {
 	font-weight: 100;
 }
 
-/*ul {
-	text-decoration: none;
-	margin:0 auto;	
-	text-transform: uppercase;	
+ul {
+	/*text-decoration: none;*/
+	/*margin:0 auto;*/	
+	/*text-transform: uppercase;*/	
 	-webkit-padding-start: 0px;
-}*/
+}
 
 /*li {
 	color: #fff;
@@ -62,12 +62,15 @@ h6 {
 p {
 	/*font-size: 14px;*/
 	line-height: 25px;
-	/*margin: 0;*/
+	margin: 0;
 }
 
 .lineSeparator{
 	
 	border: 1px solid #fff;
+	width: 60%;
+	margin-top: 0;
+	margin-bottom: 35px;
 }
 
 .ocult{
@@ -78,16 +81,15 @@ p {
 	background-color: #F0F0F1;
 }
 
-.yourSelection{
-	padding: 20px;
+.yourSelection{	
 	background-color: #EEEEEE;
-	width: 250px;
+	width: 280px;
 	margin:0 auto;
 	box-sizing:border-box;
 	border: 1px solid #999899;
 	display: none;
 	position: absolute;
-	right: -250px;
+	right: -280px;
 	position: fixed;
     top: 50%;
     z-index: 1;
@@ -95,19 +97,19 @@ p {
 
 .close{
 	display: none;
-   position: fixed;   
+    position: absolute;
     background-color: #000;
     color: #fff;
-    top: 50%;
+    top: -1px;
     width: 40px;
-    height: 40px;
+    height: 60px;
     text-align: center;
-    line-height: 37px;
-    font-size: 25px;    
+    line-height: 60px;
+    font-size: 25px;
     right: 0;
-    z-index: 2;    
-	border-top-left-radius: 100px;
-	border-bottom-left-radius: 100px;
+    z-index: 2;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
 
 .close a {
@@ -115,12 +117,52 @@ p {
 	text-decoration: none;
 }
 
-.WindowMessage {
-	position: fixed;
-	right: 0;
-	top: 50%;
-	border: 1px solid #000;
-	z-index: 99;		
+.yourSelectionHeader{
+	    background-color: #000;
+    color: #fff;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: relative;
+    right: 1px;
+    top: -1px;
+    width: 280px;
+}
+
+.yourSelectionItem{
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 25px;	 
+	list-style:none;
+	padding: 1em;	
+    overflow: hidden;
+}
+
+.resumeImg{
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-right: 5px;
+}
+
+.yourSelectionItemPrice{
+	float: right;
+    position: absolute;
+    right: 12px;    
+}
+
+.yourSelectionResumePrice{
+	list-style:none;
+	text-align: right;
+	font-size: 14px;
+	border-top: 1px solid #999899;
+	padding-top: 1em;
+	padding-right: 1em;
+	font-weight: 600;    
+}
+
+.clearFix{
+	clear: both;
 }
 
 @media screen and (max-width: 634px) {

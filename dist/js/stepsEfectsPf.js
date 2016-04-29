@@ -45,16 +45,5 @@ $(document).ready(function(){
      $("#paso4").removeClass("stepNumber-item-selected");
    }
  });
-});
-$(document).ready(function(){
-  var altura = $("#5").offset().top -200;
-  $(window).scroll(function(){
-    if($(window).scrollTop() >= altura){
-      $("#paso5").addClass("stepNumber-item-selected");
-      $("#paso4").removeClass("stepNumber-item-selected");
-    }else{
 
-     $("#paso5").removeClass("stepNumber-item-selected");
-   }
- });
 });

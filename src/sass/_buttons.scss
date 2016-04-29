@@ -65,6 +65,21 @@
 	border-radius: 4px;
 }
 
+.cardBtnActors{
+	padding: 2px 25px;
+	font-size: 15px;	
+	font-weight: 600;
+	cursor: pointer;
+	text-decoration: none;
+	color:#000;
+	border: 1px solid #606060;
+	display: inline-block;
+	line-height: 30px;		
+	border-radius: 4px;	
+    transition: all 0.5s ease;
+    margin-top: 80px;
+}
+
 
 .btn_reg_now{
 	width: 100%;

@@ -3,14 +3,14 @@
 	margin:0 auto;
 	width: 100%;
 	max-width: 1024px;
-    box-sizing: border-box;
-    text-align: center;
-    overflow: hidden;
-    vertical-align: middle;
-    padding: 20px 60px 70px 60px;    
-    background-color: #fff;
-    position: relative;
-    top: -77px;
+	box-sizing: border-box;
+	text-align: center;
+	overflow: hidden;
+	vertical-align: middle;
+	padding: 20px 60px 70px 60px;    
+	background-color: #fff;
+	position: relative;
+	top: -77px;
 }
 
 .home_services h2{
@@ -23,19 +23,25 @@
 	color:#fff;
 }
 
-.sectionsPFSteps, .sectionsPF, .sectionDejar, .section_pasarela{
+.sectionsDescriptions{
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+.sectionsPFSteps, .sectionsPF, .sectionDejar, .section_pasarela, .sectionsPfForm, .sectionActors{
 	margin:0 auto;
 	width: 100%;
 	max-width: 1024px;
-    box-sizing: border-box;
-    text-align: center;
-    overflow: hidden;
-    vertical-align: middle;
-    padding-top: 50px;
-    padding-bottom: 70px;
+	box-sizing: border-box;
+	text-align: center;
+	overflow: hidden;
+	vertical-align: middle;
+	padding-top: 50px;
+	padding-bottom: 70px;
 }
 
-.sectionsPF{
+.sectionsPF, .sectionsPfForm, .sectionActors{
 	max-width: 800px;
 }
 
@@ -99,7 +105,7 @@
 .team{
 	background-color: #f1f1f2;
 	padding-left: 13em;
-    padding-right: 13em;
+	padding-right: 13em;
 	padding-top: 3em;
 	padding-bottom: 3em;
 	text-align: center;
@@ -130,7 +136,7 @@
 	.team{
 
 		padding-left: 6em;
-	    padding-right: 6em;
+		padding-right: 6em;
 
 	}
 
@@ -139,13 +145,16 @@
 @media screen and (max-width: 1024px) {	
 
 	.sectionsPF, .sectionDejar{
-			padding-right: 1em;
-			padding-left: 1em;
-		}
+		padding-right: 1em;
+		padding-left: 1em;			
+	}
 
+	.sectionsPF{
+		max-width: 600px;
+	}
 	.home_services{		
 		max-width: 600px;   
-    
+
 	}
 
 }
@@ -161,15 +170,15 @@
 }
 @media screen and (max-width: 650px) {
 
-		.whatdo_desc_left, .whatdo_desc_right {
-	float: none;
-	width: 100%;
-		   
-}
+	.whatdo_desc_left, .whatdo_desc_right {
+		float: none;
+		width: 100%;
+
+	}
 
 	.team{
 		padding-left: 1em;
-	    padding-right: 1em;
+		padding-right: 1em;
 	}
 
 }
@@ -185,13 +194,14 @@
 
 @media screen and (max-width: 540px) {
 
-	.sectionsPF, .sectionDejar{
+	.sectionsPF, .sectionDejar, .sectionsPFSteps{
 		padding-right: 1em;
 		padding-left: 1em;
+		max-width: 310px;
 	}
 
 	.sectionsPF h2, .sectionDejar h2 {	
-	font-size: 20px;	
+		font-size: 20px;	
 	}
 
 
