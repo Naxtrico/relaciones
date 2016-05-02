@@ -8,12 +8,9 @@
     color: #fff;
     margin-top: 50px;    
     margin-right: 2%;
-    overflow: hidden;
-    -webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
+    overflow: hidden;    
 	border-radius: 10px;
-    box-sizing:border-box;
-    -webkit-box-sizing:border-box;
+    box-sizing:border-box;    
 }
 
 .cardDejar:nth-of-type(4n){
@@ -37,11 +34,7 @@
 	padding: 2px 0px;
 	width: 60px;
 	line-height: 25px;
-	display: inline-block;
-	-webkit-border-top-left-radius: 4px;
-	-webkit-border-bottom-left-radius: 4px;
-	-moz-border-radius-topleft: 4px;
-	-moz-border-radius-bottomleft: 4px;
+	display: inline-block;	
 	border-top-left-radius: 4px;
 	border-bottom-left-radius: 4px;
 }
@@ -64,10 +57,6 @@
 	text-align: left;
 	color:#381443;
 	text-align: center;	
-	-webkit-border-bottom-right-radius: 10px;
-	-webkit-border-bottom-left-radius: 10px;
-	-moz-border-radius-bottomright: 10px;
-	-moz-border-radius-bottomleft: 10px;
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 }
@@ -99,11 +88,7 @@
 	border: 1px solid #99172F;
 	display: inline-block;
 	line-height: 25px;
-	background-color: #99172F;
-	-webkit-border-top-right-radius: 4px;
-	-webkit-border-bottom-right-radius: 4px;
-	-moz-border-radius-topright: 4px;
-	-moz-border-radius-bottomright: 4px;
+	background-color: #99172F;	
 	border-top-right-radius: 4px;
 	border-bottom-right-radius: 4px;
     @include transition;
@@ -128,12 +113,7 @@
 	border: 1px solid #99172F;	
 	line-height: 25px;
 	margin-bottom: 20px;	
-	-webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-	border-radius: 4px;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition:all 0.5s ease;
-    -o-transition: all 0.5s ease;
+	border-radius: 4px;   
     transition: all 0.5s ease;
 }
 

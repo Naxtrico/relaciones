@@ -12,10 +12,11 @@
 	
 }
 
-.cite p {
+.citeText {
 	font-size: 26px;
 	line-height: 35px;
-	color:#fff;
+	color:#fff;	
+	margin: 0;
 }
 
 .members{
@@ -39,9 +40,7 @@
 .members_img{
 	margin-top: 40px;
 	width: 200px;
-	border-radius: 500px;
-	-webkit-border-radius: 500px;
-	-moz-border-radius: 500px;
+	border-radius: 500px;	
 }
 
 @media screen and (max-width: 940px) {
@@ -60,7 +59,7 @@
 
 @media screen and (max-width: 768px) {
 
-  .cite p {
+  .citeText {
   font-size: 24px; 
 }
 

@@ -1,0 +1,86 @@
+ .slider {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        margin-top: 40px;
+    }
+
+        .slider span.arrows {
+            width: 25px;
+            height: 25px;
+            position: absolute;            
+            opacity: .5;
+            top: 46%;
+            z-index: 2;
+            cursor: pointer;
+        }
+
+            .slider span.left {
+                left: 0;
+            }
+            .slider span.right {
+                right: 0;
+            }
+
+        .slider ul {
+            width: 100%;
+            position: absolute;
+            line-height: inherit;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: block;
+        }
+
+            .slider ul li {
+                margin: 0;
+                padding: 0;
+                float: left;
+                display: inline-block;
+                position: relative;
+            }
+
+            .slider ul li.first {
+/*                margin-left: 0;*/
+            }
+
+            .slider ul li img {
+                margin: 0;
+                display: block;
+                padding: 0;
+                border: none;
+            }
+
+
+            label {
+                font-size: 16px;
+            }
+
+            input[type="radio"] {
+                visibility: hidden;
+            }
+
+
+                    
+
+            .slider ul li div.actors_description {
+                position: absolute;
+                top: 100%;
+                text-align: center;
+                height: 100%;
+                width: 80%;
+                background-color: rgba(187,162, 205, 0.8);
+                padding: 10%;
+                transition: all 0.5s ease;
+                z-index: 1;
+             }
+
+             .slider ul li div.actors_description p {
+                 color: #000;
+             }
+
+             .slider ul li:hover div.actors_description {
+                 top: 0;
+             }

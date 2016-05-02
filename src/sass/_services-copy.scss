@@ -3,9 +3,7 @@
     position: relative;
     left: 50%;
     top: 50%;
-
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);    
 }
 
 .contentCopyTop{
@@ -30,17 +28,20 @@
 	width: 70%;
 }
 
-.services_copy{
+.servicesCopy{
 	width: 100%;
 	text-align: center;
 }
 
-.services_copy h1{
+.servicesCopyText{
 	margin-top: 7px;
 	margin-bottom: 7px;
+	color:#fff;
+	font-size: 35px;
+	font-weight: 500;
 }
 
-.services_copy p {
+.servicesCopy p {
 	color: #fff;
 	font-size: 15px;
 	margin:0;
@@ -49,12 +50,12 @@
 
 @media screen and (max-width: 540px) {
 
-	.services_copy p, .services_copy_home p, .services_copy_home p  {    
-   		font-size: 14px;
+	.servicesCopy p, .services_copy_home p, .services_copy_home p  {    
+   		font-size: 18px;
 	}
 
 	.services_copy_home h1{
-		font-size: 25px;	
+		font-size: 30px;	
 	}
 
 	.contentCopy, .contentCopycontacto, .content_copy_whatdo, {
@@ -73,7 +74,9 @@
 	 	padding-bottom: 35px;
 	 } 
 
-	
+	.servicesCopyText{
+		font-size: 25px;
+	}
 
 	.contentCopyBottom, .contentCopyBottomcontacto {
 		width: 70%;

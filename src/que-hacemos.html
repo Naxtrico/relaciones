@@ -23,11 +23,11 @@
   <header>
     <a href="index.html"><img src="img/logo.svg" class="logo" id="logo" alt="logo impares"></a>
     <nav class="nav_principal" id="nav_principal">
-      <ul>
-        <li><a href="que-hacemos.html">¿que hacemos?</a></li>
-        <li><a href="prueba-de-fidelidad.html">prueba de fidelidad</a></li>
-        <li><a href="dejar.html">dejar</a></li>
-        <li><a href="#" id="registry_icon_mobile" class="icon_register_mobile"><img src="img/perfil.svg" alt="logo registro login"></a></li>
+      <ul class="nav_principal-list">
+        <li class="nav_principal-item"><a href="que-hacemos.html" class="nav_principal-link">¿que hacemos?</a></li>
+        <li class="nav_principal-item"><a href="prueba-de-fidelidad.html" class="nav_principal-link">prueba de fidelidad</a></li>
+        <li class="nav_principal-item"><a href="dejar.html" class="nav_principal-link">dejar</a></li>
+        <li class="nav_principal-item"><a href="#" id="registry_icon_mobile" class="icon_register_mobile"><img src="img/perfil.svg" alt="icono registrarse"></a></li>
             <!--<li><a href="#">paquete negro</a></li>
             <li><a href="#">tienda</a></li>
             <li><a href="#">red impares</a></li>-->
@@ -83,32 +83,32 @@
       </header>
       <div class="back_full_screen_whatdo"> </div>    
       <!-- POP UP LOGIN -->
-   <div class="popup" data-popup="popup-1">
-    <div class="popup-inner">
-      <h2>¡HOLA!</h2>
-      <p>Login correcto</p>
-      <p><a data-popup-close="popup-1" href="#">Close</a></p>
-      <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
-    </div>
-  </div>
-  <!-- POP UP -->
-  <!-- POP UP REGISTRO -->
-  <div class="popup" data-popup="popup-2">
-    <div class="popup-inner">
-      <h2>¡REGISTRO COMPLETADO!</h2>
-      <p>Bienvenido a IMPARES</p>
-      <p><a data-popup-close="popup-2" href="#">Close</a></p>
-      <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
-    </div>
-  </div>
-  <!-- POP UP -->
+      <div class="popup" data-popup="popup-1">
+        <div class="popup-inner">
+          <h2>¡HOLA!</h2>
+          <p>Login correcto</p>
+          <p><a data-popup-close="popup-1" href="#">Close</a></p>
+          <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+        </div>
+      </div>
+      <!-- POP UP -->
+      <!-- POP UP REGISTRO -->
+      <div class="popup" data-popup="popup-2">
+        <div class="popup-inner">
+          <h2>¡REGISTRO COMPLETADO!</h2>
+          <p>Bienvenido a IMPARES</p>
+          <p><a data-popup-close="popup-2" href="#">Close</a></p>
+          <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+        </div>
+      </div>
+      <!-- POP UP -->
       
       <div class="container_copy_whatdo">
         <section class="content_copy_whatdo">
           <div class="content_copy_Top_whatdo">            
           </div>
-          <div class="services_copy">
-            <h1>¿Qué hacemos?</h1>            
+          <div class="servicesCopy">
+            <h1 class="servicesCopyText">¿Qué hacemos?</h1>            
           </div>
           <!--
           <div class="contentCopyBottomcontacto">
@@ -132,10 +132,10 @@
           </p>
         </div>
         <div class="cite">
-          <p>
+          <p class="citeText">
             Porque lo de:  “cada oveja con su pareja” no siempre es así…
           </p> 
-          <p>
+          <p class="citeText">
             Bienvenido a nuestro mundo IMPARES!
           </p>
           
@@ -144,14 +144,14 @@
       </section>
     </div>
     <section class="team">
-      <h2>Nuestro equipo</h2>
+      <h2 class="teamTitle teamTitle--color">Nuestro equipo</h2>
       <div class="members">
         <img src="img/Mariona.jpg" class="members_img" alt="mariona">
-        <h3>
+        <h3 class="membersTitle membersTitle--color">
           Consejera del desamor
         </h3>
 
-        <p>
+        <p class="teamDescMembers">
           Siempre habrá alguien con las palabras
           adecuadas para levantarte el ánimo 
           en esos momentos difíciles.
@@ -159,28 +159,28 @@
         
       </div>
       <div class="members">
-         <img src="img/Jordi.jpg" class="members_img" alt="jordi">
-        <h3>
-          Recogedor de lágrimas
-        </h3>
+       <img src="img/Jordi.jpg" class="members_img" alt="jordi">
+       <h3 class="membersTitle membersTitle--color">
+        Recogedor de lágrimas
+      </h3>
 
-        <p> 
-          Tus lágrimas son importantes, 
-          no las desperdicies. 
-          Te harán falta para otras cosas.
-        </p>
-        
-      </div>
-      <div class="members">
-        <img src="img/Natalia.jpg" class="members_img" alt="natalia">
-       <h3> 
+      <p class="teamDescMembers"> 
+        Tus lágrimas son importantes, 
+        no las desperdicies. 
+        Te harán falta para otras cosas.
+      </p>
+
+    </div>
+    <div class="members">
+      <img src="img/Natalia.jpg" class="members_img" alt="natalia">
+      <h3 class="membersTitle membersTitle--color"> 
         Reconstructora de corazones
       </h3>
 
-      <P>
+      <P class="teamDescMembers">
         Especialista en recoger los pedazos 
-      de tu corazón y reconstruirlos 
-      para comenzar de nuevo.
+        de tu corazón y reconstruirlos 
+        para comenzar de nuevo.
       </P> 
 
     </div>
@@ -189,11 +189,11 @@
   <footer>
     <img src="img/logofooter.svg" class="logoFooter" alt="logo impares">
     <nav class="listfooter nav_secundaria">
-      <ul>
+      <ul class="nav_secundaria-list">
           <!-- <li><a href="#">preguntas frecuentes</a></li>
           <li><a href="#">testimonios</a></li>
           <li><a href="#">política de privacidad</a></li>-->
-          <li><a href="contacto.html">contacto</a></li>
+          <li><a href="contacto.html" class="nav_secundaria-link">contacto</a></li>
         </ul>
       </nav>
       <div class="iconsfooter">
@@ -206,148 +206,12 @@
       </div>
     </footer>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-    <script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>    
     <script src="js/wow.js"></script>
-    <!-- efect scroll page -->
-    <script type="text/javascript">
-    $(function() {
-      $('a[href*="#"]:not([href="#"])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html, body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-    </script>
-    <!-- end efect scroll page -->
-    <!-- efect menu fixed -->
-    <script type="text/javascript">
-    jQuery(window).scroll(function () {
-      var threshold = 1;
-      if  (jQuery(window).scrollTop() >= 1)
-        jQuery('header').addClass('fixed');
-      else
-        jQuery('header').removeClass('fixed');
-    });
-    </script>
-    <!-- pantallas de registro y login DESKTOP -->
-    <script type="text/javascript">
-    $("#registry_icon").click(function () {
-      console.log($("#Container_login").css("display"));
-      if($("#Container_login").css("display") == "block" ){
-        $("#Container_login").hide();
-      }else{
-        $('#registration').hide();
-        $("#Container_login #login").show();
-        $("#Container_login").show();
-      }
-    });
-    </script>
-    <script type="text/javascript">
-    $(document).ready(function () {
-      $("#registrate").click(function () {
-        $("#Container_login #login").hide();
-        $('#registration').show();
-      });
-    });
-    $("#registration a.back-to-login").click(function(){
-      $("#Container_login #login").show();
-      $('#registration').hide();
-      return false;
-    });
-    </script>
-
-    <!-- pantallas de registro y login MOBILE -->
-    <script type="text/javascript">
-    $("#registry_icon_mobile").click(function () {
-      console.log($("#Container_login").css("display"));
-      if($("#Container_login").css("display") == "block" ){
-        $("#Container_login").hide();
-      }else{
-        $('#registration').hide();
-        $("#Container_login #login").show();
-        $("#Container_login").show();
-      }
-    });
-    </script>
-    <script type="text/javascript">
-    $(document).ready(function () {
-     $("#registrate").click(function () {
-       $("#Container_login #login").hide();
-       $('#registration').show();
-     });
-   });
-    $("#registration a.back-to-login").click(function(){
-     $("#Container_login #login").show();
-     $('#registration').hide();
-     return false;
-   });
-    </script>
-
-    <script type="text/javascript">
-    $("#identificar").click(function () {
-      console.log($("#Container_login").css("display"));
-      if($("#Container_login").css("display") == "block" ){
-        $("#Container_login").hide();
-      }else{
-        $('#registration').hide();
-        $("#Container_login #login").hide();
-        $("#Container_login").hide();
-      }
-    });
-    </script>
-
-    <script type="text/javascript">
-    $("#registrar").click(function () {
-      console.log($("#Container_login").css("display"));
-      if($("#Container_login").css("display") == "block" ){
-        $("#Container_login").hide();
-      }else{
-        $('#registration').hide();
-        $("#Container_login #login").hide();
-        $("#Container_login").hide();
-      }
-    });
-
-    </script>
-
-    <!-- menu hamburguer-->
-    <script type="text/javascript">
-    document.querySelector( "#nav-toggle" ).addEventListener( "click", function() {
-      this.classList.toggle( "active" );
-    });
-    $("#nav-toggle").click(function () {
-      if($('#nav_principal').hasClass('visible')){
-        $('#nav_principal').removeClass('visible');
-      }else{
-        $('#nav_principal').addClass('visible');
-      }
-    });
-    </script>
-    <!-- POPUP-->
-    <script type="text/javascript">
-    $(function() {
-    //----- OPEN
-    $('[data-popup-open]').on('click', function(e)  {
-      var targeted_popup_class = jQuery(this).attr('data-popup-open');
-      $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
-      e.preventDefault();
-    });
-    //----- CLOSE
-    $('[data-popup-close]').on('click', function(e)  {
-      var targeted_popup_class = jQuery(this).attr('data-popup-close');
-      $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
-      e.preventDefault();
-    });
-  });
-    </script>
-    <!-- POPUP-->
+    <script src="js/scrollTo.js" type="text/javascript"></script>
+    <script src="js/menuFixed.js" type="text/javascript"></script>
+    <script src="js/registerLoginScreens.js" type="text/javascript"></script>
+    <script src="js/menuMobile.js" type="text/javascript"></script>
+    <script src="js/popUpLoginRegister.js" type="text/javascript"></script>
   </body>
   </html>
