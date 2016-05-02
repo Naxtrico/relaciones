@@ -1,27 +1,14 @@
 
-.home_services{
+.homeServices{
 	margin:0 auto;
-	width: 100%;
-	max-width: 1024px;
+	width: 100%;	
 	box-sizing: border-box;
-	text-align: center;
+	text-align: left;
 	overflow: hidden;
-	vertical-align: middle;
-	padding: 20px 60px 70px 60px;    
-	background-color: #fff;
-	position: relative;
-	top: -77px;
+	vertical-align: middle;	   
+	background-color: #fff;	
 }
 
-.home_services h2{
-	font-size: 30px;
-	color: #000;
-}
-
-.home_services h3{
-	font-family: 'PT Serif', serif;
-	color:#fff;
-}
 
 .sectionsDescriptions{
 	margin-bottom: 20px;
@@ -152,10 +139,7 @@
 	.sectionsPF{
 		max-width: 600px;
 	}
-	.home_services{		
-		max-width: 600px;   
-
-	}
+	
 
 }
 
@@ -168,6 +152,8 @@
 
 	
 }
+
+
 @media screen and (max-width: 650px) {
 
 	.whatdo_desc_left, .whatdo_desc_right {
@@ -179,15 +165,6 @@
 	.team{
 		padding-left: 1em;
 		padding-right: 1em;
-	}
-
-}
-
-@media screen and (max-width: 625px) {		
-
-	.home_services{		
-		max-width: 95%;
-		padding: 20px 1.5em 70px 1.5em;    
 	}
 
 }
