@@ -1,6 +1,6 @@
-.desc_p{
+.whatDoDescP{
   margin-bottom: 20px;
-  color: #fff;
+  color: #000;
 }
 
 .cite{
@@ -14,8 +14,7 @@
 
 .citeText {
 	font-size: 26px;
-	line-height: 35px;
-	color:#fff;	
+	line-height: 35px;		
 	margin: 0;
 }
 
@@ -41,6 +40,41 @@
 	margin-top: 40px;
 	width: 200px;
 	border-radius: 500px;	
+}
+
+.whatdo_desc_left, .whatdo_desc_right{
+
+    margin-top: 50px;
+} 
+
+.whatdo_desc_left{
+    float: left;
+    margin-right: 6%;
+
+}
+
+.whatdo_desc_right{
+    float: right;
+    
+}
+
+.teamTitle--color, .membersTitle--color{
+    color: #C0212F;
+}
+
+.teamTitle{ 
+    font-size: 35px;
+    margin:0;
+}
+
+.membersTitle{  
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.teamDescMembers{
+    font-size: 16px;
+    color:#000;
 }
 
 @media screen and (max-width: 940px) {

@@ -1,7 +1,7 @@
 .icons{
 	float:right;
 	color:#fff;	
-    line-height: 75px;	
+    line-height: 50px;	
 	text-align: left;
 	text-align: right;
     padding-right: 40px;
@@ -9,4 +9,25 @@
 
 .icons img{
 	margin-right: 10px;
+	vertical-align: middle;
 }
+
+.iconsLink{	
+	font-size: 12px;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    padding-right: 3px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+@media screen and (max-width: 1067px) {
+    
+    .icons{
+        line-height: 76px;
+    }
+
+}
+    

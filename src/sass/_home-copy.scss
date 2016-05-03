@@ -2,8 +2,7 @@
    	width: 90%;
     position: relative;
     left: 50%;
-    top: 45%;
-    text-align: center;
+    top: 45%;    
     transform: translate(-50%, -50%);    
 }
 
@@ -13,7 +12,8 @@
 	font-size: 45px;
 	text-transform: none;	
 	font-weight: 600;
-	color:#fff;	
+	color:#fff;
+	text-align: left;	
 }
 
 .homeCopy{
@@ -29,6 +29,14 @@
 	margin:0;
 	line-height: 35px;	
 	text-shadow: 2px 2px rgba(0,0,0,0.40);
+}
+
+.homeUiLineSeparator{
+	width: 600px;
+	border: 1px solid #fff;
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 

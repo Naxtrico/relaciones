@@ -1,13 +1,12 @@
 /* entire container, keeps perspective */
 .flip-container {
-  -webkit-perspective: 1000;
-          perspective: 1000;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
   float: left;
-  width: 30%;
   margin-top: 50px;
   border: 1px	solid #2C0C52;
   box-sizing: border-box;
-  margin-right: 5%; }
+  margin-right: 3%; }
 
 .flip-container:last-child {
   margin-right: 0; }
@@ -18,18 +17,17 @@
           transform: rotateY(180deg); }
 
 .flip-container, .front {
-  width: 30%;
-  height: 412px;
+  width: 22.5%;
+  height: 320px;
   padding-top: 5px; }
 
 .back {
   width: 100%;
   background-color: #B3ABCE;
-  padding-top: 95px;
   padding-bottom: 20px; }
 
 .imageActors {
-  width: 318%; }
+  width: 437%; }
 
 /* flip speed goes here */
 .flipper {
@@ -69,6 +67,19 @@
     width: 220px;
     width: auto;
     margin: 0 auto; } }
+
+.contactCanals {
+  float: left;
+  text-align: center;
+  width: 33.33333333%; }
+
+@media screen and (max-width: 599px) {
+  .contactCanals {
+    float: none;
+    margin: 0 auto;
+    width: 100%; }
+  .contactCanals:nth-child(+n+2) {
+    margin-top: 30px; } }
 
 .slider {
   width: 100%;
@@ -221,19 +232,6 @@ input[type="radio"] {
 .button_color_goHome {
   margin-top: 50px; }
 
-.contacto_button {
-  padding: 10px 30px;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
-  background-color: #fff;
-  text-decoration: none;
-  color: #000;
-  display: inline-block;
-  text-transform: uppercase;
-  box-sizing: border-box;
-  border: none; }
-
 .button_login_reg {
   padding: 10px 30px;
   font-size: 15px;
@@ -258,7 +256,7 @@ input[type="radio"] {
   border-radius: 4px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  margin-top: 80px; }
+  margin-top: 83px; }
 
 .btn_reg_now {
   width: 100%;
@@ -554,59 +552,23 @@ input[type="radio"] {
   .cardDejar_description h2 {
     font-size: 18px; } }
 
-.containerred {
-  width: 100%;
-  background-color: #AF2131; }
-
-.contentCopycontacto {
-  width: 400px;
-  position: relative;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  box-sizing: border-box;
-  bottom: -28px; }
-
-.contentCopyTopcontacto {
+.contentCopyContacto {
+  max-width: 740px;
   margin: 0 auto;
-  border-top: 3px solid #fff;
-  border-right: 3px solid #fff;
-  border-left: 3px solid #fff;
-  padding-top: 11px;
   text-align: center;
-  width: 90%;
-  background-color: #AF2131;
-  box-sizing: border-box; }
+  margin-top: 50px;
+  padding-left: 1em;
+  padding-right: 1em; }
 
-.contentCopyBottomcontacto {
-  margin: 0 auto;
-  border-bottom: 3px solid #fff;
-  border-right: 3px solid #fff;
-  border-left: 3px solid #fff;
-  padding-bottom: 60px;
-  text-align: center;
-  margin-top: 40px;
-  width: 90%;
-  color: #fff; }
+.copyContacto {
+  margin-bottom: 30px;
+  color: #831D31;
+  font-size: 35px;
+  font-weight: 500; }
 
-@media screen and (max-width: 540px) {
-  .contentCopyBottomcontacto {
-    margin-top: 55px; }
-  .contentCopycontacto {
-    bottom: -16px; } }
-
-@media screen and (max-width: 380px) {
-  .contentCopycontacto {
-    bottom: -27px; } }
-
-@media screen and (max-width: 368px) {
-  .contentCopycontacto {
-    bottom: -37px; } }
-
-@media screen and (max-width: 330px) {
-  .contentCopycontacto {
-    bottom: -37px; } }
+.contactoDescription {
+  color: #000;
+  margin-bottom: 30px; }
 
 footer {
   background-color: #49494A;
@@ -670,25 +632,12 @@ footer {
   .iconsfooter {
     padding-top: 10px; } }
 
-.contact_form {
-  max-width: 600px;
-  margin: 0 auto;
-  color: #fff;
-  padding: 0 1em 3em; }
-
 .sent_form {
   text-align: center;
   max-width: 1024px;
   margin: 0 auto;
   color: #fff;
   padding-bottom: 50px; }
-
-.contact_form input[type="submit"] {
-  color: #000;
-  background-color: #fff;
-  border-radius: 4px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
 
 /* general forms  PRUEBA DE FIDELIDAD*/
 .selectSex {
@@ -829,7 +778,7 @@ form p {
   margin-bottom: 10px; }
 
 label {
-  font-size: 16px; }
+  font-size: 14px; }
 
 legend {
   position: relative;
@@ -946,7 +895,8 @@ h1 {
 	color:#2C0C52;	
 }*/
 h1, h2 {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'PT Serif', serif;
+  font-weight: 600; }
 
 /*h3 {	
 	font-size: 24px;
@@ -981,7 +931,8 @@ ul {
 p {
   /*font-size: 14px;*/
   line-height: 25px;
-  margin: 0; }
+  margin: 0;
+  font-weight: 500; }
 
 .lineSeparator {
   border: 1px solid #fff;
@@ -1025,7 +976,6 @@ header.fixed {
   position: relative;
   left: 50%;
   top: 45%;
-  text-align: center;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
@@ -1036,7 +986,8 @@ header.fixed {
   font-size: 45px;
   text-transform: none;
   font-weight: 600;
-  color: #fff; }
+  color: #fff;
+  text-align: left; }
 
 .homeCopy {
   margin-top: 7px;
@@ -1051,13 +1002,19 @@ header.fixed {
   line-height: 35px;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.4); }
 
+.homeUiLineSeparator {
+  width: 600px;
+  border: 1px solid #fff;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
 @media screen and (max-width: 540px) {
   .content_copy_home {
     width: 90%; } }
 
 .home_services_Pf, .home_services_Dejar {
   overflow: hidden;
-  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -1065,10 +1022,12 @@ header.fixed {
   box-sizing: border-box; }
 
 .home_services_Pf {
-  background-image: url(../../dist/img/servicePfHome.jpg); }
+  background-image: url(../../dist/img/servicePfHome.jpg);
+  background-position: center left; }
 
 .home_services_Dejar {
-  background-image: url(../../dist/img/serviceDejarHome.jpg); }
+  background-image: url(../../dist/img/serviceDejarHome.jpg);
+  background-position: center right; }
 
 .homeServicesCopiesPf, .homeServicesCopiesDejar {
   max-width: 500px;
@@ -1180,13 +1139,27 @@ header.fixed {
 .icons {
   float: right;
   color: #fff;
-  line-height: 75px;
+  line-height: 50px;
   text-align: left;
   text-align: right;
   padding-right: 40px; }
 
 .icons img {
-  margin-right: 10px; }
+  margin-right: 10px;
+  vertical-align: middle; }
+
+.iconsLink {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  padding-right: 3px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+@media screen and (max-width: 1067px) {
+  .icons {
+    line-height: 76px; } }
 
 .Container_login {
   display: none; }
@@ -1333,8 +1306,8 @@ nav {
   height: 75px;
   display: inline-block;
   text-align: right;
-  float: left;
-  margin-left: 20px; }
+  float: right;
+  margin-right: 25px; }
 
 .nav_principal-link, .nav_secundaria-link {
   font-size: 12px;
@@ -1358,7 +1331,7 @@ nav {
   font-weight: 100;
   display: inline-block;
   padding-top: 10px;
-  padding-right: 20px; }
+  padding-right: 30px; }
 
 @media screen and (max-width: 1067px) {
   .nav_principal {
@@ -1374,7 +1347,8 @@ nav {
     z-index: -1;
     padding-right: 10px;
     padding-left: 10px;
-    line-height: 75px; }
+    line-height: 75px;
+    margin-right: 0; }
   .nav_principal::before {
     content: "";
     width: 106px;
@@ -1637,6 +1611,24 @@ nav {
 .section_pasarela h1 {
   color: #000; }
 
+.sectionContactForm {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 1em 3em; }
+
+.sectionContactoCanals {
+  max-width: 740px;
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  overflow: hidden; }
+
+.contentsectionContactoCanalsBg {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #EFEFEF;
+  width: 100%; }
+
 .titleInfoPf {
   font-size: 24px;
   font-weight: 600;
@@ -1657,16 +1649,9 @@ nav {
 .content_desc_whatdo {
   max-width: 950px;
   margin: 0 auto;
-  color: #fff;
   padding: 0 3em 3em;
-  overflow: hidden; }
-
-.whatdo_desc_left {
-  float: left;
-  margin-right: 6%; }
-
-.whatdo_desc_right {
-  float: right; }
+  overflow: hidden;
+  text-align: center; }
 
 .whatdo_desc_left, .whatdo_desc_right {
   width: 47%;
@@ -1680,21 +1665,6 @@ nav {
   padding-bottom: 3em;
   text-align: center;
   overflow: hidden; }
-
-.teamTitle--color, .membersTitle--color {
-  color: #529CA0; }
-
-.teamTitle {
-  font-size: 35px;
-  margin: 0; }
-
-.membersTitle {
-  font-size: 20px;
-  font-weight: bold; }
-
-.teamDescMembers {
-  font-size: 16px;
-  color: #000; }
 
 @media screen and (max-width: 1280px) {
   .team {
@@ -1730,9 +1700,9 @@ nav {
   .content_desc_whatdo {
     padding: 0 2em 2em; } }
 
-.desc_p {
+.whatDoDescP {
   margin-bottom: 20px;
-  color: #fff; }
+  color: #000; }
 
 .cite {
   width: 100%;
@@ -1744,7 +1714,6 @@ nav {
 .citeText {
   font-size: 26px;
   line-height: 35px;
-  color: #fff;
   margin: 0; }
 
 .members {
@@ -1765,6 +1734,31 @@ nav {
   margin-top: 40px;
   width: 200px;
   border-radius: 500px; }
+
+.whatdo_desc_left, .whatdo_desc_right {
+  margin-top: 50px; }
+
+.whatdo_desc_left {
+  float: left;
+  margin-right: 6%; }
+
+.whatdo_desc_right {
+  float: right; }
+
+.teamTitle--color, .membersTitle--color {
+  color: #C0212F; }
+
+.teamTitle {
+  font-size: 35px;
+  margin: 0; }
+
+.membersTitle {
+  font-size: 20px;
+  font-weight: bold; }
+
+.teamDescMembers {
+  font-size: 16px;
+  color: #000; }
 
 @media screen and (max-width: 940px) {
   .members {
@@ -1790,29 +1784,12 @@ nav {
 
 .container_copy_whatdo {
   width: 100%;
-  background-color: #529CA0; }
+  padding-top: 50px; }
 
-.content_copy_whatdo {
-  width: 400px;
-  position: relative;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  box-sizing: border-box;
-  bottom: 13px; }
-
-.content_copy_Top_whatdo {
-  margin: 0 auto;
-  border-top: 3px solid #fff;
-  border-right: 3px solid #fff;
-  border-left: 3px solid #fff;
-  padding-top: 11px;
-  text-align: center;
-  width: 90%;
-  background-color: #529CA0;
-  box-sizing: border-box;
-  height: 80px; }
+.whatoDoTitle {
+  margin-bottom: 30px;
+  color: #C0212F;
+  font-size: 35px; }
 
 .contentCopy {
   width: 500px;
