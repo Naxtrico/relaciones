@@ -1,25 +1,9 @@
-.contact_form{
-	max-width: 600px;	
-	margin: 0 auto;
-	color:#fff;
-	padding: 0 1em 3em;
-}
-
 .sent_form{
 	text-align: center;
 	max-width: 1024px;	
 	margin: 0 auto;
 	color:#fff;
 	padding-bottom: 50px;
-}
-
-.contact_form input[type="submit"]{	
-	color:#000;	
-	background-color: #fff;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	@include transition;
 }
 
 
@@ -178,7 +162,7 @@ form p{
 }
 
 label{
-	font-size: 16px;
+	font-size: 14px;
 }
 
 legend{

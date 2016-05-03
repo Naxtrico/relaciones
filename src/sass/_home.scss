@@ -1,6 +1,5 @@
 .home_services_Pf, .home_services_Dejar{
-	overflow: hidden;
-	background-position: center center;
+	overflow: hidden;	
 	background-repeat: no-repeat;
 	background-size: cover;	
 	width: 100%;
@@ -10,12 +9,14 @@
 
 .home_services_Pf{
 	background-image:url(../../dist/img/servicePfHome.jpg);
+	background-position: center left;
 	
 
 }
 
 .home_services_Dejar{
 	background-image:url(../../dist/img/serviceDejarHome.jpg);
+	background-position: center right;
 	
 }
 

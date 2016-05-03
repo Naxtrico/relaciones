@@ -22,22 +22,23 @@
 <body>
   <header>
     <a href="index.html"><img src="img/logo.svg" class="logo" id="logo" alt="logo impares"></a>
+    <div class="icons">
+     <a href="#" id="registry_icon" class="icon_register_desktop"><img src="img/perfil.svg" alt="logo login registro"> <span class="iconsLink">ENTRAR</span></a>
+     <!--<a href="#"><img src="img/carrito.svg"></a>-->
+     <a href="#" id="nav-toggle" class="nav-toggle content-nav-toggle"><span></span></a>
+   </div>          
+
     <nav class="nav_principal" id="nav_principal">
-       <ul class="nav_principal-list">
-       <li class="nav_principal-item"><a href="que-hacemos.html" class="nav_principal-link">¿que hacemos?</a></li>
-       <li class="nav_principal-item"><a href="prueba-de-fidelidad.html" class="nav_principal-link">prueba de fidelidad</a></li>
-       <li class="nav_principal-item"><a href="dejar.html" class="nav_principal-link">dejar</a></li>
-       <li class="nav_principal-item"><a href="#" id="registry_icon_mobile" class="icon_register_mobile"><img src="img/perfil.svg" alt="icono registrarse"></a></li>
-            <!--<li><a href="#">paquete negro</a></li>
-            <li><a href="#">tienda</a></li>
-            <li><a href="#">red impares</a></li>-->
-          </ul>
-        </nav>
-        <div class="icons">
-          <a href="#" id="registry_icon" class="icon_register_desktop"><img src="img/perfil.svg" alt="logo registro"></a>
-          <!--<a href="#"><img src="img/carrito.svg"></a>-->
-          <a href="#" id="nav-toggle" class="nav-toggle content-nav-toggle"><span></span></a>
-        </div>
+     <ul class="nav_principal-list">
+      <li class="nav_principal-item"><a href="que-hacemos.html" class="nav_principal-link">¿que hacemos?</a></li>
+      <li class="nav_principal-item"><a href="prueba-de-fidelidad.html" class="nav_principal-link">prueba de fidelidad</a></li>
+      <li class="nav_principal-item"><a href="dejar.html" class="nav_principal-link">dejar</a></li>
+      <li class="nav_principal-item"><a href="#" id="registry_icon_mobile" class="icon_register_mobile"><img src="img/perfil.svg" alt="icono registrarse"></a></li>
+       <!-- <li><a href="#">paquete negro</a></li>
+        <li><a href="#">tienda</a></li>
+        <li><a href="#">red impares</a></li>-->
+      </ul>
+    </nav>
         <div id="Container_login" class="Container_login">
           <div class="login" id="login">
             <h3>IDENTIFÍCATE</h3>
@@ -102,33 +103,51 @@
         </div>
       </div>
       <!-- POP UP -->
-      <div class="containerred">
-        <section class="contentCopycontacto">
-          <div class="contentCopyTopcontacto">
-            <img src="img/sobrecontacto.svg" alt="imagen carta">
+      
+      <section class="contentCopyContacto">
+
+        <h1 class="copyContacto">¿Te podemos ayudar?</h1>
+        <p class="contactoDescription">
+          Si necesitas contactarnos por alguna duda que no te ha quedado clara o simplemente quieres hacernos saber algo, rellena el siguiente formulario
+        </p>
+
+      </section>
+      
+      <section class="sectionContactForm">
+        <form action="contacto-enviado.html" method ="get">
+          <label>Nombre</label>
+          <span class="error">Nombre es obligatorio</span>
+          <input type="text" id="nombre_contact" name="Nombre_contact" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'" required>
+          <label>Email</label>
+          <span class="error">Email es obligatorio</span>
+          <input type="text" name="email_contact" title="Indica un Email válido" pattern="^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" required>
+          <label>Escribe aquí tu comentario</label>
+          <span class="error">Comentario es obligatorio</span>
+          <textarea rows="4" name="comentario_contact" cols="50" placeholder="Comentario" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Comentario'"></textarea>
+          <div class="content_btn_form">
+            <input type="submit" class="form_button_PF" id="formContact" value="ENVIAR">
           </div>
-          <div class="servicesCopy">
-            <h1 class="servicesCopyText">¿Te podemos ayudar?</h1>
-            <p>Si necesitas contactarnos por alguna duda que no te</p>
-            <p>ha quedado clara o simplemente quieres hacernos</p>
-            <p>saber algo, rellena el siguiente formulario</p>
+        </form>
+      </section>
+
+      <div class="contentsectionContactoCanalsBg">
+        <section class="sectionContactoCanals">
+          <div class="contactCanals">
+            <img src="img/iconoTelefono.svg">
+            <p>LLámanos al:</p>
+            <p>933 457 863</p>
           </div>
-          <!--
-          <div class="contentCopyBottomcontacto">
-          </div>-->
-        </section>
-        <section class="contact_form">
-          <form action="contacto-enviado.html" method ="get">
-            <label>Nombre</label>
-            <input type="text" id="nombre_contact" name="Nombre_contact" required>
-            <label>Email</label>
-            <input type="text" title="Indica un Email válido" pattern="^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" value="*email" required>
-            <label>Escribe aquí tu comentario</label>
-            <textarea rows="4" cols="50"></textarea>
-            <div class="content_btn_form">
-              <input type="submit" class="contacto_button" id="cont_pers" value="CONTÁCTANOS">
-            </div>
-          </form>
+          <div class="contactCanals">
+            <img src="img/iconoMail.svg">
+            <p>Envianos un mail a:</p>
+            <p>info@imapres.com</p>
+          </div>
+          <div class="contactCanals">
+            <img src="img/iconoMapa.svg">
+            <p>Ven a visitarnos a:</p>
+            <p>C/ Villaroel, 125</p>
+            <p>Barcelona - 08013</p>
+          </div>
         </section>
       </div>
       
@@ -158,6 +177,7 @@
     <script src="js/menuFixed.js" type="text/javascript"></script>
     <script src="js/registerLoginScreens.js" type="text/javascript"></script>
     <script src="js/menuMobile.js" type="text/javascript"></script>
-    <script src="js/popUpLoginRegister.js" type="text/javascript"></script>    
+    <script src="js/popUpLoginRegister.js" type="text/javascript"></script>
+    <script src="js/validateForm.js" type="text/javascript"></script>    
   </body>
   </html>

@@ -193,6 +193,19 @@ $(document).ready(function(){
   }
 });
 
+  $("#arno4").click(function () {        
+   var masaje = $('input:radio[name=actor]:checked').val();    
+   $("#yourSelectionActor").html( "<img src='img/actor2.jpg' class='resumeImg'> " + masaje);
+   if(($('#selection').css('right') == '280px')){
+
+   }if(($('#selection').css('right') == '0px')){}
+
+   else {
+    $('#selection').fadeIn(80).animate({ "right": "+=280px" }, "fast" );
+    $('#close').fadeIn(80);
+  }
+});
+
   $("#actriz1").click(function () {        
    var masaje = $('input:radio[name=actor]:checked').val();    
    $("#yourSelectionActor").html( "<img src='img/actriz1.jpg'  class='resumeImg'> " + masaje);
@@ -222,6 +235,19 @@ $(document).ready(function(){
    $("#actriz3").click(function () {        
    var masaje = $('input:radio[name=actor]:checked').val();    
    $("#yourSelectionActor").html( "<img src='img/actriz3.jpg'  class='resumeImg'> " + masaje);
+   if(($('#selection').css('right') == '280px')){
+
+   }if(($('#selection').css('right') == '0px')){}
+
+   else {
+    $('#selection').fadeIn(80).animate({ "right": "+=280px" }, "fast" );
+    $('#close').fadeIn(80);
+  }
+});
+
+   $("#actriz4").click(function () {        
+   var masaje = $('input:radio[name=actor]:checked').val();    
+   $("#yourSelectionActor").html( "<img src='img/actriz2.jpg'  class='resumeImg'> " + masaje);
    if(($('#selection').css('right') == '280px')){
 
    }if(($('#selection').css('right') == '0px')){}

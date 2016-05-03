@@ -41,7 +41,13 @@
   </div>
   <!-- POP UP -->
   <header>            
-    <a href="index.html"><img src="img/logo.svg" class="logo" id="logo" alt="logo impares"></a>            
+    <a href="index.html"><img src="img/logo.svg" class="logo" id="logo" alt="logo impares"></a>  
+
+    <div class="icons">
+     <a href="#" id="registry_icon" class="icon_register_desktop"><img src="img/perfil.svg" alt="logo login registro"> <span class="iconsLink">ENTRAR</span></a>
+     <!--<a href="#"><img src="img/carrito.svg"></a>-->
+     <a href="#" id="nav-toggle" class="nav-toggle content-nav-toggle"><span></span></a>
+   </div>          
 
     <nav class="nav_principal" id="nav_principal">
      <ul class="nav_principal-list">
@@ -54,11 +60,7 @@
         <li><a href="#">red impares</a></li>-->
       </ul>
     </nav>
-    <div class="icons">
-     <a href="#" id="registry_icon" class="icon_register_desktop"><img src="img/perfil.svg" alt="logo login registro"></a>
-     <!--<a href="#"><img src="img/carrito.svg"></a>-->
-     <a href="#" id="nav-toggle" class="nav-toggle content-nav-toggle"><span></span></a>
-   </div>
+    
    <div id="Container_login" class="Container_login">
      <div class="login" id="login">
       <h3>IDENTIFÍCATE</h3>
@@ -318,31 +320,10 @@
      </div>
    </div>
  </div>
-</div>
-
-<div id="mujeres">
-       <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-        <div class="flipper">
-          <div class="front">
-            <img src="img/actriz1.jpg" alt="imagen modelo hombre" class="imageActors"/>
-          </div>
-          <div class="back">
-            <h2>ARNO</h2>
-            <hr class="lineSeparator">
-            <p class="descriptionActors">ALTURA: 188 / 74"</p>
-            <p class="descriptionActors">PELO: Marrón claro</p>
-            <p class="descriptionActors">OJOS: Azul</p>
-            <label>
-             <input type="radio" name="actor" value="Nati" id="actriz1">
-             <span class="cardBtnActors">Seleccionar</span>
-           </label>
-         </div>
-       </div>
-     </div>
-     <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+ <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
       <div class="flipper">
         <div class="front">
-          <img src="img/actriz2.jpg" alt="imagen modelo hombre" class="imageActors"/>
+          <img src="img/actor2.jpg" alt="imagen modelo hombre" class="imageActors"/>
         </div>
         <div class="back">
           <h2>ARNO</h2>
@@ -351,30 +332,88 @@
           <p class="descriptionActors">PELO: Marrón claro</p>
           <p class="descriptionActors">OJOS: Azul</p>
           <label>
-           <input type="radio" name="actor" value="Pepa" id="actriz2">
+           <input type="radio" name="actor" value="Luis" id="arno4">
            <span class="cardBtnActors">Seleccionar</span>
          </label>
        </div>
      </div>
    </div>
-   <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-    <div class="flipper">
-      <div class="front">
-        <img src="img/actriz3.jpg" alt="imagen modelo hombre" class="imageActors"/>
-      </div>
-      <div class="back">
-        <h2>ARNO</h2>
-        <hr class="lineSeparator">
-        <p class="descriptionActors">ALTURA: 188 / 74"</p>
-        <p class="descriptionActors">PELO: Marrón claro</p>
-        <p class="descriptionActors">OJOS: Azul</p>
-        <label>
-         <input type="radio" name="actor" value="Mika" id="actriz3">
-         <span class="cardBtnActors">Seleccionar</span>
-       </label>
-     </div>
+</div>
+
+<div id="mujeres">
+ <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+  <div class="flipper">
+    <div class="front">
+      <img src="img/actriz1.jpg" alt="imagen modelo hombre" class="imageActors"/>
+    </div>
+    <div class="back">
+      <h2>ARNO</h2>
+      <hr class="lineSeparator">
+      <p class="descriptionActors">ALTURA: 188 / 74"</p>
+      <p class="descriptionActors">PELO: Marrón claro</p>
+      <p class="descriptionActors">OJOS: Azul</p>
+      <label>
+       <input type="radio" name="actor" value="Nati" id="actriz1">
+       <span class="cardBtnActors">Seleccionar</span>
+     </label>
    </div>
  </div>
+</div>
+<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+  <div class="flipper">
+    <div class="front">
+      <img src="img/actriz2.jpg" alt="imagen modelo hombre" class="imageActors"/>
+    </div>
+    <div class="back">
+      <h2>ARNO</h2>
+      <hr class="lineSeparator">
+      <p class="descriptionActors">ALTURA: 188 / 74"</p>
+      <p class="descriptionActors">PELO: Marrón claro</p>
+      <p class="descriptionActors">OJOS: Azul</p>
+      <label>
+       <input type="radio" name="actor" value="Pepa" id="actriz2">
+       <span class="cardBtnActors">Seleccionar</span>
+     </label>
+   </div>
+ </div>
+</div>
+<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+  <div class="flipper">
+    <div class="front">
+      <img src="img/actriz3.jpg" alt="imagen modelo hombre" class="imageActors"/>
+    </div>
+    <div class="back">
+      <h2>ARNO</h2>
+      <hr class="lineSeparator">
+      <p class="descriptionActors">ALTURA: 188 / 74"</p>
+      <p class="descriptionActors">PELO: Marrón claro</p>
+      <p class="descriptionActors">OJOS: Azul</p>
+      <label>
+       <input type="radio" name="actor" value="Mika" id="actriz3">
+       <span class="cardBtnActors">Seleccionar</span>
+     </label>
+   </div>
+ </div>
+</div>
+
+<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+  <div class="flipper">
+    <div class="front">
+      <img src="img/actriz2.jpg" alt="imagen modelo hombre" class="imageActors"/>
+    </div>
+    <div class="back">
+      <h2>ARNO</h2>
+      <hr class="lineSeparator">
+      <p class="descriptionActors">ALTURA: 188 / 74"</p>
+      <p class="descriptionActors">PELO: Marrón claro</p>
+      <p class="descriptionActors">OJOS: Azul</p>
+      <label>
+       <input type="radio" name="actor" value="PepaPig" id="actriz4">
+       <span class="cardBtnActors">Seleccionar</span>
+     </label>
+   </div>
+ </div>
+</div>
 </div>
 
 </section>
@@ -417,7 +456,7 @@
   <section class="sectionsPfForm" id="4">
     <h2 class="titleInfoPf">Rellena el siguiente formulario</h2>
     <div class="content_form">
-      <form id="personal_data">
+      <form id="personal_data" action="pasarela.html">
         <fieldset>
           <legend>Tus datos</legend>
           <div class="contentItemsFormsLeft">
@@ -453,19 +492,19 @@
 
       <fieldset>        
         <legend>Tu pareja</legend>
-        <div class="contentItemsFormsLeft">     
-          <label>Nombre</label>
-          <span class="error">Must be between 4 and 15 characters</span>
-          <input type="text" id="nombre_pareja" required>
-          <label>Adjuntar foto</label>
-          <span class="error">Must be between 4 and 15 characters</span>
-          <input type='file' name='foto'>
-        </div>
-        <div class="clearFix">
-          <label>¿Qué le gusta a tu pareja?</label>
-          <span class="error">Must be between 4 and 15 characters</span>
-          <textarea id="nombrePar"> </textarea>
-        </div>
+
+        <label>Nombre</label>
+        <span class="error">Must be between 4 and 15 characters</span>
+        <input type="text" id="nombre_pareja" required>
+        <label>Adjuntar foto</label>
+        <span class="error">Must be between 4 and 15 characters</span>
+        <input type='file' name='foto'>
+        
+        
+        <label>¿Qué le gusta a tu pareja?</label>
+        <span class="error">Must be between 4 and 15 characters</span>
+        <textarea id="nombrePar"> </textarea>
+        
 
       </fieldset>
 

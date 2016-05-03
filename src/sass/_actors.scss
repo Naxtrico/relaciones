@@ -1,12 +1,11 @@
 /* entire container, keeps perspective */
 .flip-container {
-	perspective: 1000;
-	float: left;
-	width: 30%;
+	perspective: 1000px;
+	float: left;	
 	margin-top: 50px;
 	border: 1px	solid #2C0C52;
 	box-sizing: border-box;
-	margin-right: 5%;
+	margin-right: 3%;
 
 }
 
@@ -20,20 +19,19 @@
 	}
 
 .flip-container, .front, {
-	width: 30%;
-    height: 412px;
+	width: 22.5%;
+    height: 320px;
     padding-top: 5px;
 }
 
 .back{
 	width: 100%;
-	background-color: #B3ABCE;
-	padding-top: 95px;
+	background-color: #B3ABCE;	
     padding-bottom: 20px;
 }
 
 .imageActors{
-	width: 318%;
+	width: 437%;
 }
 
 /* flip speed goes here */
