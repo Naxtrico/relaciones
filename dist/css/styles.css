@@ -1018,7 +1018,7 @@ header.fixed {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 540px;
+  height: 424px;
   box-sizing: border-box; }
 
 .home_services_Pf {
@@ -1031,8 +1031,8 @@ header.fixed {
 
 .homeServicesCopiesPf, .homeServicesCopiesDejar {
   max-width: 500px;
-  margin-top: 110px;
-  margin-bottom: 110px; }
+  margin-top: 78px;
+  margin-bottom: 78px; }
 
 .homeServicesCopiesPf {
   margin-left: 10%;
@@ -1048,13 +1048,13 @@ header.fixed {
   font-weight: 400; }
 
 .servicesDescription {
-  font-size: 50px;
+  font-size: 35px;
   color: #fff;
   font-weight: 400;
-  line-height: 60px; }
+  line-height: 42px; }
 
 .marginBottom {
-  margin-bottom: 70px; }
+  margin-bottom: 30px; }
 
 .marginTop {
   margin-top: 30px; }
