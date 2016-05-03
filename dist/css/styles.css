@@ -946,6 +946,12 @@ p {
 .clearFix {
   clear: both; }
 
+@media screen and (max-width: 634px) {
+  /*li{
+		display: block;
+		padding: 0;
+	}*/ }
+
 @media screen and (max-width: 540px) {
   p {
     font-size: 14px;
