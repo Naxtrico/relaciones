@@ -195,7 +195,7 @@ $(document).ready(function(){
 
   $("#arno4").click(function () {        
    var masaje = $('input:radio[name=actor]:checked').val();    
-   $("#yourSelectionActor").html( "<img src='img/actor2.jpg' class='resumeImg'> " + masaje);
+   $("#yourSelectionActor").html( "<img src='img/actor4.jpg' class='resumeImg'> " + masaje);
    if(($('#selection').css('right') == '280px')){
 
    }if(($('#selection').css('right') == '0px')){}
@@ -247,7 +247,7 @@ $(document).ready(function(){
 
    $("#actriz4").click(function () {        
    var masaje = $('input:radio[name=actor]:checked').val();    
-   $("#yourSelectionActor").html( "<img src='img/actriz2.jpg'  class='resumeImg'> " + masaje);
+   $("#yourSelectionActor").html( "<img src='img/actriz4.jpg'  class='resumeImg'> " + masaje);
    if(($('#selection').css('right') == '280px')){
 
    }if(($('#selection').css('right') == '0px')){}
