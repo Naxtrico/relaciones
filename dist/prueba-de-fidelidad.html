@@ -264,7 +264,7 @@
        <option value="Mujeres">Mujeres</option>       
      </select> 
 
-     <div id="hombres">
+     <div id="hombres" class="contentMan">
        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
         <div class="flipper">
           <div class="front">
@@ -339,7 +339,7 @@
    </div>
 </div>
 
-<div id="mujeres">
+<div id="mujeres" class="contentWomen">
  <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
   <div class="flipper">
     <div class="front">
@@ -457,27 +457,27 @@
     <div class="content_form">
       <form id="personal_data" action="pasarela.html">
         <fieldset>
-          <legend>Tus datos</legend>
+          <legend class="titleFormsPf--color">Tus datos</legend>
           <div class="contentItemsFormsLeft">
 
             <label>Nombre</label>          
-            <span class="error">Must be between 4 and 15 characters</span>
+            <span class="error">Obligaorio</span>
             <input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'" required>
 
             <label>Móvil</label>
-            <span class="error">Must be between 4 and 15 characters</span>
+            <span class="error">Obligaorio</span>
             <input type="text" id="mobil" name="mobil"  required>
           </div>
 
           <div class="contentItemsFormsRight">
 
             <label>Email</label>
-            <span class="error">Must be between 4 and 15 characters</span>
+            <span class="error">Obligaorio</span>
             <input type="text" id="email_usuario" name="email_usuario" title="Indica un Email válido" pattern="^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'" required>
 
             <label>¿Cuando quieres que te llamemos?*</label>
             <span class="error">Must be between 4 and 15 characters</span>
-            <input type="date" id="hora" class="selectDate"  required> <select class="selectHour"> 
+            <input type="date" id="hora" class="selectDate selectDateArrowPf"  required> <select class="selectHour selectDateArrowPf"> 
             <option value="0000">00:00</option>
             <option value="0030">00:30</option>
             <option value="0100">01:00</option>
@@ -490,7 +490,7 @@
       </fieldset> 
 
       <fieldset>        
-        <legend>Tu pareja</legend>
+        <legend class="titleFormsPf--color">Tu pareja</legend>
 
         <label>Nombre</label>
         <span class="error">Must be between 4 and 15 characters</span>
@@ -508,17 +508,14 @@
       </fieldset>
 
       <fieldset>
-        <legend>Prueba</legend>             
+        <legend class="titleFormsPf--color">Prueba</legend>             
         <label>Lugar de realización de la prueba (Ciudad)</label>
         <span class="error">Must be between 4 and 15 characters</span>
         <input type="text" id="ciudad" required>
         <label>Fecha*</label>
         <span class="error">Must be between 4 and 15 characters</span>
-        <input type="date" id="hora" class="selectDate"  required>
-        <p class="textDetail">*debe de haber de margen una semana como mínimo desde la contratación</p>
-        <label>Adjuntar foto</label>
-        <span class="error">Must be between 4 and 15 characters</span>
-        <input type="file" name="adjunto">     
+        <input type="date" id="hora" class="selectDate selectDateArrowPf"  required>
+        <p class="textDetail">*debe de haber de margen una semana como mínimo desde la contratación</p>             
         
         <button type="submit" id="btn_prueba" class="form_button_PF" name="send_email">FINALIZAR</button>
 
@@ -563,3 +560,4 @@
 <script src="js/validateForm.js" type="text/javascript"></script>
 <script src="js/menWomen.js" type="text/javascript"></script>
 </body>
+</html>

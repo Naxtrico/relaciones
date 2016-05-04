@@ -69,12 +69,29 @@
 }
 
 
- @media screen and (max-width: 540px) {
+ @media screen and (max-width: 800px) {
 
- 	.actors_content{
-		float: none;
-		width: 220px;
-		width: auto;
-		margin: 0 auto
+ 	.flip-container{
+		width: 45%;
+		margin-right: 10%;
 	}
+
+	.flip-container:nth-child(even){
+		margin-right: 0;	
+}
+
+ }
+
+  @media screen and (max-width: 430px) {
+
+ 	.flip-container{
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.contentMan, .contentWomen{
+		max-width: 180px;
+		margin: 0 auto;
+	}
+
  }
