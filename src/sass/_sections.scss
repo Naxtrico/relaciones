@@ -16,7 +16,7 @@
 	line-height: 25px;
 }
 
-.sectionsPFSteps, .sectionsPF, .sectionDejar, .section_pasarela, .sectionsPfForm, .sectionActors{
+.sectionsPFSteps, .sectionsPF, .sectionDejar, .section_pasarela, .sectionsPfForm, .sectionActors, .sectionsDejarForm {
 	margin:0 auto;
 	width: 100%;
 	max-width: 1024px;
@@ -28,9 +28,10 @@
 	padding-bottom: 70px;
 }
 
-.sectionsPF, .sectionsPfForm, .sectionActors{
+.sectionsPF, .sectionsPfForm, .sectionActors, .sectionsDejarForm{
 	max-width: 800px;
 }
+
 
 .section_pasarela{
 	padding-top: 100px;
@@ -55,12 +56,12 @@
 	padding-left: 1em;
 	padding-right: 1em;
 	overflow: hidden;
-	  
+
 }
 
 .contentsectionContactoCanalsBg{
 	padding-top: 50px;
-    padding-bottom: 50px;  
+	padding-bottom: 50px;  
 	background-color: #EFEFEF;
 	width: 100%;
 }
@@ -71,7 +72,7 @@
 	color:#2C0C52;	
 }
 
-.sectionDejar h2{
+.titleInfoDejar{
 	font-size: 24px;
 	color:#99172F;
 }
@@ -128,10 +129,18 @@
 		padding-left: 1em;			
 	}
 
-	.sectionsPF{
+	.sectionsPF, .sectionDejar{
 		max-width: 600px;
 	}
 	
+
+}
+
+@media screen and (max-width: 800px) {
+
+	.sectionActors{
+		max-width: 400px;
+	}
 
 }
 
@@ -173,10 +182,8 @@
 
 
 	.content_desc_whatdo{
-
 		padding: 0 2em 2em;
 
 	}
 
 }
-

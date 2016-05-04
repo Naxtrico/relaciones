@@ -43,6 +43,7 @@
 	font-size: 18px;
 	color: #fff;
 	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
 
 }
 
@@ -50,7 +51,8 @@
 	font-size: 35px;
 	color: #fff;
 	font-weight: 400;
-	line-height: 42px;	
+	line-height: 42px;
+	font-family: 'PT Serif', serif;	
 }
 
 .marginBottom{
@@ -73,7 +75,7 @@
 	color: #6E6E6E;
 	font-weight: 400;
 	margin-top: 60px;
-
+	font-family: 'Open Sans', sans-serif;
 }
 
 .referemcesImg{
@@ -91,6 +93,13 @@
 	display: inline-block;
 }
 
+.imgScroll{
+
+position: absolute;
+   bottom: 20px;
+   left: 50%;
+   transform: translateX(-50%);   
+}
 
 
 @media screen and (max-width: 740px) {
