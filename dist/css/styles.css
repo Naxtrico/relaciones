@@ -669,12 +669,18 @@ footer {
 input[type=radio] {
   display: none; }
 
-input[type=radio]:checked + span {
-  background-color: #381443;
+.card input[type=radio]:checked + span, .cardDejar input[type=radio]:checked + span {
   background-repeat: no-repeat;
   background-position: right;
-  border: 1px solid #381443;
   color: #fff; }
+
+.card input[type=radio]:checked + span {
+  background-color: #381443;
+  border: 1px solid #381443; }
+
+.cardDejar input[type=radio]:checked + span {
+  background-color: #99172F;
+  border: 1px solid #99172F; }
 
 input[type="text"], input[type="file"] {
   margin-top: 10px;
