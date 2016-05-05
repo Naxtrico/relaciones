@@ -58,9 +58,7 @@ input[type=radio]{
 }
 
 
-.card input[type=radio]:checked + span, .cardDejar input[type=radio]:checked + span{ 	
-	background-repeat: no-repeat;
-	background-position: right;	
+.card input[type=radio]:checked + span, .cardDejar input[type=radio]:checked + span{	
 	color:#fff;
 }
 
