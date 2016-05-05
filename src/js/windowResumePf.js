@@ -61,7 +61,7 @@ $(document).ready(function(){
   $("#masaje").click(function () {        
    var masaje = $('input:radio[name=selec]:checked').val();    
    $("#yourSelectionAmbient").html( "<img src='img/masaje.jpg' class='resumeImg'>" + masaje+ "<div class='yourSelectionItemPrice'>110€</div>");
-   $("#yourSelectionResumePrice").html("<div class='yourSelectionItemPrice'>Total: 110€</div>");
+   $("#yourSelectionResumePrice").html("Total: 100€");
    if(($('#selection').css('right') == '280px')){
 
    }if(($('#selection').css('right') == '0px')){}
@@ -76,7 +76,7 @@ $(document).ready(function(){
   $("#copa").click(function () {        
    var masaje = $('input:radio[name=selec]:checked').val();    
    $("#yourSelectionAmbient").html( "<img src='img/copa.jpg' class='resumeImg'> " + masaje + "<div class='yourSelectionItemPrice'>80€</div>");
-   $("#yourSelectionResumePrice").html("Total: 80€");
+   $("#yourSelectionResumePrice").html("Total: 100€");
    if(($('#selection').css('right') == '280px')){
 
    }if(($('#selection').css('right') == '0px')){}
@@ -90,7 +90,7 @@ $(document).ready(function(){
   $("#correr").click(function () {        
    var masaje = $('input:radio[name=selec]:checked').val();    
    $("#yourSelectionAmbient").html( "<img src='img/runner1.jpg' class='resumeImg'> " + masaje+ "<div class='yourSelectionItemPrice'>99€</div>");
-   $("#yourSelectionResumePrice").html("Total: 99€");
+   $("#yourSelectionResumePrice").html("Total: 80€");
    if(($('#selection').css('right') == '280px')){
 
    }if(($('#selection').css('right') == '0px')){}
@@ -104,7 +104,7 @@ $(document).ready(function(){
   $("#biblio").click(function () {        
    var masaje = $('input:radio[name=selec]:checked').val();    
    $("#yourSelectionAmbient").html( "<img src='img/biblioteca.jpg' class='resumeImg'> " + masaje+ "<div class='yourSelectionItemPrice'>105€</div>");
-   $("#yourSelectionResumePrice").html("Total: 105€");
+   $("#yourSelectionResumePrice").html("Total: 100€");
    if(($('#selection').css('right') == '280px')){
 
    }if(($('#selection').css('right') == '0px')){}
@@ -118,7 +118,7 @@ $(document).ready(function(){
   $("#arregla").click(function () {        
    var masaje = $('input:radio[name=selec]:checked').val();    
    $("#yourSelectionAmbient").html( "<img src='img/arreglar.jpg' class='resumeImg'> " + masaje+ "<div class='yourSelectionItemPrice'>112€</div>");
-   $("#yourSelectionResumePrice").html("Total: 112€");
+   $("#yourSelectionResumePrice").html("Total: 80€");
   if(($('#selection').css('right') == '280px')){
 
    }if(($('#selection').css('right') == '0px')){}
@@ -132,7 +132,7 @@ $(document).ready(function(){
   $("#ley").click(function () {        
    var masaje = $('input:radio[name=selec]:checked').val();    
    $("#yourSelectionAmbient").html( "<img src='img/esposas.jpg' class='resumeImg'> " + masaje+ "<div class='yourSelectionItemPrice'>95€</div>");
-   $("#yourSelectionResumePrice").html("Total: 95€");
+   $("#yourSelectionResumePrice").html("Total: 80€");
    if(($('#selection').css('right') == '280px')){
 
    }if(($('#selection').css('right') == '0px')){}
