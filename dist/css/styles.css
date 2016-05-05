@@ -339,6 +339,7 @@ input[type="radio"] {
   border: 1px solid #381443;
   padding: 2px 0px;
   width: 60px;
+  line-height: 25px;
   display: inline-block;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px; }
