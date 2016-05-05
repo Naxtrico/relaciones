@@ -22,7 +22,10 @@
     border-radius:3px;
     background:#fff;
     box-sizing: border-box;
+    max-height: 500px;
+    overflow: auto;
 }
+
  
 /* Close Button */
 .popup-close {
@@ -31,8 +34,8 @@
     padding-top:4px;
     display:inline-block;
     position:absolute;
-    top:0px;
-    right:0px;
+    top: 26px;
+    right: 23px;
     transition:ease 0.25s all;    
     transform:translate(50%, -50%);
     border-radius:1000px;
@@ -48,4 +51,9 @@
     transform:translate(50%, -50%) rotate(180deg);
     background:rgba(0,0,0,1);
     text-decoration:none;
+}
+
+.ExamplesfreeTextDejar{
+    color:#99172F;
+    font-weight: 700;
 }
