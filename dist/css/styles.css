@@ -418,9 +418,7 @@ input[type="radio"] {
   .card:nth-of-type(3n) {
     margin-right: 0px; }
   .card_description h2 {
-    font-size: 18px; }
-  .card_btn {
-    line-height: 21px; } }
+    font-size: 18px; } }
 
 .cardDejar {
   background-image: url(../../dist/img/imagen-enpersona-1.jpg);
