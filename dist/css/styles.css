@@ -215,15 +215,17 @@ input[type="radio"] {
   height: 100%;
   min-height: 550px; }
 
-.back_full_screen_whatdo {
-  overflow: hidden;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../../dist/img/bg-que-hacemos.png);
-  width: 100%;
-  min-height: 400px; }
-
+/*
+.back_full_screen_whatdo{
+	overflow: hidden;
+	background-position: top center;	
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-image:url(../../dist/img/bg-que-hacemos.png);
+	width:100%;
+	min-height: 400px;
+}
+*/
 .back_full_screen_home {
   overflow: hidden;
   background-position: center center;
@@ -585,7 +587,7 @@ input[type="radio"] {
 
 .copyContacto {
   margin-bottom: 30px;
-  color: #fff;
+  color: #F7A627;
   font-size: 37px;
   font-weight: 500; }
 
@@ -1732,11 +1734,10 @@ nav {
   background-color: #F1F1F1; }
 
 .content_desc_whatdo {
-  max-width: 950px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 0 3em 3em;
-  overflow: hidden;
-  text-align: center; }
+  text-align: left; }
 
 .whatdo_desc_left, .whatdo_desc_right {
   width: 47%;
@@ -1744,17 +1745,12 @@ nav {
 
 .team {
   background-color: #f1f1f2;
-  padding-left: 13em;
-  padding-right: 13em;
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 50px;
   text-align: center;
-  overflow: hidden; }
-
-@media screen and (max-width: 1280px) {
-  .team {
-    padding-left: 6em;
-    padding-right: 6em; } }
+  height: 100%;
+  box-sizing: border-box;
+  float: right;
+  width: 40%; }
 
 @media screen and (max-width: 1024px) {
   .sectionsPF, .sectionDejar {
@@ -1801,48 +1797,48 @@ nav {
 .whatDoDescP {
   margin-bottom: 20px;
   color: #000;
-  text-align: left; }
+  text-align: left;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px; }
 
 .cite {
   width: 100%;
   clear: both;
-  text-align: center;
+  text-align: left;
   margin-top: 50px;
   display: inline-block; }
 
 .citeText {
   font-size: 26px;
   line-height: 35px;
-  margin: 0; }
+  margin: 0;
+  color: #F7A627;
+  font-weight: bold; }
 
-.members {
-  float: left;
-  width: 33.333333%;
-  padding: 10px;
-  padding-right: 5%;
-  margin-top: 20px;
+.memberMar, .memberJor, .memberNat {
+  text-align: center;
+  width: 100%;
+  padding: 5%;
+  height: 33.33333%;
   box-sizing: border-box; }
 
-.members:last-child {
-  padding-right: 0; }
+.memberMar {
+  background-color: #AAA693; }
+
+.memberJor {
+  background-color: #C4C2AE; }
+
+.memberNat {
+  background-color: #D2D1BD; }
 
 .rol_title {
   font-size: 30px; }
 
 .members_img {
-  margin-top: 40px;
-  width: 200px;
-  border-radius: 500px; }
-
-.whatdo_desc_left, .whatdo_desc_right {
-  margin-top: 50px; }
-
-.whatdo_desc_left {
   float: left;
-  margin-right: 6%; }
-
-.whatdo_desc_right {
-  float: right; }
+  width: 130px;
+  border-radius: 500px; }
 
 .teamTitle--color, .membersTitle--color {
   color: #C0212F; }
@@ -1882,12 +1878,19 @@ nav {
     width: 100%; } }
 
 .container_copy_whatdo {
-  width: 100%;
-  padding-top: 50px; }
+  float: left;
+  width: 60%;
+  box-sizing: border-box;
+  padding-top: 50px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../dist/img/bg-que-hacemos.png);
+  min-height: 727px; }
 
 .whatoDoTitle {
   margin-bottom: 30px;
-  color: #C0212F;
+  color: #F7A627;
   font-size: 35px; }
 
 .contentCopy {

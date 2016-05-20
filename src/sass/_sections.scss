@@ -93,11 +93,10 @@
 }
 
 .content_desc_whatdo{
-	max-width: 950px;	
+	max-width: 600px;	
 	margin: 0 auto;	
-	padding: 0 3em 3em;
-	overflow: hidden;
-	text-align: center;
+	padding: 0 3em 3em;	
+	text-align: left;
 }
 
 .whatdo_desc_left, .whatdo_desc_right{
@@ -106,26 +105,16 @@
 }
 
 .team{
-	background-color: #f1f1f2;
-	padding-left: 13em;
-	padding-right: 13em;
-	padding-top: 3em;
-	padding-bottom: 3em;
-	text-align: center;
-	overflow: hidden;
+
+	background-color: #f1f1f2;	
+	padding-top: 50px;	
+	text-align: center;	
+	height: 100%;
+    box-sizing: border-box;
+    float: right;
+    width: 40%;
 }
 
-
-@media screen and (max-width: 1280px) {	
-
-	.team{
-
-		padding-left: 6em;
-		padding-right: 6em;
-
-	}
-
-}
 
 @media screen and (max-width: 1024px) {	
 
