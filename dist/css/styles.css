@@ -76,10 +76,36 @@
     max-width: 180px;
     margin: 0 auto; } }
 
-.contactCanals {
-  float: left;
+.contactCanalsTelf, .contactCanalsEmail, .contactCanalsOffice {
   text-align: center;
-  width: 33.33333333%; }
+  width: 100%;
+  padding: 5%;
+  height: 33.33333%;
+  box-sizing: border-box; }
+
+.contactCanalsTelf {
+  background-color: #AAA693; }
+
+.contactCanalsEmail {
+  background-color: #C4C2AE; }
+
+.contactCanalsOffice {
+  background-color: #D2D1BD; }
+
+.contactCanalsTelf img, .contactCanalsEmail img, .contactCanalsOffice img {
+  height: 68%; }
+
+@media screen and (max-width: 699px) {
+  .contactCanalsTelf, .contactCanalsEmail, .contactCanalsOffice {
+    width: 33.333333%;
+    float: left;
+    height: 167px;
+    padding: 1%; }
+  .contactCanalsTelf img, .contactCanalsEmail img, .contactCanalsOffice img {
+    width: 100%;
+    height: 45%; }
+  .contactCanalsTelf p, .contactCanalsEmail p, .contactCanalsOffice p {
+    font-size: 10px; } }
 
 @media screen and (max-width: 599px) {
   .contactCanals {
@@ -161,13 +187,14 @@ input[type="radio"] {
 .slider ul li:hover div.actors_description {
   top: 0; }
 
-.back_full_screen_contacto {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../../dist/img/pruebafotocontacto.jpg);
-  width: 100%;
-  min-height: 300px; }
-
+/*.back_full_screen_contacto{	
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-image:url(../../dist/img/pruebafotocontacto.jpg);
+	width: 100%;
+	height: 100%;
+	min-height: 725px;
+}*/
 .back_full_screen {
   overflow: hidden;
   background-position: center center;
@@ -206,6 +233,10 @@ input[type="radio"] {
   width: 100%;
   height: 100%;
   min-height: 550px; }
+
+@media screen and (max-width: 699px) {
+  .back_full_screen_contacto {
+    min-height: 100%; } }
 
 .button_principal {
   padding: 15px 0px;
@@ -535,50 +566,75 @@ input[type="radio"] {
   .cardDejar_description h2 {
     font-size: 18px; } }
 
-.contentCopyContacto {
-  max-width: 740px;
+.contentCopyContacto, .contentCopyContactoSent {
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
   margin-top: 50px;
   padding-left: 1em;
   padding-right: 1em; }
 
+.contentCopyContactoSent {
+  max-width: 800px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-top: 0; }
+
 .copyContacto {
   margin-bottom: 30px;
-  color: #831D31;
-  font-size: 35px;
+  color: #fff;
+  font-size: 37px;
   font-weight: 500; }
 
+.copyContacto:first-child {
+  margin-top: 0px; }
+
 .contactoDescription {
-  color: #000;
+  color: #fff;
   margin-bottom: 30px; }
+
+.sectionContactForm label {
+  color: #fff; }
+
+@media screen and (max-width: 699px) {
+  .copyContacto {
+    font-size: 20px; }
+  .contentCopyContactoSent {
+    position: initial;
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
+    margin-top: 20px; } }
 
 footer {
   background-color: #49494A;
-  height: 200px;
-  text-align: right; }
+  height: 105px;
+  text-align: right;
+  clear: both; }
 
 .logoFooter {
   float: left;
-  padding-left: 35px;
-  padding-top: 66px; }
+  padding-left: 100px;
+  padding-top: 30px; }
 
 .listfooter {
-  line-height: 75px;
+  line-height: 100px;
   text-decoration: none;
-  height: 75px;
   display: inline-block;
   text-align: center;
-  padding-top: 40px;
   font-size: 18px;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  padding-right: 100px; }
 
-.iconsfooter {
-  padding-top: 65px;
-  height: 100px;
-  float: right;
-  padding-right: 35px; }
-
+/*.iconsfooter{
+	padding-top: 65px;
+	height: 100px;
+	float: right;
+	padding-right: 35px;
+}*/
 .linefooter {
   background-color: #211915;
   height: 70px;
@@ -600,16 +656,19 @@ footer {
     margin: 0 auto;
     padding-left: 0;
     padding-top: 30px; }
-  .iconsfooter {
+  /*.iconsfooter {    
     float: none;
     padding-top: 30px;
     height: auto;
     padding-bottom: 30px;
-    padding-right: 0; }
+    padding-right: 0;   
+	}*/
   .listfooter {
     padding-top: 30px;
+    padding-bottom: 30px;
     line-height: 10px;
-    height: auto; } }
+    height: auto;
+    padding-right: 0; } }
 
 @media screen and (max-width: 634px) {
   .iconsfooter {
@@ -742,7 +801,8 @@ input[type="text"]:focus {
   transition: all 0.5s ease;
   margin: 0 auto;
   display: block;
-  margin-top: 80px; }
+  margin-top: 80px;
+  min-width: 157px; }
   .form_button_PF:hover {
     background-color: #97e573; }
 
@@ -962,7 +1022,8 @@ header {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   position: fixed;
-  z-index: 1; }
+  z-index: 1;
+  background-color: #000; }
 
 header.fixed {
   position: fixed;
@@ -1635,17 +1696,23 @@ nav {
   padding: 0 1em 3em; }
 
 .sectionContactoCanals {
-  max-width: 740px;
-  margin: 0 auto;
-  padding-left: 1em;
-  padding-right: 1em;
-  overflow: hidden; }
-
-.contentsectionContactoCanalsBg {
+  float: right;
+  width: 30%;
+  box-sizing: border-box;
   padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #EFEFEF;
-  width: 100%; }
+  height: 100%;
+  min-height: 727px; }
+
+.contentFormCopy {
+  float: left;
+  width: 70%;
+  box-sizing: border-box;
+  padding-top: 50px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../dist/img/pruebafotocontacto.jpg);
+  min-height: 727px; }
 
 .titleInfoPf {
   font-size: 24px;
@@ -1703,6 +1770,15 @@ nav {
 @media screen and (max-width: 768px) {
   .teamTitle {
     font-size: 30px; } }
+
+@media screen and (max-width: 699px) {
+  .sectionContactoCanals {
+    width: 100%;
+    height: auto;
+    min-height: auto; }
+  .contentFormCopy {
+    width: 100%;
+    padding-top: 0; } }
 
 @media screen and (max-width: 650px) {
   .whatdo_desc_left, .whatdo_desc_right {

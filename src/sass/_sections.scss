@@ -51,19 +51,24 @@
 }
 
 .sectionContactoCanals{
-	max-width: 740px;
-	margin: 0 auto;
-	padding-left: 1em;
-	padding-right: 1em;
-	overflow: hidden;
-
+ 	float: right;	    
+    width: 30%;   
+    box-sizing: border-box;
+    padding-top:50px;
+    height: 100%;
+    min-height: 727px;
 }
 
-.contentsectionContactoCanalsBg{
-	padding-top: 50px;
-	padding-bottom: 50px;  
-	background-color: #EFEFEF;
-	width: 100%;
+.contentFormCopy{
+	float: left;
+    width: 70%;
+    box-sizing: border-box;
+    padding-top: 50px;
+    height: 100%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-image:url(../../dist/img/pruebafotocontacto.jpg);
+	min-height: 727px;
 }
 
 .titleInfoPf{
@@ -151,6 +156,19 @@
 	}	
 }
 
+@media screen and (max-width: 699px) {
+	
+	.sectionContactoCanals{
+		width: 100%;		
+		height: auto;
+		min-height: auto;
+	}
+
+	.contentFormCopy{	
+    	width: 100%;
+    	padding-top: 0;    	
+	}
+}
 
 @media screen and (max-width: 650px) {
 

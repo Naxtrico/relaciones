@@ -1,5 +1,5 @@
-.contentCopyContacto{
-	max-width: 740px;
+.contentCopyContacto, .contentCopyContactoSent{
+	max-width: 600px;
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 50px;
@@ -7,22 +7,47 @@
 	padding-right: 1em;
 }
 
+.contentCopyContactoSent{
+	max-width: 800px;
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 0;
+}
+
 .copyContacto{	
     margin-bottom: 30px;
-    color: #831D31;
-    font-size: 35px;
+    color: #fff;
+    font-size: 37px;
     font-weight: 500;
 }
+
+.copyContacto:first-child{
+	margin-top: 0px;
+}
+
 .contactoDescription{
-	color: #000;
+	color: #fff;
 	margin-bottom: 30px;
 }
 
+.sectionContactForm label{
+	color:#fff;
+}
 
 
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 699px) {
 
+	.copyContacto{	  
+    font-size: 20px;    
+	}
+
+	.contentCopyContactoSent{
+		position: initial;
+		transform: translateY(0%);
+		margin-top: 20px;
+	}
 
 }
 
