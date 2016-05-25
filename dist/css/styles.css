@@ -240,6 +240,128 @@ input[type="radio"] {
   .back_full_screen_contacto {
     min-height: 100%; } }
 
+.listSteps {
+  margin: 0;
+  list-style: none; }
+
+.itemSteps {
+  line-height: 100px;
+  color: #fff;
+  font-size: 16px;
+  background-color: #565656;
+  border-bottom: 1px solid #000;
+  padding-left: 5%; }
+
+.itemSteps:last-child {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding-left: 0;
+  border-bottom: 0; }
+
+.itemStepsCheck {
+  height: 20px;
+  width: 20px;
+  background-color: #000;
+  border: 1px solid #fff;
+  margin-right: 4%; }
+
+.listItemStepsArrow {
+  margin-right: 7%;
+  float: right; }
+
+.itemSteps--Checked {
+  background-color: #2C0C52; }
+
+/*--SLIDES-----------------------------------------*/
+.slideshow {
+  width: 100%;
+  height: 542px;
+  position: absolute;
+  background: black;
+  right: 0;
+  top: 0px;
+  padding-top: 50px;
+  width: 65%;
+  background-color: #DBDBDB;
+  height: 100%;
+  box-sizing: border-box; }
+
+.slideshow .slides {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+  padding: 0; }
+
+.slides ul {
+  line-height: 0px; }
+
+.slides li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  line-height: 0px;
+  font-size: 14px; }
+
+.prev,
+.next {
+  color: #2C0C52;
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  font-size: 3em;
+  padding: 10px 5px;
+  transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s; }
+
+.prev:hover,
+.next:hover {
+  opacity: 0.6;
+  cursor: pointer; }
+
+.prev {
+  left: 0; }
+
+.next {
+  right: 0; }
+
+.nav {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  z-index: 1;
+  margin: 0 auto;
+  left: 0;
+  width: 100px;
+  list-style: none; }
+
+.nav li {
+  float: left;
+  margin-right: 15px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #2C0C52;
+  border-radius: 10px;
+  transition: background 0.5s;
+  -o-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -webkit-transition: background 0.5s; }
+
+.nav li:hover {
+  background-color: #2C0C52;
+  cursor: pointer; }
+
+.active-cd {
+  background-color: #2C0C52; }
+
+.info {
+  text-align: center;
+  color: #787878; }
+
 .button_principal {
   padding: 15px 0px;
   font-size: 15px;
@@ -343,16 +465,14 @@ input[type="radio"] {
   background-position: top center;
   background-repeat: no-repeat;
   height: 481px;
-  width: 32%;
+  width: 48%;
   float: left;
   color: #fff;
-  margin-top: 50px;
   margin-right: 2%;
   overflow: hidden;
-  border-radius: 10px;
   box-sizing: border-box; }
 
-.card:nth-of-type(3n) {
+.card:last-child {
   margin-right: 0px; }
 
 .card_body {
@@ -400,7 +520,8 @@ input[type="radio"] {
 .card_description h2 {
   margin-top: 0;
   text-transform: none;
-  color: #381443; }
+  color: #381443;
+  line-height: 28px; }
 
 .card_footer {
   font-size: 20px;
@@ -410,7 +531,8 @@ input[type="radio"] {
   bottom: 100px;
   padding: 35px 0px 35px 0px;
   background-color: #fff;
-  color: #000; }
+  color: #000;
+  text-align: center; }
 
 .card_btn {
   padding: 2px 20px;
@@ -1684,6 +1806,36 @@ nav {
 .sectionsPF, .sectionsPfForm, .sectionActors, .sectionsDejarForm {
   max-width: 800px; }
 
+.contentCurrentSteps {
+  padding-top: 50px;
+  float: left;
+  width: 35%;
+  box-sizing: border-box;
+  height: 100%; }
+
+.contentCardsSlide {
+  margin: 0 auto;
+  width: 650px;
+  overflow: hidden;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.contentSlide {
+  position: absolute;
+  background: black;
+  right: 0;
+  top: 0px;
+  padding-top: 50px;
+  width: 65%;
+  background-color: #DBDBDB;
+  height: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  display: none; }
+
 .section_pasarela {
   padding-top: 100px;
   padding-left: 1em;
@@ -1751,6 +1903,10 @@ nav {
   box-sizing: border-box;
   float: right;
   width: 40%; }
+
+@media screen and (max-width: 1133px) {
+  .contentCardsSlide {
+    width: 84%; } }
 
 @media screen and (max-width: 1024px) {
   .sectionsPF, .sectionDejar {
@@ -2039,51 +2195,45 @@ nav {
     width: auto; } }
 
 .yourSelection {
-  background-color: #EEEEEE;
-  width: 280px;
+  width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  border: 1px solid #999899;
-  display: none;
-  position: absolute;
-  right: -280px;
-  position: fixed;
-  top: 50%;
-  z-index: 1; }
+  border-top: 1px solid #000;
+  display: none; }
 
-.close {
-  display: none;
-  position: absolute;
-  background-color: #000;
-  color: #fff;
-  top: -1px;
-  width: 40px;
-  height: 60px;
-  text-align: center;
-  line-height: 60px;
-  font-size: 25px;
-  right: 279px;
-  z-index: 2;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px; }
+/*
+.close{
+	display: none;
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    top: -1px;
+    width: 40px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 25px;
+    right: 279px;
+    z-index: 2;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
 
 .close a {
-  color: #fff;
-  text-decoration: none; }
+	color: #fff;
+	text-decoration: none;
+}
 
-.yourSelectionHeader {
-  background-color: #000;
-  color: #fff;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  position: relative;
-  right: 1px;
-  top: -1px;
-  width: 280px; }
-
+.yourSelectionHeader{
+	    background-color: #000;
+    color: #fff;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    position: relative;   
+}*/
 .yourSelectionItem {
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 25px;
   list-style: none;
@@ -2097,14 +2247,12 @@ nav {
   margin-right: 5px; }
 
 .yourSelectionItemPrice {
-  float: right;
-  position: absolute;
-  right: 12px; }
+  float: right; }
 
 .yourSelectionResumePrice {
   list-style: none;
   text-align: right;
-  font-size: 14px;
+  font-size: 18px;
   border-top: 1px solid #999899;
   padding-top: 1em;
   padding-right: 1em;

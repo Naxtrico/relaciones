@@ -3,17 +3,15 @@
 	background-position: top center;
     background-repeat: no-repeat;
     height: 481px;    
-    width: 32%;
+    width: 48%;
     float: left;
-    color: #fff;
-    margin-top: 50px;    
+    color: #fff;       
     margin-right: 2%;
-    overflow: hidden;    
-	border-radius: 10px;
+    overflow: hidden;	
     box-sizing:border-box;    
 }
 
-.card:nth-of-type(3n){
+.card:last-child{
 	margin-right: 0px;
 }
 
@@ -66,7 +64,8 @@
 .card_description h2{
 	margin-top: 0;	
 	text-transform: none;
-	color:#381443;	
+	color:#381443;
+	line-height: 28px;	
 }
 
 .card_footer{
@@ -78,6 +77,7 @@
     padding: 35px 0px 35px 0px;
 	background-color: #fff;
 	color:#000;
+	text-align: center;
 }
 
 .card_btn{

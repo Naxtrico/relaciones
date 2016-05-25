@@ -1,0 +1,142 @@
+.listSteps{
+	margin:0;
+	list-style: none;	
+}
+
+.itemSteps{
+	line-height: 100px;	
+	color: #fff;
+	font-size: 16px;
+	background-color: #565656;
+	border-bottom: 1px solid #000;
+	padding-left: 5%;	
+}
+
+.itemSteps:last-child{
+	background-color: #fff;
+	color:#000;
+	text-align: center;
+	padding-left: 0;
+	border-bottom: 0;
+}
+
+.itemStepsCheck{
+	height: 20px;
+    width: 20px;
+    background-color: #000;
+    border: 1px solid #fff;
+    margin-right: 4%;
+}
+
+.listItemStepsArrow{
+	margin-right: 7%;    
+    float: right;
+}
+
+.itemSteps--Checked{
+	background-color: #2C0C52;
+}
+
+
+
+/*--SLIDES-----------------------------------------*/
+.slideshow {
+  width: 100%;
+  height: 542px;
+  position: absolute;
+  background: black;  
+  right: 0;
+  top:0px;
+  padding-top: 50px;
+  width: 65%;
+  background-color: #DBDBDB;
+  height: 100%;
+  box-sizing:border-box;
+}
+
+.slideshow .slides {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+	padding: 0;
+}
+
+.slides ul {  
+      line-height: 0px;
+}
+
+.slides li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  line-height: 0px;
+  font-size: 14px;
+}
+
+.prev,
+.next {
+  color: #2C0C52;
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  font-size: 3em;  
+  padding: 10px 5px; 
+  transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.nav {
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    z-index: 1;
+    margin: 0 auto;
+    left: 0;
+    width: 100px;
+    list-style: none;
+}
+
+.nav li {
+  float: left;
+  margin-right: 15px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #2C0C52;
+  border-radius: 10px;
+  transition: background 0.5s;
+  -o-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -webkit-transition: background 0.5s;
+}
+
+.nav li:hover {
+  background-color: #2C0C52;
+  cursor: pointer;
+}
+
+.active-cd {
+  background-color: #2C0C52;
+}
+
+.info {
+  text-align: center;
+  color: #787878;
+}
