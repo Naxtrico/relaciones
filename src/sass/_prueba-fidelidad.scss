@@ -1,0 +1,221 @@
+.listSteps{
+	margin:0;
+	list-style: none;	
+}
+
+.itemSteps{
+	line-height: 100px;	
+	color: #fff;
+	font-size: 16px;
+	background-color: #565656;
+	border-bottom: 1px solid #000;
+	padding-left: 5%;
+}
+
+.itemSteps span:hover .itemSteps{
+  cursor: pointer;
+
+    background-color: #2C0C52;
+}
+
+
+.itemSteps:last-child{
+	background-color: #fff;
+	color:#000;
+	text-align: center;
+	padding-left: 0;
+	border-bottom: 0;
+}
+
+.itemStepsCheck{
+	height: 20px;
+    width: 20px;
+    background-color: #000;
+    border: 1px solid #fff;
+    margin-right: 4%;
+}
+
+.listItemStepsArrow{
+	margin-right: 7%;    
+    float: right;
+}
+
+.itemSteps--Checked{
+	background-color: #2C0C52;
+}
+
+
+
+#mujeres{
+  display: none;
+}
+
+#hombres{
+  display: block;
+}
+
+
+
+/*--SLIDES-----------------------------------------*/
+.slideshow, .slideshowM, .slideshowMu {
+  width: 100%;
+  height: 542px;  
+  background: black;  
+  right: 0;
+  top:0px;    
+  background-color: #DBDBDB;  
+  box-sizing:border-box;
+  position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.slideshowActors{
+	 top: 0;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+}
+
+
+.slideshow .slides, .slideshowM .slidesM, .slideshowMu .slidesMu {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+	padding: 0;
+}
+
+.slides ul, .slidesM ul, .slidesMu ul {  
+      line-height: 0px;
+}
+
+.slides li, .slidesM li, .slidesMu li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  line-height: 0px;
+  font-size: 14px;
+  list-style: none;
+}
+
+.prev,
+.next,
+.prevM,
+.nextM,
+.prevMu,
+.nextMu  {
+  color: #2C0C52;
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  font-size: 3em;  
+  padding: 10px 5px; 
+  transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+}
+
+.prev:hover,
+.next:hover,
+.prevM:hover,
+.nextM:hover,
+.prevMu:hover,
+.nextMu:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.prev, .prevM, .prevMu {
+  left: 0;
+}
+
+.next, .nextM, .nextMu {
+  right: 0;
+}
+
+.nav, .navM, .navMu {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    z-index: 1;
+    margin: 0 auto;
+    left: 0;
+    width: 100px;
+    list-style: none;
+}
+
+.navM, .navMu{
+	width: 43px;	
+}
+
+.nav{
+	width: 72px;	
+}
+
+
+.nav li, .navM li, .navMu li {
+  float: left;
+  margin-right: 15px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #2C0C52;
+  border-radius: 10px;
+  transition: background 0.5s;
+  -o-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -webkit-transition: background 0.5s;
+}
+
+.nav li:last-child, .navM li:last-child, .navMu li:last-child{
+	 margin-right: 0;
+}
+
+
+.nav li:hover, .navM li:hover, .navMu li:hover {
+  background-color: #2C0C52;
+  cursor: pointer;
+}
+
+.active-cd, .activeM-cd, .activeMu-cd {
+  background-color: #2C0C52;
+}
+
+.info {
+  text-align: center;
+  color: #787878;
+}
+
+
+@media screen and (max-width: 979px) {	
+	.itemSteps{		
+		font-size: 14px;		
+	}
+}
+
+@media screen and (max-width: 856px) {	
+		.listSteps{
+	    	text-align: center;
+	}	
+
+		.itemSteps{			
+			padding-left: 0;	
+	}
+
+	.listItemStepsArrow{
+		float:none;
+	}
+
+	.slideshow, .slideshowM{
+		margin-top:0;
+		transform: translateY(0%);
+	}
+
+	.nav, .navM {    
+    	bottom: 6px;
+	}   
+
+}

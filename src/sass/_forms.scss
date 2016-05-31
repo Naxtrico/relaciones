@@ -38,7 +38,8 @@
 	appearance:none;	
 	display: inline-block;
 	margin-top: 10px;   
-	margin-bottom: 20px;   
+	margin-bottom: 20px;
+	color:#000;  
 }
 
 .selectDateArrowPf{
@@ -126,20 +127,21 @@ input[type="text"]:focus{
 }
 
 .form_button_PF{
-	padding: 10px 30px;
+	padding: 7px 60px;
 	font-size: 16px;
 	font-weight: bold;
 	cursor: pointer;
 	text-decoration: none;
 	color:#fff;
 	display: inline-block;
-	background-color: #67b244;
+	background-color: #565656;
 	border: none;	
 	border-radius: 4px;
 	transition: all 0.5s ease;
 	margin: 0 auto;
 	display: block;
 	margin-top: 80px;
+	min-width: 157px;
 	&:hover{
 		background-color: #97e573;		
 	}
@@ -163,8 +165,13 @@ input[type="text"]:focus{
 	transition: all 0.5s ease;
 }
 
+
 .form_button_Dejar:hover{
 	background-color: #D32F53;	
+}
+
+.ocult{
+	display: none;
 }
 
 form{	
@@ -195,8 +202,7 @@ legend{
 
 fieldset{
 	border:0;    
-	width: auto;
-	padding-top: 2rem;
+	width: auto;	
 	padding-bottom: 2rem;
 }
 
@@ -221,14 +227,22 @@ input.error {
 }
 
 
-
 .content_form{	
 	width:auto;
 	margin:0 auto;
-	width: 80%;
-	padding: 5%;
-	margin-top: 50px;      
+	width: 80%;		    
 	border-radius: 10px;
+	max-width: 650px;
+}
+
+.content_form label{
+	line-height: 25px;
+	color:#000;
+	display: block;
+}
+
+.content_form form{
+	line-height: 25px;	
 }
 
 .textDetail{
@@ -238,20 +252,22 @@ input.error {
 
 .form_steps{
 	margin: 0 auto;
-	font-size: 20px;
-	color: #000;
-	font-weight: 600;
-	border-bottom: solid 2px #000;
+	font-size: 20px;	
+	font-weight: 600;	
 	padding-bottom: 5px;
 	padding-right: 3px;	
-	display: inherit;
+	display: inline-block;
 	text-align: center;
 	margin-bottom: 3rem;
-	width: 110px;	
+	width: 110px;
+	margin-right: 10px;	
+	color: #5D5D5D;
+	border-bottom: solid 2px #5D5D5D; 	
 }
 
-.form_steps_PF_color{
-	color: #000;
+.form_stepsNoSelected{
+	color: #391964;
+	border-bottom: solid 2px #391964;
 }
 
 .form_steps_Dejar_color{

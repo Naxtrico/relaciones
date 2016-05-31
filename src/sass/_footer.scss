@@ -1,33 +1,33 @@
 footer{
 	background-color: #49494A;
-	height: 200px;
+	height: 105px;
 	text-align: right;
+	clear: both;
 }
 
 .logoFooter{
 	float: left;
-	padding-left: 35px;
-	padding-top: 66px;
+	padding-left: 100px;
+	padding-top: 30px;
 
 }
 .listfooter{
-	line-height: 75px;
-	text-decoration: none;
-	height: 75px;	
+	line-height: 100px;
+	text-decoration: none;		
 	display: inline-block;
 	text-align: center;	
-	padding-top: 40px;
 	font-size: 18px;
 	text-transform: capitalize;
+	padding-right: 100px;
 }
 
 
-.iconsfooter{
+/*.iconsfooter{
 	padding-top: 65px;
 	height: 100px;
 	float: right;
 	padding-right: 35px;
-}
+}*/
 
 .linefooter{
 	background-color: #211915;
@@ -56,18 +56,21 @@ footer{
     padding-left: 0;
     padding-top: 30px;
 	}
-	.iconsfooter {    
+	
+	/*.iconsfooter {    
     float: none;
     padding-top: 30px;
     height: auto;
     padding-bottom: 30px;
     padding-right: 0;   
-	}
+	}*/
 
 	.listfooter{
 	padding-top: 30px;
+	padding-bottom: 30px;
 	line-height: 10px;
-	height: auto; 
+	height: auto;
+	padding-right: 0;
 	}
 }
 

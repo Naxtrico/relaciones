@@ -52,7 +52,7 @@
 	border-radius: 4px;
 }
 
-.cardBtnActors{
+.cardBtnActors, .btnSelectSex{
 	padding: 2px 25px;
 	font-size: 15px;	
 	font-weight: 600;
@@ -64,7 +64,15 @@
 	line-height: 30px;		
 	border-radius: 4px;	
     transition: all 0.5s ease;
-    margin-top: 66px;
+   
+}
+
+.cardBtnActors{
+	 margin-top: 66px;
+}
+
+.btnSelectSex{
+	margin-top: 50px;
 }
 
 

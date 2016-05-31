@@ -2,12 +2,15 @@
   margin-bottom: 20px;
   color: #000;
   text-align: left;
+  color:#fff;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .cite{
 	width: 100%;
 	clear: both;
-	text-align: center;
+	text-align: left;
 	margin-top: 50px;
 	display: inline-block;
 	
@@ -17,47 +20,42 @@
 	font-size: 26px;
 	line-height: 35px;		
 	margin: 0;
+	color:#F7A627;
+	font-weight: bold;
 }
 
-.members{
-	float: left;
-	width: 33.333333%;
-	padding: 10px;
-	padding-right: 5%;
-	margin-top: 20px;
-	box-sizing:border-box;
+.memberMar, .memberJor, .memberNat {
+	text-align: center;	
+	width: 100%;
+	padding: 5%;
+	height: 33.33333%;
+    box-sizing: border-box;
 }
 
-.members:last-child{	
-	padding-right: 0;
-	
+
+.memberMar{
+	background-color: #AAA693;
 }
+
+.memberJor{
+	background-color: #C4C2AE;
+}
+
+.memberNat{
+	background-color: #D2D1BD;
+}
+
 
 .rol_title{
 	font-size: 30px;
 }
 
 .members_img{
-	margin-top: 40px;
-	width: 200px;
+	float: left;	
+	width: 130px;
 	border-radius: 500px;	
 }
 
-.whatdo_desc_left, .whatdo_desc_right{
-
-    margin-top: 50px;
-} 
-
-.whatdo_desc_left{
-    float: left;
-    margin-right: 6%;
-
-}
-
-.whatdo_desc_right{
-    float: right;
-    
-}
 
 .teamTitle--color, .membersTitle--color{
     color: #C0212F;
@@ -76,6 +74,10 @@
 .teamDescMembers{
     font-size: 16px;
     color:#000;
+}
+
+@media screen and (max-width: 1465px) {
+	
 }
 
 @media screen and (max-width: 940px) {

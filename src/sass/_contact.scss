@@ -1,7 +1,46 @@
-.contactCanals{
-	float: left;
-	text-align: center;
-	width: 33.33333333%;
+.contactCanalsTelf, .contactCanalsEmail, .contactCanalsOffice,  {	
+	text-align: center;	
+	width: 100%;
+	padding: 5%;
+	height: 33.33333%;
+    box-sizing: border-box;
+}
+
+.contactCanalsTelf{
+	background-color: #AAA693;
+}
+
+.contactCanalsEmail{
+	background-color: #C4C2AE;
+}
+
+.contactCanalsOffice{
+	background-color: #D2D1BD;
+}
+
+.contactCanalsTelf img, .contactCanalsEmail img, .contactCanalsOffice img{
+	height: 68%;
+} 
+
+
+@media screen and (max-width: 699px) {
+
+	.contactCanalsTelf, .contactCanalsEmail, .contactCanalsOffice,  {
+		width: 33.333333%;
+		float: left;
+		height: 167px;
+		padding: 1%;
+	}
+
+	.contactCanalsTelf img, .contactCanalsEmail img, .contactCanalsOffice img{
+		width: 100%;
+		height: 45%;
+	} 
+
+	.contactCanalsTelf p, .contactCanalsEmail p, .contactCanalsOffice p{
+		font-size: 10px;
+	}
+
 }
 
 

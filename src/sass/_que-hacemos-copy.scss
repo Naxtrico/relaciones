@@ -1,11 +1,18 @@
 .container_copy_whatdo{
-	width: 100%;    
+	float: left;
+    width: 60%;
+    box-sizing: border-box;
     padding-top: 50px;
+    height: 100%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-image:url(../../dist/img/bg-que-hacemos.png);
+	min-height: 727px;
        
 }
 
 .whatoDoTitle{
     margin-bottom: 30px;
-    color: #C0212F;
+    color: #F7A627;
     font-size: 35px;    
 }

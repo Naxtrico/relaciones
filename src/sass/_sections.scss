@@ -32,6 +32,40 @@
 	max-width: 800px;
 }
 
+.contentCurrentSteps{
+	padding-top: 50px;
+	float:left;
+	width: 35%;
+	box-sizing: border-box;
+	height: 100%;
+}
+
+.contentCardsSlide{
+	margin:0 auto; 
+	width:650px; 
+	overflow:hidden;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);	
+}
+
+.contentSlide{    
+    position: absolute;
+    background: black;
+    right: 0;
+    top: 0px;
+    padding-top: 50px;
+    width: 65%;
+    background-color: #DBDBDB;
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    display: none;
+}
+
+.contentSlideDisplay{
+	display: block;
+}
 
 .section_pasarela{
 	padding-top: 100px;
@@ -51,19 +85,24 @@
 }
 
 .sectionContactoCanals{
-	max-width: 740px;
-	margin: 0 auto;
-	padding-left: 1em;
-	padding-right: 1em;
-	overflow: hidden;
-
+ 	float: right;	    
+    width: 30%;   
+    box-sizing: border-box;
+    padding-top:50px;
+    height: 100%;
+    min-height: 727px;
 }
 
-.contentsectionContactoCanalsBg{
-	padding-top: 50px;
-	padding-bottom: 50px;  
-	background-color: #EFEFEF;
-	width: 100%;
+.contentFormCopy{
+	float: left;
+    width: 70%;
+    box-sizing: border-box;
+    padding-top: 50px;
+    height: 100%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-image:url(../../dist/img/pruebafotocontacto.jpg);
+	min-height: 727px;
 }
 
 .titleInfoPf{
@@ -88,11 +127,10 @@
 }
 
 .content_desc_whatdo{
-	max-width: 950px;	
+	max-width: 600px;	
 	margin: 0 auto;	
-	padding: 0 3em 3em;
-	overflow: hidden;
-	text-align: center;
+	padding: 0 3em 3em;	
+	text-align: left;
 }
 
 .whatdo_desc_left, .whatdo_desc_right{
@@ -101,25 +139,23 @@
 }
 
 .team{
-	background-color: #f1f1f2;
-	padding-left: 13em;
-	padding-right: 13em;
-	padding-top: 3em;
-	padding-bottom: 3em;
-	text-align: center;
-	overflow: hidden;
+
+	background-color: #f1f1f2;	
+	padding-top: 50px;	
+	text-align: center;	
+	height: 100%;
+    box-sizing: border-box;
+    float: right;
+    width: 40%;
 }
 
 
-@media screen and (max-width: 1280px) {	
+@media screen and (max-width: 1133px) {	
 
-	.team{
-
-		padding-left: 6em;
-		padding-right: 6em;
-
+	.contentCardsSlide{
+		width: 84%;
 	}
-
+	
 }
 
 @media screen and (max-width: 1024px) {	
@@ -132,9 +168,24 @@
 	.sectionsPF, .sectionDejar{
 		max-width: 600px;
 	}
-	
+}
+
+@media screen and (max-width: 856px) {	
+
+	.contentCurrentSteps{
+		width: 100%;
+		height: auto;
+	}
+
+	.contentSlide{
+		position: initial;
+		margin-top: 0;
+		width: 100%;
+		padding-top: 0px;
+	}
 
 }
+
 
 @media screen and (max-width: 820px) {
 
@@ -151,6 +202,19 @@
 	}	
 }
 
+@media screen and (max-width: 699px) {
+	
+	.sectionContactoCanals{
+		width: 100%;		
+		height: auto;
+		min-height: auto;
+	}
+
+	.contentFormCopy{	
+    	width: 100%;
+    	padding-top: 0;    	
+	}
+}
 
 @media screen and (max-width: 650px) {
 
