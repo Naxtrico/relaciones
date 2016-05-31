@@ -59,49 +59,64 @@
 $(document).ready(function(){
 
   $("#masaje").click(function () {        
-   var masaje = $('input:radio[name=selec]:checked').val();    
+   var masaje = $('input:radio[name=selec]:checked').val();
+   $("#selection").css('display','block');    
    $("#yourSelectionAmbient").html( "<img src='img/masaje.jpg' class='resumeImg'>" + masaje+ "<div class='yourSelectionItemPrice'>110€</div>");
    $("#yourSelectionResumePrice").html("Total: 100€");
-   $('#step1').hide();
-   $('#step2').show();
-
+    $("#step1").slideUp();    
+    $("#step2").slideDown();
+    $( "#lugar" ).prop( "checked", true );
 }); 
 
   $("#copa").click(function () {        
-   var masaje = $('input:radio[name=selec]:checked').val();    
+   var masaje = $('input:radio[name=selec]:checked').val();
+   $("#selection").css('display','block');   
    $("#yourSelectionAmbient").html( "<img src='img/copa.jpg' class='resumeImg'> " + masaje + "<div class='yourSelectionItemPrice'>80€</div>");
-   $("#yourSelectionResumePrice").html("Total: 100€");
-   $('#step1').hide();
+   $("#yourSelectionResumePrice").html("Total: 100€");   
+   $("#step1").slideUp();    
+   $("#step2").slideDown();
+   $( "#lugar" ).prop( "checked", true );
 });
 
   $("#correr").click(function () {        
-   var masaje = $('input:radio[name=selec]:checked').val();    
+   var masaje = $('input:radio[name=selec]:checked').val();
+   $("#selection").css('display','block');    
    $("#yourSelectionAmbient").html( "<img src='img/runner1.jpg' class='resumeImg'> " + masaje+ "<div class='yourSelectionItemPrice'>99€</div>");
    $("#yourSelectionResumePrice").html("Total: 80€");
-   $('#step1').hide();
+   $("#step1").slideUp();    
+    $("#step2").slideDown();
+    $( "#lugar" ).prop( "checked", true );
 });        
 
   $("#biblio").click(function () {        
-   var masaje = $('input:radio[name=selec]:checked').val();    
+   var masaje = $('input:radio[name=selec]:checked').val();
+   $("#selection").css('display','block');  
    $("#yourSelectionAmbient").html( "<img src='img/biblioteca.jpg' class='resumeImg'> " + masaje+ "<div class='yourSelectionItemPrice'>105€</div>");
    $("#yourSelectionResumePrice").html("Total: 100€");
-  $('#step1').hide();
+  $("#step1").slideUp();    
+    $("#step2").slideDown();
+    $( "#lugar" ).prop( "checked", true );
 });        
 
   $("#arregla").click(function () {        
-   var masaje = $('input:radio[name=selec]:checked').val();    
+   var masaje = $('input:radio[name=selec]:checked').val();
+   $("#selection").css('display','block'); 
    $("#yourSelectionAmbient").html( "<img src='img/arreglar.jpg' class='resumeImg'> " + masaje+ "<div class='yourSelectionItemPrice'>112€</div>");
    $("#yourSelectionResumePrice").html("Total: 80€");
-  $('#step1').hide();
+  $("#step1").slideUp();    
+    $("#step2").slideDown();
+    $( "#lugar" ).prop( "checked", true );
   
 });        
 
   $("#ley").click(function () {        
-   var masaje = $('input:radio[name=selec]:checked').val();    
+   var masaje = $('input:radio[name=selec]:checked').val();
+   $("#selection").css('display','block');
    $("#yourSelectionAmbient").html( "<img src='img/esposas.jpg' class='resumeImg'> " + masaje+ "<div class='yourSelectionItemPrice'>95€</div>");
    $("#yourSelectionResumePrice").html("Total: 80€");
-   $('#step1').hide();
-  
+  $("#step1").slideUp();    
+    $("#step2").slideDown();
+  $( "#lugar" ).prop( "checked", true );
 });
 
 });
@@ -116,117 +131,79 @@ $(document).ready(function(){
   $("#arno1").click(function () {        
    var masaje = $('input:radio[name=actor]:checked').val();    
    $("#yourSelectionActor").html( "<img src='img/actor1.jpg' class='resumeImg'> " + masaje);
-
-  if(($('#selection').css('right') == '280px')){
-
-   }if(($('#selection').css('right') == '0px')){}
-
-   else {
-    $('#selection').fadeIn(80).animate({ "right": "+=280px" }, "fast" );
-    $('#close').fadeIn(80);
-  }
-
+   $("#step2").slideUp();
+   $("#step3").slideDown();
+   $(this).parents('li.itemSteps').addClass('itemSteps--Checked');
+   $( "#actores" ).prop( "checked", true );        
 }); 
 
   $("#arno2").click(function () {        
    var masaje = $('input:radio[name=actor]:checked').val();    
    $("#yourSelectionActor").html( "<img src='img/actor2.jpg' class='resumeImg'> " + masaje);
-  if(($('#selection').css('right') == '280px')){
-
-   }if(($('#selection').css('right') == '0px')){}
-
-   else {
-    $('#selection').fadeIn(80).animate({ "right": "+=280px" }, "fast" );
-    $('#close').fadeIn(80);
-  }
+  $("#step2").slideUp();
+   $("#step3").slideDown();
+   $(this).parents('li.itemSteps').addClass('itemSteps--Checked');
+   $( "#actores" ).prop( "checked", true );
 });
 
   $("#arno3").click(function () {        
    var masaje = $('input:radio[name=actor]:checked').val();    
    $("#yourSelectionActor").html( "<img src='img/actor3.jpg' class='resumeImg'> " + masaje);
-   if(($('#selection').css('right') == '280px')){
-
-   }if(($('#selection').css('right') == '0px')){}
-
-   else {
-    $('#selection').fadeIn(80).animate({ "right": "+=280px" }, "fast" );
-    $('#close').fadeIn(80);
-  }
+   $("#step2").slideUp();
+   $("#step3").slideDown();
+   $(this).parents('li.itemSteps').addClass('itemSteps--Checked');
+   $( "#actores" ).prop( "checked", true );
 });
 
   $("#arno4").click(function () {        
    var masaje = $('input:radio[name=actor]:checked').val();    
    $("#yourSelectionActor").html( "<img src='img/actor4.jpg' class='resumeImg'> " + masaje);
-   if(($('#selection').css('right') == '280px')){
-
-   }if(($('#selection').css('right') == '0px')){}
-
-   else {
-    $('#selection').fadeIn(80).animate({ "right": "+=280px" }, "fast" );
-    $('#close').fadeIn(80);
-  }
+   $("#step2").slideUp();
+   $("#step3").slideDown();
+   $(this).parents('li.itemSteps').addClass('itemSteps--Checked');
+   $( "#actores" ).prop( "checked", true );
 });
 
   $("#actriz1").click(function () {        
    var masaje = $('input:radio[name=actor]:checked').val();    
    $("#yourSelectionActor").html( "<img src='img/actriz1.jpg'  class='resumeImg'> " + masaje);
-   if(($('#selection').css('right') == '280px')){
-
-   }if(($('#selection').css('right') == '0px')){}
-
-   else {
-    $('#selection').fadeIn(80).animate({ "right": "+=280px" }, "fast" );
-    $('#close').fadeIn(80);
-  }
+   $("#step2").slideUp();
+   $("#step3").slideDown();
+   $(this).parents('li.itemSteps').addClass('itemSteps--Checked');
+   $( "#actores" ).prop( "checked", true );
 });
 
   $("#actriz2").click(function () {        
    var masaje = $('input:radio[name=actor]:checked').val();    
    $("#yourSelectionActor").html( "<img src='img/actriz2.jpg'  class='resumeImg'> " + masaje);
-   if(($('#selection').css('right') == '280px')){
-
-   }if(($('#selection').css('right') == '0px')){}
-
-   else {
-    $('#selection').fadeIn(80).animate({ "right": "+=280px" }, "fast" );
-    $('#close').fadeIn(80);
-  }
+   $("#step2").slideUp();
+   $("#step3").slideDown();
+   $(this).parents('li.itemSteps').addClass('itemSteps--Checked');
+   $( "#actores" ).prop( "checked", true );
 });
 
    $("#actriz3").click(function () {        
    var masaje = $('input:radio[name=actor]:checked').val();    
    $("#yourSelectionActor").html( "<img src='img/actriz3.jpg'  class='resumeImg'> " + masaje);
-   if(($('#selection').css('right') == '280px')){
-
-   }if(($('#selection').css('right') == '0px')){}
-
-   else {
-    $('#selection').fadeIn(80).animate({ "right": "+=280px" }, "fast" );
-    $('#close').fadeIn(80);
-  }
+   $("#step2").slideUp();
+   $("#step3").slideDown();
+   $(this).parents('li.itemSteps').addClass('itemSteps--Checked');
+   $( "#actores" ).prop( "checked", true );
 });
 
    $("#actriz4").click(function () {        
    var masaje = $('input:radio[name=actor]:checked').val();    
    $("#yourSelectionActor").html( "<img src='img/actriz4.jpg'  class='resumeImg'> " + masaje);
-   if(($('#selection').css('right') == '280px')){
-
-   }if(($('#selection').css('right') == '0px')){}
-
-   else {
-    $('#selection').fadeIn(80).animate({ "right": "+=280px" }, "fast" );
-    $('#close').fadeIn(80);
-  }
+   $("#step2").slideUp();
+   $("#step3").slideDown();
+   $(this).parents('li.itemSteps').addClass('itemSteps--Checked');
+   $( "#actores" ).prop( "checked", true );
 });
-
-
-
-
 
 });
 
 
-$('#close_x').click(function (e) {
+/*$('#close_x').click(function (e) {
   e.preventDefault();
 
   if($('#selection').css('right') == '0px'){
@@ -239,4 +216,4 @@ $('#close_x').click(function (e) {
     $('#selection').animate({ "right": "+=280px" }, "fast" );
     
   }           
-});
+});*/
