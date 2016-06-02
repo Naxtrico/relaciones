@@ -66,6 +66,8 @@ $(document).ready(function(){
     $("#step1").slideUp();    
     $("#step2").slideDown();
     $( "#lugar" ).prop( "checked", true );
+    $('.itemSteps').parents().find('.itemSteps--Checked').removeClass('itemSteps--Checked');
+    $(this).parents('.itemSteps').next().addClass('itemSteps--Checked');
 }); 
 
   $("#copa").click(function () {        
@@ -76,6 +78,8 @@ $(document).ready(function(){
    $("#step1").slideUp();    
    $("#step2").slideDown();
    $( "#lugar" ).prop( "checked", true );
+   $('.itemSteps').parents().find('.itemSteps--Checked').removeClass('itemSteps--Checked');
+    $(this).parents('.itemSteps').next().addClass('itemSteps--Checked');
 });
 
   $("#correr").click(function () {        
@@ -86,6 +90,8 @@ $(document).ready(function(){
    $("#step1").slideUp();    
     $("#step2").slideDown();
     $( "#lugar" ).prop( "checked", true );
+    $('.itemSteps').parents().find('.itemSteps--Checked').removeClass('itemSteps--Checked');
+    $(this).parents('.itemSteps').next().addClass('itemSteps--Checked');
 });        
 
   $("#biblio").click(function () {        
@@ -96,6 +102,8 @@ $(document).ready(function(){
   $("#step1").slideUp();    
     $("#step2").slideDown();
     $( "#lugar" ).prop( "checked", true );
+    $('.itemSteps').parents().find('.itemSteps--Checked').removeClass('itemSteps--Checked');
+    $(this).parents('.itemSteps').next().addClass('itemSteps--Checked');
 });        
 
   $("#arregla").click(function () {        
@@ -106,6 +114,8 @@ $(document).ready(function(){
   $("#step1").slideUp();    
     $("#step2").slideDown();
     $( "#lugar" ).prop( "checked", true );
+    $('.itemSteps').parents().find('.itemSteps--Checked').removeClass('itemSteps--Checked');
+    $(this).parents('.itemSteps').next().addClass('itemSteps--Checked');
   
 });        
 
@@ -117,6 +127,8 @@ $(document).ready(function(){
   $("#step1").slideUp();    
     $("#step2").slideDown();
   $( "#lugar" ).prop( "checked", true );
+  $('.itemSteps').parents().find('.itemSteps--Checked').removeClass('itemSteps--Checked');
+    $(this).parents('.itemSteps').next().addClass('itemSteps--Checked');
 });
 
 });
@@ -134,7 +146,9 @@ $(document).ready(function(){
    $("#step2").slideUp();
    $("#step3").slideDown();
    $(this).parents('li.itemSteps').addClass('itemSteps--Checked');
-   $( "#actores" ).prop( "checked", true );        
+   $( "#actores" ).prop( "checked", true );
+   $('.itemSteps').parents().find('.itemSteps--Checked').removeClass('itemSteps--Checked');
+    $(this).parents('.itemSteps').next().addClass('itemSteps--Checked');      
 }); 
 
   $("#arno2").click(function () {        
@@ -144,6 +158,8 @@ $(document).ready(function(){
    $("#step3").slideDown();
    $(this).parents('li.itemSteps').addClass('itemSteps--Checked');
    $( "#actores" ).prop( "checked", true );
+   $('.itemSteps').parents().find('.itemSteps--Checked').removeClass('itemSteps--Checked');
+    $(this).parents('.itemSteps').next().addClass('itemSteps--Checked');
 });
 
   $("#arno3").click(function () {        
@@ -153,6 +169,8 @@ $(document).ready(function(){
    $("#step3").slideDown();
    $(this).parents('li.itemSteps').addClass('itemSteps--Checked');
    $( "#actores" ).prop( "checked", true );
+   $('.itemSteps').parents().find('.itemSteps--Checked').removeClass('itemSteps--Checked');
+    $(this).parents('.itemSteps').next().addClass('itemSteps--Checked');
 });
 
   $("#arno4").click(function () {        
@@ -162,6 +180,8 @@ $(document).ready(function(){
    $("#step3").slideDown();
    $(this).parents('li.itemSteps').addClass('itemSteps--Checked');
    $( "#actores" ).prop( "checked", true );
+   $('.itemSteps').parents().find('.itemSteps--Checked').removeClass('itemSteps--Checked');
+    $(this).parents('.itemSteps').next().addClass('itemSteps--Checked');
 });
 
   $("#actriz1").click(function () {        
@@ -171,6 +191,8 @@ $(document).ready(function(){
    $("#step3").slideDown();
    $(this).parents('li.itemSteps').addClass('itemSteps--Checked');
    $( "#actores" ).prop( "checked", true );
+   $('.itemSteps').parents().find('.itemSteps--Checked').removeClass('itemSteps--Checked');
+    $(this).parents('.itemSteps').next().addClass('itemSteps--Checked');
 });
 
   $("#actriz2").click(function () {        
@@ -180,6 +202,8 @@ $(document).ready(function(){
    $("#step3").slideDown();
    $(this).parents('li.itemSteps').addClass('itemSteps--Checked');
    $( "#actores" ).prop( "checked", true );
+   $('.itemSteps').parents().find('.itemSteps--Checked').removeClass('itemSteps--Checked');
+    $(this).parents('.itemSteps').next().addClass('itemSteps--Checked');
 });
 
    $("#actriz3").click(function () {        
@@ -189,6 +213,8 @@ $(document).ready(function(){
    $("#step3").slideDown();
    $(this).parents('li.itemSteps').addClass('itemSteps--Checked');
    $( "#actores" ).prop( "checked", true );
+   $('.itemSteps').parents().find('.itemSteps--Checked').removeClass('itemSteps--Checked');
+    $(this).parents('.itemSteps').next().addClass('itemSteps--Checked');
 });
 
    $("#actriz4").click(function () {        
@@ -198,6 +224,8 @@ $(document).ready(function(){
    $("#step3").slideDown();
    $(this).parents('li.itemSteps').addClass('itemSteps--Checked');
    $( "#actores" ).prop( "checked", true );
+   $('.itemSteps').parents().find('.itemSteps--Checked').removeClass('itemSteps--Checked');
+    $(this).parents('.itemSteps').next().addClass('itemSteps--Checked');
 });
 
 });

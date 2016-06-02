@@ -12,8 +12,9 @@
 }
 
 .card:last-child{
-	margin-right: 0px;
+	margin-right: 0;
 }
+
 
 .card_body {
 	position: relative;
@@ -108,10 +109,16 @@
 	color:#311752;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
 	.card{
-		width: 49%;
+	float: none;
+    margin: 0 auto;
+    width: 90%;
 	}
+
+	.card:last-child{
+	margin-right: auto;
+}
 
 	.card:nth-of-type(3n){
 		margin-right: 2%;
@@ -121,4 +128,10 @@
 		margin-right: 0px;
 	}
 
+}
+
+@media screen and (max-width: 343px) {
+	.card{	
+    width: 80%;
+	}
 }

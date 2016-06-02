@@ -15,7 +15,7 @@
 .itemSteps span:hover .itemSteps{
   cursor: pointer;
 
-    background-color: #2C0C52;
+  background-color: #2C0C52;
 }
 
 
@@ -27,21 +27,68 @@
 	border-bottom: 0;
 }
 
-.itemStepsCheck{
-	height: 20px;
-    width: 20px;
-    background-color: #000;
-    border: 1px solid #fff;
-    margin-right: 4%;
+.styled-checkbox {
+  opacity: 0;
+  filter: alpha(opacity=0);
 }
 
-.listItemStepsArrow{
-	margin-right: 7%;    
-    float: right;
+.styled-checkbox + label:before,
+.lt-ie8 .checkbox-replacement {
+  content: '';
+  display: inline-block;
+  line-height: 1;    
+  text-align: center;
+    /* Put checkbox styles here: */
+    border: 2px solid #fff;
+    width: 20px;
+    height: 22px;
+    margin-right: 6px;
+    
+
+  }
+  .styled-checkbox:checked + label:before,
+  .lt-ie9 .styled-checkbox.checked + label:before {
+    content: '✔';
+    font-size: 20px;
+  }
+
+  .titleSlidersAmbient, .titleSlidersActors{
+    color:#000;
+    position: absolute;
+    right: 0;
+    left: 0;  
+  }
+
+  .titleSlidersActors{
+    top: 85px;
+  }
+
+  .titleSlidersAmbient{
+   top: 140px;
+ }
+
+ .listItemStepsArrow{
+   margin-right: 7%;    
+   float: right;
+ }
+
+ .finishStepsPF{
+  text-align: center;    
+}
+
+.titleFinishSteps{
+  font-size:36px;
+  color:#2C0C52;
+  line-height: 45px;
+}
+
+.descriptionsPF{
+  color:#000;
+  font-size: 29px;
 }
 
 .itemSteps--Checked{
-	background-color: #2C0C52;
+ background-color: #2C0C52;
 }
 
 
@@ -57,7 +104,7 @@
 
 
 /*--SLIDES-----------------------------------------*/
-.slideshow, .slideshowM, .slideshowMu {
+.slideshow, .slideshowM, .slideshowMu, .slideshowA {
   width: 100%;
   height: 542px;  
   background: black;  
@@ -66,32 +113,34 @@
   background-color: #DBDBDB;  
   box-sizing:border-box;
   position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  max-width: 780px;
+  margin: 0 auto;
 }
 .slideshowActors{
-	 top: 0;
-    -webkit-transform: translateY(0%);
-    -ms-transform: translateY(0%);
-    transform: translateY(0%);
+  top: 0;
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
 }
 
 
-.slideshow .slides, .slideshowM .slidesM, .slideshowMu .slidesMu {
+.slideshow .slides, .slideshowM .slidesM, .slideshowMu .slidesMu, .slideshowA .slidesA {
   width: 100%;
   height: 100%;
   position: relative;
   z-index: 0;
-	padding: 0;
+  padding: 0;
 }
 
-.slides ul, .slidesM ul, .slidesMu ul {  
-      line-height: 0px;
+.slides ul, .slidesM ul, .slidesMu ul,.slidesA ul {  
+  line-height: 0px;
 }
 
-.slides li, .slidesM li, .slidesMu li {
+.slides li, .slidesM li, .slidesMu li, .slidesA li {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -106,7 +155,9 @@
 .prevM,
 .nextM,
 .prevMu,
-.nextMu  {
+.nextMu,
+.prevA,
+.nextA   {
   color: #2C0C52;
   position: absolute;
   top: 40%;
@@ -124,32 +175,43 @@
 .prevM:hover,
 .nextM:hover,
 .prevMu:hover,
-.nextMu:hover {
+.nextMu:hover,
+.prevA:hover,
+.nextA:hover  {
   opacity: 0.6;
   cursor: pointer;
 }
 
-.prev, .prevM, .prevMu {
+.prev, .prevM, .prevMu, .prevA {
   left: 0;
 }
 
-.next, .nextM, .nextMu {
+.next, .nextM, .nextMu, .nextA {
   right: 0;
 }
 
-.nav, .navM, .navMu {
-    position: absolute;
-    bottom: -20px;
-    right: 0;
-    z-index: 1;
-    margin: 0 auto;
-    left: 0;
-    width: 100px;
-    list-style: none;
+.nav, .navM, .navMu, .navA {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  z-index: 1;
+  margin: 0 auto;
+  left: 0;
+  width: 100px;
+  list-style: none;
 }
 
-.navM, .navMu{
+.navA{
+ bottom: 7px;
+}
+
+
+.navM, .navMu, {
 	width: 43px;	
+}
+
+.navA{
+  width: 159px;
 }
 
 .nav{
@@ -157,7 +219,7 @@
 }
 
 
-.nav li, .navM li, .navMu li {
+.nav li, .navM li, .navMu li, .navA li {
   float: left;
   margin-right: 15px;
   width: 10px;
@@ -170,17 +232,17 @@
   -webkit-transition: background 0.5s;
 }
 
-.nav li:last-child, .navM li:last-child, .navMu li:last-child{
-	 margin-right: 0;
+.nav li:last-child, .navM li:last-child, .navMu li:last-child, .navA li:last-child{
+  margin-right: 0;
 }
 
 
-.nav li:hover, .navM li:hover, .navMu li:hover {
+.nav li:hover, .navM li:hover, .navMu li:hover, .navA li:hover {
   background-color: #2C0C52;
   cursor: pointer;
 }
 
-.active-cd, .activeM-cd, .activeMu-cd {
+.active-cd, .activeM-cd, .activeMu-cd, .activeA-cd {
   background-color: #2C0C52;
 }
 
@@ -189,6 +251,12 @@
   color: #787878;
 }
 
+@media screen and (max-width: 1023px) {  
+  .navM, .navMu{
+    width: 101px;
+  }
+
+}
 
 @media screen and (max-width: 979px) {	
 	.itemSteps{		
@@ -197,25 +265,46 @@
 }
 
 @media screen and (max-width: 856px) {	
-		.listSteps{
-	    	text-align: center;
-	}	
+  .listSteps{
+    text-align: center;
+  }	
 
-		.itemSteps{			
-			padding-left: 0;	
-	}
+  .itemSteps{			
+   padding-left: 0;	
+ }
 
-	.listItemStepsArrow{
-		float:none;
-	}
+ .listItemStepsArrow{
+  float:none;
+}
 
-	.slideshow, .slideshowM{
-		margin-top:0;
-		transform: translateY(0%);
-	}
+.slideshow, .slideshowM, .slideshowA{
+  margin-top:0;
+  transform: translateY(0%);
+  max-width: 465px;
+}
 
-	.nav, .navM {    
-    	bottom: 6px;
-	}   
+.nav, .navM {    
+ bottom: 6px;
+}
+.titleSlidersAmbient{
+  top: 163px;
+  z-index: 10; 
+} 
 
+.titleSlidersActors{
+  top:300px;
+}
+
+}
+@media screen and (max-width: 671px) {
+
+.titleFinishSteps{
+  font-size:30px;
+ 
+}
+
+.descriptionsPF{
+  
+  font-size: 20px;
+}
 }

@@ -138,8 +138,7 @@ input[type="text"]:focus{
 	border: none;	
 	border-radius: 4px;
 	transition: all 0.5s ease;
-	margin: 0 auto;
-	display: block;
+	margin: 0 auto;	
 	margin-top: 80px;
 	min-width: 157px;
 	&:hover{
@@ -147,9 +146,6 @@ input[type="text"]:focus{
 	}
 }
 
-.form_button_PF:hover{
-	
-}
 
 .form_button_Dejar{
 	padding: 10px 30px;
@@ -260,9 +256,13 @@ input.error {
 	text-align: center;
 	margin-bottom: 3rem;
 	width: 110px;
-	margin-right: 10px;	
+	margin-right: 40px;
 	color: #5D5D5D;
 	border-bottom: solid 2px #5D5D5D; 	
+}
+
+.form_steps.last{
+	margin-right: 0;
 }
 
 .form_stepsNoSelected{
@@ -314,6 +314,13 @@ input.error {
 	
 }
 
+@media screen and (max-width: 615px) {
+	.form_steps{
+		font-size:16px;
+		 width: 93px; 
+	}
+}
+
 @media screen and (max-width: 540px) {
 
 	.content_form{	
@@ -329,3 +336,18 @@ input.error {
 	}
 
 }
+
+@media screen and (max-width: 425px) {
+	.form_steps{
+		margin-right: 20px;
+	}
+}
+
+@media screen and (max-width: 381px) {
+	.form_steps{
+		font-size: 14px;
+		margin-right: 10px;
+		width: 80px;
+	}
+}
+
