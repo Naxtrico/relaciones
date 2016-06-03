@@ -56,15 +56,16 @@
     color:#000;
     position: absolute;
     right: 0;
-    left: 0;  
+    left: 0;
+    z-index: 1  
   }
 
   .titleSlidersActors{
-    top: 85px;
+    top: 80px;
   }
 
   .titleSlidersAmbient{
-   top: 140px;
+  top: 80px;
  }
 
  .listItemStepsArrow{
@@ -219,7 +220,7 @@
 }
 
 .navD {
-  bottom: -90px;
+  bottom: -51px;
    width: 54px;
 }
 

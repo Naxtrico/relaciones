@@ -278,13 +278,14 @@ input[type="radio"] {
   color: #000;
   position: absolute;
   right: 0;
-  left: 0; }
+  left: 0;
+  z-index: 1; }
 
 .titleSlidersActors {
-  top: 85px; }
+  top: 80px; }
 
 .titleSlidersAmbient {
-  top: 140px; }
+  top: 80px; }
 
 .listItemStepsArrow {
   margin-right: 7%;
@@ -414,7 +415,7 @@ input[type="radio"] {
   list-style: none; }
 
 .navD {
-  bottom: -90px;
+  bottom: -51px;
   width: 54px; }
 
 .navA {
@@ -742,7 +743,7 @@ input[type="radio"] {
   background-image: url(../../dist/img/imagen-enpersona-1.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 500px;
   width: 48%;
   float: left;
   color: #fff;
@@ -778,7 +779,7 @@ input[type="radio"] {
 
 .cardDejar_body {
   position: relative;
-  top: 250px;
+  top: 200px;
   height: 100%;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
@@ -1899,13 +1900,16 @@ nav {
   clear: both;
   margin-top: 20px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
@@ -1929,6 +1933,14 @@ nav {
 
 .itemStepsDejar--Checked {
   background-color: #99172F; }
+
+.titleSlidersDejar {
+  color: #000;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 80px;
+  z-index: 1; }
 
 @media screen and (max-width: 1024px) {
   .dejar_email_sent {
