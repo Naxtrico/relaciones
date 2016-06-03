@@ -3,7 +3,7 @@
 	background-position: top center;
     background-repeat: no-repeat;
     height: 600px;    
-    width: 23.5%;
+    width: 48%;
     float: left;
     color: #fff;
     margin-top: 50px;    
@@ -13,7 +13,7 @@
     box-sizing:border-box;    
 }
 
-.cardDejar:nth-of-type(4n){
+.cardDejar:last-child{
 	margin-right: 0px;
 }
 

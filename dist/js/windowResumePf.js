@@ -135,9 +135,6 @@ $(document).ready(function(){
 
 
 
-
-
-
 $(document).ready(function(){
 
   $("#arno1").click(function () {        
@@ -228,6 +225,58 @@ $(document).ready(function(){
     $(this).parents('.itemSteps').next().addClass('itemSteps--Checked');
 });
 
+});
+
+
+$(document).ready(function(){
+
+  $("#persona").click(function () {        
+   var masaje = $('input:radio[name=selec]:checked').val();
+   $("#selection").css('display','block');    
+   $("#yourSelectionAmbient").html( "<img src='img/imagen-enpersona-1.jpg' class='resumeImg'>" + masaje+ "<div class='yourSelectionItemPrice'>25€</div>");
+   $("#yourSelectionResumePrice").html("Total: 15€");
+    $("#step1").slideUp();    
+    $("#step2").slideDown();
+    $("#lugar").prop( "checked", true );
+    $('.itemSteps').parents().find('.itemStepsDejar--Checked').removeClass('itemStepsDejar--Checked');
+    $(this).parents('.itemSteps').next().addClass('itemStepsDejar--Checked');
+}); 
+
+  $("#carta").click(function () {        
+   var masaje = $('input:radio[name=selec]:checked').val();
+   $("#selection").css('display','block');    
+   $("#yourSelectionAmbient").html( "<img src='img/imagen-carta-2.jpg' class='resumeImg'>" + masaje+ "<div class='yourSelectionItemPrice'>15€</div>");
+   $("#yourSelectionResumePrice").html("Total: 15€");
+    $("#step1").slideUp();    
+    $("#step2").slideDown();
+    $("#lugar").prop( "checked", true );
+    $('.itemSteps').parents().find('.itemStepsDejar--Checked').removeClass('itemStepsDejar--Checked');
+    $(this).parents('.itemSteps').next().addClass('itemStepsDejar--Checked');
+}); 
+
+  $("#llamada").click(function () {        
+   var masaje = $('input:radio[name=selec]:checked').val();
+   $("#selection").css('display','block');    
+   $("#yourSelectionAmbient").html( "<img src='img/imagen-mobil-3.jpg' class='resumeImg'>" + masaje+ "<div class='yourSelectionItemPrice'>10€</div>");
+   $("#yourSelectionResumePrice").html("Total: 15€");
+    $("#step1").slideUp();    
+    $("#step2").slideDown();
+    $("#lugar").prop( "checked", true );
+    $('.itemSteps').parents().find('.itemStepsDejar--Checked').removeClass('itemStepsDejar--Checked');
+    $(this).parents('.itemSteps').next().addClass('itemStepsDejar--Checked');
+}); 
+
+  $("#sms").click(function () {        
+   var masaje = $('input:radio[name=selec]:checked').val();
+   $("#selection").css('display','block');    
+   $("#yourSelectionAmbient").html( "<img src='img/imagen-sms-4.jpg' class='resumeImg'>" + masaje+ "<div class='yourSelectionItemPrice'>5€</div>");
+   $("#yourSelectionResumePrice").html("Total: 15€");
+    $("#step1").slideUp();    
+    $("#step2").slideDown();
+    $("#lugar").prop( "checked", true );
+    $('.itemSteps').parents().find('.itemStepsDejar--Checked').removeClass('itemStepsDejar--Checked');
+    $(this).parents('.itemSteps').next().addClass('itemStepsDejar--Checked');
+}); 
 });
 
 

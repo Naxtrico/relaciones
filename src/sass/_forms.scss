@@ -207,10 +207,6 @@ fieldset{
 	color: #2C0C52;
 }
 
-.titleFormsDejar--color{
-	border-bottom: solid 1px #99172F;
-	color: #99172F;
-}
 
 span.error {
 	color: #DB2020;
@@ -259,6 +255,11 @@ input.error {
 	margin-right: 40px;
 	color: #5D5D5D;
 	border-bottom: solid 2px #5D5D5D; 	
+}
+
+.titleFormsDejar--color{
+	border-bottom: solid 2px #99172F;
+	color: #99172F;
 }
 
 .form_steps.last{
