@@ -223,8 +223,8 @@ input[type="radio"] {
   background-size: cover;
   background-image: url(../../dist/img/homenew.jpg);
   width: 100%;
-  height: 100%;
-  min-height: 550px; }
+  height: 500px;
+  min-height: 436px; }
 
 @media screen and (max-width: 699px) {
   .back_full_screen_contacto {
@@ -1322,6 +1322,12 @@ a {
 .clearFix {
   clear: both; }
 
+@media screen and (max-width: 634px) {
+  /*li{
+		display: block;
+		padding: 0;
+	}*/ }
+
 @media screen and (max-width: 540px) {
   p {
     font-size: 14px;
@@ -1349,9 +1355,9 @@ header.fixed {
   background-color: #000; }
 
 .content_copy_home {
-  width: 90%;
+  width: 514px;
   position: relative;
-  left: 50%;
+  left: 27%;
   top: 45%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -1360,46 +1366,55 @@ header.fixed {
 .services_copy_home h1 {
   margin-top: 7px;
   margin-bottom: 7px;
-  font-size: 45px;
+  font-size: 36px;
   text-transform: none;
   font-weight: 500;
-  color: #fff;
+  color: #000;
   text-align: left; }
+
+@media screen and (max-width: 768px) {
+  .content_copy_home {
+    left: 41%;
+    top: 49%; } }
 
 .homeCopy {
   margin-top: 7px;
   margin-bottom: 7px;
   font-size: 45px;
-  text-transform: none; }
+  text-transform: none;
+  color: #000; }
 
 .services_copy_home p {
-  color: #fff;
-  font-size: 21px;
+  color: #000;
+  font-size: 17px;
   margin: 0;
-  line-height: 35px;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.4); }
+  line-height: 35px; }
 
 .homeUiLineSeparator {
-  width: 600px;
-  border: 1px solid #fff;
+  width: 515px;
+  border: 1px solid #000;
   display: inline-block;
-  margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-top: 11px;
+  margin-bottom: 11px; }
 
 @media screen and (max-width: 540px) {
   .content_copy_home {
-    width: 90%; } }
+    width: 77%;
+    left: 49%;
+    top: 49%; }
+  .homeUiLineSeparator {
+    width: 305px; } }
 
 .home_services_Pf, .home_services_Dejar {
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 424px;
+  height: 380px;
   box-sizing: border-box; }
 
 .home_services_Pf {
-  background-image: url(../../dist/img/servicePfHome.jpg);
+  background-image: url(../../dist/img/parejafidelidadv2.jpg);
   background-position: center left; }
 
 .home_services_Dejar {
@@ -1408,19 +1423,19 @@ header.fixed {
 
 .homeServicesCopiesPf, .homeServicesCopiesDejar {
   max-width: 500px;
-  margin-top: 78px;
+  margin-top: 52px;
   margin-bottom: 78px; }
 
 .homeServicesCopiesPf {
-  margin-left: 10%;
+  margin-left: 7%;
   float: left; }
 
 .homeServicesCopiesDejar {
-  margin-right: 10%;
+  margin-right: 6%;
   float: right; }
 
 .servicesTitle {
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   font-weight: 400;
   font-family: 'Open Sans', sans-serif; }
@@ -1436,7 +1451,7 @@ header.fixed {
   margin-bottom: 30px; }
 
 .marginTop {
-  margin-top: 30px; }
+  margin-top: 14px; }
 
 .references {
   width: 100%;
@@ -1444,7 +1459,7 @@ header.fixed {
   background-color: #FFFFFF; }
 
 .referencesTitle {
-  font-size: 20px;
+  font-size: 30px;
   color: #6E6E6E;
   font-weight: 400;
   margin-top: 60px;
@@ -1827,16 +1842,13 @@ nav {
   clear: both;
   margin-top: 20px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
