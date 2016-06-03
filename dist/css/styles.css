@@ -1777,8 +1777,7 @@ nav {
   .icon_register_mobile {
     display: none; } }
 
-.content_payment, .conent_resume {
-  border: 1px solid #000;
+.content_payment {
   text-align: left;
   padding: 15px;
   width: 55%;
@@ -1786,8 +1785,34 @@ nav {
   float: left;
   box-sizing: border-box; }
 
+.conent_resume {
+  height: 100%;
+  margin-top: 110px;
+  width: 87%;
+  padding: 15px;
+  padding-top: 108px;
+  font-weight: 600;
+  margin: 0 auto;
+  padding-bottom: 100%;
+  box-sizing: border-box; }
+
 .content_payment {
-  margin-right: 5%; }
+  width: 60%;
+  height: 100%;
+  float: left;
+  margin-top: 79px;
+  margin-bottom: 79px; }
+
+.payment_line {
+  width: 91%;
+  margin-left: 31px;
+  border: 1px solid #515151; }
+
+.resume_line {
+  width: 101%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #515151; }
 
 .content_payment li {
   color: #000;
@@ -1798,9 +1823,29 @@ nav {
   list-style-type: circle;
   padding-top: 10px; }
 
-.conent_resume {
+.payment_tittle {
+  margin-top: 20px;
+  margin-left: 31px;
+  color: #000;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'PT Serif', serif; }
+
+.content_resume_full {
+  height: 100%;
   width: 40%;
-  float: right; }
+  float: right;
+  background-color: #e0e0e0;
+  padding-bottom: 35%; }
+
+.buyline {
+  width: 135px;
+  border: 1px solid #000;
+  display: inline-block;
+  margin-top: 11px;
+  margin-bottom: 26px;
+  margin-left: 0%;
+  margin-right: 0%; }
 
 .content_payment ul {
   list-style-type: circle;
@@ -1825,7 +1870,8 @@ nav {
   margin-right: 10px; }
 
 .resume_product {
-  float: left; }
+  float: left;
+  margin-top: 10px; }
 
 .product {
   font-size: 16px; }
@@ -1833,8 +1879,19 @@ nav {
 .price {
   font-size: 15px; }
 
+.square {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #515151;
+  float: left;
+  margin: 20px; }
+
 .resume {
-  margin-bottom: 15px; }
+  margin-bottom: 11px;
+  color: #000;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'PT Serif', serif; }
 
 .price_total {
   width: 100%;
@@ -2481,6 +2538,17 @@ nav {
   padding-top: 1em;
   padding-right: 1em;
   font-weight: 600; }
+
+.full_screen_dejar {
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: -webkit-linear-gradient(left, rgba(43, 12, 82, 0.86) 0%, rgba(239, 1, 124, 0) 100%), url(../../dist/img/1343735.jpg);
+  background: linear-gradient(to right, rgba(43, 12, 82, 0.86) 0%, rgba(239, 1, 124, 0) 100%), url(../../dist/img/1343735.jpg);
+  width: 100%;
+  height: 100%;
+  min-height: 550px; }
 
 .full_screen {
   overflow: hidden;
