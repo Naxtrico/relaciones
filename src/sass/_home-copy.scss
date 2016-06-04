@@ -1,10 +1,9 @@
 .content_copy_home{
    	width: 514px;
-    position: relative;
-   	margin-left: 350px; 
-   	margin-top: 242px; 
-    transform: translate(-50%, -50%); 
-    float: left;   
+        margin-left: 7%;
+    float: left;
+    margin-top: 16%;
+    margin-top:160px;
 }
 
 .services_copy_home h1{
@@ -16,31 +15,6 @@
 	color:#000;
 	text-align: left;	
 }
-
-@media screen and (max-width: 648px) {
-.content_copy_home{
-    	margin-left: 304px; 
-  }}
-
-@media screen and (max-width: 803px) {
-.content_copy_home{
-    	margin-left: 312px; 
-  }}
-
-  @media screen and (max-width: 543px) {
-.content_copy_home{
-    	margin-left: 312px; 
-  }}
-@media screen and (max-width: 919px) {
-.content_copy_home{
-      margin-left: 300px;
-      width:96%
-  }
- .homeUiLineSeparator{
- 	width: 401px;
-
-}}
-
 
 
 .homeCopy{
@@ -67,12 +41,16 @@
 	margin-bottom: 11px;
 }
 
+@media screen and (max-width: 580px) {
+	.content_copy_home{
+		width: 86%;
+	}
+
+}
 
 @media screen and (max-width: 540px) {
 
-	.content_copy_home{
 	
-	}
 	.homeUiLineSeparator{
 	width: 305px;
 	

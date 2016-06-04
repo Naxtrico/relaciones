@@ -215,3 +215,9 @@ position: absolute;
 
 
 }
+
+@media screen and (max-width: 366px) {
+	.home_services_Pf{
+		background-size: initial;
+	}
+}
