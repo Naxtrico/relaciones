@@ -76,13 +76,13 @@
 	margin-top: 100px;
 	margin-right: 10px;
 	&:hover,{
-		background-color: #2C0C52;
+		background-color: $colorPrincipalPF;
 		color:#fff;
 	}	
 }
 
 .btnSelectSex--active{
-		background-color: #2C0C52;
+		background-color: $colorPrincipalPF;
 		color:#fff;
 	}	
 

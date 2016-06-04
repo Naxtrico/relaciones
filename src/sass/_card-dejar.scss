@@ -24,14 +24,14 @@
 }
 
 .cardDejar_title{
-	color:#99172F;
+	color:$colorPrincipalDejar;
 	margin-top: 0;		
 }
 
 .cardDejar_price {	
 	font-size: 16px;
 	font-weight: 400;
-	border: 1px solid #99172F;
+	border: 1px solid $colorPrincipalDejar;
 	padding: 2px 0px;
 	width: 60px;
 	line-height: 25px;
@@ -71,7 +71,7 @@
 	bottom: 150px;
     padding: 35px 0px 35px 0px;
 	background-color: #fff;
-	color:#99172F;
+	color:$colorPrincipalDejar;
 }
 
 .cardDejar_examples{
@@ -83,8 +83,8 @@
 	font-weight: 400;
 	cursor: pointer;
 	text-decoration: none;
-	color:#99172F;
-	border: 1px solid #99172F;	
+	color:$colorPrincipalDejar;
+	border: 1px solid $colorPrincipalDejar;	
 	line-height: 25px;
 	margin-bottom: 20px;	
 	border-radius: 4px;   
@@ -121,7 +121,7 @@
 	}
 
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1023px) {
 	
 	.cardDejar{		
 	    width: 100%;

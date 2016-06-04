@@ -319,7 +319,7 @@ input[type="radio"] {
   display: block; }
 
 /*--SLIDES-----------------------------------------*/
-.slideshow, .slideshowM, .slideshowMu, .slideshowA, .slideshowD {
+.slideshow, .slideshowM, .slideshowMu, .slideshowA, .slideshowD, .slideshowDe {
   width: 100%;
   height: 542px;
   background: black;
@@ -341,17 +341,17 @@ input[type="radio"] {
   -ms-transform: translateY(0%);
   transform: translateY(0%); }
 
-.slideshow .slides, .slideshowM .slidesM, .slideshowMu .slidesMu, .slideshowA .slidesA, .slideshowD .slidesD {
+.slideshow .slides, .slideshowM .slidesM, .slideshowMu .slidesMu, .slideshowA .slidesA, .slideshowD .slidesD, .slideshowDe .slidesDe {
   width: 100%;
   height: 100%;
   position: relative;
   z-index: 0;
   padding: 0; }
 
-.slides ul, .slidesM ul, .slidesMu ul, .slidesA ul, .slidesD ul {
+.slides ul, .slidesM ul, .slidesMu ul, .slidesA ul, .slidesD ul, .slidesDe ul {
   line-height: 0px; }
 
-.slides li, .slidesM li, .slidesMu li, .slidesA li, .slidesD li {
+.slides li, .slidesM li, .slidesMu li, .slidesA li, .slidesD li, .slidesDe li {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -369,7 +369,9 @@ input[type="radio"] {
 .prevA,
 .nextA,
 .prevD,
-.nextD {
+.nextD,
+.prevDe,
+.nextDe {
   color: #2C0C52;
   position: absolute;
   top: 40%;
@@ -382,7 +384,9 @@ input[type="radio"] {
   -webkit-transition: opacity 0.5s; }
 
 .prevD,
-.nextD {
+.nextD,
+.prevDe,
+.nextDe {
   color: #99172F; }
 
 .prev:hover,
@@ -394,17 +398,19 @@ input[type="radio"] {
 .prevA:hover,
 .nextA:hover,
 .prevD:hover,
-.nextD:hover {
+.nextD:hover,
+.prevDe:hover,
+.nextDe:hover {
   opacity: 0.6;
   cursor: pointer; }
 
-.prev, .prevM, .prevMu, .prevA, .prevD {
+.prev, .prevM, .prevMu, .prevA, .prevD, .prevDe {
   left: 0; }
 
-.next, .nextM, .nextMu, .nextA, .nextD {
+.next, .nextM, .nextMu, .nextA, .nextD, .nextDe {
   right: 0; }
 
-.nav, .navM, .navMu, .navA, .navD {
+.nav, .navM, .navMu, .navA, .navD, .navDe {
   position: absolute;
   bottom: -20px;
   right: 0;
@@ -414,8 +420,8 @@ input[type="radio"] {
   width: 100px;
   list-style: none; }
 
-.navD {
-  bottom: -51px;
+.navD, .navDe {
+  bottom: -20px;
   width: 54px; }
 
 .navA {
@@ -430,7 +436,7 @@ input[type="radio"] {
 .nav {
   width: 72px; }
 
-.nav li, .navM li, .navMu li, .navA li, .navD li {
+.nav li, .navM li, .navMu li, .navA li, .navD li, .navDe li {
   float: left;
   margin-right: 15px;
   width: 10px;
@@ -445,20 +451,20 @@ input[type="radio"] {
 .navD li {
   border: 2px solid #99172F; }
 
-.nav li:last-child, .navM li:last-child, .navMu li:last-child, .navA li:last-child, .navD li:last-child {
+.nav li:last-child, .navM li:last-child, .navMu li:last-child, .navA li:last-child, .navD li:last-child, .navDe li:last-child {
   margin-right: 0; }
 
-.nav li:hover, .navM li:hover, .navMu li:hover, .navA li:hover, .navD li:hover {
+.nav li:hover, .navM li:hover, .navMu li:hover, .navA li:hover, .navD li:hover, .navDe li:hover {
   background-color: #2C0C52;
   cursor: pointer; }
 
-.navD li:hover {
+.navD li:hover, .navDe li:hover {
   background-color: #99172F; }
 
-.active-cd, .activeM-cd, .activeMu-cd, .activeA-cd, .activeD-cd {
+.active-cd, .activeM-cd, .activeMu-cd, .activeA-cd, .activeD-cd, .activeDe-cd {
   background-color: #2C0C52; }
 
-.activeD-cd {
+.activeD-cd, .activeDe-cd {
   background-color: #99172F; }
 
 .info {
@@ -480,7 +486,7 @@ input[type="radio"] {
     padding-left: 0; }
   .listItemStepsArrow {
     float: none; }
-  .slideshow, .slideshowM, .slideshowA {
+  .slideshow, .slideshowM, .slideshowA, .slideshowDe {
     margin-top: 0;
     -webkit-transform: translateY(0%);
         -ms-transform: translateY(0%);
@@ -844,7 +850,7 @@ input[type="radio"] {
   .cardDejar:nth-of-type(2n) {
     margin-right: 0px; } }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1023px) {
   .cardDejar {
     width: 100%;
     float: none; }
@@ -1266,7 +1272,7 @@ h1 {
 /*h2 {		
 	
 	font-weight: 600;
-	color:#2C0C52;	
+	color:$colorPrincipalPF;	
 }*/
 h1, h2 {
   font-family: 'PT Serif', serif;
@@ -1275,7 +1281,7 @@ h1, h2 {
 /*h3 {	
 	font-size: 24px;
 	font-weight: 500;
-	color:#2C0C52;	
+	color:$colorPrincipalPF;	
 }*/
 h4 {
   font-size: 22px;

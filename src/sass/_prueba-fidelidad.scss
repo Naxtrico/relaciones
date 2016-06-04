@@ -15,7 +15,7 @@
 .itemSteps span:hover .itemSteps{
   cursor: pointer;
 
-  background-color: #2C0C52;
+  background-color: $colorPrincipalPF;
 }
 
 
@@ -79,16 +79,16 @@
 
 .titleFinishSteps, .titleFinishDejarSteps{
   font-size:36px;
-  color:#2C0C52;
+  color:$colorPrincipalPF;
   line-height: 45px;
 }
 
 .titleFinishSteps{
-  color:#2C0C52;
+  color:$colorPrincipalPF;
 }
 
 .titleFinishDejarSteps{  
-  color:#99172F;  
+  color:$colorPrincipalDejar;  
 }
 
 .descriptionsPF{
@@ -97,7 +97,7 @@
 }
 
 .itemSteps--Checked{
- background-color: #2C0C52;
+ background-color: $colorPrincipalPF;
 }
 
 
@@ -113,7 +113,7 @@
 
 
 /*--SLIDES-----------------------------------------*/
-.slideshow, .slideshowM, .slideshowMu, .slideshowA, .slideshowD {
+.slideshow, .slideshowM, .slideshowMu, .slideshowA, .slideshowD, .slideshowDe {
   width: 100%;
   height: 542px;  
   background: black;  
@@ -137,7 +137,7 @@
 }
 
 
-.slideshow .slides, .slideshowM .slidesM, .slideshowMu .slidesMu, .slideshowA .slidesA, .slideshowD .slidesD {
+.slideshow .slides, .slideshowM .slidesM, .slideshowMu .slidesMu, .slideshowA .slidesA, .slideshowD .slidesD, .slideshowDe .slidesDe {
   width: 100%;
   height: 100%;
   position: relative;
@@ -145,11 +145,11 @@
   padding: 0;
 }
 
-.slides ul, .slidesM ul, .slidesMu ul,.slidesA ul, .slidesD ul {  
+.slides ul, .slidesM ul, .slidesMu ul,.slidesA ul, .slidesD ul, .slidesDe ul {  
   line-height: 0px;
 }
 
-.slides li, .slidesM li, .slidesMu li, .slidesA li, .slidesD li {
+.slides li, .slidesM li, .slidesMu li, .slidesA li, .slidesD li, .slidesDe li  {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -168,8 +168,10 @@
 .prevA,
 .nextA,
 .prevD,
-.nextD     {
-  color: #2C0C52;
+.nextD,
+.prevDe,
+.nextDe       {
+  color: $colorPrincipalPF;
   position: absolute;
   top: 40%;
   z-index: 1;
@@ -182,8 +184,10 @@
 }
 
 .prevD,
-.nextD   {
-   color: #99172F;
+.nextD,
+.prevDe,
+.nextDe    {
+   color: $colorPrincipalDejar;
 }
 
 .prev:hover,
@@ -195,20 +199,22 @@
 .prevA:hover,
 .nextA:hover,
 .prevD:hover,
-.nextD:hover    {
+.nextD:hover,
+.prevDe:hover,
+.nextDe:hover     {
   opacity: 0.6;
   cursor: pointer;
 }
 
-.prev, .prevM, .prevMu, .prevA, .prevD {
+.prev, .prevM, .prevMu, .prevA, .prevD, .prevDe {
   left: 0;
 }
 
-.next, .nextM, .nextMu, .nextA, .nextD  {
+.next, .nextM, .nextMu, .nextA, .nextD, .nextDe  {
   right: 0;
 }
 
-.nav, .navM, .navMu, .navA, .navD {
+.nav, .navM, .navMu, .navA, .navD, .navDe {
   position: absolute;
   bottom: -20px;
   right: 0;
@@ -219,8 +225,8 @@
   list-style: none;
 }
 
-.navD {
-  bottom: -51px;
+.navD, .navDe {
+  bottom: -20px;
    width: 54px;
 }
 
@@ -242,12 +248,12 @@
 }
 
 
-.nav li, .navM li, .navMu li, .navA li, .navD li {
+.nav li, .navM li, .navMu li, .navA li, .navD li, .navDe li {
   float: left;
   margin-right: 15px;
   width: 10px;
   height: 10px;
-  border: 2px solid #2C0C52;
+  border: 2px solid $colorPrincipalPF;
   border-radius: 10px;
   transition: background 0.5s;
   -o-transition: background 0.5s;
@@ -256,29 +262,29 @@
 }
 
 .navD li {
-     border: 2px solid #99172F;
+     border: 2px solid $colorPrincipalDejar;
 }
 
-.nav li:last-child, .navM li:last-child, .navMu li:last-child, .navA li:last-child, .navD li:last-child{
+.nav li:last-child, .navM li:last-child, .navMu li:last-child, .navA li:last-child, .navD li:last-child, .navDe li:last-child{
   margin-right: 0;
 }
 
 
-.nav li:hover, .navM li:hover, .navMu li:hover, .navA li:hover, .navD li:hover {
-  background-color: #2C0C52;
+.nav li:hover, .navM li:hover, .navMu li:hover, .navA li:hover, .navD li:hover, .navDe li:hover {
+  background-color: $colorPrincipalPF;
   cursor: pointer;
 }
 
-.navD li:hover{
-   background-color: #99172F;
+.navD li:hover, .navDe li:hover{
+   background-color: $colorPrincipalDejar;
 }
 
-.active-cd, .activeM-cd, .activeMu-cd, .activeA-cd, .activeD-cd {
-  background-color: #2C0C52;
+.active-cd, .activeM-cd, .activeMu-cd, .activeA-cd, .activeD-cd, .activeDe-cd  {
+  background-color: $colorPrincipalPF;
 }
 
-.activeD-cd{
-  background-color: #99172F;
+.activeD-cd, .activeDe-cd{
+  background-color: $colorPrincipalDejar;
 }
 
 .info {
@@ -312,7 +318,7 @@
   float:none;
 }
 
-.slideshow, .slideshowM, .slideshowA{
+.slideshow, .slideshowM, .slideshowA,.slideshowDe{
   margin-top:0;
   transform: translateY(0%);
   max-width: 465px;
@@ -321,7 +327,8 @@
 .nav, .navM {    
  bottom: 6px;
 }
-.titleSlidersAmbient{
+
+.titleSlidersAmbient,{
   top: 163px;
   z-index: 10; 
 } 
