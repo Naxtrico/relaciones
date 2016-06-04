@@ -1,0 +1,261 @@
+#instructions {
+	$small-screen: 800px;
+	$medium-screen: 1200px;
+
+	width: 100%;
+	img {
+		width: 100%;
+		display: block;
+		min-height: 225px;
+		@media screen and (max-width: $small-screen) {
+			display: none;
+		}
+
+	}
+
+	article {
+		width: 100%;
+		display: block;
+		overflow: hidden;
+		.content {
+			padding: 30px 0 20px 0;
+			box-sizing: border-box;
+			p {
+				display: block;
+				width: 80%;
+				margin: 0 auto;
+				@media screen and (max-width: $medium-screen) {
+					width: 90%;
+				}
+			}
+			& > p + p {
+				margin-top: 20px;
+				@media screen and (max-width: $medium-screen) {
+					margin-top: 10px;
+				}
+			}
+			@media screen and (max-width: $medium-screen) {
+				padding-top: 25px;
+			}
+		}
+		div {
+			display: inline-block;
+		}
+
+		.title {
+			font-family: 'PT Serif', serif;
+			color: #FFF;
+			font-size: 24px;
+			font-weight: 600;
+			@media screen and (max-width: $medium-screen) {
+				font-size: 20px;
+			}
+			span {
+				border: 1px solid #fff;
+				border-radius: 30px;
+				width: 58px;
+				height: 58px;
+				display: block;
+				text-align: center;
+				padding-top: 15px;
+				box-sizing: border-box;
+				margin-bottom:20px;
+				@media screen and (max-width: $medium-screen) {
+					font-size: 18px;
+					border-radius: 20px;
+					width: 40px;
+					height: 40px;
+					padding-top: 6px;
+					margin-bottom: 10px;
+				}
+
+			}
+		}
+
+	
+		.text {
+			font-family: 'Open Sans', sans-serif;
+			color: #FFF;
+			font-size: 18px;
+			font-weight: 400;
+			@media screen and (max-width: $medium-screen) {
+				font-size: 16px;
+			}
+		}
+
+		&.purple {
+
+			width: 33.3%; 
+			display: block;
+			float: left;
+			padding-bottom: 190px;
+
+			@media screen and (max-width: $small-screen) {
+				width: 100%;
+
+				padding-bottom: 0;
+			
+
+			}
+
+			p {
+				color: #811e32;
+
+
+				span {
+					border-color: #811e32;
+				}
+
+				
+			}
+
+			.text {
+					font-weight: 500;
+				}
+		}
+
+		&.step6 {
+			padding-bottom: 190px;
+		}
+
+		
+	}
+
+	@media screen and (max-width: $small-screen) {
+		
+		
+	}
+
+	
+
+
+	.step1{
+		background-color: #590b21;
+		.content {
+			width: 40%;
+			float: left;
+			@media screen and (max-width: $medium-screen) {
+				width: 60%;
+			}
+			@media screen and (max-width: $small-screen) {
+				width: 100%;
+			}
+		}
+		.photo {
+			width: 60%;
+			float: right;
+			@media screen and (max-width: $medium-screen) {
+				width: 40%
+			}
+		}
+	}
+
+	.step2 {
+		background-color: #811e32;
+		& > *:first-child {
+			width: 30%;
+			float: left;
+		}
+		.content {
+			width: 40%;
+			float: left;
+			@media screen and (max-width: $medium-screen) {
+				width: 70%;
+			}
+			@media screen and (max-width: $small-screen) {
+				width: 100%;
+			}
+		}
+		& > *:last-child {
+			width: 30%;
+			float: right;
+			@media screen and (max-width: $medium-screen) {
+				display: none;
+			}
+		}
+	}
+
+	
+
+	.step3 {
+		background-color: #b9899b;
+		
+		
+		.content {
+			width: 100%;
+			float: left;
+			
+		}
+	}
+
+	.step4 {
+		background-color: #cda2b1;
+
+		
+		.content {
+			
+			float: left;
+			
+		}
+	}
+
+	.step5 {
+		background-color: #dfbcc6;
+		.content {
+			float: left;
+		}
+	}
+
+	.hire {
+		position: fixed;
+		bottom: 0;
+		background-color: #811e32;
+		width: 100%;
+		height: 150px;
+		padding-top: 20px;
+		text-align: center;
+		p {
+			color: white;
+			span {
+				display: inline-block;
+				margin-right: 5px;
+				@media screen and (max-width: $small-screen) {
+					display: block;
+				}
+			}
+
+		.text a:link {
+			color: #FFF;
+
+		}
+
+		.text a:visited {
+			color: #FFF;
+
+		}
+
+		.text a:hover {
+			color: #FFF;
+
+		}
+
+
+		}
+		& > p:first-child {
+			font-family: "PT Serif",serif;
+			font-size: 22px;
+			font-weight: 600;
+			margin-bottom: 15px;
+			@media screen and (max-width: $medium-screen) {
+				font-size: 20px;
+			}
+		}
+		& > p:last-child {
+			font-size: 16px;
+			margin-top: 15px;
+		@media screen and (max-width: $small-screen) {
+				margin-bottom: 15px;
+			}
+		}
+	}
+}

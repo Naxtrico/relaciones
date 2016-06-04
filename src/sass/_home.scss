@@ -102,6 +102,7 @@ position: absolute;
 }
 
 
+
 @media screen and (max-width: 740px) {
 
 	.referemcesImg:nth-child(4){
@@ -119,6 +120,12 @@ position: absolute;
 
 
 @media screen and (max-width: 580px) {
+		.home_services_Pf{
+		background-image:url(../../dist/img/mvprueba.jpg);
+	background-size: cover;
+
+
+	}
 
 	.homeServicesCopiesPf, .homeServicesCopiesDejar{				
 		width: 100%;
@@ -128,6 +135,7 @@ position: absolute;
 		margin-bottom: 0;
 		box-sizing: border-box;
 	}
+
 
 	.servicesDescription{
 		font-size: 24px;
@@ -157,10 +165,12 @@ position: absolute;
 
 	}
 
+
 	.home_services_Pf, .home_services_Dejar{
 		background-position: top center;
 		background-size: initial;
 	}
+
 }
 
 
