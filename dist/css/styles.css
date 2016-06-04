@@ -1900,16 +1900,13 @@ nav {
   clear: both;
   margin-top: 20px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
@@ -1918,7 +1915,15 @@ nav {
     float: none;
     margin: 0 auto;
     width: 100%;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px;
+    padding-bottom: 0px; }
+  .conent_resume {
+    padding-left: 54px;
+    padding-right: 48px; }
+  .content_resume_full {
+    width: 100%;
+    padding-bottom: 0px;
+    margin-bottom: 40px; } }
 
 .dejar_email_sent {
   width: 50%;
