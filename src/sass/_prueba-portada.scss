@@ -47,6 +47,7 @@
     transform: translate(-50%, -50%);
     float:left;
 }
+
 .portadaline{
 	width:40%;
 	border: 1px solid #fff;
@@ -80,6 +81,7 @@
     background-size: cover;
 	background-image:url(../../dist/img/prruebavioleta.jpg);
 	text-align: center;
+	padding: 1em;
 
 }
 .eye_icon{
@@ -96,6 +98,20 @@
 
 }
 
+@media screen and (max-width: 930px) {
+	.contentportada{
+		margin-left:61px;} 
+
+}
+
+@media screen and (max-width: 714px) {
+	.contentportada{
+		width: 50%;
+
+	} 
+
+}
+
 @media screen and (max-width: 650px) {
 
 	.full_screen{
@@ -104,8 +120,8 @@
 height: 69%;
 }
 .contentportada{
-	width: 308px;
-    left: 52%;
+	float: none;
+	width: 100%;
 }
 .infophrase{
 	float: none;

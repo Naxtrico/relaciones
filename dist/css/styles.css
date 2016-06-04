@@ -2637,7 +2637,8 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../../dist/img/prruebavioleta.jpg);
-  text-align: center; }
+  text-align: center;
+  padding: 1em; }
 
 .eye_icon {
   margin-top: 210px;
@@ -2650,14 +2651,22 @@ nav {
   color: #fff;
   line-height: 50px; }
 
+@media screen and (max-width: 930px) {
+  .contentportada {
+    margin-left: 61px; } }
+
+@media screen and (max-width: 714px) {
+  .contentportada {
+    width: 50%; } }
+
 @media screen and (max-width: 650px) {
   .full_screen {
     background: -webkit-linear-gradient(left, rgba(43, 12, 82, 0.86) 0%, rgba(239, 1, 124, 0) 100%), url(../../dist/img/mobileprueba.jpg);
     background: linear-gradient(to right, rgba(43, 12, 82, 0.86) 0%, rgba(239, 1, 124, 0) 100%), url(../../dist/img/mobileprueba.jpg);
     height: 69%; }
   .contentportada {
-    width: 308px;
-    left: 52%; }
+    float: none;
+    width: 100%; }
   .infophrase {
     float: none; } }
 
