@@ -1358,11 +1358,12 @@ header.fixed {
 .content_copy_home {
   width: 514px;
   position: relative;
-  left: 27%;
-  top: 45%;
+  margin-left: 350px;
+  margin-top: 242px;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
+          transform: translate(-50%, -50%);
+  float: left; }
 
 .services_copy_home h1 {
   margin-top: 7px;
@@ -1373,10 +1374,24 @@ header.fixed {
   color: #000;
   text-align: left; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 648px) {
   .content_copy_home {
-    left: 41%;
-    top: 49%; } }
+    margin-left: 304px; } }
+
+@media screen and (max-width: 803px) {
+  .content_copy_home {
+    margin-left: 312px; } }
+
+@media screen and (max-width: 543px) {
+  .content_copy_home {
+    margin-left: 312px; } }
+
+@media screen and (max-width: 919px) {
+  .content_copy_home {
+    margin-left: 300px;
+    width: 96%; }
+  .homeUiLineSeparator {
+    width: 401px; } }
 
 .homeCopy {
   margin-top: 7px;
@@ -1392,17 +1407,13 @@ header.fixed {
   line-height: 35px; }
 
 .homeUiLineSeparator {
-  width: 515px;
+  width: 80%;
   border: 1px solid #000;
   display: inline-block;
   margin-top: 11px;
   margin-bottom: 11px; }
 
 @media screen and (max-width: 540px) {
-  .content_copy_home {
-    width: 77%;
-    left: 49%;
-    top: 49%; }
   .homeUiLineSeparator {
     width: 305px; } }
 
@@ -1497,8 +1508,9 @@ header.fixed {
 
 @media screen and (max-width: 580px) {
   .home_services_Pf {
-    background-image: url(../../dist/img/mvprueba.jpg);
-    background-size: cover; }
+    background-image: url(../../dist/img/movilpw.jpg);
+    background-position: top center;
+    background-size: contain; }
   .homeServicesCopiesPf, .homeServicesCopiesDejar {
     width: 100%;
     margin-top: 350px;
@@ -1521,7 +1533,7 @@ header.fixed {
     background-color: #831D31; }
   .home_services_Pf, .home_services_Dejar {
     height: auto; }
-  .home_services_Pf, .home_services_Dejar {
+  .home_services_Dejar {
     background-position: top center;
     background-size: initial; } }
 
@@ -1529,7 +1541,9 @@ header.fixed {
   .referemcesImg:nth-child(4) {
     margin-right: 0; }
   .referemcesImg:nth-child(3) {
-    margin-right: 10%; } }
+    margin-right: 10%; }
+  hr {
+    margin-right: 0%; } }
 
 @media screen and (max-width: 471px) {
   .referemcesImg:nth-child(4) {
@@ -2600,7 +2614,7 @@ nav {
   transform: translate(-50%, -50%);
   float: left; }
 
-hr {
+.portadaline {
   width: 40%;
   border: 1px solid #fff;
   margin-left: 0%;

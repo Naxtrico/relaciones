@@ -1,9 +1,10 @@
 .content_copy_home{
    	width: 514px;
     position: relative;
-    left: 27%;
-    top: 45%;    
-    transform: translate(-50%, -50%);    
+   	margin-left: 350px; 
+   	margin-top: 242px; 
+    transform: translate(-50%, -50%); 
+    float: left;   
 }
 
 .services_copy_home h1{
@@ -16,11 +17,30 @@
 	text-align: left;	
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 648px) {
 .content_copy_home{
-   	left: 41%;
-    top: 49%;    
+    	margin-left: 304px; 
   }}
+
+@media screen and (max-width: 803px) {
+.content_copy_home{
+    	margin-left: 312px; 
+  }}
+
+  @media screen and (max-width: 543px) {
+.content_copy_home{
+    	margin-left: 312px; 
+  }}
+@media screen and (max-width: 919px) {
+.content_copy_home{
+      margin-left: 300px;
+      width:96%
+  }
+ .homeUiLineSeparator{
+ 	width: 401px;
+
+}}
+
 
 
 .homeCopy{
@@ -40,7 +60,7 @@
 }
 
 .homeUiLineSeparator{
-	width: 515px;
+	width: 80%;
 	border: 1px solid #000;
 	display: inline-block;
 	margin-top: 11px;
@@ -51,9 +71,7 @@
 @media screen and (max-width: 540px) {
 
 	.content_copy_home{
-		width: 77%;
-		left: 49%;
-    top: 49%; 
+	
 	}
 	.homeUiLineSeparator{
 	width: 305px;
