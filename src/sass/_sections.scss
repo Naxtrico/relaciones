@@ -86,7 +86,7 @@
 
 .sectionContactoCanals{
  	float: right;	    
-    width: 30%;   
+    width: 20%;   
     box-sizing: border-box;
     padding-top:50px;
     height: 100%;
@@ -95,7 +95,7 @@
 
 .contentFormCopy{
 	float: left;
-    width: 70%;
+    width: 80%;
     box-sizing: border-box;
     padding-top: 50px;
     height: 100%;
@@ -217,11 +217,12 @@
 		width: 100%;		
 		height: auto;
 		min-height: auto;
+		padding-top: 0;
 	}
 
 	.contentFormCopy{	
     	width: 100%;
-    	padding-top: 0;    	
+    	height: 80%;    	   	
 	}
 }
 

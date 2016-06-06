@@ -2,12 +2,11 @@
 	background-image: url(../../dist/img/imagen-enpersona-1.jpg);
 	background-position: top center;
     background-repeat: no-repeat;
-    height: 500px;    
-    width: 48%;
+    height: 460px;    
+    width: 40%;
     float: left;
-    color: #fff;
-    margin-top: 50px;    
-    margin-right: 2%;
+    color: #fff;       
+    margin-right: 20%;
     overflow: hidden;    
 	border-radius: 10px;
     box-sizing:border-box;    
@@ -48,7 +47,7 @@
 }
 
 .cardDejar:hover .cardDejar_body{
-	top:160px;
+	top:80px;
 }
 
 .cardDejar_description{
@@ -124,12 +123,17 @@
 @media screen and (max-width: 1023px) {
 	
 	.cardDejar{		
-	    width: 100%;
-	    float: none; 	   
+	    width: 80%;
+	    float: none;
+	    margin:0 auto;	   
 	}
 
 	.cardDejar:nth-of-type(3n){
 		margin-right: 0px;
+	}
+
+	.cardDejar:last-child{
+		margin-right: auto;
 	}
 
 	.cardDejar_description h2 {
@@ -137,3 +141,4 @@
 	}
 
 }
+

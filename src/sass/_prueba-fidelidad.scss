@@ -57,7 +57,7 @@
     position: absolute;
     right: 0;
     left: 0;
-    z-index: 1  
+    z-index: 0;  
   }
 
   .titleSlidersActors{
@@ -109,11 +109,12 @@
   line-height: 25px;
   width: 25px;
   height: 25px;
-  z-index: 1;
+  z-index: 0;
   border-radius: 200px 200px 200px 200px;
   -moz-border-radius: 200px 200px 200px 200px;
   -webkit-border-radius: 200px 200px 200px 200px;
   border: 1px solid #000000;
+  text-align: center;
 }
 
 
@@ -201,7 +202,8 @@
 .prevD,
 .nextD,
 .prevDe,
-.nextDe    {
+.nextDe,
+.navDe     {
  color: $colorPrincipalDejar;
 }
 
@@ -278,7 +280,7 @@
   -webkit-transition: background 0.5s;
 }
 
-.navD li {
+.navD li, .navDe li {
  border: 2px solid $colorPrincipalDejar;
 }
 
@@ -314,6 +316,11 @@
     width: 101px;
   }
 
+  .navDe{
+    width: 101px;
+  }
+      
+
 }
 
 @media screen and (max-width: 979px) {	
@@ -345,7 +352,11 @@
  bottom: 6px;
 }
 
-.titleSlidersAmbient,{
+.navDe{
+    bottom: 12px;
+}
+
+.titleSlidersAmbient{
   top: 163px;
   z-index: 10; 
 } 
@@ -370,7 +381,7 @@
 }
 
 
-@media screen and (max-width: 4291px) {
+@media screen and (max-width: 429px) {
   .ayuda{   
     top: 55px;
     right: 6px;  
