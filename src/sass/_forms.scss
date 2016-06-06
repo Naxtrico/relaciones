@@ -69,8 +69,8 @@ input[type=radio]{
 }
 
 .cardDejar input[type=radio]:checked + span{
-	background-color: #99172F;
-	border: 1px solid #99172F;
+	background-color: $colorPrincipalDejar;
+	border: 1px solid $colorPrincipalDejar;
 }
 
 
@@ -138,18 +138,14 @@ input[type="text"]:focus{
 	border: none;	
 	border-radius: 4px;
 	transition: all 0.5s ease;
-	margin: 0 auto;
-	display: block;
-	margin-top: 80px;
+	margin: 0 auto;	
+	margin-top: 30px;
 	min-width: 157px;
 	&:hover{
 		background-color: #97e573;		
 	}
 }
 
-.form_button_PF:hover{
-	
-}
 
 .form_button_Dejar{
 	padding: 10px 30px;
@@ -159,7 +155,7 @@ input[type="text"]:focus{
 	text-decoration: none;
 	color:#fff;
 	display: inline-block;
-	background-color: #99172F;
+	background-color: $colorPrincipalDejar;
 	border: none;	
 	border-radius: 4px;
 	transition: all 0.5s ease;
@@ -207,14 +203,10 @@ fieldset{
 }
 
 .titleFormsPf--color{
-	border-bottom: solid 1px #2C0C52;
-	color: #2C0C52;
+	border-bottom: solid 1px $colorPrincipalPF;
+	color: $colorPrincipalPF;
 }
 
-.titleFormsDejar--color{
-	border-bottom: solid 1px #99172F;
-	color: #99172F;
-}
 
 span.error {
 	color: #DB2020;
@@ -260,9 +252,18 @@ input.error {
 	text-align: center;
 	margin-bottom: 3rem;
 	width: 110px;
-	margin-right: 10px;	
+	margin-right: 40px;
 	color: #5D5D5D;
 	border-bottom: solid 2px #5D5D5D; 	
+}
+
+.titleFormsDejar--color{
+	border-bottom: solid 2px $colorPrincipalDejar;
+	color: $colorPrincipalDejar;
+}
+
+.form_steps.last{
+	margin-right: 0;
 }
 
 .form_stepsNoSelected{
@@ -271,8 +272,8 @@ input.error {
 }
 
 .form_steps_Dejar_color{
-	color: #99172F;
-	border-bottom: solid 2px #99172F;
+	color: $colorPrincipalDejar;
+	border-bottom: solid 2px $colorPrincipalDejar;
 }
 
 .form_steps_ocult{
@@ -314,6 +315,13 @@ input.error {
 	
 }
 
+@media screen and (max-width: 615px) {
+	.form_steps{
+		font-size:16px;
+		 width: 93px; 
+	}
+}
+
 @media screen and (max-width: 540px) {
 
 	.content_form{	
@@ -329,3 +337,18 @@ input.error {
 	}
 
 }
+
+@media screen and (max-width: 425px) {
+	.form_steps{
+		margin-right: 20px;
+	}
+}
+
+@media screen and (max-width: 381px) {
+	.form_steps{
+		font-size: 14px;
+		margin-right: 10px;
+		width: 80px;
+	}
+}
+

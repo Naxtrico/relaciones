@@ -58,21 +58,40 @@
 	font-weight: 600;
 	cursor: pointer;
 	text-decoration: none;
-	color:#000;
-	border: 1px solid #606060;
+	color:#000;	
 	display: inline-block;
 	line-height: 30px;		
-	border-radius: 4px;	
     transition: all 0.5s ease;
+    border: 1px solid #606060;
    
 }
 
-.cardBtnActors{
-	 margin-top: 66px;
+.cardBtnActors{	
+	 margin-top: 120px;
+	 border-radius: 4px;
 }
 
-.btnSelectSex{
-	margin-top: 50px;
+.btnSelectSex,{
+	width: 150px;
+	margin-top: 75px;
+	margin-right: 10px;
+	&:hover,{
+		background-color: $colorPrincipalPF;
+		color:#fff;
+	}	
+}
+
+.btnSelectSex--active{
+		background-color: $colorPrincipalPF;
+		color:#fff;
+	}	
+
+.btnSelectSex:last-child{
+	margin-right: 0px;
+}
+
+.contentFormBtn{
+	text-align: right;
 }
 
 
@@ -91,7 +110,7 @@
 	&:hover {background-color: #97e573;}
 }
 
-.btn_pasarela{
+.btn_pasarela, .btnFisnishSteps{
 	padding: 5px 20px;
 	font-size: 15px;
 	font-weight: normal;
@@ -111,6 +130,13 @@
 		border: 1px solid #97e573;	
 		background-color: #97e573;
 	}
+}
+
+.btnFisnishSteps{
+	width: 220px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-weight: bold;
 }
 
 @media screen and (max-width: 540px) {

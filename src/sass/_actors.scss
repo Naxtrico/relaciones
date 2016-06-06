@@ -2,7 +2,6 @@
 .flip-container {
 	perspective: 1000px;
 	float: left;	
-	border: 1px	solid #2C0C52;
 	box-sizing: border-box;
 	margin-right: 18.3%;
 
@@ -19,18 +18,18 @@
 
 .flip-container, .front, {
 	 width: 40.5%;
-    height: 350px;   
+    height: 442px;  
 }
 
 .back{
 	width: 100%;
 	background-color: #B3ABCE;	
     padding-bottom: 20px;
-    padding-top: 5px;
+    padding-top: 56px;
 }
 
 .imageActors{
-	width: 168%;
+	width: 245%;
 }
 
 /* flip speed goes here */
@@ -65,4 +64,13 @@
 .descriptionActors{
 	font-size: 16px;
 	font-weight: 600;
+}
+
+@media screen and (max-width: 1023px) {
+.flip-container, .front, {
+	 width: 100%;  
+	}
+	.imageActors{
+	width: 100%;
+}
 }

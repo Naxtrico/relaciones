@@ -20,100 +20,36 @@
   </script>
 </head>
 <body>
-  <!-- POP UP LOGIN -->
-  <div class="popup" data-popup="popup-1">
-    <div class="popup-inner">
-      <h2>¡HOLA!</h2>
-      <p>Login correcto</p>
-      <p><a data-popup-close="popup-1" href="#">Close</a></p>
-      <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
-    </div>
-  </div>
-  <!-- POP UP -->
-  <!-- POP UP REGISTRO -->
-  <div class="popup" data-popup="popup-2">
-    <div class="popup-inner">
-      <h2>¡REGISTRO COMPLETADO!</h2>
-      <p>Bienvenido a IMPARES</p>
-      <p><a data-popup-close="popup-2" href="#">Close</a></p>
-      <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
-    </div>
-  </div>
-  <!-- POP UP -->
+ 
   <header class="header_pasarela_bg">            
     <a href="index.html"><img src="img/logo.svg" class="logo" id="logo" alt="logo impares"></a>           
-    <div class="icons">
-     <a href="#" id="registry_icon" class="icon_register_desktop"><img src="img/perfil.svg" alt="logo login registro"> <span class="iconsLink">ENTRAR</span></a>
-     <!--<a href="#"><img src="img/carrito.svg"></a>-->
+    <div class="icons">     
      <a href="#" id="nav-toggle" class="nav-toggle content-nav-toggle"><span></span></a>
    </div>          
 
     <nav class="nav_principal" id="nav_principal">
      <ul class="nav_principal-list">
       <li class="nav_principal-item"><a href="que-hacemos.html" class="nav_principal-link">¿que hacemos?</a></li>
-      <li class="nav_principal-item"><a href="prueba-de-fidelidad.html" class="nav_principal-link">prueba de fidelidad</a></li>
-      <li class="nav_principal-item"><a href="dejar.html" class="nav_principal-link">dejar</a></li>
+      <li class="nav_principal-item"><a href="prueba-de-fidelidad-landing.html" class="nav_principal-link">prueba de fidelidad</a></li>
+      <li class="nav_principal-item"><a href="dejar-landing.html" class="nav_principal-link">dejar</a></li>
       <li class="nav_principal-item"><a href="#" id="registry_icon_mobile" class="icon_register_mobile"><img src="img/perfil.svg" alt="icono registrarse"></a></li>
        <!-- <li><a href="#">paquete negro</a></li>
         <li><a href="#">tienda</a></li>
         <li><a href="#">red impares</a></li>-->
       </ul>
     </nav>
-   <div id="Container_login" class="Container_login">
-     <div class="login" id="login">
-      <h3>IDENTIFÍCATE</h3>
-      <form id="login_form">
-        <label>Usuario</label>
-        <input type="text" id="usuario_login" required>
-        <label>Contraseña</label>
-        <input type="text" id="contraseña" required>
-        <div class="content_btn_form">
-          <p>¿Has olvidado tu contraseña?</p>
-          <input type="submit" id="identificar" data-popup-open="popup-1" class="button_login_reg" value="IDENTIFICAR">                             
-        </div>
-      </form>
-      <div class="register_now">
-        <p>Si aún no eres usuario, registrate aquí</p>
-        <a href="#" class="button_principal btn_reg_now" id="registrate">REGÍSTRATE</a>
-      </div>
-    </div>
-  </div>
-  <div class="registration" id="registration">
-    <h3>REGÍSTRATE</h3>
-    <p>Todos los campos son obligatorios a rellenar</p>
-    <form id="registration_form">
-      <label>Nombre*</label>
-      <input type="text" id="nombre" required>
-      <label>Email*</label>
-      <input type="text" id="email" required>
-      <label>Usuario (no tene que ser tu nombre)</label>
-      <input type="text" id="usuario_reg" required>
-      <label>Contraseña (mín. 6 carácteres)</label>
-      <input type="text" id="pass" required>
-      <label>Repetir contraseña</label>
-      <input type="text" id="repass" required>
-      <p>*Tu nombre y email no se mostrarán públicamente</p>
-      <input type="checkbox" name="vehicle" value="Bike"> Acepto la política de privacidad<br>
-      <input type="checkbox" name="vehicle" value="Car" checked="checked"> Quiero recibir la newsletter<br>
-      <div class="content_btn_form">
-       <p>Volver a <a class="back-to-login" href="">"Identificate"</a></p>
-       <input type="submit" id="registrar" data-popup-open="popup-2" class="button_login_reg" value="REGISTRAR">
-     </div>
-   </form>
- </div>
+   
  
 
 </header>
-<section class="section_pasarela">
-  <div class="secure">
-    <img src="img/secure.png" alt="logo seguridad">
-  </div>
-
-  <div class="conent_resume">
-    <p class="resume">RESUMEN DE COMPRA</p>
-    <img src="#"  class="resume_img" alt="imagen resumen articulo"> 
+<section class="pasarelacontent">
+    <div class="content_resume_full">
+<div class="conent_resume">
+    <p class="resume">Resumen de compra</p>
+    <hr class="resume_line"></hr>
+    <div class="square"></div>
     <div class="resume_product">
-      <p class="product">PRODUCTO X</p><p class="price">1 X 00,00€</p>
+      <p class="product">Producto seleccionado</p><p class="price">XX€</p>
     </div>
     <div style="clear:both"></div>
     <div class="price_total">
@@ -122,20 +58,29 @@
     </div>
     
   </div>
+</div>
   
+
   <div class="content_payment">
-    <p>INICIAR SESIÓN</p>
-    <ul>
-      <li>
-        <a href="#" id="login_pay">  Cliente registrado</a>
-        <p class="init_sesion_info">¿Tienes ya una cuenta?</p>
-      </li>
-      <li>
-       <a href="#" id="registrarse"> Nuevo cliente</a>
-       <p class="init_sesion_info">Crea una nueva cuenta</p>
-     </li>
-   </ul>
-   <p>PAGAR</p> 
+    <p class="payment_tittle">Datos personales</p> 
+    <hr class="payment_line"></hr>
+
+   <form id="form_pasarela" action="pasarela-fin-compra.html">
+    <label>Nombre</label>
+    <input type="text" id="Nombre" required>
+    <label>Apellidos</label>
+    <input type="text" id="Apellidos" title="Escribe tus apellidos" required>
+     <label>Email</label>
+    <input type="text" id="Email" title="Escribe tu email" required>
+    
+    <label class="block">Móvil</label>
+    <input type="text" id="móvil"  required>
+    
+  </form>
+    
+   <p class="payment_tittle">Datos de la tarjeta</p> 
+   <hr class="payment_line"></hr>
+
 
    <form id="form_pasarela" action="pasarela-fin-compra.html">
     <img src="img/tarjetas.png" class="block" alt="iamgen targetas de crédito soportadas">       
@@ -150,7 +95,9 @@
     <input type="submit" id="cont_pers" class="btn_pasarela" value="FINALIZAR COMPRA">       
   </form>
 </div>
+</div>
 </section>
+
 
 <footer>  
   <img src="img/logofooter.svg" class="logoFooter" alt="logo footer">    

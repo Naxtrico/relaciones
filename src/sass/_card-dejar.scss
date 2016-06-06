@@ -2,18 +2,17 @@
 	background-image: url(../../dist/img/imagen-enpersona-1.jpg);
 	background-position: top center;
     background-repeat: no-repeat;
-    height: 600px;    
-    width: 23.5%;
+    height: 460px;    
+    width: 40%;
     float: left;
-    color: #fff;
-    margin-top: 50px;    
-    margin-right: 2%;
+    color: #fff;       
+    margin-right: 20%;
     overflow: hidden;    
 	border-radius: 10px;
     box-sizing:border-box;    
 }
 
-.cardDejar:nth-of-type(4n){
+.cardDejar:last-child{
 	margin-right: 0px;
 }
 
@@ -24,14 +23,14 @@
 }
 
 .cardDejar_title{
-	color:#99172F;
+	color:$colorPrincipalDejar;
 	margin-top: 0;		
 }
 
 .cardDejar_price {	
 	font-size: 16px;
 	font-weight: 400;
-	border: 1px solid #99172F;
+	border: 1px solid $colorPrincipalDejar;
 	padding: 2px 0px;
 	width: 60px;
 	line-height: 25px;
@@ -42,13 +41,13 @@
 
 .cardDejar_body {
 	position: relative;
-	top:250px;
+	top:200px;
 	height: 100%;
 	transition: all 0.5s ease;
 }
 
 .cardDejar:hover .cardDejar_body{
-	top:160px;
+	top:80px;
 }
 
 .cardDejar_description{
@@ -71,7 +70,7 @@
 	bottom: 150px;
     padding: 35px 0px 35px 0px;
 	background-color: #fff;
-	color:#99172F;
+	color:$colorPrincipalDejar;
 }
 
 .cardDejar_examples{
@@ -83,8 +82,8 @@
 	font-weight: 400;
 	cursor: pointer;
 	text-decoration: none;
-	color:#99172F;
-	border: 1px solid #99172F;	
+	color:$colorPrincipalDejar;
+	border: 1px solid $colorPrincipalDejar;	
 	line-height: 25px;
 	margin-bottom: 20px;	
 	border-radius: 4px;   
@@ -121,15 +120,20 @@
 	}
 
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1023px) {
 	
 	.cardDejar{		
-	    width: 100%;
-	    float: none; 	   
+	    width: 80%;
+	    float: none;
+	    margin:0 auto;	   
 	}
 
 	.cardDejar:nth-of-type(3n){
 		margin-right: 0px;
+	}
+
+	.cardDejar:last-child{
+		margin-right: auto;
 	}
 
 	.cardDejar_description h2 {
@@ -137,3 +141,4 @@
 	}
 
 }
+

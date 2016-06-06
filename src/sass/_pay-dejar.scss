@@ -13,6 +13,20 @@
 
 }
 
+.itemStepsDejar--Checked{
+	background-color: $colorPrincipalDejar;
+
+}
+
+.titleSlidersDejar{
+	color:#000;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 80px;
+	z-index: 0;
+}
+
 @media screen and (max-width: 1024px) {
 
 	.dejar_email_sent{
@@ -25,6 +39,14 @@
 	}
 
 	
+}
+
+@media screen and (max-width: 856px) {	
+
+	.titleSlidersDejar{
+		top: 163px;
+		z-index: 10; 
+	} 
 }
 
 @media screen and (max-width: 540px) {
