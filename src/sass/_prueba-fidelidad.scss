@@ -65,10 +65,10 @@
   }
 
   .titleSlidersAmbient{
-  top: 80px;
- }
+    top: 80px;
+  }
 
- .listItemStepsArrow{
+  .listItemStepsArrow{
    margin-right: 7%;    
    float: right;
  }
@@ -100,6 +100,21 @@
  background-color: $colorPrincipalPF;
 }
 
+.ayuda{
+  position: absolute;
+  top: 74px;
+  right: 24px;
+  background-color: #fff;  
+  color:#000;
+  line-height: 25px;
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 1px solid #000000;
+}
 
 
 #mujeres{
@@ -187,7 +202,7 @@
 .nextD,
 .prevDe,
 .nextDe    {
-   color: $colorPrincipalDejar;
+ color: $colorPrincipalDejar;
 }
 
 .prev:hover,
@@ -225,9 +240,11 @@
   list-style: none;
 }
 
+
+
 .navD, .navDe {
   bottom: -20px;
-   width: 54px;
+  width: 54px;
 }
 
 .navA{
@@ -262,7 +279,7 @@
 }
 
 .navD li {
-     border: 2px solid $colorPrincipalDejar;
+ border: 2px solid $colorPrincipalDejar;
 }
 
 .nav li:last-child, .navM li:last-child, .navMu li:last-child, .navA li:last-child, .navD li:last-child, .navDe li:last-child{
@@ -276,7 +293,7 @@
 }
 
 .navD li:hover, .navDe li:hover{
-   background-color: $colorPrincipalDejar;
+ background-color: $colorPrincipalDejar;
 }
 
 .active-cd, .activeM-cd, .activeMu-cd, .activeA-cd, .activeD-cd, .activeDe-cd  {
@@ -338,15 +355,24 @@
 }
 
 }
+
 @media screen and (max-width: 671px) {
 
-.titleFinishSteps{
-  font-size:30px;
- 
+  .titleFinishSteps{
+    font-size:30px;
+
+  }
+
+  .descriptionsPF{
+
+    font-size: 20px;
+  }
 }
 
-.descriptionsPF{
-  
-  font-size: 20px;
-}
+
+@media screen and (max-width: 4291px) {
+  .ayuda{   
+    top: 55px;
+    right: 6px;  
+  }
 }
