@@ -1,10 +1,47 @@
+.container_copy_whatdo{
+	float: left;
+    width: 60%;
+    box-sizing: border-box;
+    padding-top: 50px;
+    height: 100%;
+    background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 727px;
+	background-image: url(../../dist/img/bg-que-hacemos.png);
+	 position:relative;
+    & > .bg-whatdo  {
+        background-color: #13617f;
+        opacity: .7;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+    section {
+        position: relative;
+        z-index: 1;
+    }
+       
+}
+
+
+ 
+.whatoDoTitle{
+    margin-bottom: 30px;
+    color: #FFF;
+    font-size: 35px;    
+}
+
 .whatDoDescP{
-	margin-bottom: 20px;
-	color: #000;
-	text-align: left;
-	color:#fff;
-	font-weight: 500;
-	font-size: 18px;
+
+  margin-bottom: 10px;
+  color: #000;
+  text-align: left;
+  color:#fff;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .cite{
@@ -17,10 +54,10 @@
 }
 
 .citeText {
-	font-size: 26px;
+	font-size: 22px;
 	line-height: 35px;		
 	margin: 0;
-	color:#F7A627;
+	color:#FFF;
 	font-weight: bold;
 }
 
@@ -28,21 +65,23 @@
 	text-align: center;	
 	width: 100%;
 	padding: 5%;
+
 	height: 33.33333%;
 	box-sizing: border-box;
+
 }
 
 
 .memberMar{
-	background-color: #AAA693;
+	background-color: #e2e2e2;
 }
 
 .memberJor{
-	background-color: #C4C2AE;
+	background-color: #d3d3d3;
 }
 
 .memberNat{
-	background-color: #D2D1BD;
+	background-color: #bcbcbc;
 }
 
 
@@ -54,11 +93,14 @@
 	float: left;	
 	width: 130px;
 	border-radius: 500px;	
+	margin-right: 5%;
+	margin-top: 3%;
 }
 
 
 .teamTitle--color, .membersTitle--color{
-	color: #C0212F;
+    color: #13617f;
+
 }
 
 .teamTitle{ 
@@ -67,15 +109,23 @@
 }
 
 .membersTitle{  
-	font-size: 20px;
-	font-weight: bold;
+
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10px;
+    
 }
 
 .teamDescMembers{
-	font-size: 16px;
-	color:#000;
-	margin-left: 105px;
+    font-size: 16px;
+    color: #49484a;
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 600;   
+
 }
+
 
 @media screen and (max-width: 1069px) {
 
