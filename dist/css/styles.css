@@ -1937,16 +1937,13 @@ nav {
   clear: both;
   margin-top: 20px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
@@ -2680,8 +2677,8 @@ nav {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background: -webkit-linear-gradient(left, #821e32 0%, rgba(231, 56, 39, 0) 100%), url(../../dist/img/1343735.jpg);
-  background: linear-gradient(to right, #821e32 0%, rgba(231, 56, 39, 0) 100%), url(../../dist/img/1343735.jpg);
+  background: -webkit-linear-gradient(left, #821e32 0%, rgba(231, 56, 39, 0) 100%), url(../../dist/img/dejarfull.jpg);
+  background: linear-gradient(to right, #821e32 0%, rgba(231, 56, 39, 0) 100%), url(../../dist/img/dejarfull.jpg);
   width: 100%;
   height: 100%;
   min-height: 550px; }
@@ -2748,6 +2745,19 @@ nav {
   padding: 1em;
   box-sizing: border-box; }
 
+.infophrase_dejar {
+  width: 30%;
+  height: 100%;
+  float: right;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../dist/img/lateraldejar.jpg);
+  text-align: center;
+  padding: 1em;
+  box-sizing: border-box; }
+
 .eye_icon {
   margin-top: 210px;
   margin-bottom: 40px;
@@ -2771,7 +2781,16 @@ nav {
   .full_screen {
     background-image: -webkit-linear-gradient(left, rgba(43, 12, 82, 0.86) 0%, rgba(239, 1, 124, 0) 100%), url(../../dist/img/mobileprueba.jpg);
     background-image: linear-gradient(to right, rgba(43, 12, 82, 0.86) 0%, rgba(239, 1, 124, 0) 100%), url(../../dist/img/mobileprueba.jpg);
-    height: auto; }
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .full_screen_dejar {
+    background-image: -webkit-linear-gradient(left, #821e32 0%, rgba(231, 56, 39, 0) 100%), url(../../dist/img/mobiledejar.jpg);
+    background-image: linear-gradient(to right, #821e32 0%, rgba(231, 56, 39, 0) 100%), url(../../dist/img/mobiledejar.jpg);
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center; }
   .contentportada {
     float: none;
     width: 100%;
@@ -2784,11 +2803,11 @@ nav {
     padding: 36px 44px;
     box-sizing: border-box;
     height: auto; }
-  .infophrase {
+  .infophrase, .infophrase_dejar {
     float: none;
     width: 100%;
     height: auto;
-    margin-top: 36%; }
+    padding-bottom: 56px; }
   .eye_icon {
     margin-top: 50px; }
   .textinfo {
