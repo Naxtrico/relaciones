@@ -86,7 +86,7 @@
 
 .sectionContactoCanals{
 	float: right;	    
-	width: 20%;   
+	width: 30%;   
 	box-sizing: border-box;
 	padding-top:50px;
 	height: 100%;
@@ -95,14 +95,29 @@
 
 .contentFormCopy{
 	float: left;
-	width: 80%;
+	width: 70%;
 	box-sizing: border-box;
 	padding-top: 50px;
 	height: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image:url(../../dist/img/pruebafotocontacto.jpg);
+	background-image:url(../../dist/img/bg-contacto.png);
 	min-height: 727px;
+
+	& > .BlueLayer  {
+        background-color: #13617f;
+        opacity: .7;
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+     section {
+        position: relative;
+        z-index: 1;
+    }
 }
 
 .titleInfoPf{
