@@ -1,6 +1,6 @@
 .container_copy_whatdo{
 	float: left;
-    width: 60%;
+    width: 70%;
     box-sizing: border-box;
     padding-top: 50px;
     height: 100%;
@@ -15,4 +15,18 @@
     margin-bottom: 30px;
     color: #F7A627;
     font-size: 35px;    
+}
+
+
+@media screen and (max-width: 955px) { 
+    .container_copy_whatdo{
+         width: 60%;
+    }
+}
+
+@media screen and (max-width: 720px) { 
+   .container_copy_whatdo{
+       width: 100%;
+        height: auto;
+    }
 }
