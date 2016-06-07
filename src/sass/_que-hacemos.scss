@@ -1,10 +1,10 @@
 .whatDoDescP{
-  margin-bottom: 20px;
-  color: #000;
-  text-align: left;
-  color:#fff;
-  font-weight: 500;
-  font-size: 18px;
+	margin-bottom: 20px;
+	color: #000;
+	text-align: left;
+	color:#fff;
+	font-weight: 500;
+	font-size: 18px;
 }
 
 .cite{
@@ -29,7 +29,7 @@
 	width: 100%;
 	padding: 5%;
 	height: 33.33333%;
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 
@@ -58,64 +58,82 @@
 
 
 .teamTitle--color, .membersTitle--color{
-    color: #C0212F;
+	color: #C0212F;
 }
 
 .teamTitle{ 
-    font-size: 35px;
-    margin:0;
+	font-size: 35px;
+	margin:0;
 }
 
 .membersTitle{  
-    font-size: 20px;
-    font-weight: bold;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 .teamDescMembers{
-    font-size: 16px;
-    color:#000;
+	font-size: 16px;
+	color:#000;
+	margin-left: 105px;
 }
 
-@media screen and (max-width: 1465px) {
-	
+@media screen and (max-width: 1069px) {
+
+	.teamDescMembers{
+		font-size: 14px;   
+	}
+	.membersTitle{ 
+		font-size: 16px;
+
+	}
 }
 
 @media screen and (max-width: 940px) {
 
 	.members{
-	    float:none;
-	    margin: 0 auto;	    
-	    width: 300px;
-   }
+		float:none;
+		margin: 0 auto;	    
+		width: 300px;
+	}
 
 	.members:last-child {   	
-	    margin-right: auto;
+		margin-right: auto;
 	}
 
 }
 
 @media screen and (max-width: 768px) {
 
-  .citeText {
-  font-size: 24px; 
+	.citeText {
+		font-size: 24px; 
+	}
+
 }
 
-  }
+@media screen and (max-width: 720px) { 
+
+	.memberMar, .memberJor, .memberNat{
+		height: auto;
+		overflow: hidden;
+	}
+	
+
+}
 
 @media screen and (max-width: 620px) {
 
-  .members{
-    float:none;
-    width: 300px;
-    margin: 0 auto;
-  }
+	.members{
+		float:none;
+		width: 300px;
+		margin: 0 auto;
+	}
 
 }
 
 @media screen and (max-width: 340px) {
-  
-  .members{
-    width: 100%;
-  }
+
+	.members{
+		width: 100%;
+	}
 
 }
