@@ -590,7 +590,7 @@ input[type="radio"] {
   border: 1px solid #606060; }
 
 .cardBtnActors {
-  margin-top: 120px;
+  margin-top: 182px;
   border-radius: 4px; }
 
 .btnSelectSex {
@@ -650,6 +650,10 @@ input[type="radio"] {
   margin-top: 50px;
   margin-bottom: 50px;
   font-weight: bold; }
+
+@media screen and (max-width: 1067px) {
+  .cardBtnActors {
+    margin-top: 129px; } }
 
 @media screen and (max-width: 540px) {
   .button_principal {
@@ -1937,13 +1941,16 @@ nav {
   clear: both;
   margin-top: 20px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
@@ -2133,7 +2140,8 @@ nav {
   float: left;
   width: 35%;
   box-sizing: border-box;
-  height: 100%; }
+  height: 100%;
+  min-height: 747px; }
 
 .contentCardsSlide {
   margin: 0 auto;
@@ -2156,7 +2164,8 @@ nav {
   height: 100%;
   box-sizing: border-box;
   text-align: center;
-  display: none; }
+  display: none;
+  min-height: 747px; }
 
 .contentSlideDisplay {
   display: block; }
