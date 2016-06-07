@@ -120,12 +120,13 @@ position: absolute;
 
 
 @media screen and (max-width: 580px) {
-		.home_services_Pf{
-		background-image:url(../../dist/img/mvprueba.jpg);
-	background-size: cover;
+	.home_services_Pf{
+	background-image:url(../../dist/img/movilpw.jpg);
+	background-position: top center;
+	background-size: contain;
+	
 
-
-	}
+}	
 
 	.homeServicesCopiesPf, .homeServicesCopiesDejar{				
 		width: 100%;
@@ -166,7 +167,7 @@ position: absolute;
 	}
 
 
-	.home_services_Pf, .home_services_Dejar{
+ .home_services_Dejar{
 		background-position: top center;
 		background-size: initial;
 	}
@@ -183,6 +184,9 @@ position: absolute;
 
 	.referemcesImg:nth-child(3){
 		margin-right: 10%;
+	}
+	hr{
+		margin-right: 0%;
 	}
 
 }
@@ -210,4 +214,10 @@ position: absolute;
 	}
 
 
+}
+
+@media screen and (max-width: 366px) {
+	.home_services_Pf{
+		background-size: initial;
+	}
 }
