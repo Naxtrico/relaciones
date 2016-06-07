@@ -4,7 +4,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background: 
-	linear-gradient(to right, rgba(43,12,82,0.86) 0%, rgba(239,1,124,0) 100%), url(../../dist/img/1343735.jpg);
+	linear-gradient(to right, rgba(130,30,50,1) 0%, rgba(231,56,39,0) 100%), url(../../dist/img/1343735.jpg);
 	width: 100%;
 	height: 100%;
 	min-height: 550px;
@@ -136,12 +136,19 @@
 	.infophrase{
 		float: none;
 		width: 100%;
-		height: auto;
+		height: auto;		
+		margin-top: 36%;
 	}
+
 	.eye_icon{
 		margin-top: 50px;	
 	}
+
+	.textinfo{
+		margin-bottom: 24px;
+	}
 }
+
 @media screen and (max-width: 404px) {
 .btn_text_simple{
 	display: block;
