@@ -1357,6 +1357,12 @@ a {
 .clearFix {
   clear: both; }
 
+@media screen and (max-width: 634px) {
+  /*li{
+		display: block;
+		padding: 0;
+	}*/ }
+
 @media screen and (max-width: 540px) {
   p {
     font-size: 14px;
@@ -2224,7 +2230,7 @@ nav {
   height: 100%;
   box-sizing: border-box;
   float: right;
-  width: 30%; }
+  width: 40%; }
 
 @media screen and (max-width: 1067px) {
   .contentCardsSlide {
@@ -2244,7 +2250,9 @@ nav {
 
 @media screen and (max-width: 955px) {
   .team {
-    width: 40%; } }
+    width: 40%; }
+  .content_desc_whatdo {
+    padding: 0 2em 2em; } }
 
 @media screen and (max-width: 856px) {
   .contentCurrentSteps {
@@ -2303,7 +2311,7 @@ nav {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 727px;
+  min-height: 667px;
   background-image: url(../../dist/img/bg-que-hacemos.png);
   position: relative; }
   .container_copy_whatdo > .bg-whatdo {
@@ -2317,7 +2325,7 @@ nav {
     z-index: 0; }
   .container_copy_whatdo section {
     position: relative;
-    z-index: 1; }
+    z-index: 0; }
 
 .whatoDoTitle {
   margin-bottom: 30px;
@@ -2330,13 +2338,13 @@ nav {
   text-align: left;
   color: #fff;
   font-weight: 500;
-  font-size: 18px; }
+  font-size: 16px; }
 
 .cite {
   width: 100%;
   clear: both;
   text-align: left;
-  margin-top: 50px;
+  margin-top: 25px;
   display: inline-block; }
 
 .citeText {
@@ -2350,7 +2358,8 @@ nav {
   text-align: center;
   width: 100%;
   padding: 5%;
-  height: 33.3%;
+  min-height: 206px;
+  height: 33.33333%;
   box-sizing: border-box; }
 
 .memberMar {
@@ -2387,21 +2396,44 @@ nav {
 
 .teamDescMembers {
   font-size: 16px;
-<<<<<<< HEAD
   color: #49484a;
   text-align: left;
   margin-left: 10px;
   font-weight: 600; }
-=======
-  color: #000;
-  margin-left: 105px; }
 
 @media screen and (max-width: 1069px) {
   .teamDescMembers {
     font-size: 14px; }
   .membersTitle {
     font-size: 16px; } }
->>>>>>> 69beee85b4bd29007880933c0de9225303786609
+
+@media screen and (max-width: 955px) {
+  .container_copy_whatdo {
+    height: auto; } }
+
+@media screen and (max-width: 946px) {
+  .team {
+    min-height: 697px; } }
+
+@media screen and (max-width: 910px) {
+  .team {
+    min-height: 722px; } }
+
+@media screen and (max-width: 819px) {
+  .team {
+    min-height: 757px; } }
+
+@media screen and (max-width: 802px) {
+  .team {
+    min-height: 782px; } }
+
+@media screen and (max-width: 756px) {
+  .team {
+    min-height: 807px; } }
+
+@media screen and (max-width: 748px) {
+  .team {
+    min-height: 832px; } }
 
 @media screen and (max-width: 940px) {
   .members {
@@ -2413,12 +2445,16 @@ nav {
 
 @media screen and (max-width: 768px) {
   .citeText {
-    font-size: 24px; } }
+    font-size: 20px; } }
 
 @media screen and (max-width: 720px) {
+  .team {
+    min-height: auto; }
   .memberMar, .memberJor, .memberNat {
     height: auto;
-    overflow: hidden; } }
+    overflow: hidden; }
+  .container_copy_whatdo {
+    width: 100%; } }
 
 @media screen and (max-width: 620px) {
   .members {
@@ -2430,34 +2466,6 @@ nav {
   .members {
     width: 100%; } }
 
-<<<<<<< HEAD
-=======
-.container_copy_whatdo {
-  float: left;
-  width: 70%;
-  box-sizing: border-box;
-  padding-top: 50px;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../../dist/img/bg-que-hacemos.png);
-  min-height: 727px; }
-
-.whatoDoTitle {
-  margin-bottom: 30px;
-  color: #F7A627;
-  font-size: 35px; }
-
-@media screen and (max-width: 955px) {
-  .container_copy_whatdo {
-    width: 60%; } }
-
-@media screen and (max-width: 720px) {
-  .container_copy_whatdo {
-    width: 100%;
-    height: auto; } }
-
->>>>>>> 69beee85b4bd29007880933c0de9225303786609
 .contentCopy {
   width: 500px;
   position: relative;
