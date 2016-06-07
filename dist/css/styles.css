@@ -633,7 +633,7 @@ input[type="radio"] {
   border: 1px solid #606060; }
 
 .cardBtnActors {
-  margin-top: 120px;
+  margin-top: 182px;
   border-radius: 4px; }
 
 .btnSelectSex {
@@ -693,6 +693,10 @@ input[type="radio"] {
   margin-top: 50px;
   margin-bottom: 50px;
   font-weight: bold; }
+
+@media screen and (max-width: 1067px) {
+  .cardBtnActors {
+    margin-top: 129px; } }
 
 @media screen and (max-width: 540px) {
   .button_principal {
@@ -1937,13 +1941,16 @@ nav {
   clear: both;
   margin-top: 20px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
@@ -2133,7 +2140,8 @@ nav {
   float: left;
   width: 35%;
   box-sizing: border-box;
-  height: 100%; }
+  height: 100%;
+  min-height: 747px; }
 
 .contentCardsSlide {
   margin: 0 auto;
@@ -2156,7 +2164,8 @@ nav {
   height: 100%;
   box-sizing: border-box;
   text-align: center;
-  display: none; }
+  display: none;
+  min-height: 747px; }
 
 .contentSlideDisplay {
   display: block; }
@@ -2239,7 +2248,7 @@ nav {
   height: 100%;
   box-sizing: border-box;
   float: right;
-  width: 30%; }
+  width: 40%; }
 
 @media screen and (max-width: 1067px) {
   .contentCardsSlide {
@@ -2259,7 +2268,9 @@ nav {
 
 @media screen and (max-width: 955px) {
   .team {
-    width: 40%; } }
+    width: 40%; }
+  .content_desc_whatdo {
+    padding: 0 2em 2em; } }
 
 @media screen and (max-width: 856px) {
   .contentCurrentSteps {
@@ -2318,7 +2329,7 @@ nav {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 727px;
+  min-height: 667px;
   background-image: url(../../dist/img/bg-que-hacemos.png);
   position: relative; }
   .container_copy_whatdo > .bg-whatdo {
@@ -2332,7 +2343,7 @@ nav {
     z-index: 0; }
   .container_copy_whatdo section {
     position: relative;
-    z-index: 1; }
+    z-index: 0; }
 
 .whatoDoTitle {
   margin-bottom: 30px;
@@ -2345,13 +2356,13 @@ nav {
   text-align: left;
   color: #fff;
   font-weight: 500;
-  font-size: 18px; }
+  font-size: 16px; }
 
 .cite {
   width: 100%;
   clear: both;
   text-align: left;
-  margin-top: 50px;
+  margin-top: 25px;
   display: inline-block; }
 
 .citeText {
@@ -2365,6 +2376,9 @@ nav {
   text-align: center;
   width: 100%;
   padding: 5%;
+
+  min-height: 206px;
+
   height: 33.33333%;
   box-sizing: border-box; }
 
@@ -2413,6 +2427,35 @@ nav {
   .membersTitle {
     font-size: 16px; } }
 
+@media screen and (max-width: 955px) {
+  .container_copy_whatdo {
+    height: auto; } }
+
+@media screen and (max-width: 946px) {
+  .team {
+    min-height: 697px; } }
+
+@media screen and (max-width: 910px) {
+  .team {
+    min-height: 722px; } }
+
+@media screen and (max-width: 819px) {
+  .team {
+    min-height: 757px; } }
+
+@media screen and (max-width: 802px) {
+  .team {
+    min-height: 782px; } }
+
+@media screen and (max-width: 756px) {
+  .team {
+    min-height: 807px; } }
+
+@media screen and (max-width: 748px) {
+  .team {
+    min-height: 832px; } }
+
+
 @media screen and (max-width: 940px) {
   .members {
     float: none;
@@ -2423,12 +2466,16 @@ nav {
 
 @media screen and (max-width: 768px) {
   .citeText {
-    font-size: 24px; } }
+    font-size: 20px; } }
 
 @media screen and (max-width: 720px) {
+  .team {
+    min-height: auto; }
   .memberMar, .memberJor, .memberNat {
     height: auto;
-    overflow: hidden; } }
+    overflow: hidden; }
+  .container_copy_whatdo {
+    width: 100%; } }
 
 @media screen and (max-width: 620px) {
   .members {
@@ -2439,6 +2486,7 @@ nav {
 @media screen and (max-width: 340px) {
   .members {
     width: 100%; } }
+
 
 .container_copy_whatdo {
   float: left;
@@ -2464,6 +2512,7 @@ nav {
   .container_copy_whatdo {
     width: 100%;
     height: auto; } }
+
 
 .contentCopy {
   width: 500px;
