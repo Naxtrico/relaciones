@@ -1941,16 +1941,13 @@ nav {
   clear: both;
   margin-top: 20px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
@@ -2376,9 +2373,7 @@ nav {
   text-align: center;
   width: 100%;
   padding: 5%;
-
   min-height: 206px;
-
   height: 33.33333%;
   box-sizing: border-box; }
 
@@ -2455,7 +2450,6 @@ nav {
   .team {
     min-height: 832px; } }
 
-
 @media screen and (max-width: 940px) {
   .members {
     float: none;
@@ -2486,33 +2480,6 @@ nav {
 @media screen and (max-width: 340px) {
   .members {
     width: 100%; } }
-
-
-.container_copy_whatdo {
-  float: left;
-  width: 70%;
-  box-sizing: border-box;
-  padding-top: 50px;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../../dist/img/bg-que-hacemos.png);
-  min-height: 727px; }
-
-.whatoDoTitle {
-  margin-bottom: 30px;
-  color: #F7A627;
-  font-size: 35px; }
-
-@media screen and (max-width: 955px) {
-  .container_copy_whatdo {
-    width: 60%; } }
-
-@media screen and (max-width: 720px) {
-  .container_copy_whatdo {
-    width: 100%;
-    height: auto; } }
-
 
 .contentCopy {
   width: 500px;
