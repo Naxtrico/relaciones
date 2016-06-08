@@ -1,3 +1,7 @@
+footer {
+	height: auto;
+}
+
 #instructions {
 	$small-screen: 800px;
 	$medium-screen: 1200px;
@@ -205,6 +209,9 @@
 		.content {
 			float: left;
 		}
+		@media screen and (max-width: $small-screen) {
+			padding-bottom: 80px !important;
+		}
 	}
 
 	.hire {
@@ -253,12 +260,16 @@
 			@media screen and (max-width: $medium-screen) {
 				font-size: 20px;
 			}
+			@media screen and (max-width: $small-screen) {
+				display: none;
+			}
 		}
 		& > p:last-child {
 			font-size: 16px;
 			margin-top: 15px;
-		@media screen and (max-width: $small-screen) {
+			@media screen and (max-width: $small-screen) {
 				margin-bottom: 15px;
+				display: none;
 			}
 		}
 	}
