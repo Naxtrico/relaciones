@@ -30,7 +30,7 @@ $(window).resize(function(){
    var masaje = $('input:radio[name=selec]:checked').val();
    $("#selection").css('display','block');    
    $("#yourSelectionAmbient").html( "<img src='img/masaje.jpg' class='resumeImg'>" + masaje+ "<div class='yourSelectionItemPrice'>110€</div>");
-   $("#yourSelectionResumePrice").html("Total: 100€");
+   $("#yourSelectionResumePrice").html("Total: 110€");
     $("#step1").slideUp();    
     $("#step2").slideDown();
     $( "#lugar" ).prop( "checked", true );
@@ -40,7 +40,7 @@ $(window).resize(function(){
    var masaje = $('input:radio[name=selec]:checked').val();
    $("#selection").css('display','block');   
    $("#yourSelectionAmbient").html( "<img src='img/copa.jpg' class='resumeImg'> " + masaje + "<div class='yourSelectionItemPrice'>80€</div>");
-   $("#yourSelectionResumePrice").html("Total: 100€");   
+   $("#yourSelectionResumePrice").html("Total: 80€");   
    $("#step1").slideUp();    
    $("#step2").slideDown();
    $( "#lugar" ).prop( "checked", true );
@@ -50,7 +50,7 @@ $(window).resize(function(){
    var masaje = $('input:radio[name=selec]:checked').val();
    $("#selection").css('display','block');    
    $("#yourSelectionAmbient").html( "<img src='img/runner1.jpg' class='resumeImg'> " + masaje+ "<div class='yourSelectionItemPrice'>99€</div>");
-   $("#yourSelectionResumePrice").html("Total: 80€");
+   $("#yourSelectionResumePrice").html("Total: 99€");
    $("#step1").slideUp();    
     $("#step2").slideDown();
     $( "#lugar" ).prop( "checked", true );
@@ -60,7 +60,7 @@ $(window).resize(function(){
    var masaje = $('input:radio[name=selec]:checked').val();
    $("#selection").css('display','block');  
    $("#yourSelectionAmbient").html( "<img src='img/biblioteca.jpg' class='resumeImg'> " + masaje+ "<div class='yourSelectionItemPrice'>105€</div>");
-   $("#yourSelectionResumePrice").html("Total: 100€");
+   $("#yourSelectionResumePrice").html("Total: 105€");
   $("#step1").slideUp();    
     $("#step2").slideDown();
     $( "#lugar" ).prop( "checked", true );
@@ -70,7 +70,7 @@ $(window).resize(function(){
    var masaje = $('input:radio[name=selec]:checked').val();
    $("#selection").css('display','block'); 
    $("#yourSelectionAmbient").html( "<img src='img/arreglar.jpg' class='resumeImg'> " + masaje+ "<div class='yourSelectionItemPrice'>112€</div>");
-   $("#yourSelectionResumePrice").html("Total: 80€");
+   $("#yourSelectionResumePrice").html("Total: 112€");
   $("#step1").slideUp();    
     $("#step2").slideDown();
     $( "#lugar" ).prop( "checked", true );
@@ -81,7 +81,7 @@ $(window).resize(function(){
    var masaje = $('input:radio[name=selec]:checked').val();
    $("#selection").css('display','block');
    $("#yourSelectionAmbient").html( "<img src='img/esposas.jpg' class='resumeImg'> " + masaje+ "<div class='yourSelectionItemPrice'>95€</div>");
-   $("#yourSelectionResumePrice").html("Total: 80€");
+   $("#yourSelectionResumePrice").html("Total: 95€");
   $("#step1").slideUp();    
     $("#step2").slideDown();
   $( "#lugar" ).prop( "checked", true );
