@@ -33,7 +33,7 @@
 				<li class="nav_principal-item"><a href="que-hacemos.html" class="nav_principal-link">¿que hacemos?</a></li>
 				<li class="nav_principal-item"><a href="prueba-de-fidelidad-landing.html" class="nav_principal-link">prueba de fidelidad</a></li>
 				<li class="nav_principal-item"><a href="dejar-landing.html" class="nav_principal-link">dejar a tu pareja</a></li>
-      			<li class="nav_principal-item"><a href="contacto.html" class="nav_principal-link">contacto</a></li>         
+				<li class="nav_principal-item"><a href="contacto.html" class="nav_principal-link">contacto</a></li>         
        <!-- <li><a href="#">paquete negro</a></li>
         <li><a href="#">tienda</a></li>
         <li><a href="#">red impares</a></li>-->
@@ -134,9 +134,9 @@
 		<p class="title">	
 			<spsn>¿Lo has entendido ya? </span><span> ¡Es el momento de dar el paso!</span>
 			</p>
-			<a href="" class="button_principal button_color_PF">CONTRATAR</a>
+			<a href="dejar-comprar.html" class="button_principal button_color_PF">CONTRATAR</a>
 			<p class="text">
-				Si todavía te quedan dudas, puedes ponerte en <a href=""><u>contacto</u></a> con nosotros
+				Si todavía te quedan dudas, puedes ponerte en <a href="contacto.html"><u>contacto</u></a> con nosotros
 			</p>
 
 
@@ -163,12 +163,22 @@
 	<p class="footercopy">Copyright 2016. All Rights Reserved</p>
 </div>
 </footer>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-	<script src="js/menuFixed.js" type="text/javascript"></script>
-	<script src="js/menuMobile.js" type="text/javascript"></script>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="js/menuFixed.js" type="text/javascript"></script>
+<script src="js/menuMobile.js" type="text/javascript"></script>
 </body>
 
+<script type="text/javascript">
+$(window).scroll(function() {
+   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+       $('.hire').css('margin-bottom', '172px');
 
+   }
+   else{
+   	$('.hire').css('margin-bottom', '0px');
+   }
+});
+
+</script>
 </html>
