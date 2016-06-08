@@ -60,15 +60,15 @@
 	text-decoration: none;
 	color:#000;	
 	display: inline-block;
-	line-height: 30px;		
+	line-height: 30px;
+	border-radius: 4px;	
     transition: all 0.5s ease;
     border: 1px solid #606060;
    
 }
 
 .cardBtnActors{	
-	 margin-top: 120px;
-	 border-radius: 4px;
+	     margin-top: 182px;	
 }
 
 .btnSelectSex,{
@@ -91,7 +91,7 @@
 }
 
 .contentFormBtn{
-	text-align: right;
+	text-align: center;
 }
 
 
@@ -139,6 +139,14 @@
 	font-weight: bold;
 }
 
+
+@media screen and (max-width: 1067px) {
+
+.cardBtnActors{	
+	     margin-top: 129px;
+	 }
+
+}
 @media screen and (max-width: 540px) {
 
 	.button_principal{

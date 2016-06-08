@@ -66,6 +66,49 @@
   .imageActors {
     width: 100%; } }
 
+.contentCopyContacto, .contentCopyContactoSent {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.contentCopyContactoSent {
+  max-width: 800px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-top: 0; }
+
+.copyContacto {
+  margin-bottom: 30px;
+  color: white;
+  font-size: 37px;
+  font-weight: 500; }
+
+.copyContacto:first-child {
+  margin-top: 0px; }
+
+.contactoDescription {
+  color: #fff;
+  margin-bottom: 30px; }
+
+.sectionContactForm label {
+  color: #fff; }
+
+@media screen and (max-width: 699px) {
+  .copyContacto {
+    font-size: 20px; }
+  .contentCopyContactoSent {
+    position: initial;
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
+    margin-top: 20px; } }
+
 .contactCanalsTelf, .contactCanalsEmail, .contactCanalsOffice {
   text-align: center;
   width: 100%;
@@ -87,15 +130,13 @@
 
 @media screen and (max-width: 699px) {
   .contactCanalsTelf, .contactCanalsEmail, .contactCanalsOffice {
-    width: 33.333333%;
+    width: 100%;
     float: left;
     height: 167px;
     padding: 1%; }
   .contactCanalsTelf img, .contactCanalsEmail img, .contactCanalsOffice img {
     width: 100%;
-    height: 45%; }
-  .contactCanalsTelf p, .contactCanalsEmail p, .contactCanalsOffice p {
-    font-size: 10px; } }
+    height: 45%; } }
 
 @media screen and (max-width: 599px) {
   .contactCanals {
@@ -585,13 +626,13 @@ input[type="radio"] {
   color: #000;
   display: inline-block;
   line-height: 30px;
+  border-radius: 4px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   border: 1px solid #606060; }
 
 .cardBtnActors {
-  margin-top: 120px;
-  border-radius: 4px; }
+  margin-top: 182px; }
 
 .btnSelectSex {
   width: 150px;
@@ -609,7 +650,7 @@ input[type="radio"] {
   margin-right: 0px; }
 
 .contentFormBtn {
-  text-align: right; }
+  text-align: center; }
 
 .btn_reg_now {
   width: 100%;
@@ -650,6 +691,10 @@ input[type="radio"] {
   margin-top: 50px;
   margin-bottom: 50px;
   font-weight: bold; }
+
+@media screen and (max-width: 1067px) {
+  .cardBtnActors {
+    margin-top: 129px; } }
 
 @media screen and (max-width: 540px) {
   .button_principal {
@@ -886,49 +931,6 @@ input[type="radio"] {
     margin-right: auto; }
   .cardDejar_description h2 {
     font-size: 18px; } }
-
-.contentCopyContacto, .contentCopyContactoSent {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 50px;
-  padding-left: 1em;
-  padding-right: 1em; }
-
-.contentCopyContactoSent {
-  max-width: 800px;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  margin-top: 0; }
-
-.copyContacto {
-  margin-bottom: 30px;
-  color: #F7A627;
-  font-size: 37px;
-  font-weight: 500; }
-
-.copyContacto:first-child {
-  margin-top: 0px; }
-
-.contactoDescription {
-  color: #fff;
-  margin-bottom: 30px; }
-
-.sectionContactForm label {
-  color: #fff; }
-
-@media screen and (max-width: 699px) {
-  .copyContacto {
-    font-size: 20px; }
-  .contentCopyContactoSent {
-    position: initial;
-    -webkit-transform: translateY(0%);
-        -ms-transform: translateY(0%);
-            transform: translateY(0%);
-    margin-top: 20px; } }
 
 footer {
   background-color: #49494A;
@@ -2130,7 +2132,8 @@ nav {
   float: left;
   width: 35%;
   box-sizing: border-box;
-  height: 100%; }
+  height: 100%;
+  min-height: 747px; }
 
 .contentCardsSlide {
   margin: 0 auto;
@@ -2153,7 +2156,8 @@ nav {
   height: 100%;
   box-sizing: border-box;
   text-align: center;
-  display: none; }
+  display: none;
+  min-height: 747px; }
 
 .contentSlideDisplay {
   display: block; }
@@ -2173,7 +2177,7 @@ nav {
 
 .sectionContactoCanals {
   float: right;
-  width: 20%;
+  width: 30%;
   box-sizing: border-box;
   padding-top: 50px;
   height: 100%;
@@ -2181,14 +2185,26 @@ nav {
 
 .contentFormCopy {
   float: left;
-  width: 80%;
+  width: 70%;
   box-sizing: border-box;
   padding-top: 50px;
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../../dist/img/pruebafotocontacto.jpg);
+  background-image: url(../../dist/img/bg-contacto.png);
   min-height: 727px; }
+  .contentFormCopy .BlueLayer {
+    background-color: #13617f;
+    opacity: .7;
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; }
+  .contentFormCopy section {
+    position: relative;
+    z-index: 0; }
 
 .titleInfoPf {
   font-size: 24px;
@@ -2224,7 +2240,7 @@ nav {
   height: 100%;
   box-sizing: border-box;
   float: right;
-  width: 30%; }
+  width: 40%; }
 
 @media screen and (max-width: 1067px) {
   .contentCardsSlide {
@@ -2244,7 +2260,9 @@ nav {
 
 @media screen and (max-width: 955px) {
   .team {
-    width: 40%; } }
+    width: 40%; }
+  .content_desc_whatdo {
+    padding: 0 2em 2em; } }
 
 @media screen and (max-width: 856px) {
   .contentCurrentSteps {
@@ -2278,7 +2296,9 @@ nav {
     padding-top: 0; }
   .contentFormCopy {
     width: 100%;
-    height: 80%; } }
+    height: 100%; }
+  .contentFormCopy > .BlueLayer {
+    width: 100%; } }
 
 @media screen and (max-width: 650px) {
   .whatdo_desc_left, .whatdo_desc_right {
@@ -2295,43 +2315,73 @@ nav {
   .content_desc_whatdo {
     padding: 0 2em 2em; } }
 
+.container_copy_whatdo {
+  float: left;
+  width: 60%;
+  box-sizing: border-box;
+  padding-top: 50px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 667px;
+  background-image: url(../../dist/img/bg-que-hacemos.png);
+  position: relative; }
+  .container_copy_whatdo > .bg-whatdo {
+    background-color: #13617f;
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; }
+  .container_copy_whatdo section {
+    position: relative;
+    z-index: 0; }
+
+.whatoDoTitle {
+  margin-bottom: 30px;
+  color: #FFF;
+  font-size: 35px; }
+
 .whatDoDescP {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #000;
   text-align: left;
   color: #fff;
   font-weight: 500;
-  font-size: 18px; }
+  font-size: 16px; }
 
 .cite {
   width: 100%;
   clear: both;
   text-align: left;
-  margin-top: 50px;
+  margin-top: 25px;
   display: inline-block; }
 
 .citeText {
-  font-size: 26px;
+  font-size: 22px;
   line-height: 35px;
   margin: 0;
-  color: #F7A627;
+  color: #FFF;
   font-weight: bold; }
 
 .memberMar, .memberJor, .memberNat {
   text-align: center;
   width: 100%;
   padding: 5%;
+  min-height: 206px;
   height: 33.33333%;
   box-sizing: border-box; }
 
 .memberMar {
-  background-color: #AAA693; }
+  background-color: #e2e2e2; }
 
 .memberJor {
-  background-color: #C4C2AE; }
+  background-color: #d3d3d3; }
 
 .memberNat {
-  background-color: #D2D1BD; }
+  background-color: #bcbcbc; }
 
 .rol_title {
   font-size: 30px; }
@@ -2339,10 +2389,12 @@ nav {
 .members_img {
   float: left;
   width: 130px;
-  border-radius: 500px; }
+  border-radius: 500px;
+  margin-right: 5%;
+  margin-top: 3%; }
 
 .teamTitle--color, .membersTitle--color {
-  color: #C0212F; }
+  color: #13617f; }
 
 .teamTitle {
   font-size: 35px;
@@ -2350,18 +2402,50 @@ nav {
 
 .membersTitle {
   font-size: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: left;
+  margin-left: 10px; }
 
 .teamDescMembers {
   font-size: 16px;
-  color: #000;
-  margin-left: 105px; }
+  color: #49484a;
+  text-align: left;
+  margin-left: 10px;
+  font-weight: 600; }
 
 @media screen and (max-width: 1069px) {
   .teamDescMembers {
     font-size: 14px; }
   .membersTitle {
     font-size: 16px; } }
+
+@media screen and (max-width: 955px) {
+  .container_copy_whatdo {
+    height: auto; } }
+
+@media screen and (max-width: 946px) {
+  .team {
+    min-height: 697px; } }
+
+@media screen and (max-width: 910px) {
+  .team {
+    min-height: 722px; } }
+
+@media screen and (max-width: 819px) {
+  .team {
+    min-height: 757px; } }
+
+@media screen and (max-width: 802px) {
+  .team {
+    min-height: 782px; } }
+
+@media screen and (max-width: 756px) {
+  .team {
+    min-height: 807px; } }
+
+@media screen and (max-width: 748px) {
+  .team {
+    min-height: 832px; } }
 
 @media screen and (max-width: 940px) {
   .members {
@@ -2373,12 +2457,16 @@ nav {
 
 @media screen and (max-width: 768px) {
   .citeText {
-    font-size: 24px; } }
+    font-size: 20px; } }
 
 @media screen and (max-width: 720px) {
+  .team {
+    min-height: auto; }
   .memberMar, .memberJor, .memberNat {
     height: auto;
-    overflow: hidden; } }
+    overflow: hidden; }
+  .container_copy_whatdo {
+    width: 100%; } }
 
 @media screen and (max-width: 620px) {
   .members {
@@ -2389,31 +2477,6 @@ nav {
 @media screen and (max-width: 340px) {
   .members {
     width: 100%; } }
-
-.container_copy_whatdo {
-  float: left;
-  width: 70%;
-  box-sizing: border-box;
-  padding-top: 50px;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../../dist/img/bg-que-hacemos.png);
-  min-height: 727px; }
-
-.whatoDoTitle {
-  margin-bottom: 30px;
-  color: #F7A627;
-  font-size: 35px; }
-
-@media screen and (max-width: 955px) {
-  .container_copy_whatdo {
-    width: 60%; } }
-
-@media screen and (max-width: 720px) {
-  .container_copy_whatdo {
-    width: 100%;
-    height: auto; } }
 
 .contentCopy {
   width: 500px;
@@ -2629,8 +2692,8 @@ nav {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background: -webkit-linear-gradient(left, #821e32 0%, rgba(231, 56, 39, 0) 100%), url(../../dist/img/1343735.jpg);
-  background: linear-gradient(to right, #821e32 0%, rgba(231, 56, 39, 0) 100%), url(../../dist/img/1343735.jpg);
+  background: -webkit-linear-gradient(left, #821e32 0%, rgba(231, 56, 39, 0) 100%), url(../../dist/img/dejarfull.jpg);
+  background: linear-gradient(to right, #821e32 0%, rgba(231, 56, 39, 0) 100%), url(../../dist/img/dejarfull.jpg);
   width: 100%;
   height: 100%;
   min-height: 550px; }
@@ -2697,6 +2760,19 @@ nav {
   padding: 1em;
   box-sizing: border-box; }
 
+.infophrase_dejar {
+  width: 30%;
+  height: 100%;
+  float: right;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../dist/img/lateraldejar.jpg);
+  text-align: center;
+  padding: 1em;
+  box-sizing: border-box; }
+
 .eye_icon {
   margin-top: 210px;
   margin-bottom: 40px;
@@ -2720,7 +2796,16 @@ nav {
   .full_screen {
     background-image: -webkit-linear-gradient(left, rgba(43, 12, 82, 0.86) 0%, rgba(239, 1, 124, 0) 100%), url(../../dist/img/mobileprueba.jpg);
     background-image: linear-gradient(to right, rgba(43, 12, 82, 0.86) 0%, rgba(239, 1, 124, 0) 100%), url(../../dist/img/mobileprueba.jpg);
-    height: auto; }
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .full_screen_dejar {
+    background-image: -webkit-linear-gradient(left, #821e32 0%, rgba(231, 56, 39, 0) 100%), url(../../dist/img/mobiledejar.jpg);
+    background-image: linear-gradient(to right, #821e32 0%, rgba(231, 56, 39, 0) 100%), url(../../dist/img/mobiledejar.jpg);
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center; }
   .contentportada {
     float: none;
     width: 100%;
@@ -2733,11 +2818,11 @@ nav {
     padding: 36px 44px;
     box-sizing: border-box;
     height: auto; }
-  .infophrase {
+  .infophrase, .infophrase_dejar {
     float: none;
     width: 100%;
     height: auto;
-    margin-top: 36%; }
+    padding-bottom: 56px; }
   .eye_icon {
     margin-top: 50px; }
   .textinfo {
@@ -2836,77 +2921,77 @@ nav {
           border-color: #2c0c52; }
       #instructions article.purple .text {
         font-weight: 500; }
-    #instructions article.step6 {
+    #instructions article.step6Pf {
       padding-bottom: 190px; }
-  #instructions .step1 {
+  #instructions .step1Pf {
     background-color: #2c0c52; }
-    #instructions .step1 .content {
+    #instructions .step1Pf .content {
       width: 40%;
       float: left; }
       @media screen and (max-width: 1200px) {
-        #instructions .step1 .content {
+        #instructions .step1Pf .content {
           width: 60%; } }
       @media screen and (max-width: 800px) {
-        #instructions .step1 .content {
+        #instructions .step1Pf .content {
           width: 100%; } }
-    #instructions .step1 .photo {
+    #instructions .step1Pf .photo {
       width: 60%;
       float: right; }
       @media screen and (max-width: 1200px) {
-        #instructions .step1 .photo {
+        #instructions .step1Pf .photo {
           width: 40%; } }
-  #instructions .step2 {
+  #instructions .step2Pf {
     background-color: #6a38b2; }
-    #instructions .step2 > *:first-child {
+    #instructions .step2Pf > *:first-child {
       width: 30%;
       float: left; }
-    #instructions .step2 .content {
+    #instructions .step2Pf .content {
       width: 40%;
       float: left; }
       @media screen and (max-width: 1200px) {
-        #instructions .step2 .content {
+        #instructions .step2Pf .content {
           width: 70%; } }
       @media screen and (max-width: 800px) {
-        #instructions .step2 .content {
+        #instructions .step2Pf .content {
           width: 100%; } }
-    #instructions .step2 > *:last-child {
+    #instructions .step2Pf > *:last-child {
       width: 30%;
       float: right; }
       @media screen and (max-width: 1200px) {
-        #instructions .step2 > *:last-child {
+        #instructions .step2Pf > *:last-child {
           display: none; } }
-  #instructions .step3 {
+  #instructions .step3Pf {
     background-color: #9079b2; }
-    #instructions .step3 .photo {
+    #instructions .step3Pf .photo {
       width: 55%;
       float: left; }
       @media screen and (max-width: 1200px) {
-        #instructions .step3 .photo {
+        #instructions .step3Pf .photo {
           float: right;
           width: 40%; } }
-    #instructions .step3 .content {
+    #instructions .step3Pf .content {
       width: 45%;
       float: right; }
       @media screen and (max-width: 1200px) {
-        #instructions .step3 .content {
+        #instructions .step3Pf .content {
           float: left;
           width: 60%; } }
       @media screen and (max-width: 800px) {
-        #instructions .step3 .content {
+        #instructions .step3Pf .content {
           width: 100%; } }
-  #instructions .step4 {
+  #instructions .step4Pf {
     background-color: #afa6bc; }
-    #instructions .step4 .content {
+    #instructions .step4Pf .content {
       float: left; }
-  #instructions .step5 {
+  #instructions .step5Pf {
     background-color: #c7c2ce; }
-    #instructions .step5 .content {
+    #instructions .step5Pf .content {
       float: left; }
-  #instructions .step6 {
+  #instructions .step6Pf {
     background-color: #d8d5db; }
-    #instructions .step6 .content {
+    #instructions .step6Pf .content {
       float: left; }
-  #instructions .hire {
+  #instructions .hirePf {
     position: fixed;
     bottom: 0;
     background-color: #2c0c52;
@@ -2914,33 +2999,35 @@ nav {
     height: 150px;
     padding-top: 20px;
     text-align: center; }
-    #instructions .hire p {
+    #instructions .hirePf .text a:link {
+      color: #FFF; }
+    #instructions .hirePf .text a:visited {
+      color: #FFF; }
+    #instructions .hirePf .text a:hover {
+      color: #FFF; }
+    #instructions .hirePf .text a:active {
+      color: #FFF; }
+    #instructions .hirePf p {
       color: white; }
-      #instructions .hire p span {
+      #instructions .hirePf p span {
         display: inline-block;
         margin-right: 5px; }
         @media screen and (max-width: 800px) {
-          #instructions .hire p span {
+          #instructions .hirePf p span {
             display: block; } }
-      #instructions .hire p .text a:link {
-        color: #FFF; }
-      #instructions .hire p .text a:visited {
-        color: #FFF; }
-      #instructions .hire p .text a:hover {
-        color: #FFF; }
-    #instructions .hire > p:first-child {
+    #instructions .hirePf > p:first-child {
       font-family: "PT Serif",serif;
       font-size: 22px;
       font-weight: 600;
       margin-bottom: 15px; }
       @media screen and (max-width: 1200px) {
-        #instructions .hire > p:first-child {
+        #instructions .hirePf > p:first-child {
           font-size: 20px; } }
-    #instructions .hire > p:last-child {
+    #instructions .hirePf > p:last-child {
       font-size: 16px;
       margin-top: 15px; }
       @media screen and (max-width: 800px) {
-        #instructions .hire > p:last-child {
+        #instructions .hirePf > p:last-child {
           margin-bottom: 15px; } }
 
 #instructions {
@@ -3086,6 +3173,12 @@ nav {
     height: 150px;
     padding-top: 20px;
     text-align: center; }
+    #instructions .hire .text a:link {
+      color: #FFF; }
+    #instructions .hire .text a:visited {
+      color: #FFF; }
+    #instructions .hire .text a:hover {
+      color: #FFF; }
     #instructions .hire p {
       color: white; }
       #instructions .hire p span {
@@ -3094,12 +3187,6 @@ nav {
         @media screen and (max-width: 800px) {
           #instructions .hire p span {
             display: block; } }
-      #instructions .hire p .text a:link {
-        color: #FFF; }
-      #instructions .hire p .text a:visited {
-        color: #FFF; }
-      #instructions .hire p .text a:hover {
-        color: #FFF; }
     #instructions .hire > p:first-child {
       font-family: "PT Serif",serif;
       font-size: 22px;
