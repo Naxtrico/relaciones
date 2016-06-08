@@ -91,7 +91,7 @@
 @media screen and (max-width: 699px) {
 
 	.contactCanalsTelf, .contactCanalsEmail, .contactCanalsOffice,  {
-		width: 33.333333%;
+		width: 100%;
 		float: left;
 		height: 167px;
 		padding: 1%;
@@ -100,11 +100,7 @@
 	.contactCanalsTelf img, .contactCanalsEmail img, .contactCanalsOffice img{
 		width: 100%;
 		height: 45%;
-	} 
-
-	.contactCanalsTelf p, .contactCanalsEmail p, .contactCanalsOffice p{
-		font-size: 10px;
-	}
+	} 	
 
 }
 

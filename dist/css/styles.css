@@ -130,15 +130,13 @@
 
 @media screen and (max-width: 699px) {
   .contactCanalsTelf, .contactCanalsEmail, .contactCanalsOffice {
-    width: 33.333333%;
+    width: 100%;
     float: left;
     height: 167px;
     padding: 1%; }
   .contactCanalsTelf img, .contactCanalsEmail img, .contactCanalsOffice img {
     width: 100%;
-    height: 45%; }
-  .contactCanalsTelf p, .contactCanalsEmail p, .contactCanalsOffice p {
-    font-size: 10px; } }
+    height: 45%; } }
 
 @media screen and (max-width: 599px) {
   .contactCanals {
@@ -628,13 +626,13 @@ input[type="radio"] {
   color: #000;
   display: inline-block;
   line-height: 30px;
+  border-radius: 4px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   border: 1px solid #606060; }
 
 .cardBtnActors {
-  margin-top: 182px;
-  border-radius: 4px; }
+  margin-top: 182px; }
 
 .btnSelectSex {
   width: 150px;
@@ -1360,12 +1358,6 @@ a {
 
 .clearFix {
   clear: both; }
-
-@media screen and (max-width: 634px) {
-  /*li{
-		display: block;
-		padding: 0;
-	}*/ }
 
 @media screen and (max-width: 540px) {
   p {
@@ -2201,7 +2193,7 @@ nav {
   background-size: cover;
   background-image: url(../../dist/img/bg-contacto.png);
   min-height: 727px; }
-  .contentFormCopy > .BlueLayer {
+  .contentFormCopy .BlueLayer {
     background-color: #13617f;
     opacity: .7;
     width: 70%;
@@ -2212,7 +2204,7 @@ nav {
     z-index: 0; }
   .contentFormCopy section {
     position: relative;
-    z-index: 1; }
+    z-index: 0; }
 
 .titleInfoPf {
   font-size: 24px;
@@ -2304,7 +2296,9 @@ nav {
     padding-top: 0; }
   .contentFormCopy {
     width: 100%;
-    height: 80%; } }
+    height: 100%; }
+  .contentFormCopy > .BlueLayer {
+    width: 100%; } }
 
 @media screen and (max-width: 650px) {
   .whatdo_desc_left, .whatdo_desc_right {
@@ -2376,9 +2370,7 @@ nav {
   text-align: center;
   width: 100%;
   padding: 5%;
-
   min-height: 206px;
-
   height: 33.33333%;
   box-sizing: border-box; }
 
@@ -2455,7 +2447,6 @@ nav {
   .team {
     min-height: 832px; } }
 
-
 @media screen and (max-width: 940px) {
   .members {
     float: none;
@@ -2486,33 +2477,6 @@ nav {
 @media screen and (max-width: 340px) {
   .members {
     width: 100%; } }
-
-
-.container_copy_whatdo {
-  float: left;
-  width: 70%;
-  box-sizing: border-box;
-  padding-top: 50px;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../../dist/img/bg-que-hacemos.png);
-  min-height: 727px; }
-
-.whatoDoTitle {
-  margin-bottom: 30px;
-  color: #F7A627;
-  font-size: 35px; }
-
-@media screen and (max-width: 955px) {
-  .container_copy_whatdo {
-    width: 60%; } }
-
-@media screen and (max-width: 720px) {
-  .container_copy_whatdo {
-    width: 100%;
-    height: auto; } }
-
 
 .contentCopy {
   width: 500px;
@@ -2957,77 +2921,77 @@ nav {
           border-color: #2c0c52; }
       #instructions article.purple .text {
         font-weight: 500; }
-    #instructions article.step6 {
+    #instructions article.step6Pf {
       padding-bottom: 190px; }
-  #instructions .step1 {
+  #instructions .step1Pf {
     background-color: #2c0c52; }
-    #instructions .step1 .content {
+    #instructions .step1Pf .content {
       width: 40%;
       float: left; }
       @media screen and (max-width: 1200px) {
-        #instructions .step1 .content {
+        #instructions .step1Pf .content {
           width: 60%; } }
       @media screen and (max-width: 800px) {
-        #instructions .step1 .content {
+        #instructions .step1Pf .content {
           width: 100%; } }
-    #instructions .step1 .photo {
+    #instructions .step1Pf .photo {
       width: 60%;
       float: right; }
       @media screen and (max-width: 1200px) {
-        #instructions .step1 .photo {
+        #instructions .step1Pf .photo {
           width: 40%; } }
-  #instructions .step2 {
+  #instructions .step2Pf {
     background-color: #6a38b2; }
-    #instructions .step2 > *:first-child {
+    #instructions .step2Pf > *:first-child {
       width: 30%;
       float: left; }
-    #instructions .step2 .content {
+    #instructions .step2Pf .content {
       width: 40%;
       float: left; }
       @media screen and (max-width: 1200px) {
-        #instructions .step2 .content {
+        #instructions .step2Pf .content {
           width: 70%; } }
       @media screen and (max-width: 800px) {
-        #instructions .step2 .content {
+        #instructions .step2Pf .content {
           width: 100%; } }
-    #instructions .step2 > *:last-child {
+    #instructions .step2Pf > *:last-child {
       width: 30%;
       float: right; }
       @media screen and (max-width: 1200px) {
-        #instructions .step2 > *:last-child {
+        #instructions .step2Pf > *:last-child {
           display: none; } }
-  #instructions .step3 {
+  #instructions .step3Pf {
     background-color: #9079b2; }
-    #instructions .step3 .photo {
+    #instructions .step3Pf .photo {
       width: 55%;
       float: left; }
       @media screen and (max-width: 1200px) {
-        #instructions .step3 .photo {
+        #instructions .step3Pf .photo {
           float: right;
           width: 40%; } }
-    #instructions .step3 .content {
+    #instructions .step3Pf .content {
       width: 45%;
       float: right; }
       @media screen and (max-width: 1200px) {
-        #instructions .step3 .content {
+        #instructions .step3Pf .content {
           float: left;
           width: 60%; } }
       @media screen and (max-width: 800px) {
-        #instructions .step3 .content {
+        #instructions .step3Pf .content {
           width: 100%; } }
-  #instructions .step4 {
+  #instructions .step4Pf {
     background-color: #afa6bc; }
-    #instructions .step4 .content {
+    #instructions .step4Pf .content {
       float: left; }
-  #instructions .step5 {
+  #instructions .step5Pf {
     background-color: #c7c2ce; }
-    #instructions .step5 .content {
+    #instructions .step5Pf .content {
       float: left; }
-  #instructions .step6 {
+  #instructions .step6Pf {
     background-color: #d8d5db; }
-    #instructions .step6 .content {
+    #instructions .step6Pf .content {
       float: left; }
-  #instructions .hire {
+  #instructions .hirePf {
     position: fixed;
     bottom: 0;
     background-color: #2c0c52;
@@ -3035,33 +2999,35 @@ nav {
     height: 150px;
     padding-top: 20px;
     text-align: center; }
-    #instructions .hire p {
+    #instructions .hirePf .text a:link {
+      color: #FFF; }
+    #instructions .hirePf .text a:visited {
+      color: #FFF; }
+    #instructions .hirePf .text a:hover {
+      color: #FFF; }
+    #instructions .hirePf .text a:active {
+      color: #FFF; }
+    #instructions .hirePf p {
       color: white; }
-      #instructions .hire p span {
+      #instructions .hirePf p span {
         display: inline-block;
         margin-right: 5px; }
         @media screen and (max-width: 800px) {
-          #instructions .hire p span {
+          #instructions .hirePf p span {
             display: block; } }
-      #instructions .hire p .text a:link {
-        color: #FFF; }
-      #instructions .hire p .text a:visited {
-        color: #FFF; }
-      #instructions .hire p .text a:hover {
-        color: #FFF; }
-    #instructions .hire > p:first-child {
+    #instructions .hirePf > p:first-child {
       font-family: "PT Serif",serif;
       font-size: 22px;
       font-weight: 600;
       margin-bottom: 15px; }
       @media screen and (max-width: 1200px) {
-        #instructions .hire > p:first-child {
+        #instructions .hirePf > p:first-child {
           font-size: 20px; } }
-    #instructions .hire > p:last-child {
+    #instructions .hirePf > p:last-child {
       font-size: 16px;
       margin-top: 15px; }
       @media screen and (max-width: 800px) {
-        #instructions .hire > p:last-child {
+        #instructions .hirePf > p:last-child {
           margin-bottom: 15px; } }
 
 #instructions {
@@ -3207,6 +3173,12 @@ nav {
     height: 150px;
     padding-top: 20px;
     text-align: center; }
+    #instructions .hire .text a:link {
+      color: #FFF; }
+    #instructions .hire .text a:visited {
+      color: #FFF; }
+    #instructions .hire .text a:hover {
+      color: #FFF; }
     #instructions .hire p {
       color: white; }
       #instructions .hire p span {
@@ -3215,12 +3187,6 @@ nav {
         @media screen and (max-width: 800px) {
           #instructions .hire p span {
             display: block; } }
-      #instructions .hire p .text a:link {
-        color: #FFF; }
-      #instructions .hire p .text a:visited {
-        color: #FFF; }
-      #instructions .hire p .text a:hover {
-        color: #FFF; }
     #instructions .hire > p:first-child {
       font-family: "PT Serif",serif;
       font-size: 22px;

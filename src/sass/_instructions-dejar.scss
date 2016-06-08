@@ -215,15 +215,6 @@
 		height: 150px;
 		padding-top: 20px;
 		text-align: center;
-		p {
-			color: white;
-			span {
-				display: inline-block;
-				margin-right: 5px;
-				@media screen and (max-width: $small-screen) {
-					display: block;
-				}
-			}
 
 		.text a:link {
 			color: #FFF;
@@ -239,6 +230,18 @@
 			color: #FFF;
 
 		}
+
+		p {
+			color: white;
+			span {
+				display: inline-block;
+				margin-right: 5px;
+				@media screen and (max-width: $small-screen) {
+					display: block;
+				}
+			}
+
+		
 
 
 		}
