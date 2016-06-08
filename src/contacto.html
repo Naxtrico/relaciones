@@ -6,6 +6,7 @@
   <title>IMPARES - contacto</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="img/logoFavIcon.png">
   <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>    
   <script>
@@ -22,97 +23,94 @@
 <body>
   <header>
     <a href="index.html"><img src="img/logo.svg" class="logo" id="logo" alt="logo impares"></a>
-    <div class="icons">
-     <a href="#" id="registry_icon" class="icon_register_desktop"><img src="img/perfil.svg" alt="logo login registro"> <span class="iconsLink">ENTRAR</span></a>
-     <!--<a href="#"><img src="img/carrito.svg"></a>-->
+    <div class="icons">     
      <a href="#" id="nav-toggle" class="nav-toggle content-nav-toggle"><span></span></a>
    </div>          
 
-    <nav class="nav_principal" id="nav_principal">
+   <nav class="nav_principal" id="nav_principal">
      <ul class="nav_principal-list">
       <li class="nav_principal-item"><a href="que-hacemos.html" class="nav_principal-link">¿que hacemos?</a></li>
-      <li class="nav_principal-item"><a href="prueba-de-fidelidad.html" class="nav_principal-link">prueba de fidelidad</a></li>
-      <li class="nav_principal-item"><a href="dejar.html" class="nav_principal-link">dejar</a></li>
-      <li class="nav_principal-item"><a href="#" id="registry_icon_mobile" class="icon_register_mobile"><img src="img/perfil.svg" alt="icono registrarse"></a></li>
+      <li class="nav_principal-item"><a href="prueba-de-fidelidad-landing.html" class="nav_principal-link">prueba de fidelidad</a></li>
+       <li class="nav_principal-item"><a href="dejar-landing.html" class="nav_principal-link">dejar a tu pareja</a></li>
+      <li class="nav_principal-item"><a href="contacto.html" class="nav_principal-link">contacto</a></li>         
        <!-- <li><a href="#">paquete negro</a></li>
         <li><a href="#">tienda</a></li>
         <li><a href="#">red impares</a></li>-->
       </ul>
     </nav>
-        <div id="Container_login" class="Container_login">
-          <div class="login" id="login">
-            <h3>IDENTIFÍCATE</h3>
-            <form id="login_form">
-              <label>Usuario</label>
-              <input type="text" id="usuario_login" required>
-              <label>Contraseña</label>
-              <input type="text" id="contraseña" required>
-              <div class="content_btn_form">
-                <p>¿Has olvidado tu contraseña?</p>
-                <input type="submit" id="identificar" data-popup-open="popup-1" class="button_login_reg" value="IDENTIFICAR">
-              </div>
-            </form>
-            <div class="register_now">
-              <p>Si aún no eres usuario, registrate aquí</p>
-              <a href="#" class="button_principal btn_reg_now" id="registrate">REGÍSTRATE</a>
-            </div>
+    <div id="Container_login" class="Container_login">
+      <div class="login" id="login">
+        <h3>IDENTIFÍCATE</h3>
+        <form id="login_form">
+          <label>Usuario</label>
+          <input type="text" id="usuario_login" required>
+          <label>Contraseña</label>
+          <input type="text" id="contraseña" required>
+          <div class="content_btn_form">
+            <p>¿Has olvidado tu contraseña?</p>
+            <input type="submit" id="identificar" data-popup-open="popup-1" class="button_login_reg" value="IDENTIFICAR">
           </div>
-          <div class="registration" id="registration">
-            <h3>REGÍSTRATE</h3>
-            <p>Todos los campos son obligatorios a rellenar</p>
-            <form id="registration_form">
-              <label>Nombre*</label>
-              <input type="text" id="nombre" required>
-              <label>Email*</label>
-              <input type="text" id="email" required>
-              <label>Usuario (no tene que ser tu nombre)</label>
-              <input type="text" id="usuario_reg" required>
-              <label>Contraseña (mín. 6 carácteres)</label>
-              <input type="text" id="pass" required>
-              <label>Repetir contraseña</label>
-              <input type="text" id="repass" required>
-              <p>*Tu nombre y email no se mostrarán públicamente</p>
-              <input type="checkbox" name="vehicle" value="Bike"> Acepto la política de privacidad<br>
-              <input type="checkbox" name="vehicle" value="Car" checked="checked"> Quiero recibir la newsletter<br>
-              <div class="content_btn_form">
-                <p>Volver a <a class="back-to-login" href="">"Identificate"</a></p>
-                <input type="submit" id="registrar" data-popup-open="popup-2" class="button_login_reg" value="REGISTRAR">
-              </div>
-            </form>
-          </div>
-        </div>
-      </header>
-      <div class="back_full_screen_contacto"> </div>    
-      <!-- POP UP LOGIN -->
-      <div class="popup" data-popup="popup-1">
-        <div class="popup-inner">
-          <h2>¡HOLA!</h2>
-          <p>Login correcto</p>
-          <p><a data-popup-close="popup-1" href="#">Close</a></p>
-          <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+        </form>
+        <div class="register_now">
+          <p>Si aún no eres usuario, registrate aquí</p>
+          <a href="#" class="button_principal btn_reg_now" id="registrate">REGÍSTRATE</a>
         </div>
       </div>
-      <!-- POP UP -->
-      <!-- POP UP REGISTRO -->
-      <div class="popup" data-popup="popup-2">
-        <div class="popup-inner">
-          <h2>¡REGISTRO COMPLETADO!</h2>
-          <p>Bienvenido a IMPARES</p>
-          <p><a data-popup-close="popup-2" href="#">Close</a></p>
-          <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
-        </div>
+      <div class="registration" id="registration">
+        <h3>REGÍSTRATE</h3>
+        <p>Todos los campos son obligatorios a rellenar</p>
+        <form id="registration_form">
+          <label>Nombre*</label>
+          <input type="text" id="nombre" required>
+          <label>Email*</label>
+          <input type="text" id="email" required>
+          <label>Usuario (no tene que ser tu nombre)</label>
+          <input type="text" id="usuario_reg" required>
+          <label>Contraseña (mín. 6 carácteres)</label>
+          <input type="text" id="pass" required>
+          <label>Repetir contraseña</label>
+          <input type="text" id="repass" required>
+          <p>*Tu nombre y email no se mostrarán públicamente</p>
+          <input type="checkbox" name="vehicle" value="Bike"> Acepto la política de privacidad<br>
+          <input type="checkbox" name="vehicle" value="Car" checked="checked"> Quiero recibir la newsletter<br>
+          <div class="content_btn_form">
+            <p>Volver a <a class="back-to-login" href="">"Identificate"</a></p>
+            <input type="submit" id="registrar" data-popup-open="popup-2" class="button_login_reg" value="REGISTRAR">
+          </div>
+        </form>
       </div>
-      <!-- POP UP -->
-      
-      <section class="contentCopyContacto">
+    </div>
+  </header>         
+  <!-- POP UP LOGIN -->
+  <div class="popup" data-popup="popup-1">
+    <div class="popup-inner">
+      <h2>¡HOLA!</h2>
+      <p>Login correcto</p>
+      <p><a data-popup-close="popup-1" href="#">Close</a></p>
+      <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+    </div>
+  </div>
+  <!-- POP UP -->
+  <!-- POP UP REGISTRO -->
+  <div class="popup" data-popup="popup-2">
+    <div class="popup-inner">
+      <h2>¡REGISTRO COMPLETADO!</h2>
+      <p>Bienvenido a IMPARES</p>
+      <p><a data-popup-close="popup-2" href="#">Close</a></p>
+      <a class="popup-close" data-popup-close="popup-2" href="#">x</a>
+    </div>
+  </div>
+  <!-- POP UP -->     
 
+    <div class="contentFormCopy"> 
+    <div class="BlueLayer"></div>
+      <section class="contentCopyContacto">
         <h1 class="copyContacto">¿Te podemos ayudar?</h1>
         <p class="contactoDescription">
           Si necesitas contactarnos por alguna duda que no te ha quedado clara o simplemente quieres hacernos saber algo, rellena el siguiente formulario
         </p>
-
       </section>
-      
+
       <section class="sectionContactForm">
         <form action="contacto-enviado.html" method ="get">
           <label>Nombre</label>
@@ -124,37 +122,36 @@
           <label>Escribe aquí tu comentario</label>
           <span class="error">Comentario es obligatorio</span>
           <textarea rows="4" name="comentario_contact" cols="50" placeholder="Comentario" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Comentario'"></textarea>
-          <div class="content_btn_form">
-            <input type="submit" class="form_button_PF" id="formContact" value="ENVIAR">
-          </div>
+          
+            <input type="submit" class="form_button_PF formButtonContact" id="formContact" value="ENVIAR">
+          
         </form>
       </section>
+    </div>
 
-      <div class="contentsectionContactoCanalsBg">
-        <section class="sectionContactoCanals">
-          <div class="contactCanals">
-            <img src="img/iconoTelefono.svg">
-            <p>LLámanos al:</p>
-            <p>933 457 863</p>
-          </div>
-          <div class="contactCanals">
-            <img src="img/iconoMail.svg">
-            <p>Envianos un mail a:</p>
-            <p>info@imapres.com</p>
-          </div>
-          <div class="contactCanals">
-            <img src="img/iconoMapa.svg">
-            <p>Ven a visitarnos a:</p>
-            <p>C/ Villaroel, 125</p>
-            <p>Barcelona - 08013</p>
-          </div>
-        </section>
-      </div>
-      
-      <footer>
-        <img src="img/logofooter.svg" class="logoFooter" alt="logo impare">
-        <nav class="listfooter nav_secundaria">
-          <ul class="nav_secundaria-list">
+    <section class="sectionContactoCanals">
+        <div class="contactCanalsTelf">
+          <img src="img/iconoTelefono.svg">
+          <p>LLámanos al:</p>
+          <p><strong>933 457 863</strong></p>
+        </div>
+        <div class="contactCanalsEmail">
+          <img src="img/iconoMail.svg">
+          <p>Envianos un mail a:</p>
+          <p><strong>info@imapres.com</strong></p>
+        </div>
+        <div class="contactCanalsOffice">
+          <img src="img/iconoMapa.svg">
+          <p>Ven a visitarnos a:</p>
+          <p><strong>C/ Villaroel, 125</strong></p>
+          <p><strong>Barcelona - 08013</strong></p>
+        </div>
+      </section>   
+  
+  <footer>
+    <img src="img/logofooter.svg" class="logoFooter" alt="logo impare">
+    <nav class="listfooter nav_secundaria">
+      <ul class="nav_secundaria-list">
           <!-- <li><a href="#">preguntas frecuentes</a></li>
           <li><a href="#">testimonios</a></li>
           <li><a href="#">política de privacidad</a></li>-->

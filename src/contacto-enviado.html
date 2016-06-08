@@ -6,6 +6,7 @@
   <title>IMPARES - contacto</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/png" href="img/logoFavIcon.png">
   <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>    
   <script>
@@ -22,18 +23,16 @@
 <body>
   <header>
     <a href="index.html"><img src="img/logo.svg" class="logo" id="logo" alt="logo impares"></a>
-    <div class="icons">
-     <a href="#" id="registry_icon" class="icon_register_desktop"><img src="img/perfil.svg" alt="logo login registro"> <span class="iconsLink">ENTRAR</span></a>
-     <!--<a href="#"><img src="img/carrito.svg"></a>-->
+    <div class="icons">    
      <a href="#" id="nav-toggle" class="nav-toggle content-nav-toggle"><span></span></a>
    </div>          
 
     <nav class="nav_principal" id="nav_principal">
      <ul class="nav_principal-list">
       <li class="nav_principal-item"><a href="que-hacemos.html" class="nav_principal-link">¿que hacemos?</a></li>
-      <li class="nav_principal-item"><a href="prueba-de-fidelidad.html" class="nav_principal-link">prueba de fidelidad</a></li>
-      <li class="nav_principal-item"><a href="dejar.html" class="nav_principal-link">dejar</a></li>
-      <li class="nav_principal-item"><a href="#" id="registry_icon_mobile" class="icon_register_mobile"><img src="img/perfil.svg" alt="icono registrarse"></a></li>
+      <li class="nav_principal-item"><a href="prueba-de-fidelidad-landing.html" class="nav_principal-link">prueba de fidelidad</a></li>
+       <li class="nav_principal-item"><a href="dejar-landing.html" class="nav_principal-link">dejar a tu pareja</a></li>
+      <li class="nav_principal-item"><a href="contacto.html" class="nav_principal-link">contacto</a></li>         
        <!-- <li><a href="#">paquete negro</a></li>
         <li><a href="#">tienda</a></li>
         <li><a href="#">red impares</a></li>-->
@@ -81,8 +80,7 @@
             </form>
           </div>
         </div>
-      </header>
-      <div class="back_full_screen_contacto"> </div>    
+      </header>          
       <!-- POP UP LOGIN -->
       <div class="popup" data-popup="popup-1">
         <div class="popup-inner">
@@ -103,19 +101,44 @@
         </div>
       </div>
       <!-- POP UP -->
+
+
+        <section class="sectionContactoCanals">
+        <div class="contactCanalsTelf">
+          <img src="img/iconoTelefono.svg">
+          <p>LLámanos al:</p>
+          <p>933 457 863</p>
+        </div>
+        <div class="contactCanalsEmail">
+          <img src="img/iconoMail.svg">
+          <p>Envianos un mail a:</p>
+          <p>info@imapres.com</p>
+        </div>
+        <div class="contactCanalsOffice">
+          <img src="img/iconoMapa.svg">
+          <p>Ven a visitarnos a:</p>
+          <p>C/ Villaroel, 125</p>
+          <p>Barcelona - 08013</p>
+        </div>
+      </section>
+
+    <div class="contentFormCopy"> 
+      <section class="contentCopyContactoSent">  
           
-        <section class="contentCopyContacto">  
-          
-            <h1 class="copyContacto">¡EMAIL ENVIADO!</h1>
-            <p class="contactoDescription">Gracias por contactar con nosotros</p>
-            <p class="contactoDescription">En breve nos pondremos en contacto contigo</p>
-            <p class="contactoDescription">para resolver tu consulta.</p>   
-          
+            <h1 class="copyContacto">¡Tu mensaje ha sido enviado correctamente!</h1>            
+              <h1 class="copyContacto">¡En breve nos pondremos en contacto contigo!</h1>
+             <h1 id="Name_Contact" class="copyContacto"></h1>
+
+             <a href="index.html" class="button_principal button_color_goHome">VOLVER A LA HOME</a> 
          
         </section>
-        <section class="sent_form">
-         <h1 id="Name_Contact" class="copyContacto"></h1>                   
-       </section>
+        
+
+      
+    </div>
+
+          
+        
      
      <footer>
       <img src="img/logofooter.svg" class="logoFooter" alt="logo imnpares">

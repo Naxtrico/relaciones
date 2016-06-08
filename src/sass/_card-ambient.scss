@@ -3,19 +3,18 @@
 	background-position: top center;
     background-repeat: no-repeat;
     height: 481px;    
-    width: 32%;
+    width: 48%;
     float: left;
-    color: #fff;
-    margin-top: 50px;    
+    color: #fff;       
     margin-right: 2%;
-    overflow: hidden;    
-	border-radius: 10px;
+    overflow: hidden;	
     box-sizing:border-box;    
 }
 
-.card:nth-of-type(3n){
-	margin-right: 0px;
+.card:last-child{
+	margin-right: 0;
 }
+
 
 .card_body {
 	position: relative;
@@ -29,7 +28,7 @@
 }
 
 .card_price {
-	color: #2C0C52;
+	color: $colorPrincipalPF;
 	font-size: 16px;
 	font-weight: 600;
 	border: 1px solid #381443;
@@ -66,7 +65,8 @@
 .card_description h2{
 	margin-top: 0;	
 	text-transform: none;
-	color:#381443;	
+	color:#381443;
+	line-height: 28px;	
 }
 
 .card_footer{
@@ -78,6 +78,7 @@
     padding: 35px 0px 35px 0px;
 	background-color: #fff;
 	color:#000;
+	text-align: center;
 }
 
 .card_btn{
@@ -108,10 +109,16 @@
 	color:#311752;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
 	.card{
-		width: 49%;
+	float: none;
+    margin: 0 auto;
+    width: 90%;
 	}
+
+	.card:last-child{
+	margin-right: auto;
+}
 
 	.card:nth-of-type(3n){
 		margin-right: 2%;
@@ -122,19 +129,9 @@
 	}
 
 }
-@media screen and (max-width: 540px) {
-	
-	.card{		
-	    width: 100%;
-	    float: none; 	   
-	}
 
-	.card:nth-of-type(3n){
-		margin-right: 0px;
+@media screen and (max-width: 343px) {
+	.card{	
+    width: 80%;
 	}
-
-	.card_description h2 {
-		font-size: 18px;
-	}
-
 }

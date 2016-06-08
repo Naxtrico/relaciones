@@ -1,10 +1,11 @@
-.back_full_screen_contacto{	
+/*.back_full_screen_contacto{	
     background-repeat: no-repeat;
 	background-size: cover;
 	background-image:url(../../dist/img/pruebafotocontacto.jpg);
 	width: 100%;
-	min-height: 300px;
-}
+	height: 100%;
+	min-height: 725px;
+}*/
 
 .back_full_screen{
 	overflow: hidden;
@@ -28,6 +29,7 @@
 	min-height: 550px;
 }
 
+/*
 .back_full_screen_whatdo{
 	overflow: hidden;
 	background-position: top center;	
@@ -37,14 +39,21 @@
 	width:100%;
 	min-height: 400px;
 }
+*/
 
 .back_full_screen_home{
 	overflow: hidden;
 	background-position: center center;	
     background-repeat: no-repeat;
 	background-size: cover;
-	background-image:url(../../dist/img/bg-home.jpg);
+	background-image:url(../../dist/img/homenew.jpg);
 	width: 100%;
-	height: 100%;
-	min-height: 550px;
+	height: 500px;
+	min-height: 436px;
+}
+
+@media screen and (max-width: 699px) {
+	.back_full_screen_contacto{
+		min-height: 100%;
+	}
 }

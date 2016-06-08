@@ -1,0 +1,404 @@
+  .listSteps{
+	margin:0;
+	list-style: none;	
+}
+
+.itemSteps{
+	line-height: 100px;	
+	color: #fff;
+	font-size: 16px;
+	background-color: #565656;
+	border-bottom: 1px solid #000;
+	padding-left: 5%;
+}
+
+.itemSteps  span:hover {
+  cursor: pointer;  
+}
+
+
+.itemSteps:last-child{
+	background-color: #fff;
+	color:#000;
+	text-align: center;
+	padding-left: 0;
+	border-bottom: 0;
+}
+
+.styled-checkbox {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.styled-checkbox + label:before,
+.lt-ie8 .checkbox-replacement {
+  content: '';
+  display: inline-block;
+  line-height: 1;    
+  text-align: center;
+    /* Put checkbox styles here: */
+    border: 2px solid #fff;
+    width: 20px;
+    height: 22px;
+    margin-right: 6px;
+    
+
+  }
+  .styled-checkbox:checked + label:before,
+  .lt-ie9 .styled-checkbox.checked + label:before {
+    content: '✔';
+    font-size: 20px;
+  }
+
+  .titleSlidersAmbient, .titleSlidersActors{
+    color:#000;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: 'PT Serif' 
+  }
+
+  .titleSlidersActors{
+    top: 80px;
+  }
+
+  .titleSlidersAmbient{
+    top: 80px;
+  }
+
+  .listItemStepsArrow{
+   margin-right: 7%;    
+   float: right;
+ }
+
+ .finishStepsPF{
+  text-align: center;    
+}
+
+.titleFinishSteps, .titleFinishDejarSteps{
+  font-size:36px;
+  color:$colorPrincipalPF;
+  line-height: 45px;
+}
+
+.titleFinishSteps{
+  color:$colorPrincipalPF;
+}
+
+.titleFinishDejarSteps{  
+  color:$colorPrincipalDejar;  
+}
+
+.descriptionsPF{
+    color: #414141;
+    font-size: 29px;
+    font-weight: 600;
+  
+}
+
+.itemSteps--Checked{
+ background-color: $colorPrincipalPF;
+}
+
+.ayuda{
+  float:right; 
+  background-color: #fff;  
+  color:#000;
+  line-height: 25px;
+  width: 25px;
+  height: 25px;
+  z-index: 0;
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 1px solid #000000;
+  text-align: center;
+  margin-top: 30px;
+  margin-right: 45px;
+  font-family: 'PT Serif';
+    font-size: 21px;
+    font-weight: 800;
+
+}
+
+
+#mujeres{
+  display: none;
+}
+
+#hombres{
+  display: block;
+}
+
+
+
+/*--SLIDES-----------------------------------------*/
+.slideshow, .slideshowM, .slideshowMu, .slideshowA, .slideshowD, .slideshowDe {
+  width: 100%;
+  height: 542px;  
+  background: black;  
+  right: 0;
+  top:0px;    
+  background-color: #DBDBDB;  
+  box-sizing:border-box;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  max-width: 780px;
+  margin: 0 auto;
+}
+.slideshowActors{
+  top: 0;
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+
+.slideshow .slides, .slideshowM .slidesM, .slideshowMu .slidesMu, .slideshowA .slidesA, .slideshowD .slidesD, .slideshowDe .slidesDe {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+  padding: 0;
+}
+
+.slides ul, .slidesM ul, .slidesMu ul,.slidesA ul, .slidesD ul, .slidesDe ul {  
+  line-height: 0px;
+}
+
+.slides li, .slidesM li, .slidesMu li, .slidesA li, .slidesD li, .slidesDe li  {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: none;
+  line-height: 0px;
+  font-size: 14px;
+  list-style: none;
+}
+
+.prev,
+.next,
+.prevM,
+.nextM,
+.prevMu,
+.nextMu,
+.prevA,
+.nextA,
+.prevD,
+.nextD,
+.prevDe,
+.nextDe       {
+  color: $colorPrincipalPF;
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  font-size: 3em;  
+  padding: 10px 5px; 
+  transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+}
+
+.prevD,
+.nextD,
+.prevDe,
+.nextDe,
+.navDe     {
+ color: $colorPrincipalDejar;
+}
+
+.prev:hover,
+.next:hover,
+.prevM:hover,
+.nextM:hover,
+.prevMu:hover,
+.nextMu:hover,
+.prevA:hover,
+.nextA:hover,
+.prevD:hover,
+.nextD:hover,
+.prevDe:hover,
+.nextDe:hover     {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.prev, .prevM, .prevMu, .prevA, .prevD, .prevDe {
+  left: 0;
+}
+
+.next, .nextM, .nextMu, .nextA, .nextD, .nextDe  {
+  right: 0;
+}
+
+.nav, .navM, .navMu, .navA, .navD, .navDe {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  z-index: 1;
+  margin: 0 auto;
+  left: 0;
+  width: 100px;
+  list-style: none;
+}
+
+
+
+.navD, .navDe {
+  bottom: -20px;
+  width: 54px;
+}
+
+.navA{
+ bottom: 7px;
+}
+
+
+.navM, .navMu, {
+	width: 43px;	
+}
+
+.navA{
+  width: 159px;
+}
+
+.nav{
+	width: 72px;	
+}
+
+
+.nav li, .navM li, .navMu li, .navA li, .navD li, .navDe li {
+  float: left;
+  margin-right: 15px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid $colorPrincipalPF;
+  border-radius: 10px;
+  transition: background 0.5s;
+  -o-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -webkit-transition: background 0.5s;
+}
+
+.navD li, .navDe li {
+ border: 2px solid $colorPrincipalDejar;
+}
+
+.nav li:last-child, .navM li:last-child, .navMu li:last-child, .navA li:last-child, .navD li:last-child, .navDe li:last-child{
+  margin-right: 0;
+}
+
+
+.nav li:hover, .navM li:hover, .navMu li:hover, .navA li:hover, .navD li:hover, .navDe li:hover {
+  background-color: $colorPrincipalPF;
+  cursor: pointer;
+}
+
+.navD li:hover, .navDe li:hover{
+ background-color: $colorPrincipalDejar;
+}
+
+.active-cd, .activeM-cd, .activeMu-cd, .activeA-cd, .activeD-cd, .activeDe-cd  {
+  background-color: $colorPrincipalPF;
+}
+
+.activeD-cd, .activeDe-cd{
+  background-color: $colorPrincipalDejar;
+}
+
+.info {
+  text-align: center;
+  color: #787878;
+}
+
+@media screen and (max-width: 1023px) {  
+  .navM, .navMu{
+    width: 101px;
+  }
+
+  .navDe{
+    width: 101px;
+  }
+  
+  .slideshow, .slideshowM, .slideshowMu, .slideshowA, .slideshowD, .slideshowDe {
+    max-width: 400px;
+  }  
+
+}
+
+@media screen and (max-width: 979px) {	
+	.itemSteps{		
+		font-size: 14px;		
+	}
+}
+
+@media screen and (max-width: 856px) {
+
+  .ayuda{
+    margin-top: -13px;
+    margin-right: 13px;
+  }	
+
+  .listSteps{
+    text-align: center;
+  }	
+
+  .itemSteps{			
+   padding-left: 0;	
+ }
+
+ .listItemStepsArrow{
+  float:none;
+  display:inline-block;     
+  transform: rotate(90deg);
+  margin-left: 5px;    
+}
+
+.slideshow, .slideshowM, .slideshowA,.slideshowDe{
+  margin-top:0;
+  transform: translateY(0%);
+  max-width: 400px;
+}
+
+.nav, .navM {    
+ bottom: 6px;
+}
+
+.navDe{
+  bottom: 12px;
+}
+
+.titleSlidersAmbient{
+  top: 163px;
+  z-index: 10;
+  position: initial;
+} 
+
+.titleSlidersActors{
+  top:300px;
+  position: initial;
+}
+
+}
+
+@media screen and (max-width: 671px) {
+
+  .titleFinishSteps{
+    font-size:30px;
+
+  }
+
+  .descriptionsPF{
+
+    font-size: 20px;
+  }
+}
+
+

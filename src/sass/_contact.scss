@@ -1,7 +1,107 @@
-.contactCanals{
-	float: left;
+.contentCopyContacto, .contentCopyContactoSent{
+	max-width: 600px;
+	margin: 0 auto;
 	text-align: center;
-	width: 33.33333333%;
+	margin-top: 50px;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.contentCopyContactoSent{
+	max-width: 800px;
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 0;
+}
+
+.copyContacto{	
+    margin-bottom: 30px;
+    color: white;
+    font-size: 37px;
+    font-weight: 500;
+}
+
+.copyContacto:first-child{
+	margin-top: 0px;
+}
+
+.contactoDescription{
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+.sectionContactForm label{
+	color:#fff;
+}
+
+
+
+@media screen and (max-width: 699px) {
+
+	.copyContacto{	  
+    font-size: 20px;    
+	}
+
+	.contentCopyContactoSent{
+		position: initial;
+		transform: translateY(0%);
+		margin-top: 20px;
+	}
+
+}
+
+@media screen and (max-width: 380px) {
+	
+}
+
+@media screen and (max-width: 368px) {
+	
+	}
+
+
+@media screen and (max-width: 330px) {
+	}
+
+.contactCanalsTelf, .contactCanalsEmail, .contactCanalsOffice,  {	
+	text-align: center;	
+	width: 100%;
+	padding: 5%;
+	height: 33.33333%;
+    box-sizing: border-box;
+}
+
+.contactCanalsTelf{
+	background-color: #e2e2e2;
+}
+
+.contactCanalsEmail{
+	background-color: #d3d3d3;
+}
+
+.contactCanalsOffice{
+	background-color: #bcbcbc;
+}
+
+.contactCanalsTelf img, .contactCanalsEmail img, .contactCanalsOffice img{
+	height: 45%;
+} 
+
+
+@media screen and (max-width: 699px) {
+
+	.contactCanalsTelf, .contactCanalsEmail, .contactCanalsOffice,  {
+		width: 100%;
+		float: left;
+		height: 167px;
+		padding: 1%;
+	}
+
+	.contactCanalsTelf img, .contactCanalsEmail img, .contactCanalsOffice img{
+		width: 100%;
+		height: 45%;
+	} 	
+
 }
 
 

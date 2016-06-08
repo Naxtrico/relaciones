@@ -13,6 +13,28 @@
 
 }
 
+.itemStepsDejar--Checked{
+	background-color: $colorPrincipalDejar;
+
+}
+
+.titleSlidersDejar{
+	color:#000;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 80px;
+	z-index: 0;
+	font-weight: 800;
+    font-size: 20px;
+    font-family: 'PT Serif'
+}
+.iconStep3{
+	margin-top: 50px;
+    margin-bottom: 40px;
+    width: 80px;
+}
+
 @media screen and (max-width: 1024px) {
 
 	.dejar_email_sent{
@@ -25,6 +47,15 @@
 	}
 
 	
+}
+
+@media screen and (max-width: 856px) {	
+
+	.titleSlidersDejar{
+		top: 163px;
+		z-index: 10;
+		position: initial;
+	} 
 }
 
 @media screen and (max-width: 540px) {

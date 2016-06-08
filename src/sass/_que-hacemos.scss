@@ -1,119 +1,244 @@
+.container_copy_whatdo{
+	float: left;
+	width: 60%;
+	box-sizing: border-box;
+	padding-top: 50px;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 667px;
+	background-image: url(../../dist/img/bg-que-hacemos.png);
+	position:relative;	 
+	& > .bg-whatdo  {
+		background-color: #13617f;
+		opacity: .7;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+
+	}
+	section {
+		position: relative;
+		z-index: 0;
+	}
+
+}
+
+
+
+.whatoDoTitle{
+	margin-bottom: 30px;
+	color: #FFF;
+	font-size: 35px;    
+}
+
 .whatDoDescP{
-  margin-bottom: 20px;
-  color: #000;
-  text-align: left;
+
+	margin-bottom: 10px;
+	color: #000;
+	text-align: left;
+	color:#fff;
+	font-weight: 500;
+	font-size: 16px;
 }
 
 .cite{
 	width: 100%;
 	clear: both;
-	text-align: center;
-	margin-top: 50px;
+	text-align: left;
+	margin-top: 25px;
 	display: inline-block;
 	
 }
 
 .citeText {
-	font-size: 26px;
+	font-size: 22px;
 	line-height: 35px;		
 	margin: 0;
+	color:#FFF;
+	font-weight: bold;
 }
 
-.members{
-	float: left;
-	width: 33.333333%;
-	padding: 10px;
-	padding-right: 5%;
-	margin-top: 20px;
-	box-sizing:border-box;
+.memberMar, .memberJor, .memberNat {
+	text-align: center;	
+	width: 100%;
+	padding: 5%;
+	min-height: 206px;
+	height: 33.33333%;
+	box-sizing: border-box;
+
 }
 
-.members:last-child{	
-	padding-right: 0;
-	
+
+.memberMar{
+	background-color: #e2e2e2;
 }
+
+.memberJor{
+	background-color: #d3d3d3;
+}
+
+.memberNat{
+	background-color: #bcbcbc;
+}
+
 
 .rol_title{
 	font-size: 30px;
 }
 
 .members_img{
-	margin-top: 40px;
-	width: 200px;
+	float: left;	
+	width: 130px;
 	border-radius: 500px;	
+	margin-right: 5%;
+	margin-top: 3%;
 }
 
-.whatdo_desc_left, .whatdo_desc_right{
-
-    margin-top: 50px;
-} 
-
-.whatdo_desc_left{
-    float: left;
-    margin-right: 6%;
-
-}
-
-.whatdo_desc_right{
-    float: right;
-    
-}
 
 .teamTitle--color, .membersTitle--color{
-    color: #C0212F;
+	color: #13617f;
+
 }
 
 .teamTitle{ 
-    font-size: 35px;
-    margin:0;
+	font-size: 35px;
+	margin:0;
 }
 
 .membersTitle{  
-    font-size: 20px;
-    font-weight: bold;
+
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 10px;
+
 }
 
 .teamDescMembers{
-    font-size: 16px;
-    color:#000;
+	font-size: 16px;
+	color: #49484a;
+	text-align: left;
+	margin-left: 10px;
+	font-weight: 600;   
+
 }
+
+
+@media screen and (max-width: 1069px) {
+
+	.teamDescMembers{
+		font-size: 14px;   
+	}
+	.membersTitle{ 
+		font-size: 16px;
+
+	}
+}
+
+@media screen and (max-width: 955px) {
+	.container_copy_whatdo{
+		height:auto;		    
+	}
+
+
+}
+
+
+@media screen and (max-width: 946px) {
+	.team{ 
+		min-height: 697px;
+	}  
+}
+
+@media screen and (max-width: 910px) {
+	.team{ 
+		min-height: 722px;
+	}  
+}
+
+@media screen and (max-width: 819px) {
+	.team{ 
+		min-height: 757px;
+	}  
+}
+
+@media screen and (max-width: 802px) {
+	.team{ 
+		min-height: 782px;
+	}  
+}
+
+@media screen and (max-width: 756px) {
+	.team{ 
+		min-height: 807px;
+	}  
+}
+
+@media screen and (max-width: 748px) {
+	.team{ 
+		min-height: 832px;
+
+	}  
+}
+
 
 @media screen and (max-width: 940px) {
 
 	.members{
-	    float:none;
-	    margin: 0 auto;	    
-	    width: 300px;
-   }
+		float:none;
+		margin: 0 auto;	    
+		width: 300px;
+	}
 
 	.members:last-child {   	
-	    margin-right: auto;
+		margin-right: auto;
 	}
 
 }
 
 @media screen and (max-width: 768px) {
 
-  .citeText {
-  font-size: 24px; 
+	.citeText {
+		font-size: 20px; 
+	}
+
 }
 
-  }
+@media screen and (max-width: 720px) { 
+	.team{
+		min-height: auto;
+	}
+
+	.memberMar, .memberJor, .memberNat{
+		height: auto;
+		overflow: hidden;
+	}
+
+	.container_copy_whatdo{
+		width: 100%;
+	}
+	
+
+}
 
 @media screen and (max-width: 620px) {
 
-  .members{
-    float:none;
-    width: 300px;
-    margin: 0 auto;
-  }
+	.members{
+		float:none;
+		width: 300px;
+		margin: 0 auto;
+	}
 
 }
 
 @media screen and (max-width: 340px) {
-  
-  .members{
-    width: 100%;
-  }
+
+	.members{
+		width: 100%;
+	}
 
 }
