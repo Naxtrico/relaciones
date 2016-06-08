@@ -45,7 +45,8 @@
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	float:left;	
+	float:left;
+	width: 410px;	
 }
 
 .portadaline{
@@ -101,7 +102,7 @@
 .eye_icon{
 	margin-top: 210px;
 	margin-bottom: 40px;
-	width: 20%;
+	width: 80px;
 }
 
 .info_p_text{
@@ -109,6 +110,8 @@
 	font-family: 'Open Sans', serif;
 	color:#fff;
 	line-height: 50px;
+	margin: 0;
+    font-weight: 600;
 
 
 }

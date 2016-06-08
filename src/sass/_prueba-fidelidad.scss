@@ -1,4 +1,4 @@
-.listSteps{
+  .listSteps{
 	margin:0;
 	list-style: none;	
 }
@@ -55,7 +55,10 @@
     position: absolute;
     right: 0;
     left: 0;
-    z-index: 0;  
+    z-index: 0;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: 'PT Serif' 
   }
 
   .titleSlidersActors{
@@ -90,8 +93,10 @@
 }
 
 .descriptionsPF{
-  color:#000;
-  font-size: 29px;
+    color: #414141;
+    font-size: 29px;
+    font-weight: 600;
+  
 }
 
 .itemSteps--Checked{
@@ -111,8 +116,12 @@
   -webkit-border-radius: 200px 200px 200px 200px;
   border: 1px solid #000000;
   text-align: center;
-    margin-top: 10px;
-    margin-right: 10px;
+  margin-top: 30px;
+  margin-right: 45px;
+  font-family: 'PT Serif';
+    font-size: 21px;
+    font-weight: 800;
+
 }
 
 
@@ -317,7 +326,10 @@
   .navDe{
     width: 101px;
   }
-      
+  
+  .slideshow, .slideshowM, .slideshowMu, .slideshowA, .slideshowD, .slideshowDe {
+    max-width: 400px;
+  }  
 
 }
 
@@ -330,7 +342,8 @@
 @media screen and (max-width: 856px) {
 
   .ayuda{
-        margin-top: -13px;
+    margin-top: -13px;
+    margin-right: 13px;
   }	
 
   .listSteps{
@@ -351,7 +364,7 @@
 .slideshow, .slideshowM, .slideshowA,.slideshowDe{
   margin-top:0;
   transform: translateY(0%);
-  max-width: 465px;
+  max-width: 400px;
 }
 
 .nav, .navM {    
@@ -359,7 +372,7 @@
 }
 
 .navDe{
-    bottom: 12px;
+  bottom: 12px;
 }
 
 .titleSlidersAmbient{
