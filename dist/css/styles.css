@@ -484,6 +484,9 @@ input[type="radio"] {
   width: 100px;
   list-style: none; }
 
+.navM {
+  bottom: 13px; }
+
 .navD, .navDe {
   bottom: -20px;
   width: 54px; }
