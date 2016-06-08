@@ -257,11 +257,11 @@
 								<legend></legend>
 								<label>Nombre</label>          
 								<span class="error">Nombre Obligatorio</span>
-								<input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'" required>
+								<input type="text" id="nombre_usuario" name="nombre_usuario" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'">
 
 								<label>Email</label>
 								<span class="error">Email Obligatorio</span>
-								<input type="text" id="email_usuario" name="email_usuario" title="Indica un Email válido" pattern="^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'" required>
+								<input type="text" id="email_usuario" name="email_usuario"  placeholder="Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name'">
 								
 							</select>
 							<div class="contentFormBtn">
@@ -273,13 +273,13 @@
 						<fieldset id="couple" class="ocult">        
 							<legend></legend>
 							<label>Nombre y apellidos</label>
-							<input type="text" id="nombre_pareja" required>      
-							<label>Si has elegido llamada o sms escribe el número móbil</label>
+							<input type="text" id="nombre_pareja">      
+							<label>Si has elegido llamada o sms escribe el número móvil</label>
 							<input type="text" id="mobil">
-							<label>Si has elegido la carta o en persona, dinos su dirección: (callle, numero, piso, ciudad, codigo postal)</label>
+							<label>Si has elegido la carta o en persona, dinos su dirección: (calle, número, piso, ciudad, código postal)</label>
 							<input type="text" id="direccion">
-							<label>Que dia quieres que se lo digamos?</label>
-							<input type="date" id="dia" class="selectDate selectDateArrowDejar" required="">
+							<label>¿Que día quieres que se lo digamos?</label>
+							<input type="date" id="dia" class="selectDate selectDateArrowDejar">
 							<div class="contentFormBtn">
 								<button id="next2" class="form_button_PF">Siguiente (2/3)</button>
 							</div>
@@ -288,7 +288,7 @@
 						<fieldset class="ocult" id="prueba">
 							<legend></legend>             
 							<label>Escribe aquí el motivo de ruptura y todos los sentimientos que quieres que le expresemos a tu pareja</label>
-							<textarea id="motivo" required> </textarea>
+							<textarea id="motivo" > </textarea>
 							<div class="contentFormBtn">
 								<button id="next3" class="form_button_PF">Finalizar</button>
 							</div>
@@ -357,35 +357,9 @@
 <script src="js/menuMobile.js" type="text/javascript"></script>
 <script src="js/popUpLoginRegister.js" type="text/javascript"></script>
 <script src="js/opacityCardsPf.js" type="text/javascript"></script>
-<script src="js/validateForm.js" type="text/javascript"></script>
 <script src="js/sliderDejar.js" type="text/javascript"></script>
 <script src="js/windowResumePf.js" type="text/javascript"></script>
-<!-- Cambiar forms -->
-<script type="text/javascript">
-$(document).ready(function () {
-	$("#next1").click(function () {
-		$('#personal_data').addClass('ocult');
-		$('#couple').removeClass('ocult');
-		$('#tusDatos').removeClass('titleFormsDejar--color');
-		$('#tuPareja').addClass('titleFormsDejar--color');  
-	});
-	$("#next2").click(function () {		
-		$('#couple').addClass('ocult');
-		$('#prueba').removeClass('ocult');
-		$('#tuPareja').removeClass('titleFormsDejar--color');
-		$('#pruebaForm').addClass('titleFormsDejar--color');         
-	});
-
-	$("#next3").click(function (event) {
-		event.preventDefault();
-		$('#tusDatos').addClass('ocult');
-		$('#tuPareja').addClass('ocult');
-		$('#pruebaForm').addClass('ocult');  
-		$('#prueba').addClass('ocult');
-		$('#pay').removeClass('ocult');	       
-	});
-});
-</script>
+<script src="js/formChangeDejar.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 $(document).ready(function() {
@@ -397,5 +371,6 @@ $(document).ready(function() {
 	});
 });	
 </script>
+
 </body>
 </html>
