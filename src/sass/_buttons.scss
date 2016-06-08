@@ -24,9 +24,9 @@
 	color:#000;
 	background-color:#fff;
 	&:hover {
-        background-color:#555;
-        color:#fff;
-    }
+		background-color:#555;
+		color:#fff;
+	}
 }
 
 .button_color_goHome{
@@ -62,13 +62,13 @@
 	display: inline-block;
 	line-height: 30px;
 	border-radius: 4px;	
-    transition: all 0.5s ease;
-    border: 1px solid #606060;
-   
+	transition: all 0.5s ease;
+	border: 1px solid #606060;
+
 }
 
 .cardBtnActors{	
-	     margin-top: 182px;	
+	margin-top: 182px;	
 }
 
 .btnSelectSex,{
@@ -82,13 +82,15 @@
 }
 
 .btnSelectSex--active{
-		background-color: $colorPrincipalPF;
-		color:#fff;
-	}	
+	background-color: $colorPrincipalPF;
+	color:#fff;
+}	
 
-.btnSelectSex:last-child{
+.btnSelectSex:last-of-type{
 	margin-right: 0px;
 }
+
+
 
 .contentFormBtn{
 	text-align: center;
@@ -139,14 +141,31 @@
 	font-weight: bold;
 }
 
+@media screen and (max-width: 856px) {
+
+	.btnSelectSex{	
+		margin-top: 10px;
+	}
+
+}
+
+
 
 @media screen and (max-width: 1067px) {
 
-.cardBtnActors{	
-	     margin-top: 129px;
-	 }
+	.cardBtnActors{	
+		margin-top: 129px;
+	}
 
 }
+@media screen and (max-width: 377px) {
+
+	.btnSelectSex{
+		width: 100px;
+		padding: 2px 18px;
+	}
+}
+
 @media screen and (max-width: 540px) {
 
 	.button_principal{

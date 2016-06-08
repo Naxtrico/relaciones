@@ -284,8 +284,7 @@ input[type="radio"] {
   padding-left: 5%; }
 
 .itemSteps span:hover {
-  cursor: pointer;
-  background-color: #2C0C52; }
+  cursor: pointer; }
 
 .itemSteps:last-child {
   background-color: #fff;
@@ -354,9 +353,7 @@ input[type="radio"] {
   background-color: #2C0C52; }
 
 .ayuda {
-  position: absolute;
-  top: 74px;
-  right: 24px;
+  float: right;
   background-color: #fff;
   color: #000;
   line-height: 25px;
@@ -367,7 +364,9 @@ input[type="radio"] {
   -moz-border-radius: 200px 200px 200px 200px;
   -webkit-border-radius: 200px 200px 200px 200px;
   border: 1px solid #000000;
-  text-align: center; }
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 10px; }
 
 #mujeres {
   display: none; }
@@ -540,12 +539,19 @@ input[type="radio"] {
     font-size: 14px; } }
 
 @media screen and (max-width: 856px) {
+  .ayuda {
+    margin-top: -13px; }
   .listSteps {
     text-align: center; }
   .itemSteps {
     padding-left: 0; }
   .listItemStepsArrow {
-    float: none; }
+    float: none;
+    display: inline-block;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    margin-left: 5px; }
   .slideshow, .slideshowM, .slideshowA, .slideshowDe {
     margin-top: 0;
     -webkit-transform: translateY(0%);
@@ -558,20 +564,17 @@ input[type="radio"] {
     bottom: 12px; }
   .titleSlidersAmbient {
     top: 163px;
-    z-index: 10; }
+    z-index: 10;
+    position: initial; }
   .titleSlidersActors {
-    top: 300px; } }
+    top: 300px;
+    position: initial; } }
 
 @media screen and (max-width: 671px) {
   .titleFinishSteps {
     font-size: 30px; }
   .descriptionsPF {
     font-size: 20px; } }
-
-@media screen and (max-width: 429px) {
-  .ayuda {
-    top: 55px;
-    right: 6px; } }
 
 .button_principal {
   padding: 15px 0px;
@@ -646,7 +649,7 @@ input[type="radio"] {
   background-color: #2C0C52;
   color: #fff; }
 
-.btnSelectSex:last-child {
+.btnSelectSex:last-of-type {
   margin-right: 0px; }
 
 .contentFormBtn {
@@ -692,9 +695,18 @@ input[type="radio"] {
   margin-bottom: 50px;
   font-weight: bold; }
 
+@media screen and (max-width: 856px) {
+  .btnSelectSex {
+    margin-top: 10px; } }
+
 @media screen and (max-width: 1067px) {
   .cardBtnActors {
     margin-top: 129px; } }
+
+@media screen and (max-width: 377px) {
+  .btnSelectSex {
+    width: 100px;
+    padding: 2px 18px; } }
 
 @media screen and (max-width: 540px) {
   .button_principal {
@@ -826,7 +838,6 @@ input[type="radio"] {
   color: #fff;
   margin-right: 20%;
   overflow: hidden;
-  border-radius: 10px;
   box-sizing: border-box; }
 
 .cardDejar:last-child {
@@ -1047,7 +1058,7 @@ footer {
   background: white url("../img/arroeSelectDejar.png") no-repeat right center; }
 
 .selectHour {
-  width: 130px; }
+  width: 136px; }
 
 input[type=radio] {
   display: none; }
@@ -1554,9 +1565,7 @@ header.fixed {
   .referemcesImg:nth-child(4) {
     margin-right: 0; }
   .referemcesImg:nth-child(3) {
-    margin-right: 10%; }
-  hr {
-    margin-right: 0%; } }
+    margin-right: 10%; } }
 
 @media screen and (max-width: 471px) {
   .referemcesImg:nth-child(4) {
@@ -1597,7 +1606,8 @@ header.fixed {
 
 @media screen and (max-width: 1023px) {
   .icons {
-    line-height: 76px; } }
+    line-height: 76px;
+    height: 50px; } }
 
 .Container_login {
   display: none; }
@@ -1996,7 +2006,8 @@ nav {
 @media screen and (max-width: 856px) {
   .titleSlidersDejar {
     top: 163px;
-    z-index: 10; } }
+    z-index: 10;
+    position: initial; } }
 
 @media screen and (max-width: 540px) {
   .dejar_email_sent {
@@ -2274,7 +2285,8 @@ nav {
     position: initial;
     margin-top: 0;
     width: 100%;
-    padding-top: 24px; } }
+    padding-top: 24px;
+    min-height: auto; } }
 
 @media screen and (max-width: 820px) {
   .sectionActors {
