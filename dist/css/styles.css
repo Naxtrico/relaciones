@@ -984,14 +984,13 @@ footer {
 }*/
 .linefooter {
   background-color: #211915;
-  height: 70px;
+  height: 30px;
   clear: both; }
 
 .footercopy {
   color: #fff;
   text-align: center;
-  font-size: 12px;
-  padding-top: 25px; }
+  font-size: 12px; }
 
 @media screen and (max-width: 1067px) {
   footer {
@@ -1437,7 +1436,7 @@ header.fixed {
   margin-bottom: 7px;
   font-size: 36px;
   text-transform: none;
-  font-weight: 500;
+  font-weight: 800;
   color: #000;
   text-align: left; }
 
@@ -1452,7 +1451,7 @@ header.fixed {
   color: #000;
   font-size: 17px;
   margin: 0;
-  line-height: 35px; }
+  line-height: 25px; }
 
 .homeUiLineSeparator {
   width: 80%;
@@ -1507,7 +1506,7 @@ header.fixed {
 .servicesDescription {
   font-size: 35px;
   color: #fff;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 42px;
   font-family: 'PT Serif', serif; }
 
