@@ -101,13 +101,7 @@
 
 @media screen and (max-width: 699px) {
   .copyContacto {
-    font-size: 20px; }
-  .contentCopyContactoSent {
-    position: initial;
-    -webkit-transform: translateY(0%);
-        -ms-transform: translateY(0%);
-            transform: translateY(0%);
-    margin-top: 20px; } }
+    font-size: 20px; } }
 
 .contactCanalsTelf, .contactCanalsEmail, .contactCanalsOffice {
   text-align: center;
@@ -1392,12 +1386,6 @@ a {
 .messageFinishPay {
   font-size: 16px; }
 
-@media screen and (max-width: 634px) {
-  /*li{
-		display: block;
-		padding: 0;
-	}*/ }
-
 @media screen and (max-width: 540px) {
   p {
     font-size: 14px;
@@ -1971,13 +1959,16 @@ nav {
   clear: both;
   margin-top: 20px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
