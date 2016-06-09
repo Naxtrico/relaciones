@@ -1,3 +1,7 @@
+footer {
+	height: auto;
+}
+
 #instructions {
 	$small-screen: 800px;
 	$medium-screen: 1200px;
@@ -205,14 +209,17 @@
 		.content {
 			float: left;
 		}
+		@media screen and (max-width: $small-screen) {
+			padding-bottom: 80px !important;
+		}
 	}
 
 	.hire {
 		position: fixed;
 		bottom: 0;
-		background-color: #811e32;
+		background-color: #590b21;
 		width: 100%;
-		height: 150px;
+		padding-bottom: 20px;
 		padding-top: 20px;
 		text-align: center;
 
@@ -253,12 +260,16 @@
 			@media screen and (max-width: $medium-screen) {
 				font-size: 20px;
 			}
+			@media screen and (max-width: $small-screen) {
+				display: none;
+			}
 		}
 		& > p:last-child {
 			font-size: 16px;
 			margin-top: 15px;
-		@media screen and (max-width: $small-screen) {
+			@media screen and (max-width: $small-screen) {
 				margin-bottom: 15px;
+				display: none;
 			}
 		}
 	}

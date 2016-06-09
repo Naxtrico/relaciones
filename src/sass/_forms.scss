@@ -146,6 +146,12 @@ input[type="text"]:focus{
 	}
 }
 
+.formButtonContact{
+	background-color: #fff;
+	color:#000;
+	margin:0 auto;
+	display: block;
+}
 
 .form_button_Dejar{
 	padding: 10px 30px;
@@ -183,7 +189,7 @@ label{
 	font-size: 14px;
 }
 
-legend{
+/*legend{
 	position: relative;
 	top:30px;  
 	display: block;
@@ -194,7 +200,7 @@ legend{
 	display: inherit;
 	text-align: center;
 	margin-bottom: 3rem;  
-}
+}*/
 
 fieldset{
 	border:0;    
